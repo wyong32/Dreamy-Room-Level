@@ -1,5 +1,10 @@
 {
-  "rewrites": [],
+  "rewrites": [
+    {
+      "source": "/((?!api/|_next/|favicon.ico|assets/|images/|robots.txt|sitemap.xml).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
