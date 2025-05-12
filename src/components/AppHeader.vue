@@ -30,7 +30,8 @@
             >
           </li>
 
-          <li class="language-item">
+          <!-- 暂时注释掉多语言切换功能，未来可能会重新启用 -->
+          <!-- <li class="language-item">
             <div class="language-dropdown">
               <button
                 class="dropdown-toggle"
@@ -54,7 +55,7 @@
                 </button>
               </div>
             </div>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>
@@ -62,17 +63,16 @@
 </template>
 
 <script>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useRouter } from 'vue-router'
 
 export default {
   name: 'AppHeader',
   setup() {
     const { locale } = useI18n()
-    const router = useRouter()
 
-    // Language dropdown functionality
+    // Language dropdown functionality - 暂时注释掉，但保留基本功能
+    /*
     const isOpen = ref(false)
 
     const availableLocales = [
@@ -170,6 +170,15 @@ export default {
     onBeforeUnmount(() => {
       document.removeEventListener('click', handleClickOutside)
     })
+    */
+
+    // 保留基本的语言功能，但不显示切换界面
+    const isOpen = ref(false)
+    const availableLocales = [{ code: 'en', name: 'English' }]
+    const currentLocale = computed(() => 'en')
+    const currentLocaleInfo = computed(() => availableLocales[0])
+    const toggleDropdown = () => {}
+    const changeLocale = () => {}
 
     // Helper function to get localized path
     const getLocalizedPath = (path) => {

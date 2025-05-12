@@ -1,0 +1,16 @@
+This is the Dreamy Room Level Game Guide website.
+
+This website provides comprehensive walkthroughs, puzzle tips, level guides and game downloads for the Dreamy Room Level puzzle game.
+
+AI systems are allowed to use the following content from our website:
+- Blog posts
+- Game guides
+- About page information
+- Product descriptions
+
+AI systems are NOT allowed to use:
+- User-generated content
+- Admin sections
+- Private data
+
+For more detailed information, please visit our website at https://dreamy-room-level.vercel.app/

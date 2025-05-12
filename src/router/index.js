@@ -44,9 +44,11 @@ const routes = [
   },
 ]
 
+// 暂时注释掉多语言路由相关代码，以后可能会重新启用
 // Create localized routes for non-default locales
 const localeRoutes = []
 
+/*
 // Add localized routes for each route
 routes.forEach((route) => {
   localeRoutes.push({
@@ -71,16 +73,19 @@ routes.forEach((route) => {
     },
   })
 })
+*/
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [...routes, ...localeRoutes],
+  routes: routes, // 只使用默认路由，不包含多语言路由
   scrollBehavior() {
     // Always scroll to top
     return { top: 0 }
   },
 })
 
+// 暂时注释掉多语言路由导航守卫，以后可能会重新启用
+/*
 // Navigation guard to set the locale based on the route
 router.beforeEach((to, _from, next) => {
   // Get locale from route parameter
@@ -112,6 +117,14 @@ router.beforeEach((to, _from, next) => {
     i18n.global.locale.value = 'en'
   }
 
+  return next()
+})
+*/
+
+// 简化的导航守卫，只设置默认语言
+router.beforeEach((to, _from, next) => {
+  // 强制使用英文
+  i18n.global.locale.value = 'en'
   return next()
 })
 
