@@ -1001,10 +1001,6 @@ section.animate {
     font-size: 1.3rem;
   }
 
-  .feature-items {
-    /* auto-fit minmax(300px, 1fr) 应该能很好地处理平板，可能不需要额外调整 */
-  }
-
   .download-container {
     flex-direction: column;
     text-align: center;
