@@ -29,7 +29,7 @@ const loadGuideIds = () => {
         if (idMatches) {
           idMatches.forEach((match) => {
             const id = match.match(/['|"](game-level-\d+)['|"]/)[1]
-            if (id) ids.add(id)
+            if (id && typeof id === 'string') ids.add(id)
           })
         }
 
@@ -40,10 +40,10 @@ const loadGuideIds = () => {
         if (routeMatches) {
           routeMatches.forEach((match) => {
             const route = match.match(/['|"](\/[a-zA-Z0-9-]+)['|"]/)[1]
-            if (route) {
+            if (route && typeof route === 'string') {
               // 移除开头的斜杠，因为path属性不需要
-              const path = route.startsWith('/') ? route.substring(1) : route
-              ids.add(path)
+              const pathStr = route.startsWith('/') ? route.substring(1) : route
+              ids.add(pathStr)
             }
           })
         }
@@ -69,11 +69,31 @@ const loadBlogIds = () => {
       const content = fs.readFileSync(filePath, 'utf-8')
 
       // 使用正则表达式查找所有博客ID
-      const idMatches = content.match(/id:\s*['|"](blog-[a-zA-Z0-9-]+)['|"]/g)
+      const idMatches = content.match(/id:\s*['|"]([a-zA-Z0-9-]+)['|"]/g)
       if (idMatches) {
         idMatches.forEach((match) => {
-          const id = match.match(/['|"](blog-[a-zA-Z0-9-]+)['|"]/)[1]
-          if (id) ids.add(id)
+          const idMatch = match.match(/['|"]([a-zA-Z0-9-]+)['|"]/)
+          if (idMatch && idMatch[1] && typeof idMatch[1] === 'string') {
+            // 添加blog-前缀，因为路由是/blog-{id}
+            ids.add(`blog-${idMatch[1]}`)
+          }
+        })
+      }
+
+      // 查找detailsRoute中的路径
+      const routeMatches = content.match(/detailsRoute:\s*{\s*path:\s*['|"](\/[a-zA-Z0-9-]+)['|"]/g)
+      if (routeMatches) {
+        routeMatches.forEach((match) => {
+          const routeMatch = match.match(/['|"](\/[a-zA-Z0-9-]+)['|"]/)
+          if (routeMatch && routeMatch[1] && typeof routeMatch[1] === 'string') {
+            // 移除开头的斜杠，因为path属性不需要
+            const pathStr = routeMatch[1].startsWith('/')
+              ? routeMatch[1].substring(1)
+              : routeMatch[1]
+            if (typeof pathStr === 'string') {
+              ids.add(pathStr)
+            }
+          }
         })
       }
     }
@@ -90,11 +110,14 @@ const loadBlogIds = () => {
           const content = fs.readFileSync(filePath, 'utf-8')
 
           // 使用正则表达式查找所有博客ID
-          const idMatches = content.match(/id:\s*['|"](blog-[a-zA-Z0-9-]+)['|"]/g)
+          const idMatches = content.match(/id:\s*['|"]([a-zA-Z0-9-]+)['|"]/g)
           if (idMatches) {
             idMatches.forEach((match) => {
-              const id = match.match(/['|"](blog-[a-zA-Z0-9-]+)['|"]/)[1]
-              if (id) ids.add(id)
+              const idMatch = match.match(/['|"]([a-zA-Z0-9-]+)['|"]/)
+              if (idMatch && idMatch[1] && typeof idMatch[1] === 'string') {
+                // 添加blog-前缀，因为路由是/blog-{id}
+                ids.add(`blog-${idMatch[1]}`)
+              }
             })
           }
 
@@ -104,11 +127,15 @@ const loadBlogIds = () => {
           )
           if (routeMatches) {
             routeMatches.forEach((match) => {
-              const route = match.match(/['|"](\/[a-zA-Z0-9-]+)['|"]/)[1]
-              if (route) {
+              const routeMatch = match.match(/['|"](\/[a-zA-Z0-9-]+)['|"]/)
+              if (routeMatch && routeMatch[1] && typeof routeMatch[1] === 'string') {
                 // 移除开头的斜杠，因为path属性不需要
-                const path = route.startsWith('/') ? route.substring(1) : route
-                ids.add(path)
+                const pathStr = routeMatch[1].startsWith('/')
+                  ? routeMatch[1].substring(1)
+                  : routeMatch[1]
+                if (typeof pathStr === 'string') {
+                  ids.add(pathStr)
+                }
               }
             })
           }
@@ -161,21 +188,11 @@ export default defineConfig({
       ],
       // 添加动态路由（游戏关卡和博客文章）
       dynamicRoutes: [
-        // 游戏关卡路由
-        ...loadGuideIds().map((id) => ({
-          path: `/${id}`,
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.8,
-          changefreq: 'weekly',
-        })),
-        // 博客文章路由
-        ...loadBlogIds().map((id) => ({
-          path: `/${id}`,
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.7,
-          changefreq: 'weekly',
-        })),
-      ],
+        // 游戏关卡路由 - 使用字符串数组而不是对象数组
+        ...loadGuideIds().map((id) => id),
+        // 博客文章路由 - 使用字符串数组而不是对象数组
+        ...loadBlogIds().map((id) => id),
+      ].filter(Boolean), // 过滤掉可能的null或undefined值
       outDir: 'dist',
     }),
     robots({
