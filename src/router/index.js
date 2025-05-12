@@ -5,6 +5,10 @@ import BlogView from '../views/BlogView.vue'
 import DownloadView from '../views/DownloadView.vue'
 import GuideDetail from '../views/GuideDetail.vue'
 import BlogDetail from '../views/BlogDetail.vue'
+import PrivacyView from '../views/PrivacyView.vue'
+import TermsView from '../views/TermsView.vue'
+import AboutView from '../views/AboutView.vue'
+import ContactView from '../views/ContactView.vue'
 
 import i18n from '../i18n'
 
@@ -29,6 +33,26 @@ const routes = [
     path: '/download',
     name: 'download',
     component: DownloadView,
+  },
+  {
+    path: '/privacy',
+    name: 'privacy',
+    component: PrivacyView,
+  },
+  {
+    path: '/terms',
+    name: 'terms',
+    component: TermsView,
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: AboutView,
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: ContactView,
   },
   {
     path: '/:id(game-level-\\d+)',

@@ -44,10 +44,12 @@
               :title="$t('footer.quickLinks.download')"
               >{{ $t('footer.quickLinks.download') }}</router-link
             >
-            <!-- 暂时注释掉About链接，因为路由中没有定义 -->
-            <!-- <router-link :to="getLocalizedPath('/about')" :title="$t('footer.quickLinks.about')">{{
+            <router-link :to="getLocalizedPath('/about')" :title="$t('footer.quickLinks.about')">{{
               $t('footer.quickLinks.about')
-            }}</router-link> -->
+            }}</router-link>
+            <router-link :to="getLocalizedPath('/contact')" title="Contact Us">
+              Contact Us
+            </router-link>
           </nav>
         </div>
 
@@ -57,14 +59,24 @@
             <span class="footer-icon">🎮</span> {{ $t('footer.levels.title') }}
           </h3>
           <nav class="footer-nav" aria-label="Levels Navigation">
-            <a href="#" title="View Dreamy Room Level 96">Dreamy Room Level 96</a>
-            <a href="#" title="View Dreamy Room Level 97">Dreamy Room Level 97</a>
-            <a href="#" title="View Dreamy Room Level 98">Dreamy Room Level 98</a>
-            <a href="#" title="View Dreamy Room Level 99">Dreamy Room Level 99</a>
-            <a href="#" title="View Dreamy Room Level 100">Dreamy Room Level 100</a>
-            <a href="#" title="View Dreamy Room Level 101">Dreamy Room Level 101</a>
-            <a href="#" title="View Dreamy Room Level 102">Dreamy Room Level 102</a>
-            <a href="#" title="View Dreamy Room Level 103">Dreamy Room Level 103</a>
+            <a href="/dreamy-room-level-15" title="View Dreamy Room Level 15"
+              >Dreamy Room Level 15</a
+            >
+            <a href="/dreamy-room-level-16" title="View Dreamy Room Level 16"
+              >Dreamy Room Level 16</a
+            >
+            <a href="/dreamy-room-level-22" title="View Dreamy Room Level 22"
+              >Dreamy Room Level 22</a
+            >
+            <a href="/dreamy-room-level-25" title="View Dreamy Room Level 25"
+              >Dreamy Room Level 25</a
+            >
+            <a href="/dreamy-room-level-50" title="View Dreamy Room Level 50"
+              >Dreamy Room Level 50</a
+            >
+            <a href="/dreamy-room-level-56" title="View Dreamy Room Level 56"
+              >Dreamy Room Level 56</a
+            >
           </nav>
         </div>
 
@@ -74,10 +86,12 @@
             <span class="footer-icon">📜</span> {{ $t('footer.legal.title') }}
           </h3>
           <nav class="footer-nav" aria-label="Legal Navigation">
-            <a href="/privacy" :title="$t('footer.legal.privacy')">{{
+            <router-link :to="getLocalizedPath('/privacy')" :title="$t('footer.legal.privacy')">{{
               $t('footer.legal.privacy')
-            }}</a>
-            <a href="/terms" :title="$t('footer.legal.terms')">{{ $t('footer.legal.terms') }}</a>
+            }}</router-link>
+            <router-link :to="getLocalizedPath('/terms')" :title="$t('footer.legal.terms')">{{
+              $t('footer.legal.terms')
+            }}</router-link>
           </nav>
         </div>
       </div>
@@ -261,46 +275,47 @@ export default {
 
 @media (max-width: 768px) {
   .footer {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem; /* Further reduce padding */
   }
 
   .footer-columns {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-    margin-bottom: 1.5rem;
+    /* auto-fit with minmax(150px, 1fr) should result in single column mostly */
+    /* If we want to ensure single column for very small screens for all columns: */
+    /* grid-template-columns: 1fr; */
+    gap: 1.5rem; /* Can adjust gap if needed */
   }
 
   .footer-column {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .footer-column:last-child {
-    border-bottom: none;
+    /* If single column, items might look better centered or with adjusted alignment */
+    /* text-align: center; */ /* Example: center align text in columns */
   }
 
   .footer-logo {
     font-size: 1.4rem;
-    margin-bottom: 0.8rem;
+    /* text-align: center; */ /* If centering column content */
   }
 
   .footer-desc {
-    margin-bottom: 1rem;
     font-size: 0.85rem;
+    /* text-align: center; */ /* If centering column content */
   }
 
   .footer-title {
     font-size: 1rem;
-    margin-bottom: 0.8rem;
+    /* justify-content: center; */ /* If centering title with icon */
   }
 
-  .footer-icon {
-    font-size: 1rem;
+  .footer-nav {
+    gap: 0.5rem;
+    /* align-items: center; */ /* If centering nav items */
   }
 
-  .social-link {
-    width: 32px;
-    height: 32px;
+  .footer-nav a {
+    font-size: 0.85rem;
+  }
+
+  .social-links {
+    /* justify-content: center; */ /* If centering column content */
   }
 
   .copyright {
@@ -312,13 +327,15 @@ export default {
   }
 }
 
-@media (max-width: 480px) {
-  .footer {
-    padding: 1.5rem 0.8rem;
+@media (max-width: 576px) {
+  .footer-columns {
+    grid-template-columns: 1fr; /* Force single column for very small screens */
+    gap: 1.2rem;
   }
 
-  .footer-columns {
-    gap: 1rem;
+  .footer-column {
+    /* On very small screens, ensure content isn't too cramped */
+    padding: 0 0.5rem; /* Add a little horizontal padding within columns if needed */
   }
 
   .footer-logo {
@@ -335,12 +352,6 @@ export default {
 
   .footer-nav a {
     font-size: 0.8rem;
-  }
-
-  .social-link {
-    width: 28px;
-    height: 28px;
-    font-size: 0.9rem;
   }
 }
 </style>

@@ -30,6 +30,27 @@ export default {
       keywords:
         'download dreamy room level, mobile game, iOS game, Android game, puzzle game download',
     },
+    privacy: {
+      title: 'Privacy Policy - Dreamy Room Level',
+      description: 'Learn how we collect, use, and protect your information at Dreamy Room Level.',
+      keywords: 'privacy policy, data protection, personal information, dreamy room level',
+    },
+    terms: {
+      title: 'Terms of Service - Dreamy Room Level',
+      description: 'Learn about the rules and guidelines for using our website.',
+      keywords: 'terms of service, terms and conditions, user agreement, dreamy room level',
+    },
+    about: {
+      title: 'About Us - Dreamy Room Level',
+      description:
+        'Learn about Dreamy Room Level - Your ultimate guide to mastering every level of the game.',
+      keywords: 'about us, dreamy room level, game guides, game walkthroughs, gaming community',
+    },
+    contact: {
+      title: 'Contact Us - Dreamy Room Level',
+      description: "Get in touch with the Dreamy Room Level team. We'd love to hear from you!",
+      keywords: 'contact us, get in touch, feedback, support, dreamy room level',
+    },
   },
 
   // Header
@@ -39,6 +60,10 @@ export default {
     guides: 'Guides',
     blog: 'Blog',
     download: 'Download',
+    about: 'About',
+    contact: 'Contact',
+    privacy: 'Privacy Policy',
+    terms: 'Terms of Service',
   },
 
   // Home Page
@@ -206,6 +231,7 @@ export default {
       blog: 'Blog',
       download: 'Download',
       about: 'About',
+      contact: 'Contact Us',
     },
     levels: {
       title: 'Levels',

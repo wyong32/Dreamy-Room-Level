@@ -64,6 +64,7 @@ import guidesZhData from '@/datas/guides-zh/index.js'
 import SeoHead from '@/components/SeoHead.vue'
 import { useI18n } from 'vue-i18n'
 import i18n from '@/i18n'
+import { useHead } from '@vueuse/head'
 
 export default {
   name: 'GuideDetail',
@@ -164,6 +165,7 @@ export default {
       // 如果找到了指南，设置guide
       if (guide) {
         this.guide = guide
+        this.injectJsonLd(guide)
       } else {
         // 处理找不到指南的情况
         console.error('Guide not found')
@@ -197,6 +199,33 @@ export default {
         // 使用window.location.href进行导航
         window.location.href = path
       }
+    },
+    injectJsonLd(guide) {
+      const url = typeof window !== 'undefined' ? window.location.href : ''
+      useHead({
+        script: [
+          {
+            type: 'application/ld+json',
+            children: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline: guide.pageTitle,
+              description: guide.seo?.description || '',
+              image: guide.imageUrl || '',
+              author: {
+                '@type': 'Person',
+                name: 'Dreamy Room Team',
+              },
+              datePublished: guide.publishDate,
+              uploadDate: guide.publishDate,
+              mainEntityOfPage: {
+                '@type': 'WebPage',
+                '@id': url,
+              },
+            }),
+          },
+        ],
+      })
     },
   },
   watch: {
@@ -502,6 +531,7 @@ export default {
 
   .guide-sidebar {
     order: -1;
+    display: none;
   }
 
   .guide-header {
@@ -571,7 +601,7 @@ export default {
   }
 
   .main-content {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
   }
 
   .guide-details {

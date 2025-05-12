@@ -348,7 +348,7 @@ export default {
 
 @media (max-width: 768px) {
   .download-view {
-    padding: 1.5rem 0;
+    padding: 3rem 0 0;
   }
 
   .container {
@@ -435,7 +435,7 @@ export default {
 
 @media (max-width: 480px) {
   .download-view {
-    padding: 1.2rem 0;
+    padding: 100px 0 0;
   }
 
   .container {

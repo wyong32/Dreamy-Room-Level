@@ -168,19 +168,4 @@ h5 {
 h6 {
   font-size: 1rem;
 }
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.75rem;
-  }
-
-  h3 {
-    font-size: 1.25rem;
-  }
-}
 </style>

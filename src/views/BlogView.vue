@@ -180,7 +180,7 @@ export default {
 
 .post-image {
   height: 100%;
-  min-height: 250px;
+  height: 250px;
   overflow: hidden;
 }
 

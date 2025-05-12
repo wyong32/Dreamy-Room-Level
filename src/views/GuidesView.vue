@@ -83,4 +83,83 @@ export default {
   color: #8a8a8a;
   font-size: 1.1rem;
 }
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+  .guides-view {
+    padding-top: 70px; /* Adjust based on header height at this breakpoint */
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  .page-title {
+    /* Assuming h1, let's set a base size and then adjust icon */
+    font-size: 1.8rem;
+  }
+
+  .title-icon {
+    font-size: 1.3rem; /* Adjust icon size relative to title */
+  }
+
+  .page-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .guides-view {
+    padding-top: 60px; /* Adjust based on header height at this breakpoint */
+    padding-bottom: 1rem; /* Reduce bottom padding */
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .page-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+  }
+
+  .title-icon {
+    font-size: 1.2rem;
+  }
+
+  .page-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .guides-view {
+    padding-top: 60px; /* Assuming header height doesn't change further significantly */
+  }
+
+  .page-title {
+    font-size: 1.4rem;
+    /* flex-direction: column; /* Example: stack icon and text if needed */
+    /* align-items: center; */
+  }
+
+  .title-icon {
+    font-size: 1.1rem;
+    /* margin-right: 0; */
+    /* margin-bottom: 0.3rem; */ /* If stacking */
+  }
+
+  .page-description {
+    font-size: 0.9rem;
+  }
+}
 </style>

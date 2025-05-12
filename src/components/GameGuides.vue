@@ -270,13 +270,12 @@ export default {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .level-nav-item {
     padding: 0.6rem 1rem;
     font-size: 0.85rem;
-    width: 30%; /* 一行放3个 */
     text-align: center;
     box-sizing: border-box;
   }
@@ -300,8 +299,11 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .guides-container {
+    padding: 0;
+  }
+
   .level-nav-item {
-    width: 30%; /* 保持一行3个 */
     padding: 0.5rem 0.5rem;
     font-size: 0.8rem;
   }

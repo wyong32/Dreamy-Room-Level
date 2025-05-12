@@ -7,69 +7,120 @@
           <img src="/images/logo.webp" alt="Logo" class="logo-image" /> {{ $t('header.logo') }}
         </div>
       </div>
-      <nav class="nav" aria-label="Main Navigation">
+      <nav class="nav desktop-nav" aria-label="Main Navigation">
         <ul>
           <li>
-            <router-link :to="getLocalizedPath('/')" :title="$t('header.home')"
+            <router-link
+              :to="getLocalizedPath('/')"
+              :title="$t('header.home')"
+              @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">🏠</span> {{ $t('header.home') }}</router-link
             >
           </li>
           <li>
-            <router-link :to="getLocalizedPath('/guides')" :title="$t('header.guides')"
+            <router-link
+              :to="getLocalizedPath('/guides')"
+              :title="$t('header.guides')"
+              @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link
             >
           </li>
           <li>
-            <router-link :to="getLocalizedPath('/blog')" :title="$t('header.blog')"
+            <router-link
+              :to="getLocalizedPath('/blog')"
+              :title="$t('header.blog')"
+              @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">📝</span> {{ $t('header.blog') }}</router-link
             >
           </li>
           <li>
-            <router-link :to="getLocalizedPath('/download')" :title="$t('header.download')"
+            <router-link
+              :to="getLocalizedPath('/download')"
+              :title="$t('header.download')"
+              @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">⬇️</span> {{ $t('header.download') }}</router-link
             >
           </li>
-
-          <!-- 暂时注释掉多语言切换功能，未来可能会重新启用 -->
-          <!-- <li class="language-item">
-            <div class="language-dropdown">
-              <button
-                class="dropdown-toggle"
-                @click="toggleDropdown"
-                :aria-expanded="isOpen"
-                aria-haspopup="true"
-              >
-                {{ currentLocaleInfo.name }}
-                <span class="dropdown-arrow" :class="{ open: isOpen }">▼</span>
-              </button>
-
-              <div class="dropdown-menu" v-if="isOpen" @click.stop>
-                <button
-                  v-for="locale in availableLocales"
-                  :key="locale.code"
-                  @click="changeLocale(locale.code)"
-                  :class="{ active: currentLocale === locale.code }"
-                  class="dropdown-item"
-                >
-                  {{ locale.name }}
-                </button>
-              </div>
-            </div>
-          </li> -->
         </ul>
       </nav>
+      <button
+        class="mobile-nav-toggle"
+        @click="toggleMobileMenu"
+        aria-label="Toggle navigation"
+        :aria-expanded="isMobileMenuOpen.toString()"
+      >
+        <span class="hamburger-icon"></span>
+      </button>
     </div>
+    <nav class="mobile-nav" :class="{ open: isMobileMenuOpen }" aria-label="Mobile Navigation">
+      <ul>
+        <li>
+          <router-link
+            :to="getLocalizedPath('/')"
+            :title="$t('header.home')"
+            @click="closeMobileMenu"
+            ><span class="nav-icon">🏠</span> {{ $t('header.home') }}</router-link
+          >
+        </li>
+        <li>
+          <router-link
+            :to="getLocalizedPath('/guides')"
+            :title="$t('header.guides')"
+            @click="closeMobileMenu"
+            ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link
+          >
+        </li>
+        <li>
+          <router-link
+            :to="getLocalizedPath('/blog')"
+            :title="$t('header.blog')"
+            @click="closeMobileMenu"
+            ><span class="nav-icon">📝</span> {{ $t('header.blog') }}</router-link
+          >
+        </li>
+        <li>
+          <router-link
+            :to="getLocalizedPath('/download')"
+            :title="$t('header.download')"
+            @click="closeMobileMenu"
+            ><span class="nav-icon">⬇️</span> {{ $t('header.download') }}</router-link
+          >
+        </li>
+      </ul>
+    </nav>
   </header>
 </template>
 
 <script>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 export default {
   name: 'AppHeader',
   setup() {
-    const { locale } = useI18n()
+    const { locale, t } = useI18n()
+
+    const isMobileMenuOpen = ref(false)
+
+    const toggleMobileMenu = () => {
+      isMobileMenuOpen.value = !isMobileMenuOpen.value
+      if (isMobileMenuOpen.value) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = ''
+      }
+    }
+
+    const closeMobileMenu = () => {
+      isMobileMenuOpen.value = false
+      document.body.style.overflow = ''
+    }
+
+    const closeMobileMenuIfNeeded = () => {
+      if (isMobileMenuOpen.value) {
+        closeMobileMenu()
+      }
+    }
 
     // Language dropdown functionality - 暂时注释掉，但保留基本功能
     /*
@@ -182,10 +233,18 @@ export default {
 
     // Helper function to get localized path
     const getLocalizedPath = (path) => {
-      return locale.value === 'en' ? path : `/${locale.value}${path}`
+      return currentLocale.value === 'en' || !currentLocale.value
+        ? path
+        : `/${currentLocale.value}${path}`
     }
 
     return {
+      // Mobile Menu
+      isMobileMenuOpen,
+      toggleMobileMenu,
+      closeMobileMenu,
+      closeMobileMenuIfNeeded,
+
       // Language dropdown
       isOpen,
       availableLocales,
@@ -196,6 +255,7 @@ export default {
 
       // Path localization
       getLocalizedPath,
+      t,
     }
   },
 }
@@ -358,6 +418,10 @@ export default {
   font-weight: bold;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 /* 响应式设计 */
 @media (max-width: 992px) {
   .logo .logo-text {
@@ -371,58 +435,137 @@ export default {
   .nav-icon {
     font-size: 1rem;
   }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    color: #6a4c93;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: -0.5rem;
+  }
+
+  .hamburger-icon {
+    width: 24px;
+    height: 2px;
+    background-color: #6a4c93;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger-icon::before,
+  .hamburger-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #6a4c93;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  .hamburger-icon::before {
+    top: -7px;
+  }
+
+  .hamburger-icon::after {
+    bottom: -7px;
+  }
+
+  .mobile-nav-toggle[aria-expanded='true'] .hamburger-icon {
+    background-color: transparent;
+  }
+
+  .mobile-nav-toggle[aria-expanded='true'] .hamburger-icon::before {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .mobile-nav-toggle[aria-expanded='true'] .hamburger-icon::after {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    box-sizing: border-box;
+    z-index: 99;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile-nav.open {
+    display: flex;
+  }
+
+  .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .mobile-nav li {
+    width: 100%;
+  }
+
+  .mobile-nav a {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    display: block;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav a.router-link-exact-active {
+    background-color: rgba(106, 76, 147, 0.1);
+    color: #9370db;
+  }
+
+  .mobile-nav .nav-icon {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 0.8rem 0;
+  }
+  .mobile-nav {
+    top: 54px;
+    height: calc(100vh - 54px);
+  }
+
   .container {
-    flex-direction: column;
-    gap: 0.8rem;
     padding: 0 1rem;
-  }
-
-  .nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .logo .logo-text {
-    font-size: 1.4rem;
-  }
-
-  .logo-image {
-    height: 25px;
-  }
-
-  .nav a {
-    font-size: 0.85rem;
-  }
-
-  .nav-icon {
-    font-size: 0.9rem;
-    margin-right: 0.3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 0.5rem;
-  }
-
-  .nav ul {
-    gap: 0.7rem;
   }
 
   .logo .logo-text {
     font-size: 1.2rem;
-  }
-
-  .logo-image {
-    height: 20px;
-  }
-
-  .nav a {
-    font-size: 0.8rem;
   }
 }
 </style>

@@ -291,7 +291,7 @@ export default {
             }
           })
         },
-        { threshold: 0.1 },
+        { threshold: 0.1 }
       )
 
       sections.forEach((section) => {
@@ -486,9 +486,7 @@ main {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition:
-    width 0.6s ease,
-    height 0.6s ease;
+  transition: width 0.6s ease, height 0.6s ease;
   z-index: -1;
 }
 
@@ -989,197 +987,262 @@ section.animate {
   transform: rotate(45deg);
 }
 
-/* 响应式设计 */
+/* --- 响应式设计 --- */
 @media (max-width: 992px) {
-  .download-container,
-  .about-container {
-    flex-direction: column;
+  .container {
+    padding: 0 1.5rem;
   }
 
-  .download-image,
-  .about-image {
-    order: -1;
-    width: 100%;
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .feature-items {
+    /* auto-fit minmax(300px, 1fr) 应该能很好地处理平板，可能不需要额外调整 */
+  }
+
+  .download-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .download-info {
+    padding: 1rem 0; /* 调整内边距 */
+  }
+
+  .download-buttons {
+    justify-content: center; /* 居中下载按钮 */
   }
 
   .phone-mockup {
-    transform: rotate(0);
+    width: 250px; /* 缩小手机模型 */
+    height: auto; /* 高度自适应 */
+    aspect-ratio: 280 / 550; /* 保持原始宽高比 */
+    margin-top: 2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 2rem;
   }
 
   .image-frame {
-    width: 100%;
-    max-width: 400px;
+    width: 350px; /* 缩小图片框架 */
+    height: 350px;
+  }
+
+  .tips-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 1.8rem; /* 调整章节标题大小 */
   }
 }
 
 @media (max-width: 768px) {
-  .header .container {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.8rem;
+    font-size: 2.8rem;
   }
 
   .hero p {
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-content {
-    padding: 1.5rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-  }
-
-  .feature-items,
-  .guide-cards {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-  }
-
-  .tips-container {
-    grid-template-columns: repeat(3, 1fr); /* 一行放三个 */
-    gap: 1rem;
-  }
-
-  .feature-item {
-    padding: 1.5rem;
-  }
-
-  .feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .tip-card {
-    padding: 1.5rem;
-  }
-
-  .tip-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .download-stats {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .download-buttons {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .section-title {
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-  }
-
-  .title-icon {
     font-size: 1.2rem;
   }
 
-  .features,
-  .guides,
-  .download,
-  .about,
-  .tips,
-  .faq {
-    padding: 3rem 1.5rem;
+  .hero-buttons {
+    flex-direction: column; /* 按钮垂直排列 */
+    gap: 0.8rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 1.5rem; /* 调整按钮内边距 */
+    width: 100%; /* 按钮宽度占满 */
+    max-width: 300px; /* 最大宽度，避免过宽 */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .features {
+    padding: 1rem;
+  }
+
+  .feature-items {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* 特色项改为单列 */
+    gap: 0.5rem;
+  }
+
+  .guides {
+    padding: 1rem 0;
+  }
+
+  .download-info h3 {
+    font-size: 2rem; /* 调整下载区域标题大小 */
+  }
+
+  .download-info p {
+    font-size: 1rem; /* 调整下载区域描述文字大小 */
+  }
+
+  .download-buttons {
+    flex-direction: column; /* 下载按钮垂直排列 */
+    align-items: center;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 280px; /* 统一按钮宽度 */
+  }
+
+  .phone-mockup {
+    width: 220px;
+  }
+
+  .image-frame {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .tips-container {
+    grid-template-columns: 1fr;
   }
 
   .faq-question h3 {
-    font-size: 1rem;
+    font-size: 1rem; /* FAQ问题字体 */
+  }
+
+  .tip-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .faq {
+    padding: 1rem;
+  }
+
+  .faq-question {
+    padding: 0.5rem;
+  }
+
+  .faq-container {
+    padding: 0;
   }
 }
 
-@media (max-width: 480px) {
-  .tips-container {
-    grid-template-columns: repeat(2, 1fr); /* 小屏幕一行放两个 */
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero p {
     font-size: 1rem;
   }
 
-  .hero-content {
-    padding: 1rem;
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 
-  .btn-primary,
-  .btn-secondary {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.85rem;
+  .feature-item {
+    padding: 0.5rem 0; /* 调整特色项内边距 */
   }
 
   .feature-icon {
-    font-size: 2rem;
-  }
-
-  .tip-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .tip-card {
-    padding: 1.2rem;
-  }
-
-  .tip-card h3 {
-    font-size: 0.95rem;
+    font-size: 2.5rem; /* 调整特色项图标大小 */
     margin-bottom: 0.5rem;
   }
 
-  .tip-card p {
-    font-size: 0.85rem;
+  .feature-item h3 {
+    font-size: 1rem; /* 调整特色项标题大小 */
+    line-height: 1;
   }
 
-  .section-title {
+  .download {
+    padding: 1rem;
+  }
+  .download-info {
+    padding: 0;
+  }
+  .download-info h3 {
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
   }
-
-  .title-icon {
+  .download-info p {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .download-container {
+    gap: 0.5rem;
+  }
+  .download-btn {
+    padding: 0.5rem 1rem;
   }
 
-  .features,
-  .guides,
-  .download,
-  .about,
-  .tips,
-  .faq {
-    padding: 2.5rem 1rem;
+  .phone-mockup {
+    width: 180px;
   }
 
-  .stat-number {
-    font-size: 1.5rem;
+  .image-frame {
+    width: 100%; /* 图片框架宽度占满，由父容器控制 */
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 1 / 1; /* 保持方形 */
   }
 
-  .stat-label {
-    font-size: 0.8rem;
+  .about {
+    padding: 1rem;
+  }
+
+  .about-container {
+    display: block;
+  }
+
+  .about-image {
+    margin-bottom: 1rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-content {
+    padding: 0;
+  }
+
+  .about-content p {
+    margin-bottom: 0.5rem;
+  }
+
+  .about-features {
+    margin-top: 0;
+  }
+
+  .tips {
+    padding: 1rem;
+  }
+
+  .tips-container {
+    padding: 0;
+  }
+
+  .tip-card {
+    padding: 0.5rem; /* 调整提示卡片内边距 */
   }
 }
 </style>
