@@ -86,12 +86,7 @@ export default defineConfig({
       lastmod: new Date().toISOString().split('T')[0],
     }),
     robots({
-      sitemap: 'https://dreamy-room-level.vercel.app/sitemap.xml',
-      host: 'https://dreamy-room-level.vercel.app',
-      disallow: ['/admin/', '/private/'],
-      allow: ['/'],
-      useDisallowAll: false,
-      useProductionFile: false, // 不使用外部文件
+      useProductionFile: true, // 使用.robots.production.txt文件
     }),
   ],
   resolve: {
