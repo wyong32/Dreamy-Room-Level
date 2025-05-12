@@ -17,23 +17,13 @@ export default function handler(_req, res) {
     { url: '/download', priority: '0.7', lastmod: today },
   ]
 
-  // 游戏关卡页面 - 基于guides文件夹中的文件
+  // 游戏关卡页面 - 只包含实际存在的页面
+  // 这里我们只包含1-30的关卡，您可以根据实际情况调整
   const levelPages = []
 
-  // 添加所有可能的游戏关卡URL格式
-  // 根据guides文件夹中的文件，我们有1-110的关卡
-
-  // 1. 添加/game-level-X格式（路由配置中的格式）
-  for (let i = 1; i <= 110; i++) {
-    levelPages.push({
-      url: `/game-level-${i}`,
-      priority: '0.8',
-      lastmod: today,
-    })
-  }
-
-  // 2. 添加/dreamy-room-level-X格式（guides数据中的格式）
-  for (let i = 1; i <= 110; i++) {
+  // 只添加/dreamy-room-level-X格式（guides数据中的格式）
+  // 这里我们假设只有1-30的关卡实际存在
+  for (let i = 1; i <= 30; i++) {
     levelPages.push({
       url: `/dreamy-room-level-${i}`,
       priority: '0.8',
@@ -51,13 +41,10 @@ export default function handler(_req, res) {
   // 合并所有页面
   const allPages = [...mainPages, ...levelPages, ...blogPages]
 
-  // 去重 - 确保没有重复的URL
-  const uniquePages = Array.from(new Map(allPages.map((page) => [page.url, page])).values())
-
   // 生成XML
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${uniquePages
+${allPages
   .map(
     (page) => `  <url>
     <loc>${baseUrl}${page.url}</loc>
