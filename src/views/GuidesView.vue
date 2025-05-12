@@ -1,0 +1,86 @@
+<template>
+  <div class="guides-view">
+    <!-- SEO Head -->
+    <SeoHead pageType="guides" />
+    <div class="container">
+      <div class="page-header">
+        <h1 class="page-title"><span class="title-icon">📖</span> {{ $t('guides.title') }}</h1>
+        <p class="page-description">{{ $t('guides.description') }}</p>
+      </div>
+
+      <!-- Game Guides Component -->
+      <GameGuides />
+    </div>
+  </div>
+</template>
+
+<script>
+import GameGuides from '@/components/GameGuides.vue'
+import SeoHead from '@/components/SeoHead.vue'
+import { useI18n } from 'vue-i18n'
+
+export default {
+  name: 'GuidesView',
+  components: {
+    GameGuides,
+    SeoHead,
+  },
+  setup() {
+    const { t, locale } = useI18n()
+    return {
+      t,
+      i18nLocale: locale,
+    }
+  },
+}
+</script>
+
+<style scoped>
+.guides-view {
+  padding: 2rem 0;
+  padding-top: 100px; /* 增加顶部内边距，避免被头部导航栏遮挡 */
+  background-color: #f9f7fe;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-title {
+  color: #6a4c93;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.page-description {
+  color: #8a8a8a;
+  font-size: 1.1rem;
+}
+</style>
