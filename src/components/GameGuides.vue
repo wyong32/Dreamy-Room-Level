@@ -114,23 +114,24 @@ export default {
       console.log('Current locale:', currentLocale)
       console.log('Guide ID:', guide.id)
       console.log('Guide object:', guide)
+      console.log('Guide detailsRoute:', guide.detailsRoute)
 
-      // 确保 guide.id 存在
-      if (!guide.id) {
-        console.error('Guide ID is undefined or null')
+      // 确保 guide.detailsRoute.path 存在
+      if (!guide.detailsRoute || !guide.detailsRoute.path) {
+        console.error('Guide detailsRoute.path is undefined or null')
         return
       }
 
       // 使用更直接的方式进行导航
       if (currentLocale === 'en') {
         // 英文路由
-        const path = `/${guide.id}`
+        const path = guide.detailsRoute.path
         console.log('Navigating to:', path)
         // 使用window.location.href进行导航
         window.location.href = path
       } else {
         // 非英文路由
-        const path = `/${currentLocale}/${guide.id}`
+        const path = `/${currentLocale}${guide.detailsRoute.path}`
         console.log('Navigating to:', path)
         // 使用window.location.href进行导航
         window.location.href = path

@@ -57,47 +57,87 @@ export default {
     return {
       blog: null,
       idFromUrl: null,
+      pathFromUrl: null,
     }
   },
   created() {
-    // 从URL中获取ID
+    // 从URL中获取ID或路径
     const pathParts = window.location.pathname.split('/')
     const lastPart = pathParts[pathParts.length - 1]
 
     // 检查是否是博客ID格式（blog-xxx）
     if (lastPart && lastPart.startsWith('blog-')) {
+      // 可能是ID格式或完整路径格式
       this.idFromUrl = lastPart.replace('blog-', '')
+      this.pathFromUrl = `/blog-${this.idFromUrl}`
     }
 
     this.loadBlogData()
   },
   methods: {
     loadBlogData() {
-      // 使用从URL中获取的ID或者路由参数中的ID
-      const blogId = this.idFromUrl || this.id
-
       // 获取当前语言
       const { locale } = useI18n()
       const currentLocale = locale.value
 
-      if (currentLocale === 'zh' && blogsZhData[blogId]) {
-        // 如果是中文并且有对应的中文数据，直接使用中文数据
-        this.blog = blogsZhData[blogId]
-      } else {
-        // 否则使用英文数据
-        const blog = blogsData.find((b) => b.id === blogId)
+      // 定义查找博客的函数
+      const findBlogById = (data, id) => data.find((b) => b.id === id)
+      const findBlogByPath = (data, path) =>
+        data.find((b) => b.detailsRoute && b.detailsRoute.path === path)
 
-        if (blog) {
-          this.blog = blog
-        } else {
-          // 处理找不到博客的情况
-          console.error(`Blog with ID ${blogId} not found`)
-          // 重定向到博客页面
-          if (currentLocale === 'en') {
-            this.$router.push('/blog')
-          } else {
-            this.$router.push(`/${currentLocale}/blog`)
+      // 尝试使用不同的方法查找博客
+      let blog = null
+
+      // 1. 如果有pathFromUrl，尝试使用path查找
+      if (this.pathFromUrl) {
+        console.log('Searching blog by path:', this.pathFromUrl)
+        if (currentLocale === 'zh') {
+          // 尝试在中文数据中查找
+          const zhBlogs = Array.isArray(blogsZhData) ? blogsZhData : Object.values(blogsZhData)
+          blog = findBlogByPath(zhBlogs, this.pathFromUrl)
+          if (!blog) {
+            // 如果在中文数据中找不到，尝试在英文数据中查找
+            blog = findBlogByPath(blogsData, this.pathFromUrl)
           }
+        } else {
+          // 在英文数据中查找
+          blog = findBlogByPath(blogsData, this.pathFromUrl)
+        }
+      }
+
+      // 2. 如果没有找到，尝试使用ID查找
+      if (!blog && (this.idFromUrl || this.id)) {
+        const blogId = this.idFromUrl || this.id
+        console.log('Searching blog by ID:', blogId)
+        if (currentLocale === 'zh') {
+          // 尝试在中文数据中查找
+          const zhBlogs = Array.isArray(blogsZhData) ? blogsZhData : Object.values(blogsZhData)
+          blog = findBlogById(zhBlogs, blogId)
+          if (!blog && blogsZhData[blogId]) {
+            // 如果是对象格式，直接使用键值查找
+            blog = blogsZhData[blogId]
+          }
+          if (!blog) {
+            // 如果在中文数据中找不到，尝试在英文数据中查找
+            blog = findBlogById(blogsData, blogId)
+          }
+        } else {
+          // 在英文数据中查找
+          blog = findBlogById(blogsData, blogId)
+        }
+      }
+
+      // 如果找到了博客，设置blog
+      if (blog) {
+        this.blog = blog
+      } else {
+        // 处理找不到博客的情况
+        console.error('Blog not found')
+        // 重定向到博客页面
+        if (currentLocale === 'en') {
+          this.$router.push('/blog')
+        } else {
+          this.$router.push(`/${currentLocale}/blog`)
         }
       }
     },
@@ -106,15 +146,21 @@ export default {
       const { locale } = useI18n()
       const currentLocale = locale.value
 
+      // 确保 blog.detailsRoute.path 存在
+      if (!blog.detailsRoute || !blog.detailsRoute.path) {
+        console.error('Blog detailsRoute.path is undefined or null')
+        return
+      }
+
       // 使用更直接的方式进行导航
       if (currentLocale === 'en') {
         // 英文路由
-        const path = `/blog-${blog.id}`
+        const path = blog.detailsRoute.path
         // 使用window.location.href进行导航
         window.location.href = path
       } else {
         // 非英文路由
-        const path = `/${currentLocale}/blog-${blog.id}`
+        const path = `/${currentLocale}${blog.detailsRoute.path}`
         // 使用window.location.href进行导航
         window.location.href = path
       }

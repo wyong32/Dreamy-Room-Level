@@ -92,24 +92,30 @@ export default {
     return {
       guide: null,
       idFromUrl: null,
+      pathFromUrl: null,
     }
   },
   created() {
-    // 从URL中获取ID
+    // 从URL中获取ID或路径
     const pathParts = window.location.pathname.split('/')
 
     // 检查URL格式
     if (pathParts.length >= 2) {
-      // 最后一部分应该是ID
+      // 最后一部分应该是ID或路径的最后部分
       const lastPart = pathParts[pathParts.length - 1]
 
+      // 检查是否是game-level-X格式
       if (lastPart && lastPart.startsWith('game-level-')) {
         this.idFromUrl = lastPart
+      }
+      // 检查是否是dreamy-room-level-X格式
+      else if (lastPart && lastPart.startsWith('dreamy-room-level-')) {
+        this.pathFromUrl = `/dreamy-room-level-${lastPart.split('dreamy-room-level-')[1]}`
+      }
 
-        // 检查是否是中文路径 (如 /zh/game-level-1)
-        if (pathParts.length >= 3 && pathParts[1] === 'zh') {
-          i18n.global.locale.value = 'zh'
-        }
+      // 检查是否是中文路径 (如 /zh/game-level-1 或 /zh/dreamy-room-level-1)
+      if (pathParts.length >= 3 && pathParts[1] === 'zh') {
+        i18n.global.locale.value = 'zh'
       }
     }
 
@@ -117,39 +123,55 @@ export default {
   },
   methods: {
     loadGuideData() {
-      // 使用从URL中获取的ID或者路由参数中的ID
-      const guideId = this.idFromUrl || this.id
-
       // 获取当前语言
       const currentLocale = this.i18nLocale
 
-      if (currentLocale === 'zh') {
-        // 如果是中文，在中文数组中查找对应的指南
-        const guide = guidesZhData.find((g) => g.id === guideId)
-        if (guide) {
-          this.guide = guide
-        } else {
-          // 如果没有中文数据，尝试使用英文数据
-          const guide = guidesData.find((g) => g.id === guideId)
-          if (guide) {
-            this.guide = guide
-          } else {
-            // 处理找不到指南的情况
-            console.error(`Guide with ID ${guideId} not found`)
-            // 重定向到指南页面
-            this.$router.push(`/${currentLocale}/guides`)
+      // 定义查找指南的函数
+      const findGuideById = (data, id) => data.find((g) => g.id === id)
+      const findGuideByPath = (data, path) =>
+        data.find((g) => g.detailsRoute && g.detailsRoute.path === path)
+
+      // 尝试使用不同的方法查找指南
+      let guide = null
+
+      // 1. 如果有pathFromUrl，尝试使用path查找
+      if (this.pathFromUrl) {
+        console.log('Searching by path:', this.pathFromUrl)
+        if (currentLocale === 'zh') {
+          guide = findGuideByPath(guidesZhData, this.pathFromUrl)
+          if (!guide) {
+            guide = findGuideByPath(guidesData, this.pathFromUrl)
           }
-        }
-      } else {
-        // 英文版本
-        const guide = guidesData.find((g) => g.id === guideId)
-        if (guide) {
-          this.guide = guide
         } else {
-          // 处理找不到指南的情况
-          console.error(`Guide with ID ${guideId} not found`)
-          // 重定向到指南页面
+          guide = findGuideByPath(guidesData, this.pathFromUrl)
+        }
+      }
+
+      // 2. 如果没有找到，尝试使用ID查找
+      if (!guide && (this.idFromUrl || this.id)) {
+        const guideId = this.idFromUrl || this.id
+        console.log('Searching by ID:', guideId)
+        if (currentLocale === 'zh') {
+          guide = findGuideById(guidesZhData, guideId)
+          if (!guide) {
+            guide = findGuideById(guidesData, guideId)
+          }
+        } else {
+          guide = findGuideById(guidesData, guideId)
+        }
+      }
+
+      // 如果找到了指南，设置guide
+      if (guide) {
+        this.guide = guide
+      } else {
+        // 处理找不到指南的情况
+        console.error('Guide not found')
+        // 重定向到指南页面
+        if (currentLocale === 'en') {
           this.$router.push('/guides')
+        } else {
+          this.$router.push(`/${currentLocale}/guides`)
         }
       }
     },
@@ -157,15 +179,21 @@ export default {
       // 获取当前语言
       const currentLocale = this.i18nLocale
 
+      // 确保 guide.detailsRoute.path 存在
+      if (!guide.detailsRoute || !guide.detailsRoute.path) {
+        console.error('Guide detailsRoute.path is undefined or null')
+        return
+      }
+
       // 使用更直接的方式进行导航
       if (currentLocale === 'en') {
         // 英文路由
-        const path = `/${guide.id}`
+        const path = guide.detailsRoute.path
         // 使用window.location.href进行导航
         window.location.href = path
       } else {
         // 非英文路由
-        const path = `/${currentLocale}/${guide.id}`
+        const path = `/${currentLocale}${guide.detailsRoute.path}`
         // 使用window.location.href进行导航
         window.location.href = path
       }

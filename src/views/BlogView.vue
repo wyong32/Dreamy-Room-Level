@@ -89,7 +89,14 @@ export default {
       return new Date(dateString).toLocaleDateString(undefined, options)
     },
     navigateToBlog(blog) {
-      this.$router.push(blog.detailsRoute)
+      // 确保 blog.detailsRoute.path 存在
+      if (!blog.detailsRoute || !blog.detailsRoute.path) {
+        console.error('Blog detailsRoute.path is undefined or null')
+        return
+      }
+
+      // 使用 blog.detailsRoute.path 进行导航
+      this.$router.push(blog.detailsRoute.path)
     },
   },
   watch: {

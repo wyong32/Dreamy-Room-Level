@@ -37,6 +37,12 @@ const routes = [
     props: true,
   },
   {
+    path: '/:id(dreamy-room-level-\\d+)',
+    name: 'guide-detail-alt',
+    component: GuideDetail,
+    props: true,
+  },
+  {
     path: '/:id(blog-[\\w-]+)',
     name: 'blog-detail',
     component: BlogDetail,

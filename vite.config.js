@@ -24,16 +24,7 @@ const loadGuideIds = () => {
         const filePath = path.join(dataDir, file)
         const content = fs.readFileSync(filePath, 'utf-8')
 
-        // 使用正则表达式查找所有游戏关卡ID
-        const idMatches = content.match(/id:\s*['|"](game-level-\d+)['|"]/g)
-        if (idMatches) {
-          idMatches.forEach((match) => {
-            const id = match.match(/['|"](game-level-\d+)['|"]/)[1]
-            if (id && typeof id === 'string') ids.add(id)
-          })
-        }
-
-        // 查找detailsRoute中的路径
+        // 查找detailsRoute中的路径，这是我们希望的URL路径
         const routeMatches = content.match(
           /detailsRoute:\s*{\s*path:\s*['|"](\/[a-zA-Z0-9-]+)['|"]/g,
         )
@@ -68,19 +59,7 @@ const loadBlogIds = () => {
     if (fs.existsSync(filePath)) {
       const content = fs.readFileSync(filePath, 'utf-8')
 
-      // 使用正则表达式查找所有博客ID
-      const idMatches = content.match(/id:\s*['|"]([a-zA-Z0-9-]+)['|"]/g)
-      if (idMatches) {
-        idMatches.forEach((match) => {
-          const idMatch = match.match(/['|"]([a-zA-Z0-9-]+)['|"]/)
-          if (idMatch && idMatch[1] && typeof idMatch[1] === 'string') {
-            // 添加blog-前缀，因为路由是/blog-{id}
-            ids.add(`blog-${idMatch[1]}`)
-          }
-        })
-      }
-
-      // 查找detailsRoute中的路径
+      // 查找detailsRoute中的路径，这是我们希望的URL路径
       const routeMatches = content.match(/detailsRoute:\s*{\s*path:\s*['|"](\/[a-zA-Z0-9-]+)['|"]/g)
       if (routeMatches) {
         routeMatches.forEach((match) => {
@@ -109,19 +88,7 @@ const loadBlogIds = () => {
           const filePath = path.join(blogsDir, file)
           const content = fs.readFileSync(filePath, 'utf-8')
 
-          // 使用正则表达式查找所有博客ID
-          const idMatches = content.match(/id:\s*['|"]([a-zA-Z0-9-]+)['|"]/g)
-          if (idMatches) {
-            idMatches.forEach((match) => {
-              const idMatch = match.match(/['|"]([a-zA-Z0-9-]+)['|"]/)
-              if (idMatch && idMatch[1] && typeof idMatch[1] === 'string') {
-                // 添加blog-前缀，因为路由是/blog-{id}
-                ids.add(`blog-${idMatch[1]}`)
-              }
-            })
-          }
-
-          // 查找detailsRoute中的路径
+          // 查找detailsRoute中的路径，这是我们希望的URL路径
           const routeMatches = content.match(
             /detailsRoute:\s*{\s*path:\s*['|"](\/[a-zA-Z0-9-]+)['|"]/g,
           )
