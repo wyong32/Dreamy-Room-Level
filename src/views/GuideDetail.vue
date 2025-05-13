@@ -15,11 +15,12 @@
 
       <div class="guide-content">
         <div class="main-content">
-          <div v-if="guide.iframeUrl" class="guide-video">
+          <div v-if="guide.iframeUrl" class="guide-video-wrapper">
             <iframe
               :src="guide.iframeUrl"
+              :title="guide.pageTitle + ' Video Gameplay'"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
           </div>
@@ -139,7 +140,7 @@ export default {
 
       // 1. 如果有pathFromUrl，尝试使用path查找
       if (this.pathFromUrl) {
-        console.log('Searching by path:', this.pathFromUrl)
+        // console.log('Searching by path:', this.pathFromUrl)
         if (currentLocale === 'zh') {
           guide = findGuideByPath(guidesZhData, this.pathFromUrl)
           if (!guide) {
@@ -153,7 +154,7 @@ export default {
       // 2. 如果没有找到，尝试使用ID查找
       if (!guide && (this.idFromUrl || this.id)) {
         const guideId = this.idFromUrl || this.id
-        console.log('Searching by ID:', guideId)
+        // console.log('Searching by ID:', guideId)
         if (currentLocale === 'zh') {
           guide = findGuideById(guidesZhData, guideId)
           if (!guide) {
@@ -164,19 +165,16 @@ export default {
         }
       }
 
-      // 如果找到了指南，设置guide
       if (guide) {
         this.guide = guide
         this.injectJsonLd(guide)
       } else {
-        // 处理找不到指南的情况
-        console.error('Guide not found')
-        // 重定向到指南页面
-        if (currentLocale === 'en') {
-          this.$router.push('/dreamy-room-revel-game-guides')
-        } else {
-          this.$router.push(`/${currentLocale}/dreamy-room-revel-game-guides`)
-        }
+        console.error('Guide not found for id/path:', this.idFromUrl || this.id, this.pathFromUrl)
+        const fallbackRoute =
+          currentLocale === 'en'
+            ? '/dreamy-room-revel-game-guides'
+            : `/${currentLocale}/dreamy-room-revel-game-guides`
+        this.$router.push(fallbackRoute)
       }
     },
     navigateToGuide(guide) {
@@ -202,29 +200,114 @@ export default {
         window.location.href = path
       }
     },
+    getYoutubeThumbnailUrl(youtubeEmbedUrl) {
+      if (!youtubeEmbedUrl) return null
+      let videoId = null
+      try {
+        const url = new URL(youtubeEmbedUrl)
+        if (url.hostname === 'www.youtube.com' || url.hostname === 'youtube.com') {
+          if (url.pathname.startsWith('/embed/')) {
+            videoId = url.pathname.split('/embed/')[1].split('/')[0] // Get ID robustly
+          } else if (url.pathname === '/watch') {
+            videoId = url.searchParams.get('v')
+          }
+        }
+      } catch (e) {
+        const regex =
+          /(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|watch\?v=|embed\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+        const match = youtubeEmbedUrl.match(regex)
+        if (match && match[1]) {
+          videoId = match[1]
+        }
+      }
+      return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null
+    },
     injectJsonLd(guide) {
-      const url = typeof window !== 'undefined' ? window.location.href : ''
+      const siteUrl =
+        import.meta.env.VITE_SITE_URL ||
+        (typeof window !== 'undefined' ? window.location.origin : '')
+      const pageUrl = siteUrl + this.$route.path
+      const logoPath = siteUrl + '/images/logo.webp' // Defined logo path
+      const fallbackImagePath = siteUrl + '/images/about-image.webp' // Defined fallback image path
+
+      let articleImage = fallbackImagePath // Default to fallback
+      if (guide.imageUrl) {
+        articleImage =
+          siteUrl + (guide.imageUrl.startsWith('/') ? guide.imageUrl : '/' + guide.imageUrl)
+      }
+
+      const articleJsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: guide.pageTitle || 'Untitled Guide',
+        description: guide.seo?.description || guide.pageSubtitle || 'No description available.',
+        image: articleImage,
+        author: {
+          '@type': 'Organization',
+          name: 'Dreamy Room Team',
+          url: siteUrl,
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Dreamy Room Team',
+          logo: {
+            '@type': 'ImageObject',
+            url: logoPath,
+          },
+        },
+        datePublished: guide.publishDate
+          ? `${guide.publishDate}T00:00:00Z`
+          : new Date().toISOString(),
+        dateModified: guide.lastUpdated
+          ? `${guide.lastUpdated}T00:00:00Z`
+          : guide.publishDate
+          ? `${guide.publishDate}T00:00:00Z`
+          : new Date().toISOString(),
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': pageUrl,
+        },
+      }
+
+      if (guide.iframeUrl) {
+        let videoThumbnail = this.getYoutubeThumbnailUrl(guide.iframeUrl)
+        if (!videoThumbnail) {
+          // If YouTube thumbnail fails
+          videoThumbnail = guide.imageUrl
+            ? siteUrl + (guide.imageUrl.startsWith('/') ? guide.imageUrl : '/' + guide.imageUrl)
+            : fallbackImagePath
+        }
+
+        articleJsonLd.video = {
+          '@type': 'VideoObject',
+          name: guide.seo?.title || guide.pageTitle || 'Gameplay Video',
+          description:
+            guide.seo?.description ||
+            guide.pageSubtitle ||
+            'Watch the gameplay video for this guide.',
+          thumbnailUrl: [videoThumbnail], // Ensure it's an array
+          uploadDate: guide.publishDate
+            ? `${guide.publishDate}T00:00:00Z`
+            : new Date().toISOString(),
+          // duration: guide.videoDuration, // Add this if/when you have video duration data
+          embedUrl: guide.iframeUrl,
+          publisher: {
+            '@type': 'Organization',
+            name: 'Dreamy Room Team',
+            logo: {
+              '@type': 'ImageObject',
+              url: logoPath,
+            },
+          },
+        }
+      }
+
       useHead({
         script: [
           {
             type: 'application/ld+json',
-            children: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Article',
-              headline: guide.pageTitle,
-              description: guide.seo?.description || '',
-              image: guide.imageUrl || '',
-              author: {
-                '@type': 'Person',
-                name: 'Dreamy Room Team',
-              },
-              datePublished: guide.publishDate,
-              uploadDate: guide.publishDate,
-              mainEntityOfPage: {
-                '@type': 'WebPage',
-                '@id': url,
-              },
-            }),
+            children: JSON.stringify(articleJsonLd),
+            id: 'guide-jsonld',
           },
         ],
       })
@@ -321,21 +404,23 @@ export default {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.guide-video {
-  margin-bottom: 2rem;
+.guide-video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
+  max-width: 100%;
+  background: #f0f0f0; /* Light grey background, can be #000 or transparent */
+  margin-bottom: 20px; /* Space below the video */
 }
 
-.guide-video iframe {
+.guide-video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 6px;
+  border: none; /* Ensure no default border */
 }
 
 .guide-details {
