@@ -8,7 +8,7 @@
       :customDescription="guide.seo.description"
       :customKeywords="guide.seo.keywords"
     />
-    <div class="container">
+    <div v-if="guide" class="container">
       <div class="guide-header">
         <h1>{{ guide.pageTitle }}</h1>
       </div>
@@ -53,6 +53,9 @@
           </div>
         </aside>
       </div>
+    </div>
+    <div v-else class="container no-content-container">
+      <p>{{ $t('guides.guideNotFound') }}</p>
     </div>
   </div>
 </template>
@@ -228,12 +231,41 @@ export default {
     },
   },
   watch: {
-    // Watch for changes in the ID prop (in case user navigates between guides)
-    id() {
-      this.loadGuideData()
+    // Watch for changes in the route object to reload data when navigating between guide pages
+    $route(to, from) {
+      if (to.path !== from.path) {
+        // Ensure it's a navigation to a different guide page
+        // Re-initialize path/id variables from the new route
+        const pathParts = to.path.split('/')
+        this.idFromUrl = null // Reset previous values
+        this.pathFromUrl = null
+
+        if (pathParts.length >= 2) {
+          const lastPart = pathParts[pathParts.length - 1]
+          if (lastPart && lastPart.startsWith('game-level-')) {
+            this.idFromUrl = lastPart
+          } else if (lastPart && lastPart.startsWith('dreamy-room-level-')) {
+            this.pathFromUrl = `/dreamy-room-level-${lastPart.split('dreamy-room-level-')[1]}`
+          }
+        }
+        // Also handle locale from path if necessary (though current i18n setup in created might be simplified)
+        // For simplicity, we rely on i18n.global.locale being set correctly elsewhere or AppHeader's logic
+
+        this.loadGuideData()
+      }
+    },
+
+    // Watch for changes in the ID prop (can be kept as a fallback or if ID is passed directly)
+    id(newId, oldId) {
+      if (newId !== oldId) {
+        // This might be redundant if $route watcher handles everything, but can be a safeguard
+        console.log('ID prop changed, reloading data...')
+        this.loadGuideData()
+      }
     },
     // 监听语言变化，使用更直接的方法
     '$root.$i18n.locale'() {
+      // When language changes, URL might change if locale is in path, or content needs reload
       this.loadGuideData()
     },
     // 不再需要手动更新SEO信息，使用SeoHead组件代替
@@ -682,5 +714,12 @@ export default {
   to {
     opacity: 1;
   }
+}
+
+.no-content-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
+  color: #666;
 }
 </style>

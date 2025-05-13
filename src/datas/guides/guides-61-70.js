@@ -187,7 +187,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-63' },
     iframeUrl: 'https://www.youtube.com/embed/58sxmaJctdI',
     seo: {
-      title: 'Dreamy Room Level 63 Walkthrough – Beautifully Decorated Haven',
+      title: 'Dreamy Room Level 63 – Beautifully Decorated Haven',
       description:
         'A step-by-step guide for completing Dreamy Room Level 63 by carefully arranging each item to create a perfect and balanced space.',
       keywords:
@@ -382,7 +382,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-65' },
     iframeUrl: 'https://www.youtube.com/embed/xIKvUbITmfc',
     seo: {
-      title: 'Dreamy Room Level 65 Walkthrough – Elegant and Balanced Living Room',
+      title: 'Dreamy Room Level 65 – Elegant and Balanced Living Room',
       description:
         'A detailed walkthrough for Dreamy Room Level 65 where you create a stylish, cozy, and balanced living room by carefully placing each item.',
       keywords:
@@ -467,7 +467,7 @@ export default [
   {
     id: 'game-level-66',
     title: 'Level 66',
-    pageTitle: 'Dreamy Room Level 66 Walkthrough – Cozy and Balanced Living Room',
+    pageTitle: 'Dreamy Room Level 66 – Cozy and Balanced Living Room',
     pageSubtitle:
       'Step-by-step guide to creating a warm and stylish living room in Dreamy Room Level 66 with perfect object placement.',
     category: '61-70',
@@ -577,7 +577,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-67' },
     iframeUrl: 'https://www.youtube.com/embed/yG3UvzV33J0',
     seo: {
-      title: 'Dreamy Room Level 67 Walkthrough – Vintage and Cozy Living Space',
+      title: 'Dreamy Room Level 67 – Vintage and Cozy Living Space',
       description:
         'A detailed walkthrough for Dreamy Room Level 67 where you transform a blank space into a vintage-inspired, cozy living room with perfect object placement.',
       keywords:
@@ -683,9 +683,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-68' },
     iframeUrl: 'https://www.youtube.com/embed/GUWkm5-IEDs',
     seo: {
-      title: 'Dreamy Room Level 68 Walkthrough – Heartfelt, Memory-Laden Environment',
+      title: 'Dreamy Room Level 68 – Heartfelt, Memory-Laden Environment',
       description:
-        'A detailed walkthrough for Dreamy Room Level 68 where you transform a blank space into a nostalgic, sentimental room filled with personal touches and meaningful decor.',
+        'Dreamy Room Level 68 where you transform a blank space into a nostalgic, sentimental room filled with personal touches and meaningful decor.',
       keywords:
         'Dreamy Room Level 68, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -785,9 +785,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-69' },
     iframeUrl: 'https://www.youtube.com/embed/2MjUQi5SVNg',
     seo: {
-      title: 'Dreamy Room Level 69 Walkthrough – Luxury and Contemporary Living Room',
+      title: 'Dreamy Room Level 69 – Luxury and Contemporary Living Room',
       description:
-        'A detailed walkthrough for Dreamy Room Level 69 where you transform an empty space into a luxurious, contemporary living room filled with cozy furniture and modern decor.',
+        'Dreamy Room Level 69 where you transform an empty space into a luxurious, contemporary living room filled with cozy furniture and modern decor.',
       keywords:
         'Dreamy Room Level 69, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -886,9 +886,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-70' },
     iframeUrl: 'https://www.youtube.com/embed/E5rrTjSWqFI',
     seo: {
-      title: 'Dreamy Room Level 70 Walkthrough – Modern Elegance and Bright Accents',
+      title: 'Dreamy Room Level 70 – Modern Elegance and Bright Accents',
       description:
-        'A detailed guide for Dreamy Room Level 70, where you create a modern, stylish living room with an elegant design, featuring a geometric rug, glass coffee table, and contemporary art.',
+        'Dreamy Room Level 70,where you create a modern, stylish living room with an elegant design,featuring a geometric rug,glass coffee table, and contemporary art.',
       keywords:
         'Dreamy Room Level 70, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },

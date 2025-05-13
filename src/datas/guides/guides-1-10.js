@@ -92,7 +92,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 2 Walkthrough & Bathroom Decor Tips',
       description:
-        'Solve the bathroom layout puzzle in Dreamy Room Level 2 with this complete guide. Learn how to position the tub, toilet, sink, and accessories for a perfect result.',
+        'Solve the bathroom layout puzzle in Dreamy Room Level 2 with this complete guide. Learn how to position the tub, toilet, sink.',
       keywords:
         'Dreamy Room Level 2, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -187,7 +187,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 3 Walkthrough & Office Setup Guide',
       description:
-        'Transform an empty room into a cozy, professional workspace in Dreamy Room Level 3. Follow this detailed guide to place the desk, chair, bookshelf, and finishing touches.',
+        'Transform an empty room into a cozy, workspace in Dreamy Room Level 3. Follow this detailed guide to place the desk, chair, bookshelf, and finishing touches.',
       keywords:
         'Dreamy Room Level 3, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -286,7 +286,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 4 Walkthrough & Kitchen Setup Guide',
       description:
-        'Transform an empty space into a cozy, functional kitchen in Dreamy Room Level 4. Follow this step-by-step guide to place the fridge, cabinets, sink, and final touches.',
+        'Transform an empty space into a cozy, functional kitchen in Dreamy Room Level 4. Follow this step-by-step guide to place the fridge, cabinets, sink.',
       keywords:
         'Dreamy Room Level 4, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },

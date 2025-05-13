@@ -8,7 +8,7 @@
         <h2 class="page-description">{{ $t('blog.description') }}</h2>
       </div>
 
-      <div class="blog-posts">
+      <div v-if="blogPosts.length > 0" class="blog-posts">
         <article
           class="blog-post"
           v-for="post in blogPosts"
@@ -29,6 +29,9 @@
             }}</router-link>
           </div>
         </article>
+      </div>
+      <div v-else class="no-content-container">
+        <p>{{ $t('blog.noBlogsFound') }}</p>
       </div>
     </div>
   </div>
@@ -347,5 +350,12 @@ export default {
   .post-excerpt {
     font-size: 0.85rem;
   }
+}
+
+.no-content-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
+  color: #666;
 }
 </style>

@@ -36,6 +36,8 @@ export default {
     guides: '攻略',
     blog: '博客',
     download: '下载',
+    searchPlaceholder: '输入关卡 (1-{max})',
+    searchInvalidLevel: '请输入 1 到 {max} 之间的关卡。',
   },
 
   // 首页
@@ -144,6 +146,8 @@ export default {
     levels: '关卡',
     levelRange: '关卡 {start}-{end}',
     relatedGuides: '相关攻略',
+    noGuidesFound: '此分类下暂无攻略，请稍后再试！',
+    guideNotFound: '抱歉，我们未能找到您想要的攻略。',
   },
 
   // 博客页面
@@ -160,6 +164,8 @@ export default {
       community: '社区',
       tips: '技巧与窍门',
     },
+    noBlogsFound: '暂无博客文章，敬请期待！',
+    blogNotFound: '抱歉，我们未能找到您想要的博客文章。',
   },
 
   // 下载页面

@@ -92,9 +92,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-52' },
     iframeUrl: 'https://www.youtube.com/embed/wZy7QrnMSTw',
     seo: {
-      title: 'Dreamy Room Level 52 Walkthrough & Nostalgic Bedroom Decor Guide',
+      title: 'Dreamy Room Level 52 Walkthrough & Nostalgic Bedroom Decor',
       description:
-        'Full walkthrough for Dreamy Room Level 52. Discover how to decorate a vintage-inspired bedroom with a central bed, trinkets, mirror, bookshelf, and personal photo corner.',
+        'Dreamy Room Level 52. Discover how to decorate a vintage-inspired bedroom with a central bed, trinkets, mirror, bookshelf, and personal photo corner.',
       keywords:
         'Dreamy Room Level 52, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -357,7 +357,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-55' },
     iframeUrl: 'https://www.youtube.com/embed/UY1IuIq2fqw',
     seo: {
-      title: 'Dreamy Room Level 55 Walkthrough – Cozy, Inviting Decor Guide',
+      title: 'Dreamy Room Level 55 Walkthrough – Cozy, Inviting Decor',
       description:
         'A step-by-step guide for completing Dreamy Room Level 55, featuring cozy furnishings, personal touches, and a warm, inviting atmosphere.',
       keywords:
@@ -442,10 +442,11 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-56' },
     iframeUrl: 'https://www.youtube.com/embed/C7ENakZKI88',
     seo: {
-      title: 'Dreamy Room Level 56 Walkthrough – Treasure Room Decoration Guide',
+      title: 'Dreamy Room Level 56 – Treasure Room Decoration Guide',
       description:
-        'A detailed walkthrough for completing Dreamy Room Level 56, featuring how to turn an empty cave into a richly decorated treasure room filled with mystery and elegance.',
-      keywords: 'Dreamy Room Level 56, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
+        'completing Dreamy Room Level 56, featuring how to turn an empty cave into a richly decorated treasure room filled with mystery and elegance.',
+      keywords:
+        'Dreamy Room Level 56, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_56.webp',
@@ -527,7 +528,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-57' },
     iframeUrl: 'https://www.youtube.com/embed/arqQIY2ShYg',
     seo: {
-      title: 'Dreamy Room Level 57 Walkthrough – Cozy Meditation Room Decoration Guide',
+      title: 'Dreamy Room Level 57 – Cozy Meditation Room Decoration',
       description:
         'A detailed walkthrough for completing Dreamy Room Level 57, featuring how to turn an empty space into a peaceful, cozy meditation and reading room.',
       keywords:
@@ -616,10 +617,11 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-58' },
     iframeUrl: 'https://www.youtube.com/embed/CqEN9EmZHF4',
     seo: {
-      title: 'Dreamy Room Level 58 Walkthrough – Cozy Sanctuary Room Decoration Guide',
+      title: 'Dreamy Room Level 58 – Cozy Sanctuary Room Decoration',
       description:
         'A detailed walkthrough for completing Dreamy Room Level 58, featuring how to turn an empty space into a cozy sanctuary with a canopy bed, sofa, and balcony.',
-      keywords: 'Dreamy Room Level 58, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
+      keywords:
+        'Dreamy Room Level 58, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_58.webp',
@@ -703,7 +705,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-59' },
     iframeUrl: 'https://www.youtube.com/embed/NgxRLWQVCD8',
     seo: {
-      title: 'Dreamy Room Level 59 Walkthrough – Mysterious Charm Room Decoration Guide',
+      title: 'Dreamy Room Level 59 – Mysterious Charm Room Decoration',
       description:
         'A detailed walkthrough for completing Dreamy Room Level 59, transforming the space into a mysterious, atmospheric room with gothic charm.',
       keywords:

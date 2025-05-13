@@ -11,7 +11,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-31' },
     iframeUrl: 'https://www.youtube.com/embed/OnQz8JAjv64',
     seo: {
-      title: 'Dreamy Room Level 31 Walkthrough & Plant-Filled Bedroom Setup',
+      title: 'Dreamy Room Level 31 & Plant-Filled Bedroom Setup',
       description:
         'Complete Dreamy Room Level 31 with this detailed walkthrough. Learn how to place beds, desks, plants, plushies, and create a tranquil, greenery-rich space.',
       keywords:
@@ -107,7 +107,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 32 Walkthrough & Cozy Café Setup',
       description:
-        'Master Dreamy Room Level 32 with this detailed walkthrough. Learn how to arrange counters, appliances, tables, and the pink bunny to build the perfect café scene.',
+        'Master Dreamy Room Level 32 with this detailed walkthrough.Learn how to arrange counters,appliances,tables,and the pink bunny to build the perfect café scene.',
       keywords:
         'Dreamy Room Level 32, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -292,7 +292,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-34' },
     iframeUrl: 'https://www.youtube.com/embed/bH1nW9wj1YI',
     seo: {
-      title: 'Dreamy Room Level 34 Walkthrough & Floral Garden Bedroom Design',
+      title: 'Dreamy Room Level 34 Walkthrough & Floral Garden Bedroom',
       description:
         'Follow this detailed walkthrough to complete Dreamy Room Level 34. Learn how to create a peaceful pastel bedroom full of cozy charm and flowers.',
       keywords:
@@ -385,7 +385,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-35' },
     iframeUrl: 'https://www.youtube.com/embed/IDSzimLDW_s',
     seo: {
-      title: 'Dreamy Room Level 35 Walkthrough & Rocket-Themed Treehouse Guide',
+      title: 'Dreamy Room Level 35 Walkthrough & Rocket-Themed Treehouse',
       description:
         'Follow this detailed walkthrough to complete Dreamy Room Level 35. Learn how to build a cozy, imaginative rocket-themed treehouse step by step.',
       keywords:
@@ -680,7 +680,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 38 Walkthrough & Cozy Pastel Bedroom Guide',
       description:
-        'Step-by-step guide to completing Dreamy Room Level 38. Learn how to create a charming, pastel-themed bedroom with plush toys, delicate furniture, and decorative accents.',
+        'Step-by-step to completing  Room Level 38. Learn how to create a charming, pastel-themed bedroom with plush toys, delicate furniture, and decorative accents.',
       keywords:
         'Dreamy Room Level 38, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -789,7 +789,7 @@ export default [
       description:
         'Step-by-step guide to completing Dreamy Room Level 39. Learn how to create a bustling winter-themed mini-shop complete with penguin customers and cozy decor.',
       keywords:
-        "Dreamy Room Level 39, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips",
+        'Dreamy Room Level 39, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_39.webp',
@@ -880,8 +880,9 @@ export default [
     seo: {
       title: 'Dreamy Room Level 40 Walkthrough & Cozy Living Space Guide',
       description:
-        'Step-by-step guide to completing Dreamy Room Level 40. Learn how to create a cozy and inviting living space with a kitchen area, cozy seating, and beautiful decor.',
-      keywords: 'Dreamy Room Level 40, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
+        'guide to completing Dreamy Room Level 40. Learn how to create a cozy and inviting living space with a kitchen area, cozy seating, and beautiful decor.',
+      keywords:
+        'Dreamy Room Level 40, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_40.webp',

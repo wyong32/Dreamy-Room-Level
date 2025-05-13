@@ -13,8 +13,9 @@ export default [
     seo: {
       title: 'Dreamy Room Level 41 Walkthrough & Cozy Living Room Guide',
       description:
-        'Step-by-step guide to completing Dreamy Room Level 41. Learn how to create a cozy and heartwarming space with pastel colors, kitchen setup, and a cozy sitting area.',
-      keywords: 'Dreamy Room Level 41, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
+        'guide to completing Dreamy Room Level 41. Learn how to create a cozy and heartwarming space with pastel colors, kitchen setup, and a cozy sitting area.',
+      keywords:
+        'Dreamy Room Level 41, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_41.webp',
@@ -101,9 +102,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-42' },
     iframeUrl: 'https://www.youtube.com/embed/AX6qLslsjmc',
     seo: {
-      title: 'Dreamy Room Level 42 Walkthrough & Gaming Streaming Room Guide',
+      title: 'Dreamy Room Level 42 Walkthrough & Gaming Guide',
       description:
-        'Step-by-step guide to completing Dreamy Room Level 42. Learn how to create a cozy and nostalgic gaming streaming setup with collectibles, lights, and streaming equipment.',
+        'guide to completing Dreamy Room Level 42. Learn how to create a cozy and nostalgic gaming streaming setup with collectibles, lights, and streaming equipment.',
       keywords:
         'Dreamy Room Level 42, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -197,7 +198,8 @@ export default [
       title: 'Dreamy Room Level 43 Walkthrough & Cozy Kitchen Room Guide',
       description:
         'Step-by-step guide to completing Dreamy Room Level 43. Learn how to create a cozy, decorated kitchen room with a fireplace, shelving unit, and dining area.',
-      keywords: 'Dreamy Room Level 43, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
+      keywords:
+        'Dreamy Room Level 43, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_43.webp',
@@ -280,7 +282,8 @@ export default [
       title: 'Dreamy Room Level 44 Walkthrough & Cozy Kitchen Setup Guide',
       description:
         'Step-by-step guide for completing Dreamy Room Level 44. Build a cheerful kitchen scene with pizza oven, storage shelf, pastel appliances, and garden entryway.',
-      keywords: 'Dreamy Room Level 44, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
+      keywords:
+        'Dreamy Room Level 44, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_44.webp',

@@ -104,7 +104,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-12' },
     iframeUrl: 'https://www.youtube.com/embed/yDVEEfLRB7A',
     seo: {
-      title: 'Dreamy Room Level 12 Walkthrough & Two-Story Bedroom Design Guide',
+      title: 'Dreamy Room Level 12 Walkthrough & Two-Story Bedroom Guide',
       description:
         'Follow this detailed walkthrough for Dreamy Room Level 12 to create a cozy two-story room with a bed, desk, staircase, and dining area.',
       keywords:
@@ -389,7 +389,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 15 Walkthrough & Holiday Room Design Guide',
       description:
-        'Learn how to decorate the festive space in Dreamy Room Level 15 with our complete walkthrough. Follow each step to place the blossoming tree, lion dance figure, and other decorations correctly.',
+        'Learn how to decorate the festive space in Dreamy Room Level 15 with our complete walkthrough., lion dance figure, and other decorations correctly.',
       keywords:
         'Dreamy Room Level 15, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -479,7 +479,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 16 Walkthrough & Cozy Reading Nook Guide',
       description:
-        'Complete Dreamy Room Level 16 with this step-by-step guide. Learn how to create a cozy reading corner with a cat-themed lounge chair, book shelf, teacup, and decorations.',
+        'Complete Dream Room Level 16. Learn how to create a cozy reading nook with cat-themed lounge chairs, bookshelves, cups, and decorations.',
       keywords:
         'Dreamy Room Level 16, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -683,7 +683,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 18 Walkthrough & Underwater Theme Guide',
       description:
-        'Complete Dreamy Room Level 18 with this detailed walkthrough. Create a magical underwater sanctuary filled with seashells, banners, coral, and a regal frog guardian.',
+        'Complete Dreamy Room Level 18 with . Create a magical underwater sanctuary filled with seashells, banners, coral, and a regal frog guardian.',
       keywords:
         'Dreamy Room Level 18, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -787,7 +787,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 19 Walkthrough & Cat Café Bar Theme Guide',
       description:
-        'Complete Dreamy Room Level 19 with this detailed walkthrough. Create a cozy cat-themed bar complete with neon signs, musical instruments, and adorable cat figures.',
+        'Complete Dreamy Room Level 19 with . Create a cozy cat-themed bar complete with neon signs, musical instruments, and adorable cat figures.',
       keywords:
         'Dreamy Room Level 19, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -900,7 +900,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 20 Walkthrough & Holiday-Themed Room Guide',
       description:
-        'Complete Dreamy Room Level 20 with this detailed walkthrough. Transform an empty space into a cozy holiday-themed room complete with a fireplace, Christmas tree, and festive décor.',
+        'Complete Dreamy Room Level 20 with. Transform an empty space into a cozy holiday-themed room complete with a fireplace, Christmas tree, and festive décor.',
       keywords:
         'Dreamy Room Level 20, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },

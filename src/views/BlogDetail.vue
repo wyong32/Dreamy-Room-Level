@@ -8,7 +8,7 @@
       :customDescription="blog.seo.description"
       :customKeywords="blog.seo.keywords"
     />
-    <div class="container">
+    <div v-if="blog" class="container">
       <div class="blog-header">
         <h1>{{ blog.pageTitle }}</h1>
         <div class="blog-meta" v-if="blog.publishDate">
@@ -20,6 +20,9 @@
           <div class="blog-details" v-html="blog.detailsHtml"></div>
         </div>
       </div>
+    </div>
+    <div v-else class="container no-content-container">
+      <p>{{ $t('blog.blogNotFound') }}</p>
     </div>
   </div>
 </template>
@@ -502,5 +505,12 @@ export default {
   to {
     opacity: 1;
   }
+}
+
+.no-content-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.2rem;
+  color: #666;
 }
 </style>

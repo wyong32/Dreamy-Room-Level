@@ -104,7 +104,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 102 Walkthrough & Spa-Themed Bedroom Guide',
       description:
-        'Complete walkthrough for Dreamy Room Level 102. Create a peaceful, multi-level spa room with step-by-step guidance.',
+        'Create a peaceful, multi-level spa sanctuary with soothing decor, warm lighting, and tranquil elements—follow each step for perfect harmony.',
       keywords:
         'Dreamy Room Level 102, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -179,78 +179,6 @@ export default [
     </ul>
 
     <p>By following this guide, you’ll successfully complete Dreamy Room Level 102, transforming the space into a serene, multi-level spa retreat. Enjoy decorating your spa-inspired haven!</p>
-  `,
-  },
-
-  {
-    id: 'game-level-103',
-    title: 'Level 103',
-    pageTitle: 'Dreamy Room Level 103 Game Walkthrough',
-    pageSubtitle: 'Step-by-step guide for completing Level 103 of Dreamy Room',
-    category: '101-110',
-    publishDate: '2025-05-10',
-    imageUrl: 'images/guides_103.webp',
-    imageAlt: 'Level 103 of the Dreamy Room game',
-    detailsRoute: { path: '/dreamy-room-level-103' },
-    iframeUrl: 'https://www.youtube.com/embed/your-video-link',
-    seo: {
-      title: 'Dreamy Room Level 103 Walkthrough & Themed Bedroom Guide',
-      description:
-        'Complete walkthrough for Dreamy Room Level 103. Learn how to create a beautifully designed, themed space with intricate details and perfect placements.',
-      keywords:
-        'Dreamy Room Level 103, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
-    },
-    sidebarData: {
-      sidebarImageUrl: '/images/guides_101.webp',
-      levelInfoHtml:
-        '<h3>Level 103: Whimsical Themed Bedroom</h3><p>Design a dreamy, whimsical themed bedroom with a variety of playful decor. Arrange the furniture and items precisely to match the desired look.</p>',
-      featuredGuides: [
-        {
-          id: 'game-level-102',
-          title: 'Level 102<br/>Magical Nursery',
-          imageUrl: 'images/guides_102.webp',
-          imageAlt: 'Level 102 of the Dreamy Room game',
-          detailsRoute: { path: '/dreamy-room-level-102' },
-        },
-      ],
-    },
-    detailsHtml: `
-    <h2>Step-by-step guide for Dreamy Room Level 103: Whimsical Themed Bedroom</h2>
-    <p>Dreamy Room Level 103 challenges you to create a whimsical themed bedroom with careful attention to detail. Follow this walkthrough to perfectly place each element and achieve the intended design.</p>
-
-    <h3>Step 1: Position the Hexagonal Pink Floor Tiles</h3>
-    <p>Start by placing the hexagonal pink floor tiles on the lower level platform. Align the tiles flush against the curved front ledge to create a perfectly even base.</p>
-
-    <h3>Step 2: Install the Symmetrical Spiral Staircases</h3>
-    <p>Next, position the two spiral staircases symmetrically on either side of the central entrance, ensuring they align with the floor tiles and the green base plate.</p>
-
-    <h3>Step 3: Add the Doorway, Windows, and Flower Planters</h3>
-    <p>Place the red front door with a porthole window, then add two matching arched windows and rectangular flower planters beneath each window for a charming touch.</p>
-
-    <h3>Step 4: Mount the Red Railings and Upper Floor Platform</h3>
-    <p>Position the red metal railings around the mid-tier and then place the pale pink upper floor panel on top to complete the structure.</p>
-
-    <h3>Step 5: Set the Golden Planet Sculpture</h3>
-    <p>Place the golden planet sculpture above the front door, centered between the two spiral staircases. Ensure the sculpture is perfectly aligned for visual balance.</p>
-
-    <h3>Step 6: Arrange the Telescope, Bear Figurine, Bird Statue, Swing, and Seating</h3>
-    <p>Arrange whimsical accessories such as the white telescope, tan teddy bear figurine, pink bird statue, yellow swing bench, and circular table with chairs on the upper deck.</p>
-
-    <h2>Notes and Precautions</h2>
-    <ul>
-      <li><strong>Placement Accuracy:</strong> Pay close attention to alignments to avoid overlaps and misplacements.</li>
-      <li><strong>Preview Mode:</strong> Use the preview mode to verify placement before locking objects in position.</li>
-      <li><strong>Color Coordination:</strong> Ensure the elements complement each other, especially with the pink and red tones.</li>
-    </ul>
-
-    <h2>Tips and Tricks</h2>
-    <ul>
-      <li><strong>Double-check Symmetry:</strong> Ensure all elements, such as the staircases and railings, maintain symmetry to enhance the design.</li>
-      <li><strong>Group Similar Items:</strong> Keep similar-themed items close together for a more cohesive look.</li>
-      <li><strong>Take Your Time:</strong> Don’t rush! Carefully plan and arrange each object for a perfectly designed space.</li>
-    </ul>
-
-    <p>By following this guide, you’ll create a dreamy and whimsical themed bedroom that showcases your design skills in Dreamy Room Level 103. Enjoy the process and make your space come to life!</p>
   `,
   },
 ]

@@ -13,7 +13,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 21 Walkthrough & Campsite Setup Guide',
       description:
-        'Complete Dreamy Room Level 21 with this detailed walkthrough. Transform an empty space into a charming campsite complete with tents, a camper van, palm trees, and festive decorations.',
+        'Complete Dreamy Room Level 21 with. Transform an empty space into a charming campsite complete with tents, a camper van, palm trees, and festive decorations.',
       keywords:
         'Dreamy Room Level 21, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -115,7 +115,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 22 Walkthrough & Laundry Setup Guide',
       description:
-        'Complete Dreamy Room Level 22 with this detailed walkthrough. Transform an empty space into a functional and charming laundry area with all the necessary appliances and accessories.',
+        'Complete Dreamy Room Level 22 with. Transform an empty space into a functional and charming laundry area with all the necessary appliances and accessories.',
       keywords:
         'Dreamy Room Level 22, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -209,7 +209,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 23 Walkthrough & Salon Setup Guide',
       description:
-        'Complete Dreamy Room Level 23 with this detailed walkthrough. Transform an empty room into a fully decorated salon-like space with stylish furniture and accessories.',
+        'Complete Dreamy Room Level 23 with. Transform an empty room into a fully decorated salon-like space with stylish furniture and accessories.',
       keywords: 'Dreamy Room Level 23, salon, styling tools, partition, walkthrough',
     },
     sidebarData: {
@@ -395,7 +395,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 25 Walkthrough & Japanese Retreat Setup',
       description:
-        'Complete Dreamy Room Level 25 with this detailed walkthrough. Transform an empty space into a tranquil, Japanese-inspired retreat with serene décor and traditional elements.',
+        'Complete Dreamy Room Level 25 with. Transform an empty space into a tranquil, Japanese-inspired retreat with serene décor and traditional elements.',
       keywords: 'Dreamy Room Level 25, Japanese retreat, onsen, tea table, walkthrough',
     },
     sidebarData: {
@@ -485,7 +485,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 26 Walkthrough & Cat-Themed Haven Setup',
       description:
-        'Complete Dreamy Room Level 26 with this detailed walkthrough. Transform the empty space into a cozy, cat-themed haven with playful plushies, furniture, and soft lighting.',
+        'Complete Dreamy Room Level 26 with. Transform the empty space into a cozy, cat-themed haven with playful plushies, furniture, and soft lighting.',
       keywords: 'Dreamy Room Level 26, cat-themed room, plushies, walkthrough',
     },
     sidebarData: {
@@ -689,7 +689,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 28 Walkthrough & Circus Wonderland Setup',
       description:
-        'Complete Dreamy Room Level 28 with this detailed walkthrough. Transform the empty suitcase into a lively circus-themed wonderland with a carousel, Ferris wheel, and more.',
+        'Complete Dreamy Room Level 28 with. Transform the empty suitcase into a lively circus-themed wonderland with a carousel, Ferris wheel, and more.',
       keywords: 'Dreamy Room Level 28, circus theme, walkthrough, carnival, suitcase room',
     },
     sidebarData: {
@@ -782,7 +782,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 29 Walkthrough & Cozy Pastel Haven Setup',
       description:
-        'Complete Dreamy Room Level 29 with this detailed walkthrough. Transform a bare two-story layout into a cozy, pastel-themed retreat with a kitchen, living area, and bedroom.',
+        'Complete Dreamy Room Level 29 with. Transform a bare two-story layout into a cozy, pastel-themed retreat with a kitchen, living area, and bedroom.',
       keywords: 'Dreamy Room Level 29, pastel theme, walkthrough, two-story, cozy, retreat',
     },
     sidebarData: {
@@ -869,7 +869,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 30 Walkthrough & Tranquil Nook Setup',
       description:
-        'Complete Dreamy Room Level 30 with this detailed walkthrough. Transform a plain mint-green corner into a tranquil nook with comfy seating, lush greenery, and a delightful tea party.',
+        'Complete Dreamy Room Level 30 with. Transform a plain mint-green corner into a tranquil nook with comfy seating, lush greenery, and a delightful tea party.',
       keywords: 'Dreamy Room Level 30, tranquil nook, walkthrough, cozy seating, tea party, cat',
     },
     sidebarData: {

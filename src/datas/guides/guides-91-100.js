@@ -12,7 +12,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-91' },
     iframeUrl: 'https://www.youtube.com/embed/LdG3NSVN9Jg',
     seo: {
-      title: 'Dreamy Room Level 91 Walkthrough – Mobile Home Transformation',
+      title: 'Dreamy Room Level 91 – Mobile Home Transformation .',
       description:
         'Transform an empty space into a cozy mobile home in Dreamy Room Level 91 with this step-by-step guide, featuring furniture and design tips.',
       keywords:
@@ -175,7 +175,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 93 Walkthrough & Arcade-Themed Room Guide',
       description:
-        'Complete walkthrough for Dreamy Room Level 93. Learn how to place each item to build a vibrant arcade-themed room with lighting, gaming cabinets, and playful decor.',
+        'Complete for Dreamy Room Level 93. Learn how to place each item to build a vibrant arcade-themed room with lighting, gaming cabinets, and playful decor.',
       keywords:
         'Dreamy Room Level 93, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -260,7 +260,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 94 Walkthrough & Zen Spa Bedroom Guide',
       description:
-        'Full walkthrough for Dreamy Room Level 94. Create a tranquil Zen-inspired loft with bamboo, spa elements, and traditional decor.',
+        'Full walkthrough for Dreamy Room Level 94 Walkthrough. Create a tranquil Zen-inspired loft with bamboo, spa elements, and traditional decor.',
       keywords:
         'Dreamy Room Level 94, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -343,7 +343,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 95 Walkthrough & Burger Café Diorama Guide',
       description:
-        'Complete walkthrough for Dreamy Room Level 95. Create a fully decorated burger café with intricate object placements and precise alignment.',
+        'Complete walkthrough for Dreamy Room Level 95 . Create a fully decorated burger café with intricate object placements and precise alignment.',
       keywords:
         'Dreamy Room Level 95, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -602,7 +602,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 98 Walkthrough & Dairy Factory Setup Guide',
       description:
-        'Complete walkthrough for Dreamy Room Level 98. Learn how to arrange cows, machinery, and create a dairy factory with precision.',
+        'Complete walkthrough for Dreamy Room Level 98 Walkthrough . Learn how to arrange cows, machinery, and create a dairy factory with precision.',
       keywords:
         'Dreamy Room Level 98, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -687,7 +687,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 99 Walkthrough & Seaside Sushi Bar Guide',
       description:
-        'Complete walkthrough for Dreamy Room Level 99. Learn how to arrange each item to create a serene seaside sushi bar with accuracy and style.',
+        'Complete walkthrough for Dreamy Room Level 99 Walkthrough. Learn how to arrange each item to create a serene seaside sushi bar with accuracy and style.',
       keywords:
         'Dreamy Room Level 99, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -778,7 +778,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 100 Walkthrough & Toy-Filled Haven Guide',
       description:
-        'Complete walkthrough for Dreamy Room Level 100. Learn how to place each item to create a cozy, toy-filled haven with precision and style.',
+        'Complete walkthrough for Dreamy Room Level 100 Walkthrough. Learn how to place each item to create a cozy, toy-filled haven with precision and style.',
       keywords:
         'Dreamy Room Level 100, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },

@@ -13,9 +13,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-81' },
     iframeUrl: 'https://www.youtube.com/embed/QDgAXPSxH6w',
     seo: {
-      title: 'Dreamy Room Level 81 Walkthrough – Cozy Activity-Packed Haven',
+      title: 'Dreamy Room Level 81 – Cozy Activity-Packed Haven',
       description:
-        'Complete your two-tiered space in Dreamy Room Level 81 by following these placement steps for a cozy and activity-packed design. Perfect your layout and enjoy a satisfying build.',
+        'Complete your two-tiered space in Dreamy Room Level 81 steps for a cozy and activity-packed design. Perfect your layout and enjoy a satisfying build.',
       keywords:
         'Dreamy Room Level 81, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -244,7 +244,7 @@ export default [
 
   {
     id: 'dreamy-room-level-83',
-    title: 'Dreamy Room Level 83 Walkthrough – Cozy Futuristic Sci-Fi Chamber',
+    title: 'Dreamy Room Level 83 – Cozy Futuristic Sci-Fi Chamber',
     pageTitle:
       'Dreamy Room Level 83 Walkthrough – Complete Guide to Building a Cozy Sci-Fi Chamber',
     pageSubtitle:
@@ -256,9 +256,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-83' },
     iframeUrl: 'https://www.youtube.com/embed/O-HLzdx-K4M',
     seo: {
-      title: 'Dreamy Room Level 83 Walkthrough – Cozy Futuristic Sci-Fi Chamber',
+      title: 'Dreamy Room Level 83 – Cozy Futuristic Sci-Fi Chamber',
       description:
-        'Complete your two-tiered sci-fi chamber in Dreamy Room Level 83 by following these placement steps for a cozy and futuristic design. Perfect your layout and enjoy a satisfying build.',
+        'Complete your two-tiered sci-fi chamber in Dreamy Room Level 83 by steps for a cozy and futuristic design. Perfect your layout and enjoy a satisfying build.',
       keywords:
         'Dreamy Room Level 83, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -368,7 +368,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 84 Walkthrough – Serene Japanese Spa Haven',
       description:
-        'Complete your serene Japanese spa haven in Dreamy Room Level 84 with these detailed placement steps. Perfect the layout and enjoy the calming atmosphere of your finished design.',
+        'Complete your serene Japanese spa haven in Dreamy Room Level 84 . Perfect the layout and enjoy the calming atmosphere of your finished design.',
       keywords:
         'Dreamy Room Level 84, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -481,7 +481,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 85 Walkthrough – Elegant Garden Retreat',
       description:
-        'Complete your elegant garden retreat in Dreamy Room Level 85 with these detailed placement steps. Perfect the layout and enjoy the calming atmosphere of your finished design.',
+        'Complete your elegant garden retreat in Dreamy Room Level 85 . Perfect the layout and enjoy the calming atmosphere of your finished design .',
       keywords:
         'Dreamy Room Level 85, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -1022,7 +1022,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-89' },
     iframeUrl: 'https://www.youtube.com/embed/GzBXSLapCMM',
     seo: {
-      title: 'Dreamy Room Level 89 Walkthrough – Charming Winter Wonderland',
+      title: 'Dreamy Room Level 89 – Charming Winter Wonderland.',
       description:
         'Create a futuristic, workshop-inspired room in Dreamy Room Level 89 with this comprehensive guide. Follow each step for a perfect sci-fi setup.',
       keywords:

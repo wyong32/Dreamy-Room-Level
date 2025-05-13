@@ -12,9 +12,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-71' },
     iframeUrl: 'https://www.youtube.com/embed/d5fDSJC3mSs',
     seo: {
-      title: 'Dreamy Room Level 71 Walkthrough – Sleek Urban Studio with Retro Vibes',
+      title: 'Dreamy Room Level 71 – Sleek Urban Studio with Retro Vibes',
       description:
-        'A detailed guide for Dreamy Room Level 71, where you create a chic urban studio featuring retro decor and modern finishes, including a sleek sofa, vintage lighting, and eclectic artwork.',
+        'guide for Dreamy Room Level 71, where you create a chic urban studio featuring retro decor and modern finishes, including a sleek sofa, vintage lighting.',
       keywords:
         'Dreamy Room Level 71, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -105,9 +105,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-72' },
     iframeUrl: 'https://www.youtube.com/embed/G9lrql0jGLE',
     seo: {
-      title: 'Dreamy Room Level 72 Walkthrough – Antique Charm and Personal Touches',
+      title: 'Dreamy Room Level 72 – Antique Charm and Personal Touches',
       description:
-        'A detailed guide for Dreamy Room Level 72, where you create a cozy, vintage-inspired living space featuring a wooden bookshelf, comfy reading chair, and framed family photos.',
+        'guide for Dreamy Room Level 72, where you create a cozy, vintage-inspired living space featuring a wooden bookshelf, comfy reading chair, and framed family.',
       keywords:
         'Dreamy Room Level 72, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -200,7 +200,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-73' },
     iframeUrl: 'https://www.youtube.com/embed/AyJQGOyk95A',
     seo: {
-      title: 'Dreamy Room Level 73 Walkthrough – Creating a Cozy, Balanced Haven',
+      title: 'Dreamy Room Level 73 – Creating a Cozy, Balanced Haven',
       description:
         'Learn how to arrange furniture, lighting, and decorative pieces in Dreamy Room Level 73 to create a cozy, vintage-inspired space full of charm and personality.',
       keywords:
@@ -293,7 +293,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-74' },
     iframeUrl: 'https://www.youtube.com/embed/ktFzAeSxXxA',
     seo: {
-      title: 'Dreamy Room Level 74 Walkthrough – Creating a Warm, Timeless Space',
+      title: 'Dreamy Room Level 74 – Creating a Warm, Timeless Space',
       description:
         'Learn how to transform an empty room into a warm, nostalgic space in Dreamy Room Level 74 with vintage furniture, natural elements, and timeless decor.',
       keywords:
@@ -387,7 +387,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-75' },
     iframeUrl: 'https://www.youtube.com/embed/PWmk2Kru0pM',
     seo: {
-      title: 'Dreamy Room Level 75 Walkthrough – Designing a Serene, Stylish Haven',
+      title: 'Dreamy Room Level 75 – Designing a Serene, Stylish Haven',
       description:
         'Transform your empty room into a serene and stylish space in Dreamy Room Level 75 by carefully arranging furniture, lighting, and personal decor.',
       keywords:
@@ -487,9 +487,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-76' },
     iframeUrl: 'https://www.youtube.com/embed/MNc66cdqsGs',
     seo: {
-      title: 'Dreamy Room Level 76 Walkthrough – Minimalist, Contemporary Style',
+      title: 'Dreamy Room Level 76 – Minimalist, Contemporary Style',
       description:
-        'Transform your room in Dreamy Room Level 76 into a minimalist and elegant space by thoughtfully placing furniture, artwork, and decor items with precision and balance.',
+        'Transform the Dream Room 76 into a simple yet elegant space through the careful placement of furniture, artwork and decorative items.',
       keywords:
         'Dreamy Room Level 76, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -581,7 +581,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-77' },
     iframeUrl: 'https://www.youtube.com/embed/uKoVvTUPrTM',
     seo: {
-      title: 'Dreamy Room Level 77 Walkthrough – Creating a Cozy, Nostalgic Haven',
+      title: 'Dreamy Room Level 77 – Creating a Cozy, Nostalgic Haven',
       description:
         'Transform your empty room into a nostalgic, cozy space in Dreamy Room Level 77 by carefully arranging furniture, lighting, and personal decor.',
       keywords:
@@ -675,7 +675,7 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-78' },
     iframeUrl: 'https://www.youtube.com/embed/IKwkI3L7q8Y',
     seo: {
-      title: 'Dreamy Room Level 78 Walkthrough – Creating a Charming Pastel Boutique',
+      title: 'Dreamy Room Level 78 – Creating a Charming Pastel Boutique',
       description:
         'Learn how to transform your empty hexagonal space into a charming pastel boutique by placing furniture, decor, and personal items in Dreamy Room Level 78.',
       keywords:
@@ -790,9 +790,9 @@ export default [
     detailsRoute: { path: '/dreamy-room-level-79' },
     iframeUrl: 'https://www.youtube.com/embed/kgAQkbRZ3R4',
     seo: {
-      title: 'Dreamy Room Level 79 Walkthrough – Enchanting Garden Canopy Room',
+      title: 'Dreamy Room Level 79 – Enchanting Garden Canopy Room',
       description:
-        'Learn how to decorate the empty platform in Dreamy Room Level 79 to create an enchanted garden canopy, filled with floral decor, elegant furniture, and magical ambiance.',
+        'decorate the empty platform in Dreamy Room Level 79 to create an enchanted garden canopy, filled with floral decor, elegant furniture, and magical ambiance.',
       keywords:
         'Dreamy Room Level 79, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
@@ -905,7 +905,7 @@ export default [
     seo: {
       title: 'Dreamy Room Level 80 Walkthrough – Vibrant Musical Stage',
       description:
-        'Learn how to create a vibrant musical stage with drums, keyboards, DJ turntables, and more in Dreamy Room Level 80. Follow this detailed guide for placement tips and tricks.',
+        'create a vibrant musical stage with drums, keyboards, DJ turntables, and more in Dreamy Room Level 80. Follow this detailed guide for placement tips.',
       keywords:
         'Dreamy Room Level 80, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },

@@ -43,6 +43,25 @@
           </li>
         </ul>
       </nav>
+
+      <!-- Level Search Bar -->
+      <div class="level-search-container">
+        <div class="level-search-bar">
+          <span class="search-icon">🔍</span>
+          <input
+            type="number"
+            v-model="searchLevel"
+            :placeholder="searchPlaceholder"
+            min="1"
+            :max="maxLevel"
+            @keyup.enter="performSearch"
+            class="level-search-input"
+            aria-label="Search level"
+          />
+        </div>
+      </div>
+      <!-- End Level Search Bar -->
+
       <button
         class="mobile-nav-toggle"
         @click="toggleMobileMenu"
@@ -94,11 +113,13 @@
 <script>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 
 export default {
   name: 'AppHeader',
   setup() {
     const { locale, t } = useI18n()
+    const router = useRouter()
 
     const isMobileMenuOpen = ref(false)
 
@@ -238,6 +259,27 @@ export default {
         : `/${currentLocale.value}${path}`
     }
 
+    // --- Level Search Logic ---
+    const searchLevel = ref(null)
+    const maxLevel = ref(115) // Max level, as specified
+
+    const searchPlaceholder = computed(() => t('header.searchPlaceholder', { max: maxLevel.value }))
+
+    const performSearch = () => {
+      const level = parseInt(searchLevel.value)
+      if (!isNaN(level) && level >= 1 && level <= maxLevel.value) {
+        const path = `/dreamy-room-level-${level}`
+        router.push(getLocalizedPath(path))
+        searchLevel.value = null // Clear input after search
+        closeMobileMenuIfNeeded() // Also close mobile menu if open
+      } else {
+        alert(t('header.searchInvalidLevel', { max: maxLevel.value }))
+        // Optionally clear invalid input or provide better feedback
+        searchLevel.value = null
+      }
+    }
+    // --- End Level Search Logic ---
+
     return {
       // Mobile Menu
       isMobileMenuOpen,
@@ -256,6 +298,12 @@ export default {
       // Path localization
       getLocalizedPath,
       t,
+
+      // Level Search
+      searchLevel,
+      maxLevel,
+      searchPlaceholder,
+      performSearch,
     }
   },
 }
@@ -566,6 +614,78 @@ export default {
 
   .logo .logo-text {
     font-size: 1.2rem;
+  }
+}
+
+.level-search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f0e6ff; /* Light purple background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #dcd1ff;
+  transition: box-shadow 0.3s ease;
+}
+
+.level-search-bar:focus-within {
+  box-shadow: 0 0 0 2px #a17de8; /* Focus outline */
+  border-color: #a17de8;
+}
+
+.search-icon {
+  margin-right: 0.5rem;
+  color: #6a4c93; /* Icon color */
+  font-size: 0.9rem;
+}
+
+.level-search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333;
+  font-size: 0.9rem;
+  width: 120px; /* Adjust width as needed */
+  padding: 0.2rem 0;
+}
+
+/* Hide number input spinners */
+.level-search-input::-webkit-outer-spin-button,
+.level-search-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.level-search-input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.level-search-input::placeholder {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* Responsive adjustments for search bar */
+@media (max-width: 992px) {
+  .level-search-container {
+    margin-left: 1rem; /* Adjust spacing */
+  }
+  .level-search-input {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .level-search-container {
+    display: none; /* Hide desktop search bar on mobile */
+    /* Alternatively, move it inside the mobile menu if needed */
+  }
+
+  /* Ensure desktop nav doesn't interfere when hidden */
+  .desktop-nav {
+    margin-right: 0;
+  }
+
+  .level-search-container {
+    display: none;
   }
 }
 </style>

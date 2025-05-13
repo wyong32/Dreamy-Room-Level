@@ -14,7 +14,7 @@
       </a>
     </div>
 
-    <div class="guide-cards">
+    <div v-if="filteredGuides.length > 0" class="guide-cards">
       <article
         v-for="guide in filteredGuides"
         :key="guide.id"
@@ -36,6 +36,9 @@
           </h3>
         </div>
       </article>
+    </div>
+    <div v-else class="no-content-container">
+      <p>{{ $t('guides.noGuidesFound') }}</p>
     </div>
   </div>
 </template>
@@ -291,5 +294,12 @@ export default {
   .card-image {
     height: 120px;
   }
+}
+
+.no-content-container {
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 1.2rem;
+  color: #666;
 }
 </style>

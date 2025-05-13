@@ -64,6 +64,8 @@ export default {
     contact: 'Contact',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',
+    searchPlaceholder: 'Enter level (1-{max})',
+    searchInvalidLevel: 'Please enter a level between 1 and {max}.',
   },
 
   // Home Page
@@ -181,6 +183,8 @@ export default {
     levels: 'Level',
     levelRange: 'Levels {start}-{end}',
     relatedGuides: 'Related Guides',
+    noGuidesFound: 'No guides found for this category yet. Please check back later!',
+    guideNotFound: "Sorry, we couldn't find the guide you were looking for.",
   },
 
   // Blog Page
@@ -197,6 +201,8 @@ export default {
       community: 'Community',
       tips: 'Tips & Tricks',
     },
+    noBlogsFound: 'No blog posts found yet. Stay tuned!',
+    blogNotFound: "Sorry, we couldn't find the blog post you were looking for.",
   },
 
   // Download Page
