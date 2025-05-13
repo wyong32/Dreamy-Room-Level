@@ -242,7 +242,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('images/phone-screen.webp') center/cover no-repeat;
+  background: url('/images/phone-screen.webp') center/cover no-repeat;
   opacity: 0.8;
 }
 

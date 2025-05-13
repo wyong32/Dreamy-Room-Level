@@ -117,6 +117,18 @@ const loadBlogIds = () => {
   return Array.from(ids)
 }
 
+// 定义静态路径（不带前导斜杠）
+const staticPaths = [
+  '', // 对应首页 '/'
+  'dreamy-room-revel-game-guides',
+  'dreamy-room-game-blog',
+  'download-dreamy-room-game',
+  'about',
+  'contact',
+  'privacy',
+  'terms',
+]
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -125,65 +137,28 @@ export default defineConfig({
     vueDevTools(),
     ViteSitemapPlugin({
       hostname: process.env.VITE_SITE_URL || 'https://dreamy-room-level.vercel.app/',
-      exclude: ['/:id'],
-      // 添加静态路由（主页和主要页面）
-      routes: [
-        {
-          path: '/',
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 1.0,
-          changefreq: 'weekly',
-        },
-        {
-          path: '/dreamy-room-revel-game-guides',
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.9,
-          changefreq: 'weekly',
-        },
-        {
-          path: '/dreamy-room-game-blog',
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.8,
-          changefreq: 'weekly',
-        },
-        {
-          path: '/download-dreamy-room-game',
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.7,
-          changefreq: 'weekly',
-        },
-        {
-          path: '/about',
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.6,
-          changefreq: 'monthly',
-        },
-        {
-          path: '/contact',
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.6,
-          changefreq: 'monthly',
-        },
-        {
-          path: '/privacy',
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.5,
-          changefreq: 'yearly',
-        },
-        {
-          path: '/terms',
-          lastmod: new Date().toISOString().split('T')[0],
-          priority: 0.5,
-          changefreq: 'yearly',
-        },
-      ],
-      // 添加动态路由（游戏关卡和博客文章）
+      exclude: ['/:id'], // 这个可能不再需要，或者需要调整
+      // 不再使用 routes 选项
       dynamicRoutes: [
-        // 游戏关卡路由 - 使用字符串数组而不是对象数组
-        ...loadGuideIds().map((id) => id),
-        // 博客文章路由 - 使用字符串数组而不是对象数组
-        ...loadBlogIds().map((id) => id),
-      ].filter(Boolean), // 过滤掉可能的null或undefined值
+        // 先添加所有静态路径
+        ...staticPaths,
+        // 再添加动态生成的路径
+        ...loadGuideIds(), // 直接使用 loadGuideIds() 的结果
+        ...loadBlogIds(), // 直接使用 loadBlogIds() 的结果
+      ].filter(Boolean), // 过滤掉可能的空值
+      // 可以为特定路径自定义 lastmod, changefreq, priority (可选)
+      // 如果需要，可以使用 `transform` 选项来自定义每个 URL 的属性
+      // transform: async (route) => {
+      //   if (staticPaths.includes(route)) {
+      //      // 为静态路由设置不同的属性
+      //      if (route === '') return { loc: '/', priority: 1.0, changefreq: 'weekly', lastmod: new Date() }
+      //      if (route === 'dreamy-room-revel-game-guides') return { loc: `/${route}`, priority: 0.9, changefreq: 'weekly', lastmod: new Date() }
+      //      // ... 其他静态路由
+      //   } else {
+      //     // 动态路由的默认属性
+      //     return { loc: `/${route}`, priority: 0.8, changefreq: 'daily', lastmod: new Date() }
+      //   }
+      // },
       outDir: 'dist',
     }),
     robots({

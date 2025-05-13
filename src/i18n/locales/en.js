@@ -6,7 +6,7 @@ export default {
       separator: ' - ',
     },
     home: {
-      title: 'Dreamy Room Level - Game Guide & Tips',
+      title: 'Dreamy Room Level - Game Guide & Tips - DreamyRoom.co',
       description:
         'Explore every corner of the dreamy room and unlock the secrets of all levels. Find comprehensive guides, tips, and tricks for Dreamy Room Level game.',
       keywords: 'dreamy room level, game guide, puzzle game, room decoration, game tips',
