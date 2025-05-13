@@ -4,7 +4,7 @@ export default [
     title: 'Level 101',
     pageTitle: 'Dreamy Room Level 101 Game Walkthrough',
     pageSubtitle: 'Step-by-step guide for completing Level 101 of Dreamy Room',
-    category: '91-100',
+    category: '101-110',
     publishDate: '2025-05-10',
     imageUrl: 'images/guides_101.webp',
     imageAlt: 'Level 101 of the Dreamy Room game',
@@ -15,7 +15,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 101. Learn how to place each item to design a desert restaurant with Egyptian and modern elements.',
       keywords:
-        'Dreamy Room Level 101, desert restaurant, walkthrough, dreamy guide, restaurant decor, how to solve level 101, puzzle game tips',
+        'Dreamy Room Level 101, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_99.webp',
@@ -39,7 +39,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 101 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 101: Desert Restaurant</h2>
     <p>Dreamy Room Level 101 challenges you to build a desert-themed restaurant with Egyptian-inspired decor. Follow this step-by-step guide to ensure each item is placed perfectly.</p>
   
     <h3>Step 1: Place the Two Palm Trees on the Platform Edges</h3>
@@ -72,14 +72,14 @@ export default [
     <h3>Step 10: Place the Black-and-Yellow Sphinx Ornament in the Center of the Pyramid Roof</h3>
     <p>Finally, place the black-and-yellow sphinx ornament at the top of the pyramid roof. Ensure it aligns with the notch and locks into place for a dramatic finish.</p>
   
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Snap-Point Sensitivity:</strong> Be mindful of misalignments. Rotate items slightly if they won’t lock into place.</li>
       <li><strong>Orientation:</strong> Some items, like the Egyptian pillars and sphinx, need to face specific directions. Always check the highlighted outline before placing.</li>
       <li><strong>Camera Angles:</strong> Rotate and zoom as needed to get the best view of the notches and make precise placements.</li>
     </ul>
   
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Use the Snap Sound:</strong> Trust the snap sound when an object locks into place—it’s your best indicator of correct placement.</li>
       <li><strong>Take Your Time:</strong> Level 101 is challenging, so don’t rush. Double-check placements for accuracy.</li>
@@ -106,7 +106,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 102. Create a peaceful, multi-level spa room with step-by-step guidance.',
       keywords:
-        'Dreamy Room Level 102, spa room, walkthrough, decorating guide, bathroom design, home décor tips',
+        'Dreamy Room Level 102, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_102.webp',
@@ -123,7 +123,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 102 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 102: Spa-Themed Room</h2>
     <p>Dreamy Room Level 102 challenges you to create a serene and stylish spa-inspired room with a variety of decorative items. Follow this detailed guide to arrange everything with precision and finesse.</p>
 
     <h3>Step 1: Place the two cream-colored mattresses on the top platform</h3>
@@ -162,7 +162,7 @@ export default [
     <h3>Step 12: Decorate the back wall with mirrors, frames, and sink</h3>
     <p>Place the large arched mirror on the right section of the back wall and add three picture frames. Finally, position the glass bowl sink and faucet assembly next to the stairs, filling the sink with water.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Inventory Placement:</strong> Ensure perfect alignment with item outlines. Use arrow keys for micro-adjustments.</li>
       <li><strong>Layer Order:</strong> Larger background items should be placed first to avoid snapping issues.</li>
@@ -170,7 +170,7 @@ export default [
       <li><strong>Overlap Warnings:</strong> Watch for red ghost previews indicating collisions. Resolve overlaps before confirming.</li>
     </ul>
 
-    <h3>Tips and Tricks from Top Player</h3>
+    <h2>Tips and Tricks from Top Player</h2>
     <ul>
       <li><strong>Grid-Snap Strategy:</strong> Use the grid overlay for precise alignment of shelves and planters.</li>
       <li><strong>Staggered Ordering:</strong> Use a checkerboard pattern when placing objects to speed up snapping.</li>
@@ -198,7 +198,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 103. Learn how to create a beautifully designed, themed space with intricate details and perfect placements.',
       keywords:
-        'Dreamy Room Level 103, themed bedroom, walkthrough, dreamy guide, bedroom decor, how to solve level 103, puzzle game tips',
+        'Dreamy Room Level 103, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_101.webp',
@@ -215,7 +215,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 103 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 103: Whimsical Themed Bedroom</h2>
     <p>Dreamy Room Level 103 challenges you to create a whimsical themed bedroom with careful attention to detail. Follow this walkthrough to perfectly place each element and achieve the intended design.</p>
 
     <h3>Step 1: Position the Hexagonal Pink Floor Tiles</h3>
@@ -236,14 +236,14 @@ export default [
     <h3>Step 6: Arrange the Telescope, Bear Figurine, Bird Statue, Swing, and Seating</h3>
     <p>Arrange whimsical accessories such as the white telescope, tan teddy bear figurine, pink bird statue, yellow swing bench, and circular table with chairs on the upper deck.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Placement Accuracy:</strong> Pay close attention to alignments to avoid overlaps and misplacements.</li>
       <li><strong>Preview Mode:</strong> Use the preview mode to verify placement before locking objects in position.</li>
       <li><strong>Color Coordination:</strong> Ensure the elements complement each other, especially with the pink and red tones.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Double-check Symmetry:</strong> Ensure all elements, such as the staircases and railings, maintain symmetry to enhance the design.</li>
       <li><strong>Group Similar Items:</strong> Keep similar-themed items close together for a more cohesive look.</li>

@@ -44,116 +44,93 @@
 import guidesData from '@/datas/guides/index.js'
 import guidesZhData from '@/datas/guides-zh/index.js'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
+import { ref, computed, watch, onMounted } from 'vue'
 
 export default {
   name: 'GameGuides',
   setup() {
-    const { t, locale } = useI18n()
-    return {
-      t,
-      i18nLocale: locale,
-    }
-  },
-  data() {
-    return {
-      guides: [],
-      activeCategory: '01-10',
-      categories: [
-        { id: '01-10', name: 'Levels 1-10', module: 'guides-1-10' },
-        { id: '11-20', name: 'Levels 11-20', module: 'guides-11-20' },
-        { id: '21-30', name: 'Levels 21-30', module: 'guides-21-30' },
-        { id: '31-40', name: 'Levels 31-40', module: 'guides-31-40' },
-        { id: '41-50', name: 'Levels 41-50', module: 'guides-41-50' },
-        { id: '51-60', name: 'Levels 51-60', module: 'guides-51-60' },
-        { id: '61-70', name: 'Levels 61-70', module: 'guides-61-70' },
-        { id: '71-80', name: 'Levels 71-80', module: 'guides-71-80' },
-        { id: '81-90', name: 'Levels 81-90', module: 'guides-81-90' },
-        { id: '91-100', name: 'Levels 91-100', module: 'guides-91-100' },
-        { id: '101-110', name: 'Levels 101-110', module: 'guides-101-110' },
-      ],
-    }
-  },
-  created() {
-    // 初始加载指南数据
-    this.loadGuides()
-  },
-  computed: {
-    filteredGuides() {
-      return this.guides
-    },
-  },
-  methods: {
-    async loadGuides() {
-      const currentLocale = this.i18nLocale
+    const { t, locale: i18nLocale } = useI18n()
+    const router = useRouter()
 
+    const guides = ref([])
+    const activeCategory = ref('01-10')
+    const categories = ref([
+      { id: '01-10', name: 'Levels 1-10' },
+      { id: '11-20', name: 'Levels 11-20' },
+      { id: '21-30', name: 'Levels 21-30' },
+      { id: '31-40', name: 'Levels 31-40' },
+      { id: '41-50', name: 'Levels 41-50' },
+      { id: '51-60', name: 'Levels 51-60' },
+      { id: '61-70', name: 'Levels 61-70' },
+      { id: '71-80', name: 'Levels 71-80' },
+      { id: '81-90', name: 'Levels 81-90' },
+      { id: '91-100', name: 'Levels 91-100' },
+      { id: '101-110', name: 'Levels 101-110' },
+    ])
+
+    const loadGuides = () => {
       try {
-        if (currentLocale === 'zh') {
-          // 加载中文指南数据
-          this.guides = guidesZhData.filter((guide) => guide.category === this.activeCategory)
-        } else {
-          // 加载英文指南数据
-          this.guides = guidesData.filter((guide) => guide.category === this.activeCategory)
-        }
+        const sourceData = i18nLocale.value === 'zh' ? guidesZhData : guidesData
+        guides.value = sourceData.filter((guide) => guide.category === activeCategory.value)
       } catch (error) {
         console.error('Error loading guides:', error)
-        this.guides = []
+        guides.value = []
       }
-    },
+    }
 
-    async setActiveCategory(categoryId) {
-      this.activeCategory = categoryId
+    const setActiveCategory = (categoryId) => {
+      if (activeCategory.value !== categoryId) {
+        activeCategory.value = categoryId
+        loadGuides()
+        sessionStorage.setItem('gameGuidesActiveCategory', categoryId)
+      }
+    }
 
-      // 切换类别时重新加载指南数据
-      await this.loadGuides()
-    },
+    const initializeActiveCategory = () => {
+      const savedCategory = sessionStorage.getItem('gameGuidesActiveCategory')
+      if (savedCategory && categories.value.some((cat) => cat.id === savedCategory)) {
+        activeCategory.value = savedCategory
+      } else if (categories.value.length > 0) {
+        activeCategory.value = categories.value[0].id
+      }
+      loadGuides()
+    }
 
-    navigateToGuide(guide) {
-      // 使用 this.i18nLocale 而不是 useI18n()
-      const currentLocale = this.i18nLocale
+    onMounted(() => {
+      initializeActiveCategory()
+    })
 
-      console.log('Current locale:', currentLocale)
-      console.log('Guide ID:', guide.id)
-      console.log('Guide object:', guide)
-      console.log('Guide detailsRoute:', guide.detailsRoute)
+    watch(i18nLocale, () => {
+      loadGuides()
+    })
 
-      // 确保 guide.detailsRoute.path 存在
+    const filteredGuides = computed(() => guides.value)
+
+    const navigateToGuide = (guide) => {
       if (!guide.detailsRoute || !guide.detailsRoute.path) {
         console.error('Guide detailsRoute.path is undefined or null')
         return
       }
+      router.push({ path: guide.detailsRoute.path })
+    }
 
-      // 使用更直接的方式进行导航
-      if (currentLocale === 'en') {
-        // 英文路由
-        const path = guide.detailsRoute.path
-        console.log('Navigating to:', path)
-        // 使用window.location.href进行导航
-        window.location.href = path
-      } else {
-        // 非英文路由
-        const path = `/${currentLocale}${guide.detailsRoute.path}`
-        console.log('Navigating to:', path)
-        // 使用window.location.href进行导航
-        window.location.href = path
-      }
-    },
-
-    getCategoryName(category) {
-      // 根据当前语言返回翻译后的类别名称
+    const getCategoryName = (category) => {
       const id = category.id
       const range = id.split('-')
-      return this.t('guides.levelRange', { start: range[0], end: range[1] })
-    },
-  },
+      return t('guides.levelRange', { start: range[0], end: range[1] })
+    }
 
-  watch: {
-    // 监听语言变化，重新加载指南数据
-    i18nLocale: {
-      handler() {
-        this.loadGuides()
-      },
-      immediate: true,
-    },
+    return {
+      t,
+      i18nLocale,
+      activeCategory,
+      categories,
+      filteredGuides,
+      setActiveCategory,
+      navigateToGuide,
+      getCategoryName,
+    }
   },
 }
 </script>
@@ -256,8 +233,36 @@ export default {
   }
 
   .guide-cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .card-image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .guides-container {
+    padding: 1.5rem 0;
+  }
+
+  .level-nav {
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .level-nav-item {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .guide-cards {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1.2rem;
+  }
+
+  .card-image {
+    height: 140px;
   }
 
   .card-content h3 {
@@ -265,64 +270,26 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
-  .level-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.6rem;
-    margin-bottom: 1rem;
-  }
-
-  .level-nav-item {
-    padding: 0.6rem 1rem;
-    font-size: 0.85rem;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  .guide-cards {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 1rem;
-  }
-
-  .card-image {
-    height: 150px;
-  }
-
-  .card-content {
-    padding: 0.8rem;
-  }
-
-  .card-content h3 {
-    font-size: 0.85rem;
-  }
-}
-
 @media (max-width: 480px) {
-  .guides-container {
-    padding: 0;
+  .level-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 0.5rem; /* For scrollbar visibility */
+    white-space: nowrap; /* Prevent wrapping */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   }
 
   .level-nav-item {
-    padding: 0.5rem 0.5rem;
-    font-size: 0.8rem;
+    flex: 0 0 auto; /* Prevent shrinking */
   }
 
   .guide-cards {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 0.8rem;
   }
 
   .card-image {
     height: 120px;
-  }
-
-  .card-content {
-    padding: 0.6rem;
-  }
-
-  .card-content h3 {
-    font-size: 0.8rem;
   }
 }
 </style>

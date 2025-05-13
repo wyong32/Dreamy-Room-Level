@@ -5,7 +5,7 @@
     <div class="container">
       <div class="page-header">
         <h1 class="page-title"><span class="title-icon">📖</span> {{ $t('guides.title') }}</h1>
-        <p class="page-description">{{ $t('guides.description') }}</p>
+        <h2 class="page-description">{{ $t('guides.description') }}</h2>
       </div>
 
       <!-- Game Guides Component -->

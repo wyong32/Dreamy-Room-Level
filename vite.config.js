@@ -124,7 +124,7 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
     ViteSitemapPlugin({
-      hostname: 'https://dreamy-room-level.vercel.app/',
+      hostname: process.env.VITE_SITE_URL || 'https://dreamy-room-level.vercel.app/',
       exclude: ['/:id'],
       // 添加静态路由（主页和主要页面）
       routes: [
@@ -135,22 +135,46 @@ export default defineConfig({
           changefreq: 'weekly',
         },
         {
-          path: '/guides',
+          path: '/dreamy-room-revel-game-guides',
           lastmod: new Date().toISOString().split('T')[0],
           priority: 0.9,
           changefreq: 'weekly',
         },
         {
-          path: '/blog',
+          path: '/dreamy-room-game-blog',
           lastmod: new Date().toISOString().split('T')[0],
           priority: 0.8,
           changefreq: 'weekly',
         },
         {
-          path: '/download',
+          path: '/download-dreamy-room-game',
           lastmod: new Date().toISOString().split('T')[0],
           priority: 0.7,
           changefreq: 'weekly',
+        },
+        {
+          path: '/about',
+          lastmod: new Date().toISOString().split('T')[0],
+          priority: 0.6,
+          changefreq: 'monthly',
+        },
+        {
+          path: '/contact',
+          lastmod: new Date().toISOString().split('T')[0],
+          priority: 0.6,
+          changefreq: 'monthly',
+        },
+        {
+          path: '/privacy',
+          lastmod: new Date().toISOString().split('T')[0],
+          priority: 0.5,
+          changefreq: 'yearly',
+        },
+        {
+          path: '/terms',
+          lastmod: new Date().toISOString().split('T')[0],
+          priority: 0.5,
+          changefreq: 'yearly',
         },
       ],
       // 添加动态路由（游戏关卡和博客文章）

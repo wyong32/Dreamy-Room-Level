@@ -19,7 +19,7 @@
           </li>
           <li>
             <router-link
-              :to="getLocalizedPath('/guides')"
+              :to="getLocalizedPath('/dreamy-room-revel-game-guides')"
               :title="$t('header.guides')"
               @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link
@@ -27,7 +27,7 @@
           </li>
           <li>
             <router-link
-              :to="getLocalizedPath('/blog')"
+              :to="getLocalizedPath('/dreamy-room-game-blog')"
               :title="$t('header.blog')"
               @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">📝</span> {{ $t('header.blog') }}</router-link
@@ -35,7 +35,7 @@
           </li>
           <li>
             <router-link
-              :to="getLocalizedPath('/download')"
+              :to="getLocalizedPath('/download-dreamy-room-game')"
               :title="$t('header.download')"
               @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">⬇️</span> {{ $t('header.download') }}</router-link
@@ -64,7 +64,7 @@
         </li>
         <li>
           <router-link
-            :to="getLocalizedPath('/guides')"
+            :to="getLocalizedPath('/dreamy-room-revel-game-guides')"
             :title="$t('header.guides')"
             @click="closeMobileMenu"
             ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link
@@ -72,7 +72,7 @@
         </li>
         <li>
           <router-link
-            :to="getLocalizedPath('/blog')"
+            :to="getLocalizedPath('/dreamy-room-game-blog')"
             :title="$t('header.blog')"
             @click="closeMobileMenu"
             ><span class="nav-icon">📝</span> {{ $t('header.blog') }}</router-link
@@ -80,7 +80,7 @@
         </li>
         <li>
           <router-link
-            :to="getLocalizedPath('/download')"
+            :to="getLocalizedPath('/download-dreamy-room-game')"
             :title="$t('header.download')"
             @click="closeMobileMenu"
             ><span class="nav-icon">⬇️</span> {{ $t('header.download') }}</router-link

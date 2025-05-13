@@ -36,11 +36,13 @@
               :title="$t('footer.quickLinks.guides')"
               >{{ $t('footer.quickLinks.guides') }}</router-link
             >
-            <router-link :to="getLocalizedPath('/blog')" :title="$t('footer.quickLinks.blog')">{{
-              $t('footer.quickLinks.blog')
-            }}</router-link>
             <router-link
-              :to="getLocalizedPath('/download')"
+              :to="getLocalizedPath('/dreamy-room-game-blog')"
+              :title="$t('footer.quickLinks.blog')"
+              >{{ $t('footer.quickLinks.blog') }}</router-link
+            >
+            <router-link
+              :to="getLocalizedPath('/download-dreamy-room-game')"
               :title="$t('footer.quickLinks.download')"
               >{{ $t('footer.quickLinks.download') }}</router-link
             >

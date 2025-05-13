@@ -11,7 +11,6 @@
     <div class="container">
       <div class="guide-header">
         <h1>{{ guide.pageTitle }}</h1>
-        <p class="guide-subtitle">{{ guide.pageSubtitle }}</p>
       </div>
 
       <div class="guide-content">
@@ -171,9 +170,9 @@ export default {
         console.error('Guide not found')
         // 重定向到指南页面
         if (currentLocale === 'en') {
-          this.$router.push('/guides')
+          this.$router.push('/dreamy-room-revel-game-guides')
         } else {
-          this.$router.push(`/${currentLocale}/guides`)
+          this.$router.push(`/${currentLocale}/dreamy-room-revel-game-guides`)
         }
       }
     },
@@ -262,9 +261,13 @@ export default {
 
 .guide-header h1 {
   color: #333;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1.5rem;
   font-size: 2.2rem;
-  font-weight: 600;
+  border-bottom: 2px solid #6a4c93;
+  padding-bottom: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .guide-subtitle {
@@ -308,7 +311,7 @@ export default {
   color: #333;
   font-size: 1.05rem;
 }
-
+/* 
 .guide-details h2 {
   color: #333;
   margin: 2rem 0 1.5rem;
@@ -316,25 +319,48 @@ export default {
   border-bottom: 1px solid #eee;
   padding-bottom: 0.8rem;
   font-weight: 600;
-}
+} */
 
-.guide-details h3 {
-  color: #333;
-  margin: 2.5rem 0 1rem;
-  font-size: 1.4rem;
-  position: relative;
+.guide-details h2 {
+  color: #4b3869;
+  margin: 2rem 0 1.2rem;
+  font-size: 1.45rem;
   font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.4rem;
+  background: none;
+  border-radius: 0;
+  letter-spacing: 0.01em;
 }
 
 /* 步骤标题特殊样式 */
-.guide-details h3[id^='step-'],
-.guide-details h3:nth-of-type(-n + 12):not([id]) {
+.guide-details h2[id^='step-'],
+.guide-details h2:nth-of-type(-n + 12):not([id]) {
   background-color: #f8f9fa;
   border-left: 4px solid #6a4c93;
   border-radius: 0;
   padding: 0.8rem 1rem 0.8rem 1rem;
   margin: 2rem 0 1.2rem;
   font-weight: 600;
+}
+
+.guide-details h3 {
+  color: #8e7cc3;
+  margin: 1.2rem 0 0.8rem 0;
+  font-size: 1.08rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 1px dashed #d1c4e9;
+  padding: 0 0 0.3rem 0;
+  border-radius: 0;
+  box-shadow: none;
+  letter-spacing: 0.01em;
+  transition: color 0.2s;
+}
+.guide-details h3:hover {
+  color: #6a4c93;
+  background: none;
 }
 
 .guide-details p {
@@ -539,7 +565,9 @@ export default {
   }
 
   .guide-header h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin: 1.2rem 0 1rem;
+    padding-bottom: 0.5rem;
   }
 
   .guide-subtitle {
@@ -555,18 +583,20 @@ export default {
   }
 
   .guide-details h2 {
-    font-size: 1.6rem;
-    margin: 1.8rem 0 1rem;
+    font-size: 1.1rem;
+    margin: 1.2rem 0 0.7rem;
+    padding-bottom: 0.2rem;
   }
 
   .guide-details h3 {
-    font-size: 1.3rem;
-    margin: 1.8rem 0 0.8rem;
+    font-size: 0.98rem;
+    margin: 0.8rem 0 0.5rem 0;
+    padding-bottom: 0.2rem;
   }
 
   /* 步骤标题特殊样式 - 移动端 */
-  .guide-details h3[id^='step-'],
-  .guide-details h3:nth-of-type(-n + 12):not([id]) {
+  .guide-details h2[id^='step-'],
+  .guide-details h2:nth-of-type(-n + 12):not([id]) {
     padding: 0.7rem 1rem 0.7rem 1rem;
     margin: 1.8rem 0 1rem;
   }
@@ -593,7 +623,9 @@ export default {
   }
 
   .guide-header h1 {
-    font-size: 1.6rem;
+    font-size: 1.18rem;
+    margin: 0.8rem 0 0.7rem;
+    padding-bottom: 0.3rem;
   }
 
   .guide-subtitle {
@@ -609,11 +641,15 @@ export default {
   }
 
   .guide-details h2 {
-    font-size: 1.4rem;
+    font-size: 0.98rem;
+    margin: 0.7rem 0 0.4rem;
+    padding-bottom: 0.1rem;
   }
 
   .guide-details h3 {
-    font-size: 1.2rem;
+    font-size: 0.89rem;
+    margin: 0.5rem 0 0.3rem 0;
+    padding-bottom: 0.1rem;
   }
 
   .guide-details ul,

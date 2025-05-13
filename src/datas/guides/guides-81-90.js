@@ -17,7 +17,7 @@ export default [
       description:
         'Complete your two-tiered space in Dreamy Room Level 81 by following these placement steps for a cozy and activity-packed design. Perfect your layout and enjoy a satisfying build.',
       keywords:
-        'Dreamy Room Level 81, two-tiered space, cozy haven, sports car, trampoline, gaming desk, sports posters',
+        'Dreamy Room Level 81, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_81.webp',
@@ -41,7 +41,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 81 Walkthrough – Cozy Activity-Packed Haven</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 81: Cozy Activity-Packed Haven</h2>
     <p>Welcome to Dreamy Room Level 81! In this level, you’ll turn an empty two-tiered space into a cozy haven filled with various activities. Follow these steps to position each item and complete this challenge.</p>
 
     <h3>Step 1: Place the Red Sports Car in the Garage Nook</h3>
@@ -153,7 +153,7 @@ export default [
       description:
         'Create the ultimate chic home office in Dreamy Room Level 82 by following these precise object placements. Achieve the perfect mix of style and productivity.',
       keywords:
-        'Dreamy Room Level 82, chic home office, desk setup, indoor plants, minimalist design, Dreamy Room walkthrough',
+        'Dreamy Room Level 82, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_82.webp',
@@ -177,7 +177,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 82 Walkthrough – Chic Home Office</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 82: Chic Home Office</h2>
     <p>Welcome to Dreamy Room Level 82! This level challenges you to turn an empty space into a sleek and efficient home office. Use the steps below to place each item correctly and complete the level with a stylish result.</p>
 
     <h3>Step 1: Position the White L-Shaped Desk Against the Back Wall</h3>
@@ -260,7 +260,7 @@ export default [
       description:
         'Complete your two-tiered sci-fi chamber in Dreamy Room Level 83 by following these placement steps for a cozy and futuristic design. Perfect your layout and enjoy a satisfying build.',
       keywords:
-        'Dreamy Room Level 83, sci-fi chamber, cozy, futuristic, space decor, bioreactor, control panel',
+        'Dreamy Room Level 83, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_83.webp',
@@ -284,7 +284,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 83 Walkthrough – Cozy Futuristic Sci-Fi Chamber</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 83: Cozy Futuristic Sci-Fi Chamber</h2>
     <p>Welcome to Dreamy Room Level 83! In this level, you’ll transform a plain two-tiered sci-fi chamber into a cozy and functional futuristic space. Follow these steps for the perfect layout!</p>
 
     <h3>Step 1: Place the Single Bed in the Lower-Left Alcove</h3>
@@ -332,7 +332,7 @@ export default [
     <h3>Step 15: Add the Maintenance Drone Orb, Coffee Mug, and Potted Plant</h3>
     <p>Place the hovering drone orb beside the desk, set the coffee mug on the desktop near the right monitor, and add a small potted plant for a cozy touch.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Rotation:</strong> Each item has a preferred orientation. Use the rotate tool before placing items.</li>
       <li><strong>Overlap Check:</strong> Ensure no items overlap; misaligned objects will snap back.</li>
@@ -340,7 +340,7 @@ export default [
       <li><strong>Inventory Order:</strong> Group similar objects for quicker placement.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Grid Overlay:</strong> Use the grid to align objects perfectly.</li>
       <li><strong>Quick-Swap Tools:</strong> Bind rotate and move keys to hotkeys for fast adjustments.</li>
@@ -369,7 +369,8 @@ export default [
       title: 'Dreamy Room Level 84 Walkthrough – Serene Japanese Spa Haven',
       description:
         'Complete your serene Japanese spa haven in Dreamy Room Level 84 with these detailed placement steps. Perfect the layout and enjoy the calming atmosphere of your finished design.',
-      keywords: 'Dreamy Room Level 84, Japanese spa, serene, water fountain, bamboo, torii gate',
+      keywords:
+        'Dreamy Room Level 84, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_84.webp',
@@ -393,7 +394,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 84 Walkthrough – Serene Japanese Spa Haven</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 84: Serene Japanese Spa Haven</h2>
     <p>Welcome to Dreamy Room Level 84! In this level, you'll be transforming a blank space into a serene Japanese spa haven. Follow these steps to perfect your layout and create a peaceful, calming atmosphere.</p>
 
     <h3>Step 1: Place the Circular Stone Floor Slab in the Center</h3>
@@ -444,7 +445,7 @@ export default [
     <h3>Step 16: Hang Paper Lanterns from Both Structures</h3>
     <p>Finally, hang one yellow paper lantern from the torii gate’s crossbar and another from the side post of the pavilion. This completes the serene ambiance of your spa haven.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Precision:</strong> Getting each piece perfectly aligned is crucial—reset and try again if needed.</li>
       <li><strong>Overlapping Items:</strong> Watch for auto-layering with pieces like the barrel and inner stones.</li>
@@ -452,7 +453,7 @@ export default [
       <li><strong>Undo:</strong> Use the undo button to preserve grid alignment when resetting.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Grid Snapping:</strong> Enable the “show grid” option to view snap points before placement.</li>
       <li><strong>Quick Rotate:</strong> Tap an object to rotate it in 45° increments, essential for aligning the shoji screens.</li>
@@ -482,7 +483,7 @@ export default [
       description:
         'Complete your elegant garden retreat in Dreamy Room Level 85 with these detailed placement steps. Perfect the layout and enjoy the calming atmosphere of your finished design.',
       keywords:
-        'Dreamy Room Level 85, elegant garden retreat, pastel seating, two-story design, fireplace, dining table',
+        'Dreamy Room Level 85, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_85.webp',
@@ -506,7 +507,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 85 Walkthrough – Elegant Garden Retreat</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 85: Elegant Garden Retreat</h2>
     <p>Welcome to Dreamy Room Level 85! In this level, you’ll transform a two-story space into an elegant garden retreat. Follow these steps to arrange each item for the perfect cozy and refined atmosphere.</p>
 
     <h3>Step 1: Arrange the Pastel Seating Set Upstairs</h3>
@@ -566,7 +567,7 @@ export default [
     <h3>Step 19: Set the Panda Figurine by the Hearth</h3>
     <p>Finally, on the hearth next to the fireplace, position the panda plush figurine facing toward the room for a heartwarming touch.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Grid Snapping:</strong> Misaligned placement may block future objects, as each item snaps to a hidden grid.</li>
       <li><strong>No Rotation:</strong> Objects cannot be rotated. Place carefully in their fixed orientations.</li>
@@ -575,7 +576,7 @@ export default [
       <li><strong>No Timer:</strong> There is no timer, so take your time to arrange each piece accurately.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Work Outside-In:</strong> Begin with large furniture (staircase, fireplace, table) and then add decor.</li>
       <li><strong>Use the Overlay:</strong> Toggle the transparent placement preview to check for overlaps before placing items.</li>
@@ -607,7 +608,7 @@ export default [
       description:
         'Master Dreamy Room Level 86 with this detailed walkthrough. Create a cozy pastel diorama complete with a celestial orb, plush sofa, and vintage decor.',
       keywords:
-        'Dreamy Room Level 86, pastel diorama, cozy platform, celestial orb, curved sectional sofa, vintage desk',
+        'Dreamy Room Level 86, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_86.webp',
@@ -631,7 +632,7 @@ export default [
       ],
     },
     detailsHtml: `
-        <h2>Dreamy Room Level 86 Walkthrough – Cozy Pastel Diorama</h2>
+        <h2>Step-by-step guide for Dreamy Room Level 86: Cozy Pastel Diorama</h2>
         <p>Welcome to Dreamy Room Level 86! This level challenges you to transform an empty circular platform into a cozy, pastel-perfect diorama filled with cherished objects. Follow these detailed steps to complete your design and reveal the hidden life story behind each placement.</p>
 
         <h3>Step 1: Place the Crescent Canopy Arch in the Back Center</h3>
@@ -700,7 +701,7 @@ export default [
         <h3>Step 22: Place the Potted Plant on a Wooden Stool at the Front-Right</h3>
         <p>Finally, position the leafy green plant in its purple pot atop the three-legged wooden stool just beyond the globe, completing the peaceful diorama.</p>
 
-        <h3>Notes and Precautions</h3>
+        <h2>Notes and Precautions</h2>
         <ul>
           <li><strong>Avoid Overlapping:</strong> Ensure no two objects share the same footprint to prevent blocking placement.</li>
           <li><strong>Snap-to-Grid Feature:</strong> Use the snap guides for perfect alignment, especially for the canopy and desk.</li>
@@ -708,7 +709,7 @@ export default [
           <li><strong>Rotation Lock:</strong> Engage the rotation lock for circular items like the orb and globe to prevent drift.</li>
         </ul>
 
-        <h3>Tips and Tricks</h3>
+        <h2>Tips and Tricks</h2>
         <ul>
           <li><strong>Batch Placement:</strong> Group similar objects (e.g., tabletop items) for faster placement.</li>
           <li><strong>Use Zoom:</strong> Zoom in for precise placement, especially for small items like the diamonds and orb.</li>
@@ -738,7 +739,7 @@ export default [
       description:
         'Transform your Dreamy Room into a tropical haven with this detailed guide. Follow each step to arrange lush greenery, stylish furniture, and vibrant accents.',
       keywords:
-        'Dreamy Room Level 87, tropical decor, music-themed room, cozy space, platform decorating guide',
+        'Dreamy Room Level 87, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_87.webp',
@@ -762,7 +763,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 87 Walkthrough – Glamorous Tropical Escape</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 87: Glamorous Tropical Escape</h2>
     <p>Welcome to Dreamy Room Level 87! Your goal is to create a tropical music-themed environment filled with cozy vibes and functional music gear. Follow this step-by-step guide to place each item precisely and bring the tropical atmosphere to life.</p>
 
     <h3>Step 1: Place the Wooden Cabinet in the Bottom-Left Corner</h3>
@@ -858,7 +859,7 @@ export default [
     <h3>Step 31: Place the Teddy Bear Plush and Orange Cushion to the Right of the Coffee Table</h3>
     <p>Position the beige teddy and the orange cushion side by side on the rug’s right edge to finish the cozy corner.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>No Timer:</strong> Take your time to match placements exactly, as there is no countdown.</li>
       <li><strong>Layer Ordering:</strong> Always drop background wall items before adding props in front to avoid occlusion mistakes.</li>
@@ -886,7 +887,7 @@ export default [
       description:
         'Create a warm, autumn-inspired kitchen in Dreamy Room Level 88 with this comprehensive guide. Follow each step to arrange the cozy kitchen items perfectly.',
       keywords:
-        'Dreamy Room Level 88, cozy autumn kitchen, pumpkin-shaped room, fall decor, kitchen design, fall-inspired decor',
+        'Dreamy Room Level 88, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_88.webp',
@@ -910,7 +911,7 @@ export default [
       ],
     },
     detailsHtml: `
-        <h2>Dreamy Room Level 88 Walkthrough – Cozy Autumn Kitchen</h2>
+        <h2>Step-by-step guide for Dreamy Room Level 88: Cozy Autumn Kitchen</h2>
         <p>Welcome to Dreamy Room Level 88! Your mission is to transform a pumpkin-shaped room into a cozy, autumn-inspired kitchen. This guide will walk you through every step to ensure you place each item perfectly for a warm and inviting kitchen atmosphere.</p>
 
         <h3>Step 1: Place the Wooden Rolling Pin on the Left Wall Hooks</h3>
@@ -988,7 +989,7 @@ export default [
         <h3>Step 18: Final Placement Check</h3>
         <p>Walk through the room and ensure that every item matches the completed image’s locations. The key challenge is precision, so double-check alignments and spacing for the perfect cozy kitchen.</p>
 
-        <h3>Notes and Precautions</h3>
+        <h2>Notes and Precautions</h2>
         <ul>
           <li><strong>No Timer:</strong> Dreamy Room Level 88 is untimed, so focus on accuracy over speed.</li>
           <li><strong>Snap-to-Grid:</strong> Objects will “snap” into preset slots. If an item won’t attach, try nudging it slightly.</li>
@@ -996,7 +997,7 @@ export default [
           <li><strong>Undo Button:</strong> You can always undo a placement if an object lands incorrectly.</li>
         </ul>
 
-        <h3>Tips and Tricks</h3>
+        <h2>Tips and Tricks</h2>
         <ul>
           <li><strong>Batch Placement:</strong> Group similar items together for faster placement.</li>
           <li><strong>Zoom In:</strong> Zoom in to ensure precise placement, especially for smaller items.</li>
@@ -1025,7 +1026,7 @@ export default [
       description:
         'Create a futuristic, workshop-inspired room in Dreamy Room Level 89 with this comprehensive guide. Follow each step for a perfect sci-fi setup.',
       keywords:
-        'Dreamy Room Level 89, sci-fi workshop, futuristic room design, tech decor, robot figurines, workshop tools',
+        'Dreamy Room Level 89, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_89.webp',
@@ -1049,7 +1050,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 89 Walkthrough – Charming Winter Wonderland</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 89: Charming Winter Wonderland</h2>
     <p>Welcome to Dreamy Room Level 89! In this level, you'll need to create a futuristic workshop complete with robots, tech gadgets, and minimalistic furnishings. Follow these steps carefully to get everything in place.</p>
 
     <h3>Step 1: Place the Empty Room Shell</h3>
@@ -1103,7 +1104,7 @@ export default [
     <h3>Step 17: Add Cooler Boxes</h3>
     <p>Place the grey and pink cooler boxes side by side on the floor near the desk, completing the futuristic look of the room.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Snap-to-Grid:</strong> Objects will snap into preset slots. Be cautious of any misalignments.</li>
       <li><strong>Space Considerations:</strong> Make sure there is enough space between items to avoid overlap.</li>
@@ -1130,7 +1131,7 @@ export default [
       description:
         'Create a cozy sushi café in Dreamy Room Level 90 with this step-by-step guide. Design the space with functional and decorative elements.',
       keywords:
-        'Dreamy Room Level 90, sushi café, cozy cafe design, sushi counter, koi fish, cat chef',
+        'Dreamy Room Level 90, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_90.webp',
@@ -1154,7 +1155,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 90 Walkthrough – Cozy Sushi Café</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 89: Cozy Sushi Café</h2>
     <p>Welcome to Dreamy Room Level 90! In this level, you'll create a charming, cozy sushi café. From setting up the wooden floors to arranging the sushi bar and seating, follow these steps carefully to create your perfect sushi spot.</p>
 
     <h3>Step 1: Place the Wooden Floor Panel</h3>
@@ -1217,7 +1218,7 @@ export default [
     <h3>Step 20: Place the Entrance A-Board Sign</h3>
     <p>Finally, position the wooden A-frame chalkboard sign near the front steps to announce the café’s grand opening.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Alignment:</strong> Walls and floors must snap into place precisely. Misaligned pieces can block object placement.</li>
       <li><strong>Layer Order:</strong> Start with the base elements (floor, walls, railing) before adding decorations to avoid occlusion.</li>

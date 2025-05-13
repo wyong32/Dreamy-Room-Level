@@ -16,7 +16,7 @@ export default [
       description:
         'A detailed walkthrough for completing Dreamy Room Level 61, turning the space into a whimsical seaside-themed haven.',
       keywords:
-        'Dreamy Room Level 61, seaside, beach umbrellas, shell structure, green creatures, picnic table, coral, seaweed',
+        'Dreamy Room Level 61, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_61.webp',
@@ -40,47 +40,47 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 61 Walkthrough – Seaside Paradise Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 61: Seaside Paradise</h2>
     <p>Welcome to Dreamy Room Level 61! This delightful puzzle challenges you to arrange seaside-themed objects into their perfect spots. Follow these steps to create a charming coastal paradise.</p>
 
-    <h3>Walkthrough Steps</h3>
+    <h2>Walkthrough Steps</h2>
 
-    <h2>Step 1: Place the Large Shell Structure at the Center</h2>
+    <h3>Step 1: Place the Large Shell Structure at the Center</h3>
     <p>Start by placing the large shell-shaped structure in the center of the room on the sandy spot. This shell is the focal point, and all other items will revolve around it.</p>
 
-    <h2>Step 2: Position the Beach Umbrellas</h2>
+    <h3>Step 2: Position the Beach Umbrellas</h3>
     <p>Place the two blue-and-white beach umbrellas in front of the large shell structure. These umbrellas create a shaded, cozy spot for relaxation.</p>
 
-    <h2>Step 3: Set the Picnic Tables and Seating Area</h2>
+    <h3>Step 3: Set the Picnic Tables and Seating Area</h3>
     <p>Next, position the picnic tables and pink seats beneath the umbrellas, directly in front of the shell. This creates a welcoming area for the green creatures to gather.</p>
 
-    <h2>Step 4: Decorate with Green Creatures</h2>
+    <h3>Step 4: Decorate with Green Creatures</h3>
     <p>Place the cute green creatures around the seating area. One lounges in a pink inner tube, two sit at the table, and others can be seated around the area, adding a lively touch.</p>
 
-    <h2>Step 5: Arrange the Decorative Items and Food</h2>
+    <h3>Step 5: Arrange the Decorative Items and Food</h3>
     <p>Place food items like cupcakes and drinks on the picnic tables, ensuring they are evenly spaced for a balanced look.</p>
 
-    <h2>Step 6: Enhance with Beach Toys</h2>
+    <h3>Step 6: Enhance with Beach Toys</h3>
     <p>Place colorful beach balls around the seating area to introduce playful elements and complement the whimsical theme of the room.</p>
 
-    <h2>Step 7: Finalize with Coral and Seaweed</h2>
+    <h3>Step 7: Finalize with Coral and Seaweed</h3>
     <p>Complete the seaside paradise by placing coral formations (in orange, red, and pink) and green seaweed around the perimeter of the sandy area. These elements frame the scene and enhance the oceanic vibe.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Proper Spacing:</strong> Be mindful of not overcrowding areas. Proper spacing enhances the aesthetics and gameplay satisfaction.</li>
       <li><strong>Focus on Harmony:</strong> Dreamy Room Level 61 is about creating a harmonious arrangement. Pay close attention to placement hints provided during gameplay.</li>
       <li><strong>Avoid Forced Placements:</strong> Ensure each item fits naturally in its environment. A relaxed and inviting atmosphere is key to completing the level successfully.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Use the Snapping Feature:</strong> If you're unsure about placement, temporarily place an item and see if it "snaps" into position. This feature will help guide you.</li>
       <li><strong>No Timers:</strong> Since Dreamy Room Level 61 has no timers, take your time experimenting with different configurations until you get it right.</li>
       <li><strong>Group Similar Items:</strong> Grouping similar items or coordinating colors can help you find the ideal layout more quickly.</li>
     </ul>
 
-    <h3>Final Thoughts</h3>
+    <h2>Final Thoughts</h2>
     <p>With these steps, you'll turn Dreamy Room Level 61 into a serene and charming seaside retreat, where every item plays a part in telling a delightful story. Enjoy the calming atmosphere and have fun decorating!</p>
   `,
   },
@@ -102,7 +102,7 @@ export default [
       description:
         'A detailed walkthrough for completing Dreamy Room Level 62, turning the space into a cozy and inviting boutique with stylish decor.',
       keywords:
-        'Dreamy Room Level 62, boutique, clothes racks, display shelves, mirror, glass partitions, cozy, decorative plants',
+        'Dreamy Room Level 62, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_62.webp',
@@ -126,50 +126,50 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 62 Walkthrough – Cozy Boutique Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 62: Cozy Boutique</h2>
     <p>Welcome to Dreamy Room Level 62! In this puzzle, you will transform an empty space into a cozy boutique filled with stylish clothes, accessories, and decorations. Follow the steps below to complete this level with ease.</p>
 
-    <h3>Walkthrough Steps</h3>
+    <h2>Walkthrough Steps</h2>
 
-    <h2>Step 1: Place the Green Curtains on the Large Window</h2>
+    <h3>Step 1: Place the Green Curtains on the Large Window</h3>
     <p>Start by hanging the soft green curtains on the large, arch-topped window located on the left side of the room. This will bring warmth and a sense of privacy to your boutique.</p>
 
-    <h2>Step 2: Position the Clothes Racks</h2>
+    <h3>Step 2: Position the Clothes Racks</h3>
     <p>Place the main clothes rack, which contains colorful dresses, along the rear wall. Ensure that the dresses are clearly visible to enhance the inviting boutique atmosphere.</p>
 
-    <h2>Step 3: Install Display Shelves</h2>
+    <h3>Step 3: Install Display Shelves</h3>
     <p>Next, position two tall display shelves along the right-side wall. Arrange hats, handbags, and gift boxes neatly on the shelves to keep the boutique organized and welcoming.</p>
 
-    <h2>Step 4: Arrange the Central Display Table</h2>
+    <h3>Step 4: Arrange the Central Display Table</h3>
     <p>Place the central display table in the lower middle area of the room. Decorate it with neatly folded clothes, elegant hats, and accessories, which are crucial for the charm of the boutique.</p>
 
-    <h2>Step 5: Set Up the Mirror</h2>
+    <h3>Step 5: Set Up the Mirror</h3>
     <p>Position a tall, stylish mirror adjacent to the clothes rack. This mirror enhances the boutique aesthetic by giving customers a place to preview their outfits.</p>
 
-    <h2>Step 6: Decorate with Plants and Accessories</h2>
+    <h3>Step 6: Decorate with Plants and Accessories</h3>
     <p>Place lush greenery near the windows and corners. Additionally, add small perfume bottles and colorful flower arrangements to create a cozy, relaxing ambiance throughout the boutique.</p>
 
-    <h2>Step 7: Add Special Display Elements</h2>
+    <h3>Step 7: Add Special Display Elements</h3>
     <p>In the lower-right area, position an elegant golden birdcage with a vibrant red dress. This makes for a captivating centerpiece, completing the boutique's decor.</p>
 
-    <h2>Step 8: Finish with Glass Partitions</h2>
+    <h3>Step 8: Finish with Glass Partitions</h3>
     <p>Finally, place transparent glass partitions along the open edges of the boutique. This addition will give the room a sophisticated look and help complete your Dreamy Room Level 62 setup.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Precise Placement:</strong> Ensure each item is placed correctly, as the level emphasizes accurate positioning of each element.</li>
       <li><strong>Avoid Overcrowding:</strong> Maintain visual appeal by not overcrowding any area in the boutique. Spacing out items will help achieve a neat, organized look.</li>
       <li><strong>Check Visibility:</strong> Confirm that all boutique items are visible and accessible from different angles. A good view from all sides will enhance the overall design.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Start with Larger Furniture:</strong> Begin by placing larger items like the clothes racks and tables to better visualize available space for smaller accessories.</li>
       <li><strong>Rotate the Viewing Angle:</strong> Frequently change your angle of view to make sure all the placements are harmonious.</li>
       <li><strong>Thoughtful Arrangement:</strong> The key to Dreamy Room Level 62 is arranging each item thoughtfully to create a visually inviting boutique with an elegant aesthetic.</li>
     </ul>
 
-    <h3>Final Thoughts</h3>
+    <h2>Final Thoughts</h2>
     <p>With these steps, you'll create a beautiful and welcoming boutique in Dreamy Room Level 62. Enjoy the relaxing process and have fun designing this cozy, stylish space!</p>
   `,
   },
@@ -191,7 +191,7 @@ export default [
       description:
         'A step-by-step guide for completing Dreamy Room Level 63 by carefully arranging each item to create a perfect and balanced space.',
       keywords:
-        'Dreamy Room Level 63, modern sofa, coffee table, bookshelf, floor lamp, mirror, decorative items, lighting, home decor',
+        'Dreamy Room Level 63, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_63.webp',
@@ -215,7 +215,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 63 Walkthrough – Beautifully Decorated Haven</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 63: Beautifully Decorated Haven</h2>
     <p>Welcome to Dreamy Room Level 63! In this level, you will transform an empty room into a beautifully decorated haven by carefully arranging each piece of furniture and decoration. Precision is key, so follow these steps closely for a stunning result.</p>
 
     <h3>Walkthrough Steps</h3>
@@ -291,7 +291,7 @@ export default [
       description:
         'A detailed walkthrough for Dreamy Room Level 64 where you arrange sentimental items and create a cozy, personalized space.',
       keywords:
-        'Dreamy Room Level 64, vintage sofa, coffee table, bookshelf, family portrait, potted plants, decorative rug, room decor',
+        'Dreamy Room Level 64, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_64.webp',
@@ -315,7 +315,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 64 Walkthrough – Heartfelt and Cozy Room</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 64: Heartfelt and Cozy Room</h2>
     <p>Welcome to Dreamy Room Level 64! In this level, you'll turn a plain, empty room into a space filled with warmth and personal charm. The key to success lies in thoughtful object placement, where each item has a meaningful place. Let's dive into the steps that will transform this room into a heartfelt haven.</p>
 
     <h3>Walkthrough Steps</h3>
@@ -386,7 +386,7 @@ export default [
       description:
         'A detailed walkthrough for Dreamy Room Level 65 where you create a stylish, cozy, and balanced living room by carefully placing each item.',
       keywords:
-        'Dreamy Room Level 65, plush sofa, coffee table, ornate mirror, bookshelf, potted plant, floor lamp, room decor',
+        'Dreamy Room Level 65, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_65.webp',
@@ -410,7 +410,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 65 Walkthrough – Elegant and Balanced Living Room</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 65: Elegant and Balanced Living Room</h2>
     <p>Welcome to Dreamy Room Level 65! In this level, your challenge is to transform an empty room into a stylish and balanced living room by carefully placing each object. The key to success is ensuring every item is placed thoughtfully to contribute to the overall aesthetic and function of the room. Follow these steps for a perfect result!</p>
 
     <h3>Walkthrough Steps</h3>
@@ -481,7 +481,7 @@ export default [
       description:
         'A detailed walkthrough for Dreamy Room Level 66 where you create a cozy and stylish living room by carefully placing every object.',
       keywords:
-        'Dreamy Room Level 66, plush sofa, coffee table, decorative painting, bookshelf, potted plant, floor lamp, room decor',
+        'Dreamy Room Level 66, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_66.webp',
@@ -505,7 +505,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 66 Walkthrough – Cozy and Balanced Living Room</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 66: Cozy and Balanced Living Room</h2>
     <p>Welcome to Dreamy Room Level 66! In this level, your task is to transform a blank room into a cozy and balanced living space by carefully arranging every item. The key to success in Dreamy Room Level 66 lies in precision and thoughtful placement. Follow the steps below to achieve the perfect setup!</p>
 
     <h3>Walkthrough Steps</h3>
@@ -581,7 +581,7 @@ export default [
       description:
         'A detailed walkthrough for Dreamy Room Level 67 where you transform a blank space into a vintage-inspired, cozy living room with perfect object placement.',
       keywords:
-        'Dreamy Room Level 67, vintage sofa, antique coffee table, armchair, bookshelf, potted plant, floor lamp, room decor',
+        'Dreamy Room Level 67, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_67.webp',
@@ -605,7 +605,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 67 Walkthrough – Vintage and Cozy Living Space</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 67: Vintage and Cozy Living Space</h2>
     <p>Welcome to Dreamy Room Level 67! In this level, your challenge is to turn a blank room into a vintage-inspired, cozy living space by carefully placing each item. The key to success in this level is precision, symmetry, and creating a harmonious atmosphere with thoughtful decor choices.</p>
 
     <h3>Walkthrough Steps</h3>
@@ -687,7 +687,7 @@ export default [
       description:
         'A detailed walkthrough for Dreamy Room Level 68 where you transform a blank space into a nostalgic, sentimental room filled with personal touches and meaningful decor.',
       keywords:
-        'Dreamy Room Level 68, vintage decor, sentimental items, cozy armchair, family photo, antique mirror',
+        'Dreamy Room Level 68, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_68.webp',
@@ -789,7 +789,7 @@ export default [
       description:
         'A detailed walkthrough for Dreamy Room Level 69 where you transform an empty space into a luxurious, contemporary living room filled with cozy furniture and modern decor.',
       keywords:
-        'Dreamy Room Level 69, contemporary living room, plush sofa, abstract painting, decorative mirror, vintage bookshelf',
+        'Dreamy Room Level 69, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_69.webp',
@@ -890,7 +890,7 @@ export default [
       description:
         'A detailed guide for Dreamy Room Level 70, where you create a modern, stylish living room with an elegant design, featuring a geometric rug, glass coffee table, and contemporary art.',
       keywords:
-        'Dreamy Room Level 70, modern elegance, geometric rug, abstract painting, bookshelf, LED lighting',
+        'Dreamy Room Level 70, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_70.webp',

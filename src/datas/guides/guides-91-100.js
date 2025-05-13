@@ -16,7 +16,7 @@ export default [
       description:
         'Transform an empty space into a cozy mobile home in Dreamy Room Level 91 with this step-by-step guide, featuring furniture and design tips.',
       keywords:
-        'Dreamy Room Level 91, mobile home, cozy home design, veranda, staircase, pastel furniture',
+        'Dreamy Room Level 91, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_91.webp',
@@ -40,7 +40,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 91 Walkthrough – Mobile Home Transformation</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 95: Mobile Home Transformation</h2>
     <p>Welcome to Dreamy Room Level 91! In this level, you'll turn an empty space into a charming, cozy mobile home. From setting up the veranda to arranging the furniture, follow these steps carefully to create a beautiful and functional space.</p>
 
     <h3>Step 1: Place the Plush Bunny on the Van Roof</h3>
@@ -64,7 +64,7 @@ export default [
     <h3>Step 7: Furnish the Second Floor Workspace and Bedroom</h3>
     <p>On the upper floor, start by positioning the tall white wardrobe cabinet flush against the back wall. Add two cardboard moving boxes on top for a realistic touch. Then, place the glass candy jar filled with pastel confections on the wardrobe's surface. Hang the pink curtains on the rear windows and add lighting with a yellow wall sconce and purple-based table lamp. Complete the bedroom by adding a yellow bolster on the bed, a floral rug on the floor, and a green potted plant in the corner.</p>
 
-    <h3>Notes and Precautions for Dreamy Room Level 91</h3>
+    <h2>Notes and Precautions for Dreamy Room Level 91</h2>
     <ul>
       <li><strong>Camera Adjustment:</strong> Make sure your camera is set to isometric view to align placements properly.</li>
       <li><strong>Alignment:</strong> Ensure each railing and furniture piece snaps cleanly to the grid to avoid misalignment.</li>
@@ -92,7 +92,7 @@ export default [
       description:
         'Complete Dreamy Room Level 92 with this step-by-step attic room walkthrough featuring furniture placement, alignment tips, and aesthetic design choices.',
       keywords:
-        'Dreamy Room Level 92, attic transformation, cozy room design, bookshelf, game setup, balcony furniture',
+        'Dreamy Room Level 92, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_92.webp',
@@ -116,7 +116,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 92 Walkthrough – Attic Room Makeover</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 95: Attic Room Makeover</h2>
     <p>Follow this comprehensive guide to transform the bare canvas of Dreamy Room Level 92 into the charming, fully decorated attic space shown in the completed image. Every placement counts—practice patience and precision to reveal the story hidden in each object.</p>
 
     <h3>Step 1: Place the Glass Railing Panels Along the Balcony Edge</h3>
@@ -149,7 +149,7 @@ export default [
     <h3>Step 10: Add Final Floor Accessories</h3>
     <p>Place a leafy potted plant near the desk leg, the record player between the desk and rug, the robotic vacuum near the whiteboard, and the glowing smart speaker beside the rug. Check for overlapping shadows and adjust if needed.</p>
 
-    <h3>Notes and Precautions for Dreamy Room Level 92</h3>
+    <h2>Notes and Precautions for Dreamy Room Level 92</h2>
     <ul>
       <li><strong>Snap-to Highlights:</strong> Watch for green outlines when placing or rotating objects—these confirm correct positions.</li>
       <li><strong>No Timer Stress:</strong> Dreamy Room Level 92 is untimed, allowing you to refine each detail without rush.</li>
@@ -177,7 +177,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 93. Learn how to place each item to build a vibrant arcade-themed room with lighting, gaming cabinets, and playful decor.',
       keywords:
-        'Dreamy Room Level 93, arcade room, walkthrough, dreamy guide, gaming decor, neon puzzle, how to solve level 93, puzzle game tips',
+        'Dreamy Room Level 93, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_91.webp',
@@ -201,7 +201,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 93 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 93: Arcade-Themed Room</h2>
     <p>Dreamy Room Level 93 features a vibrant arcade-themed setup. Follow this detailed guide to align all elements correctly and complete the level efficiently.</p>
 
     <h3>Step 1: Install the Back Wall’s Shelving and Upper Decorations</h3>
@@ -222,7 +222,7 @@ export default [
     <h3>Step 6: Complete the Right Shelf and Arrange Floor Accents</h3>
     <p>Install the tall purple bookshelf to the right wall and fill it with books and storage. Add the teddy bear, clock, spool reel, and box. Place the controller rug, red console unit, and low table with pastries, plant, and crate at the front-right corner.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Grid Alignment:</strong> Use highlighted grids for accuracy; half-tile shifts may break layout.</li>
       <li><strong>Order of Placement:</strong> Always start with lights and large objects before smaller items.</li>
@@ -232,7 +232,7 @@ export default [
       <li><strong>Backup:</strong> Take screenshots to retrace steps if needed.</li>
     </ul>
 
-    <h3>Tips and Tricks from Top Player</h3>
+    <h2>Tips and Tricks from Top Player</h2>
     <ul>
       <li>Tap empty grid tiles to reveal hidden anchors for snapping items.</li>
       <li>Use copy-paste on aligned items like neon bars for consistency.</li>
@@ -262,7 +262,7 @@ export default [
       description:
         'Full walkthrough for Dreamy Room Level 94. Create a tranquil Zen-inspired loft with bamboo, spa elements, and traditional decor.',
       keywords:
-        'Dreamy Room Level 94, Zen spa room, walkthrough, dreamy room guide, bamboo bedroom, puzzle decor game',
+        'Dreamy Room Level 94, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_91.webp',
@@ -286,7 +286,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 94 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 94: Zen Spa Loft</h2>
     <p>Dreamy Room Level 94 offers a serene design challenge set in a Zen-inspired loft with spa-like elements. Follow these steps to create a calming and precise environment.</p>
 
     <h3>Step 1: Place the Bamboo Hedge in the Front Left Corner</h3>
@@ -307,7 +307,7 @@ export default [
     <h3>Step 6: Hang Lanterns, Mount the Scroll, and Add Final Decorative Touches</h3>
     <p>Hang lanterns on both eaves, and mount the scroll on the left wall between the bamboo and window. Add flowering shrubs along the railing and orange trees on both floors.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Collision Masks:</strong> Avoid overlapping objects that might lock placement.</li>
       <li><strong>Undo Limit:</strong> Only one undo is allowed—check placements carefully.</li>
@@ -316,7 +316,7 @@ export default [
       <li><strong>Placement is Key:</strong> Trial-and-error may be needed for perfection.</li>
     </ul>
 
-    <h3>Tips and Tricks from Top Player</h3>
+    <h2>Tips and Tricks from Top Player</h2>
     <ul>
       <li><strong>Snap to Grid:</strong> Hold Shift while dragging for quicker alignment.</li>
       <li><strong>Pre-Rotate Items:</strong> Save time by rotating items in your inventory view.</li>
@@ -345,7 +345,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 95. Create a fully decorated burger café with intricate object placements and precise alignment.',
       keywords:
-        'Dreamy Room Level 95, burger café, walkthrough, dreamy room guide, object placement, diorama',
+        'Dreamy Room Level 95, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_93.webp',
@@ -369,7 +369,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 95 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 95: Burger Café Diorama</h2>
     <p>Embark on your journey through Dreamy Room Level 95 with this detailed, step-by-step walkthrough. The true challenge in Dreamy Room Level 95 is determining the exact placement for every object, so follow each instruction carefully to recreate the fully decorated burger café diorama shown in the completed image.</p>
 
     <h3>Step 1. Place the Base Foundation Block in the Center</h3>
@@ -399,7 +399,7 @@ export default [
     <h3>Step 9. Final Touches: Frog Figurine and Gold Coin</h3>
     <p>Complete the scene by adding a frog figurine and gold coin. Place the coin on the front-left corner next to the sauce pool, and set the frog on the adjacent orange puddle area. Make sure both are perfectly positioned for the final touch.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Patience Is Key:</strong> Dreamy Room Level 95 rewards meticulous placement. Rushing can lead to misaligned pieces that block later placements.</li>
       <li><strong>Check Connection Points:</strong> Always verify that pegs are fully inserted into slots. Minor gaps can lead to bigger alignment issues.</li>
@@ -428,7 +428,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 96. Learn how to transform a corner cutaway into a cozy three-tiered panda-themed space with detailed placement tips.',
       keywords:
-        'Dreamy Room Level 96, panda-themed, walkthrough, three-tiered room, puzzle game, level 96, home decor, kitchen, bedroom',
+        'Dreamy Room Level 96, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_94.webp',
@@ -452,7 +452,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 96 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 96: Panda-Themed Haven</h2>
     <p>Dreamy Room Level 96 challenges you to transform a corner cutaway into a cozy, three-tiered panda-themed haven. Follow the detailed steps to ensure perfect placement of every object, from furniture to panda figurines, for a harmonious layout.</p>
 
     <h3>Step 1: Lay the Checkered Floor Tile and Erect the Panda-Ear Walls</h3>
@@ -485,7 +485,7 @@ export default [
     <h3>Step 10: Decorate the Ground Veranda with Pond, Pandas, and Seating</h3>
     <p>On the ground level, start by placing the stone water basin and plant rack. Then arrange the ceramic jars, panda cub figurines, and seating elements like the wooden swing bench and rocking chairs to complete the outdoor charm.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Patience with Placement:</strong> Exact grid alignment is essential. Zoom in for precise adjustments.</li>
       <li><strong>Layer Awareness:</strong> Always ensure you're placing items on the correct tier to avoid blocking the staircase.</li>
@@ -513,7 +513,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 97. Learn how to place each item to create a charming pig-themed bedroom with precision and style.',
       keywords:
-        'Dreamy Room Level 97, pig bedroom, walkthrough, dreamy guide, bedroom decor, how to solve level 97, puzzle game tips',
+        'Dreamy Room Level 97, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_95.webp',
@@ -537,7 +537,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 97 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 97: Pig-Themed Bedroom</h2>
     <p>Dreamy Room Level 97 invites you to design a serene and nostalgic room with a pig-themed bedroom at its heart. Follow this walkthrough to recreate the room exactly as shown in the finished layout.</p>
 
     <h3>Step 1: Position the Bed in the Right Corner</h3>
@@ -570,14 +570,14 @@ export default [
     <h3>Step 10: Position the Mirror, Record Player, and Mini Garden</h3>
     <p>Set the tall mirror near the closet. Next to it, add the small round table with the record player. Near the bottom edge of the room, place the mini garden with a potted plant and a pastry on display.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Object Locking:</strong> Some items snap into place and can be difficult to move afterward—check placement carefully first.</li>
       <li><strong>Avoid Overlaps:</strong> Ensure objects do not block each other to prevent misalignment errors.</li>
       <li><strong>Color Coordination:</strong> The green and pink color palette is intentional—maintain balance for proper theme alignment.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Use Preview Mode:</strong> This helps you verify item alignment before finalizing.</li>
       <li><strong>Rotate When Needed:</strong> Some furniture can be rotated—experiment to find the best fit.</li>
@@ -604,7 +604,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 98. Learn how to arrange cows, machinery, and create a dairy factory with precision.',
       keywords:
-        'Dreamy Room Level 98, dairy factory, walkthrough, farmhouse decor, factory setup, puzzle game tips',
+        'Dreamy Room Level 98, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_96.webp',
@@ -628,7 +628,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 98 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 98: Dairy Factory</h2>
     <p>In Dreamy Room Level 98, you’ll design a vibrant dairy factory with precise object placement. From cows to production lines, follow this guide for the perfect factory setup.</p>
 
     <h3>Step 1: Place the White Wooden Fence and Hay Bales</h3>
@@ -655,14 +655,14 @@ export default [
     <h3>Step 8: Position the Milk Truck, Vending Machines, and Decorative Sign</h3>
     <p>Finish by positioning the milk truck at the lower right edge, place the vending machines near the conveyor belt, and mount the cow face wall sign on the left wall.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Alignment:</strong> Pay attention to grid alignment and avoid overlaps as they can affect object placement.</li>
       <li><strong>Elevation:</strong> The elevation differences between platforms require careful stacking, particularly when layering items.</li>
       <li><strong>Rotation:</strong> Be mindful of rotation angles, especially for the decorative items like the vending machines and sign.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Use Grid Toggle:</strong> This helps ensure all items align correctly with each other and the platform.</li>
       <li><strong>Preview Mode:</strong> Check your work before finalizing to avoid misalignments.</li>
@@ -689,7 +689,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 99. Learn how to arrange each item to create a serene seaside sushi bar with accuracy and style.',
       keywords:
-        'Dreamy Room Level 99, seaside sushi bar, walkthrough, dreamy guide, coastal decor, puzzle game tips',
+        'Dreamy Room Level 99, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_97.webp',
@@ -713,7 +713,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 99 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 99: Seaside Sushi Bar</h2>
     <p>Dreamy Room Level 99 invites you to create a serene seaside sushi bar on a floating wooden platform. Follow this step-by-step guide to arrange the items with precision and build the perfect coastal retreat.</p>
 
     <h3>Step 1: Place the Floating Wooden Platform in the Center</h3>
@@ -746,14 +746,14 @@ export default [
     <h3>Step 10: Place Cat Characters Around the Sushi Bar</h3>
     <p>Populate the scene with cat characters: position a fishing cat near the net, sushi server cats behind the counter, a seated cat on the left bench, and a standing cat in the center.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Alignment:</strong> Pay close attention to grid alignment to prevent misplacement of objects.</li>
       <li><strong>Object Overlaps:</strong> Ensure that objects do not clip into each other, especially with the hanging lanterns and fish tanks.</li>
       <li><strong>Clear View:</strong> Double-check that interactive elements, like the fish tanks, maintain visibility without obstruction.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Use the Grid-Snapping Feature:</strong> Hold Shift while dragging to align items precisely along the grid.</li>
       <li><strong>Preview Mode:</strong> Rotate the camera to inspect for hidden clipping issues or misalignments.</li>
@@ -780,7 +780,7 @@ export default [
       description:
         'Complete walkthrough for Dreamy Room Level 100. Learn how to place each item to create a cozy, toy-filled haven with precision and style.',
       keywords:
-        'Dreamy Room Level 100, toy-filled room, walkthrough, dreamy guide, home decor, how to solve level 100, puzzle game tips',
+        'Dreamy Room Level 100, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_98.webp',
@@ -804,7 +804,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 100 Walkthrough & Guide</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 100: Toy-Filled Haven</h2>
     <p>Dreamy Room Level 100 invites you to transform a pastel corner into a cozy, toy-filled haven. Follow this step-by-step guide to ensure every item is placed just right for a whimsical final look.</p>
 
     <h3>Step 1: Place the Curtains and Sky Decals on the Window Wall</h3>
@@ -837,14 +837,14 @@ export default [
     <h3>Step 10: Arrange the Puzzle Bench, Blocks, Horse Box, and Ball</h3>
     <p>Place the grey puzzle piece bench in the right foreground. On top, stack the cube blocks, and add the orange basketball in front. Finally, position the small cardboard box with the pink horse plush and yarn ball beside the bench.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Precision Placement:</strong> Make sure each item is aligned correctly to avoid errors.</li>
       <li><strong>Object Orientation:</strong> Pay attention to the orientation of items like decals and plush toys.</li>
       <li><strong>Object Overlaps:</strong> Avoid overlapping items on the same grid space to ensure proper placement.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Use Preview Mode:</strong> It helps you check the alignment before finalizing.</li>
       <li><strong>Rotate Items:</strong> Use rotation to find the perfect fit for furniture and decor.</li>

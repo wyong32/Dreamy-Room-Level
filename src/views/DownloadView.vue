@@ -5,7 +5,7 @@
     <div class="container">
       <div class="page-header">
         <h1 class="page-title"><span class="title-icon">⬇️</span> {{ $t('download.title') }}</h1>
-        <p class="page-description">{{ $t('download.description') }}</p>
+        <h2 class="page-description">{{ $t('download.description') }}</h2>
       </div>
 
       <div class="download-container">

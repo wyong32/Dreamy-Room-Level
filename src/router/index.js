@@ -20,17 +20,21 @@ const routes = [
     component: HomeView,
   },
   {
-    path: '/guides',
+    path: '/dreamy-room-revel-game-guides',
     name: 'guides',
     component: GuidesView,
   },
   {
-    path: '/blog',
+    path: '/guides',
+    redirect: '/dreamy-room-revel-game-guides',
+  },
+  {
+    path: '/dreamy-room-game-blog',
     name: 'blog',
     component: BlogView,
   },
   {
-    path: '/download',
+    path: '/download-dreamy-room-game',
     name: 'download',
     component: DownloadView,
   },

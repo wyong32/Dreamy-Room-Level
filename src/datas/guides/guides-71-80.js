@@ -16,7 +16,7 @@ export default [
       description:
         'A detailed guide for Dreamy Room Level 71, where you create a chic urban studio featuring retro decor and modern finishes, including a sleek sofa, vintage lighting, and eclectic artwork.',
       keywords:
-        'Dreamy Room Level 71, urban studio, retro style, eclectic decor, vintage lighting, modern furniture',
+        'Dreamy Room Level 71, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_71.webp',
@@ -40,7 +40,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 71 Walkthrough – Sleek Urban Studio with Retro Vibes</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 71: Sleek Urban Studio with Retro Vibes</h2>
     <p>In Dreamy Room Level 71, you’ll design a chic urban studio combining modern aesthetics with retro touches. From vintage lighting to bold artwork, every placement contributes to a vibrant and personalized space.</p>
 
     <h3>Step 1: Lay Down the Geometric Area Rug</h3>
@@ -73,7 +73,7 @@ export default [
     <h3>Step 10: Final Touches and Adjustments</h3>
     <p>Take a step back and evaluate the room’s layout. Make any necessary adjustments to furniture placement, ensuring that everything aligns symmetrically and that the space feels balanced. Add personal touches like decorative bowls or a retro clock to complete the look.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Alignment is Key:</strong> Ensure all furniture pieces are properly aligned, especially the rug and sofa.</li>
       <li><strong>Mind the Lighting:</strong> Position the floor lamp and table lamps to ensure that they provide enough light without overwhelming the space.</li>
@@ -81,7 +81,7 @@ export default [
       <li><strong>Adjustments:</strong> If something feels off, make small adjustments. The game rewards precision and careful thought.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Start Big:</strong> Begin by placing the largest pieces first, like the rug, sofa, and bookshelf, to establish the room's overall framework.</li>
       <li><strong>Layering is Essential:</strong> Mix textures like soft fabrics, vintage wood, and sleek metal to create depth and interest.</li>
@@ -109,7 +109,7 @@ export default [
       description:
         'A detailed guide for Dreamy Room Level 72, where you create a cozy, vintage-inspired living space featuring a wooden bookshelf, comfy reading chair, and framed family photos.',
       keywords:
-        'Dreamy Room Level 72, antique bookshelf, cozy reading chair, pastel rug, vintage mirror, family photographs',
+        'Dreamy Room Level 72, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_72.webp',
@@ -133,7 +133,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 72 Walkthrough – Antique Charm and Personal Touches</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 72: Antique Charm and Personal Touches</h2>
     <p>In Dreamy Room Level 72, your primary challenge is to determine the correct placement for each object. Every item—from the antique bookshelf to the delicate houseplant—tells part of a larger story. The joy lies in crafting a space that feels personal and balanced. Follow these steps to transform the room into a beautifully decorated haven.</p>
 
     <h3>Step 1: Place the Antique Wooden Bookshelf on the Left Wall</h3>
@@ -166,7 +166,7 @@ export default [
     <h3>Step 10: Install the Elegant Chandelier in the Center Ceiling</h3>
     <p>Install an elegant chandelier in the center of the ceiling. This fixture adds a focal point and illuminates the space, enhancing the ambiance and making the room feel more inviting.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Symmetry and Balance:</strong> Ensure all objects are symmetrically placed to maintain harmony in the room.</li>
       <li><strong>Scale and Proportion:</strong> Verify that all items are appropriately sized relative to their space.</li>
@@ -175,7 +175,7 @@ export default [
       <li><strong>Patience:</strong> Take your time with placements. Rushing may compromise the overall design and narrative of the room.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Plan Ahead:</strong> Sketch a layout of the room to help visualize the furniture placement.</li>
       <li><strong>Group Similar Items:</strong> Create visual harmony by grouping related items together.</li>
@@ -204,7 +204,7 @@ export default [
       description:
         'Learn how to arrange furniture, lighting, and decorative pieces in Dreamy Room Level 73 to create a cozy, vintage-inspired space full of charm and personality.',
       keywords:
-        'Dreamy Room Level 73, cozy vintage sofa, decorative coffee table, artwork, indoor plants, layered lighting',
+        'Dreamy Room Level 73, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_73.webp',
@@ -228,7 +228,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 73 Walkthrough – Creating a Cozy, Balanced Haven</h2>
+     <h2>Step-by-step guide for Dreamy Room Level 73: Cozy, Balanced Haven</h2>
     <p>In Dreamy Room Level 73, your challenge is to carefully arrange furniture, decorative accents, and lighting to create a cozy, balanced space. The room features a vintage sofa, patterned rug, and other carefully selected items. Let's dive into the step-by-step process of transforming this empty room.</p>
 
     <h3>Step 1: Survey the Empty Space in Dreamy Room Level 73</h3>
@@ -258,7 +258,7 @@ export default [
     <h3>Step 9: Finalize with Comfort and Cohesion</h3>
     <p>Arrange patterned cushions on the sofa in a balanced, symmetrical manner. Step back and assess the room's overall cohesion. Make any necessary adjustments to ensure all items are aligned and contribute to a harmonious and inviting space.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Precision Matters:</strong> Ensure that all objects are precisely placed, as small misalignments can affect the overall balance of the room.</li>
       <li><strong>Minimal Clutter:</strong> Avoid overcrowding the space. Dreamy Room Level 73 thrives on simplicity and thoughtful arrangements.</li>
@@ -267,7 +267,7 @@ export default [
       <li><strong>Patience is Key:</strong> Take your time to perfect the placement of each item, as minor tweaks may be needed for the ideal look.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Sketch a Layout:</strong> Before placing items, sketch a rough layout of the room to ensure all pieces fit cohesively.</li>
       <li><strong>Use Natural Guides:</strong> Utilize the natural light and the room's architecture to guide where items should be placed.</li>
@@ -297,7 +297,7 @@ export default [
       description:
         'Learn how to transform an empty room into a warm, nostalgic space in Dreamy Room Level 74 with vintage furniture, natural elements, and timeless decor.',
       keywords:
-        'Dreamy Room Level 74, vintage sofa, wooden coffee table, antique bookshelf, abstract painting, floor lamp, decorative wall clock',
+        'Dreamy Room Level 74, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_74.webp',
@@ -321,7 +321,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 74 Walkthrough – Creating a Warm, Timeless Space</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 74: Warm, Timeless Space</h2>
     <p>In Dreamy Room Level 74, your goal is to design a room that exudes warmth and nostalgia. Every item in this room tells a story, and your task is to position each piece thoughtfully to create an inviting, timeless space. Follow the steps below to ensure the room is balanced, harmonious, and full of sentimental value.</p>
 
     <h3>Step 1: Lay the Foundation with the Area Rug</h3>
@@ -354,7 +354,7 @@ export default [
     <h3>Step 10: Final Touch – Place the Ambient Floor Lamp in the Reading Nook</h3>
     <p>Finish your design by placing a soft, ambient floor lamp in the designated reading nook. The gentle glow from the lamp will create a relaxing atmosphere, perfect for quiet moments. This final touch completes the room, ensuring every corner is thoughtfully curated.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>Precision Matters:</strong> Every item needs to be carefully placed to ensure the room feels balanced and harmonious. Take your time with the positioning of each object.</li>
       <li><strong>Avoid Overcrowding:</strong> While each item carries its own story, avoid cluttering the space. The room should feel open and inviting, with enough space for movement.</li>
@@ -362,7 +362,7 @@ export default [
       <li><strong>Lighting and Shadow:</strong> Reassess how the natural light interacts with your objects. Make adjustments as necessary to ensure the lighting complements the room's mood.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Subtle Adjustments:</strong> A slight shift in object placement can significantly change the vibe of the room. Experiment with different arrangements until it feels just right.</li>
       <li><strong>Symmetry:</strong> Balanced, symmetrical arrangements are key to mastering the challenge of Dreamy Room Level 74.</li>
@@ -391,7 +391,7 @@ export default [
       description:
         'Transform your empty room into a serene and stylish space in Dreamy Room Level 75 by carefully arranging furniture, lighting, and personal decor.',
       keywords:
-        'Dreamy Room Level 75, sheer curtains, vintage armchair, abstract wall art, ambient sconces, floor lamp, personal mementos',
+        'Dreamy Room Level 75, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_75.webp',
@@ -415,7 +415,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 75 Walkthrough – Designing a Serene, Stylish Haven</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 75: Serene, Stylish Living Room</h2>
     <p>Welcome to Dreamy Room Level 75! In this walkthrough, we will guide you through every step of transforming an empty room into a beautifully serene and stylish living space. Follow the steps to strategically arrange each item, from furniture to personal decor, to create a balanced, inviting atmosphere.</p>
 
     <h3>Step 1: Hang the Elegant Sheer Curtains on the North Wall</h3>
@@ -454,7 +454,7 @@ export default [
     <h3>Step 12: Apply the Final Touches and Personalize the Space</h3>
     <p>Scatter personal artifacts throughout the room—such as a wall clock above the desk, a decorative vase on the coffee table, and small art pieces on secondary walls. These subtle accents complete the room’s design, ensuring every object is thoughtfully placed.</p>
 
-    <h3>Notes and Precautions for Dreamy Room Level 75</h3>
+    <h2>Notes and Precautions for Dreamy Room Level 75</h2>
     <ul>
       <li><strong>Object Placement:</strong> Precision is key in Dreamy Room Level 75. Ensure every item is placed exactly where it belongs to avoid disrupting the room's flow.</li>
       <li><strong>Space Management:</strong> Avoid overcrowding the room. Dreamy Room Level 75 thrives on a balanced layout, so be mindful of spacing.</li>
@@ -462,7 +462,7 @@ export default [
       <li><strong>Fragility Awareness:</strong> Handle delicate items carefully to preserve their beauty and avoid disrupting the overall aesthetic of the room.</li>
     </ul>
 
-    <h3>Tips and Tricks for Dreamy Room Level 75</h3>
+    <h2>Tips and Tricks for Dreamy Room Level 75</h2>
     <ul>
       <li><strong>Plan Ahead:</strong> Sketch out your layout before making any placements to visualize the optimal arrangement.</li>
       <li><strong>Use Temporary Placements:</strong> Temporarily place items to test different layouts. Adjust as needed to perfect the ambiance.</li>
@@ -491,7 +491,7 @@ export default [
       description:
         'Transform your room in Dreamy Room Level 76 into a minimalist and elegant space by thoughtfully placing furniture, artwork, and decor items with precision and balance.',
       keywords:
-        'Dreamy Room Level 76, wooden bookshelf, vintage armchair, Persian rug, floor lamp, family portrait, cozy design, minimalist decor',
+        'Dreamy Room Level 76, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_76.webp',
@@ -515,7 +515,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 76 Walkthrough – Minimalist, Contemporary Style</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 76: Minimalist, Contemporary Style</h2>
     <p>Welcome to this comprehensive walkthrough for Dreamy Room Level 76. In this guide, you will transform the empty room into the fully decorated space featured in the completed image. The essence of Dreamy Room Level 76 lies in discovering the perfect spot for each treasured object, making every decision essential.</p>
 
     <h3>Step 1. Place the Wooden Bookshelf on the Left Wall</h3>
@@ -548,7 +548,7 @@ export default [
     <h3>Step 10. Place the Side Table with Fresh Flowers Next to the Coffee Table</h3>
     <p>Finish with a small side table beside the coffee table, topped with a vibrant vase of fresh flowers to add fragrance and color.</p>
 
-    <h3>Notes and Precautions for Dreamy Room Level 76</h3>
+    <h2>Notes and Precautions for Dreamy Room Level 76</h2>
     <ul>
       <li><strong>Precision in Placement:</strong> Even minor misalignments can disrupt the harmony of the space.</li>
       <li><strong>Spatial Awareness:</strong> Avoid crowding—each object needs breathing room.</li>
@@ -557,7 +557,7 @@ export default [
       <li><strong>Double-Check Alignments:</strong> Review positioning periodically to maintain flow and symmetry.</li>
     </ul>
 
-    <h3>Tips and Tricks for Dreamy Room Level 76</h3>
+    <h2>Tips and Tricks for Dreamy Room Level 76</h2>
     <ul>
       <li><strong>Start with the Big Pieces:</strong> Place foundational items like the bookshelf and table before adding smaller decor.</li>
       <li><strong>Use Symmetry:</strong> Balance placements across the room to avoid visual heaviness on one side.</li>
@@ -585,7 +585,7 @@ export default [
       description:
         'Transform your empty room into a nostalgic, cozy space in Dreamy Room Level 77 by carefully arranging furniture, lighting, and personal decor.',
       keywords:
-        'Dreamy Room Level 77, decorative rug, plush sofa, framed artwork, vintage floor lamp, bookshelf, indoor plant',
+        'Dreamy Room Level 77, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_77.webp',
@@ -609,7 +609,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 77 Walkthrough – Creating a Cozy, Nostalgic Haven</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 77: Cozy, Nostalgic Living Room</h2>
     <p>Welcome to Dreamy Room Level 77! In this walkthrough, we will guide you through each step of transforming an empty room into a cozy, nostalgic haven. From furniture placement to adding personal mementos, every detail contributes to the overall feeling of comfort and warmth.</p>
 
     <h3>Step 1: Place the Decorative Center Rug on the Floor</h3>
@@ -642,7 +642,7 @@ export default [
     <h3>Step 10: Install Wall Mirrors and Additional Wall Art</h3>
     <p>Install a pair of mirrors on the opposite wall and surround them with additional artwork. This will not only brighten the space but also enhance the sense of depth in the room.</p>
 
-    <h3>Notes and Precautions for Dreamy Room Level 77</h3>
+    <h2>Notes and Precautions for Dreamy Room Level 77</h2>
     <ul>
       <li><strong>Precision is key:</strong> Each item needs to be placed precisely. Misalignment can disrupt the overall flow of the room.</li>
       <li><strong>Symmetry matters:</strong> Ensure the items are balanced and symmetrical to enhance the room's nostalgic charm.</li>
@@ -650,7 +650,7 @@ export default [
       <li><strong>Check spacing:</strong> Ensure that there’s adequate space between items for a smooth and organized look.</li>
     </ul>
 
-    <h3>Tips and Tricks for Dreamy Room Level 77</h3>
+    <h2>Tips and Tricks for Dreamy Room Level 77</h2>
     <ul>
       <li><strong>Trial and Error:</strong> Experiment with different arrangements before settling on a final setup.</li>
       <li><strong>Preview Feature:</strong> Use the preview feature to test different designs in real time.</li>
@@ -679,7 +679,7 @@ export default [
       description:
         'Learn how to transform your empty hexagonal space into a charming pastel boutique by placing furniture, decor, and personal items in Dreamy Room Level 78.',
       keywords:
-        'Dreamy Room Level 78, pastel boutique, staircase, flower planters, dress mannequins, jewelry display, tea set, seating arrangement',
+        'Dreamy Room Level 78, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_78.webp',
@@ -703,7 +703,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 78 Walkthrough – Creating a Charming Pastel Boutique</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 78: Pastel Boutique</h2>
     <p>Welcome to Dreamy Room Level 78! In this walkthrough, we'll guide you through each step to transform your hexagonal room into a pastel boutique with perfect furniture and decor arrangements.</p>
 
     <h3>Step 1: Place the Staircase Against the Left-Side Wall Support Post</h3>
@@ -760,14 +760,14 @@ export default [
     <h3>Step 18: Set the Five Pastel-Colored Dress Mannequins Across the Right Shelf</h3>
     <p>Position the five pastel-colored dress mannequins across the right back shelf. These dresses in green, yellow, and peach complete the boutique's pastel theme.</p>
 
-    <h3>Notes and Precautions</h3>
+    <h2>Notes and Precautions</h2>
     <ul>
       <li><strong>No Timer:</strong> There's no timer in this level, so take your time to test placements before finalizing.</li>
       <li><strong>Alignment Matters:</strong> Ensure proper alignment to avoid misaligned items that may overlap walls and block other placements.</li>
       <li><strong>Grid Snapping:</strong> Make sure each item snaps fully to the grid for optimal placement.</li>
     </ul>
 
-    <h3>Tips and Tricks</h3>
+    <h2>Tips and Tricks</h2>
     <ul>
       <li><strong>Rotate-and-Snap Shortcut:</strong> Hold the rotate key while placing items to speed up alignment.</li>
       <li><strong>Outline Mode Preview:</strong> Toggle the outline mode to preview each furniture placement and avoid accidental overlaps.</li>
@@ -794,7 +794,7 @@ export default [
       description:
         'Learn how to decorate the empty platform in Dreamy Room Level 79 to create an enchanted garden canopy, filled with floral decor, elegant furniture, and magical ambiance.',
       keywords:
-        'Dreamy Room Level 79, enchanted garden canopy, purple canopy bed, rose vines, crystal orb, bunny statue, harp, clover stools, lily pond',
+        'Dreamy Room Level 79, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_79.webp',
@@ -818,7 +818,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 79 Walkthrough – Enchanting Garden Canopy</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 79: Enchanted Garden Canopy</h2>
     <p>Welcome to Dreamy Room Level 79! In this level, you'll be decorating an isometric platform with an enchanted garden canopy theme. Follow these detailed steps to create the magical, floral ambiance in this room.</p>
 
     <h3>Step 1: Place the Canopy Bed Under the Glass Dome</h3>
@@ -907,7 +907,7 @@ export default [
       description:
         'Learn how to create a vibrant musical stage with drums, keyboards, DJ turntables, and more in Dreamy Room Level 80. Follow this detailed guide for placement tips and tricks.',
       keywords:
-        'Dreamy Room Level 80, musical stage, drum set, keyboard, DJ turntables, vintage microphone, rainbow pathway',
+        'Dreamy Room Level 80, pig themed bedroom walkthrough, Dreamy Room guide, puzzle game tips',
     },
     sidebarData: {
       sidebarImageUrl: '/images/guides_80.webp',
@@ -931,7 +931,7 @@ export default [
       ],
     },
     detailsHtml: `
-    <h2>Dreamy Room Level 80 Walkthrough – Vibrant Musical Stage</h2>
+    <h2>Step-by-step guide for Dreamy Room Level 80: Vibrant Musical Stage</h2>
     <p>Welcome to Dreamy Room Level 80! In this level, you'll create a vibrant and dynamic musical stage on an empty floating platform. Follow these steps to arrange the elements and complete the level.</p>
 
     <h3>Step 1: Place the Pink Base Platform with Bulb-Lined Rim on the Cloud Bed</h3>

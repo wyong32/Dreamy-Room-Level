@@ -168,7 +168,8 @@ export default {
     },
     formatDate(dateString) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(dateString).toLocaleDateString(undefined, options)
+      // Explicitly use 'en-US' locale for English format
+      return new Date(dateString).toLocaleDateString('en-US', options)
     },
     injectJsonLd(blog) {
       const url = typeof window !== 'undefined' ? window.location.href : ''

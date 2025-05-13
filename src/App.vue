@@ -13,15 +13,76 @@ import { computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
 import AppFooter from '@/components/AppFooter.vue'
+import { useI18n } from 'vue-i18n'
+import { useHead } from '@vueuse/head'
 
 // 获取当前路由
 const route = useRoute()
+const { t, locale } = useI18n()
 
-// 计算当前页面的完整URL（用于规范链接和社交媒体分享）
+// 将 baseUrl 定义提升到 setup 顶层
+const baseUrl = import.meta.env.VITE_SITE_URL || '/'
+
+// pageUrl 现在可以直接使用顶层的 baseUrl
 const pageUrl = computed(() => {
-  // 从环境变量获取基础URL，如果不存在则使用默认值
-  const baseUrl = import.meta.env.VITE_SITE_URL || 'https://dreamy-room-level.vercel.app'
   return `${baseUrl}${route.path}`
+})
+
+// useHead 也可以直接使用顶层的 baseUrl
+useHead({
+  htmlAttrs: {
+    lang: locale,
+  },
+  // Canonical URL (现在统一由SeoHead处理或页面单独处理，这里不再硬编码)
+  // link: [
+  //   {
+  //     rel: 'canonical',
+  //     href: computed(() => `${baseUrl}${route.path}`)
+  //   }
+  // ],
+  meta: [
+    // General SEO
+    {
+      name: 'robots',
+      content: 'index, follow',
+    },
+    // Open Graph
+    {
+      property: 'og:type',
+      content: 'website',
+    },
+    {
+      property: 'og:site_name',
+      content: computed(() => t('seo.global.siteName')),
+    },
+    {
+      property: 'og:locale',
+      content: computed(() => (locale.value === 'zh' ? 'zh_CN' : 'en_US')),
+    },
+    {
+      property: 'og:image',
+      // 使用顶层 baseUrl
+      content: computed(() => `${baseUrl}images/guides_01.webp`),
+    },
+    {
+      property: 'og:image:alt',
+      content: computed(() => t('seo.global.siteName')),
+    },
+    // Twitter Card
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+    {
+      name: 'twitter:image',
+      // 使用顶层 baseUrl
+      content: computed(() => `${baseUrl}images/guides_01.webp`),
+    },
+    {
+      name: 'twitter:image:alt',
+      content: computed(() => t('seo.global.siteName')),
+    },
+  ],
 })
 
 // 动态更新规范链接和社交媒体元标签
@@ -34,7 +95,7 @@ watch(
     // 更新社交媒体元标签
     updateSocialMetaTags()
   },
-  { immediate: true },
+  { immediate: true }
 )
 
 // 更新规范链接
@@ -61,21 +122,15 @@ function updateSocialMetaTags() {
   updateMetaTag('property', 'og:url', pageUrl.value)
   updateMetaTag('property', 'og:title', title)
   updateMetaTag('property', 'og:description', description)
-  updateMetaTag(
-    'property',
-    'og:image',
-    'https://dreamy-room-level.vercel.app/images/guides_01.webp',
-  )
+  // 直接传递 baseUrl 构建的字符串
+  updateMetaTag('property', 'og:image', `${baseUrl}images/guides_01.webp`)
 
   // 更新Twitter元标签
   updateMetaTag('property', 'twitter:url', pageUrl.value)
   updateMetaTag('property', 'twitter:title', title)
   updateMetaTag('property', 'twitter:description', description)
-  updateMetaTag(
-    'property',
-    'twitter:image',
-    'https://dreamy-room-level.vercel.app/images/guides_01.webp',
-  )
+  // 直接传递 baseUrl 构建的字符串
+  updateMetaTag('property', 'twitter:image', `${baseUrl}images/guides_01.webp`)
 }
 
 // 辅助函数：更新或创建元标签

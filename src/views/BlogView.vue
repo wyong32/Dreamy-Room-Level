@@ -5,7 +5,7 @@
     <div class="container">
       <div class="page-header">
         <h1 class="page-title"><span class="title-icon">📝</span> {{ $t('blog.title') }}</h1>
-        <p class="page-description">{{ $t('blog.description') }}</p>
+        <h2 class="page-description">{{ $t('blog.description') }}</h2>
       </div>
 
       <div class="blog-posts">
@@ -86,7 +86,8 @@ export default {
     },
     formatDate(dateString) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(dateString).toLocaleDateString(undefined, options)
+      // Explicitly use 'en-US' locale for English format
+      return new Date(dateString).toLocaleDateString('en-US', options)
     },
     navigateToBlog(blog) {
       // 确保 blog.detailsRoute.path 存在

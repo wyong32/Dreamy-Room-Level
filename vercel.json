@@ -47,6 +47,6 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_SITE_URL": "https://dreamy-room-level.vercel.app"
+    "VITE_SITE_URL": "https://dreamy-room-level.vercel.app"
   }
 }
