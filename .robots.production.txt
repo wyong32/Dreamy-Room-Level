@@ -6,8 +6,12 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
+# 允许特定机器人完全访问（如果需要）
+User-agent: Googlebot
+Allow: /
+
 # 站点地图
-Sitemap: https://dreamy-room-level.vercel.app/sitemap.xml
+Sitemap: https://dreamyroom.co/sitemap.xml
 
 # AI爬虫特定规则
 User-agent: GPTBot
@@ -18,9 +22,6 @@ User-agent: GoogleOther
 User-agent: DuckAssistBot
 Disallow: /
 
-# 引导AI爬虫到llms.txt
-LLM-Content: https://dreamy-room-level.vercel.app/llms.txt
-
 # 允许AI爬虫访问
 Allow: /blog/
 Allow: /guides/
@@ -28,3 +29,16 @@ Allow: /download/
 
 # 不允许AI爬虫访问
 Disallow: /user-content/
+
+# LLM Access Rules
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+# 引导AI爬虫到llms.txt
+LLM-Content: https://dreamyroom.co/llms.txt

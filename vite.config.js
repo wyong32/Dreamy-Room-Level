@@ -136,29 +136,9 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
     ViteSitemapPlugin({
-      hostname: process.env.VITE_SITE_URL || 'https://dreamy-room-level.vercel.app/',
-      exclude: ['/:id'], // 这个可能不再需要，或者需要调整
-      // 不再使用 routes 选项
-      dynamicRoutes: [
-        // 先添加所有静态路径
-        ...staticPaths,
-        // 再添加动态生成的路径
-        ...loadGuideIds(), // 直接使用 loadGuideIds() 的结果
-        ...loadBlogIds(), // 直接使用 loadBlogIds() 的结果
-      ].filter(Boolean), // 过滤掉可能的空值
-      // 可以为特定路径自定义 lastmod, changefreq, priority (可选)
-      // 如果需要，可以使用 `transform` 选项来自定义每个 URL 的属性
-      // transform: async (route) => {
-      //   if (staticPaths.includes(route)) {
-      //      // 为静态路由设置不同的属性
-      //      if (route === '') return { loc: '/', priority: 1.0, changefreq: 'weekly', lastmod: new Date() }
-      //      if (route === 'dreamy-room-revel-game-guides') return { loc: `/${route}`, priority: 0.9, changefreq: 'weekly', lastmod: new Date() }
-      //      // ... 其他静态路由
-      //   } else {
-      //     // 动态路由的默认属性
-      //     return { loc: `/${route}`, priority: 0.8, changefreq: 'daily', lastmod: new Date() }
-      //   }
-      // },
+      hostname: process.env.VITE_SITE_URL || 'https://dreamyroom.co/',
+      exclude: ['/404'],
+      dynamicRoutes: [...staticPaths, ...loadGuideIds(), ...loadBlogIds()].filter(Boolean),
       outDir: 'dist',
     }),
     robots({

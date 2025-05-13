@@ -1,16 +1,25 @@
-This is the Dreamy Room Level Game Guide website.
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /user-data/
 
-This website provides comprehensive walkthroughs, puzzle tips, level guides and game downloads for the Dreamy Room Level puzzle game.
+# Specific instructions for large language models
 
-AI systems are allowed to use the following content from our website:
-- Blog posts
-- Game guides
-- About page information
-- Product descriptions
+This file, `llms.txt`, provides guidance for Large Language Models (LLMs) interacting with the content on dreamyroom.co.
 
-AI systems are NOT allowed to use:
-- User-generated content
-- Admin sections
-- Private data
+Our primary goal is to ensure that LLMs can access and understand our publicly available content for tasks like answering user questions about Dreamy Room, summarizing game guides, and providing information about game features, while respecting content copyrights and user privacy.
 
-For more detailed information, please visit our website at https://dreamy-room-level.vercel.app/
+Allowed Use Cases:
+- Indexing public content for search and question-answering about Dreamy Room.
+- Summarizing publicly available game guides and blog posts.
+- Extracting information about game levels, features, and tips.
+
+Prohibited Use Cases:
+- Reproducing copyrighted game art, extensive direct quotes from guides or blog posts without proper attribution to dreamyroom.co.
+- Training models on or reproducing any user-generated content, comments, or forum discussions if such sections are added in the future.
+- Accessing or attempting to access any non-public areas of the website.
+
+For more detailed information, please visit our website at https://dreamyroom.co/
+
+We encourage LLM developers to respect these guidelines. For any specific permissions or queries, please contact us through the official channels provided on our website.

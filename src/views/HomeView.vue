@@ -4,7 +4,7 @@
     <SeoHead pageType="home" />
     <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="floating-bubbles" aria-hidden="true">
+      <!-- <div class="floating-bubbles" aria-hidden="true">
         <div
           class="bubble"
           v-for="n in 10"
@@ -17,7 +17,7 @@
             animationDelay: `${Math.random() * 5}s`,
           }"
         ></div>
-      </div>
+      </div> -->
       <div class="hero-content">
         <h1 id="hero-title">{{ $t('home.hero.title') }}</h1>
         <p>{{ $t('home.hero.subtitle') }}</p>

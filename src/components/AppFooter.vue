@@ -287,11 +287,6 @@ export default {
     gap: 1.5rem; /* Can adjust gap if needed */
   }
 
-  .footer-column {
-    /* If single column, items might look better centered or with adjusted alignment */
-    /* text-align: center; */ /* Example: center align text in columns */
-  }
-
   .footer-logo {
     font-size: 1.4rem;
     /* text-align: center; */ /* If centering column content */
@@ -314,10 +309,6 @@ export default {
 
   .footer-nav a {
     font-size: 0.85rem;
-  }
-
-  .social-links {
-    /* justify-content: center; */ /* If centering column content */
   }
 
   .copyright {

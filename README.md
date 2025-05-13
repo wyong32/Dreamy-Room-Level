@@ -4,7 +4,7 @@ Official game guide website for Dreamy Room Level, providing comprehensive walkt
 
 ## 域名配置
 
-当前网站使用Vercel提供的临时域名：`https://dreamy-room-level.vercel.app`
+当前网站使用Vercel提供的临时域名：`https://dreamyroom.co`
 
 ### 更改为自定义域名的步骤
 
@@ -69,3 +69,5 @@ npm run preview
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vite.dev/config/).
+
+## 项目背景

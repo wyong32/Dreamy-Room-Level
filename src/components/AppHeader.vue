@@ -654,9 +654,6 @@ export default {
   -webkit-appearance: none;
   margin: 0;
 }
-.level-search-input[type='number'] {
-  -moz-appearance: textfield; /* Firefox */
-}
 
 .level-search-input::placeholder {
   color: #aaa;
