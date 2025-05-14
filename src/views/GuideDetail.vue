@@ -172,8 +172,8 @@ export default {
         console.error('Guide not found for id/path:', this.idFromUrl || this.id, this.pathFromUrl)
         const fallbackRoute =
           currentLocale === 'en'
-            ? '/dreamy-room-revel-game-guides'
-            : `/${currentLocale}/dreamy-room-revel-game-guides`
+            ? '/dreamy-room-level-game-guides'
+            : `/${currentLocale}/dreamy-room-level-game-guides`
         this.$router.push(fallbackRoute)
       }
     },

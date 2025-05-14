@@ -120,7 +120,7 @@ const loadBlogIds = () => {
 // 定义静态路径（不带前导斜杠）
 const staticPaths = [
   '', // 对应首页 '/'
-  'dreamy-room-revel-game-guides',
+  'dreamy-room-level-game-guides',
   'dreamy-room-game-blog',
   'download-dreamy-room-game',
   'about',

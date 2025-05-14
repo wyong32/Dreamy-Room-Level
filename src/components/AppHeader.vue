@@ -19,7 +19,7 @@
           </li>
           <li>
             <router-link
-              :to="getLocalizedPath('/dreamy-room-revel-game-guides')"
+              :to="getLocalizedPath('/dreamy-room-level-game-guides')"
               :title="$t('header.guides')"
               @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link
@@ -83,7 +83,7 @@
         </li>
         <li>
           <router-link
-            :to="getLocalizedPath('/dreamy-room-revel-game-guides')"
+            :to="getLocalizedPath('/dreamy-room-level-game-guides')"
             :title="$t('header.guides')"
             @click="closeMobileMenu"
             ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link

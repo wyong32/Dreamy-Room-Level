@@ -20,13 +20,13 @@ const routes = [
     component: HomeView,
   },
   {
-    path: '/dreamy-room-revel-game-guides',
+    path: '/dreamy-room-level-game-guides',
     name: 'guides',
     component: GuidesView,
   },
   {
     path: '/guides',
-    redirect: '/dreamy-room-revel-game-guides',
+    redirect: '/dreamy-room-level-game-guides',
   },
   {
     path: '/dreamy-room-game-blog',
