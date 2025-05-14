@@ -281,10 +281,22 @@ export default {
   }
 
   .footer-columns {
-    /* auto-fit with minmax(150px, 1fr) should result in single column mostly */
-    /* If we want to ensure single column for very small screens for all columns: */
-    /* grid-template-columns: 1fr; */
-    gap: 1.5rem; /* Can adjust gap if needed */
+    display: block;
+    overflow: hidden;
+  }
+
+  .footer-column:nth-child(2) {
+    width: 50%;
+    float: left;
+  }
+
+  .footer-column:nth-child(3) {
+    display: none;
+  }
+
+  .footer-column:nth-child(4) {
+    width: 50%;
+    float: left;
   }
 
   .footer-logo {
@@ -321,11 +333,6 @@ export default {
 }
 
 @media (max-width: 576px) {
-  .footer-columns {
-    grid-template-columns: 1fr; /* Force single column for very small screens */
-    gap: 1.2rem;
-  }
-
   .footer-column {
     /* On very small screens, ensure content isn't too cramped */
     padding: 0 0.5rem; /* Add a little horizontal padding within columns if needed */

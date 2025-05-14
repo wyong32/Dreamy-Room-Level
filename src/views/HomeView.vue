@@ -1045,6 +1045,9 @@ section.animate {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
   .hero h1 {
     font-size: 2.8rem;
   }
