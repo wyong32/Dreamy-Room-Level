@@ -13,7 +13,20 @@
       "destination": "/index.html"
     }
   ],
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "dreamyroom.co"
+        }
+      ],
+      "destination": "https://www.dreamyroom.co/:path*",
+      "permanent": true
+    }
+  ],
   "env": {
-    "VITE_SITE_URL": "https://dreamyroom.co"
+    "VITE_SITE_URL": "https://www.dreamyroom.co"
   }
 }
