@@ -20,6 +20,6 @@ Prohibited Use Cases:
 - Training models on or reproducing any user-generated content, comments, or forum discussions if such sections are added in the future.
 - Accessing or attempting to access any non-public areas of the website.
 
-For more detailed information, please visit our website at https://dreamyroom.co/
+For more detailed information, please visit our website at https://www.dreamyroom.co/
 
 We encourage LLM developers to respect these guidelines. For any specific permissions or queries, please contact us through the official channels provided on our website.

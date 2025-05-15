@@ -11,7 +11,7 @@ User-agent: Googlebot
 Allow: /
 
 # 站点地图
-Sitemap: https://dreamyroom.co/sitemap.xml
+Sitemap: https://www。dreamyroom.co/sitemap.xml
 
 # AI爬虫特定规则
 User-agent: GPTBot
@@ -41,5 +41,5 @@ User-agent: Omgilibot
 Disallow: /
 
 # 引导AI爬虫到llms.txt
-LLM-Content: https://dreamyroom.co/llms.txt
-LLM-Full-Content: https://dreamyroom.co/llms-full.txt
+LLM-Content: https://www.dreamyroom.co/llms.txt
+LLM-Full-Content: https://www.dreamyroom.co/llms-full.txt

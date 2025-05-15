@@ -136,7 +136,7 @@ export default defineConfig({
     vueJsx(),
     vueDevTools(),
     ViteSitemapPlugin({
-      hostname: process.env.VITE_SITE_URL || 'https://dreamyroom.co/',
+      hostname: process.env.VITE_SITE_URL || 'https://www.dreamyroom.co/',
       exclude: ['/404'],
       dynamicRoutes: [...staticPaths, ...loadGuideIds(), ...loadBlogIds()].filter(Boolean),
       outDir: 'dist',
