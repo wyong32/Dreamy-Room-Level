@@ -372,9 +372,11 @@ export default {
 
 <style>
 .guide-detail {
-  padding: 5rem 0 2rem 0; /* 增加顶部间距从2rem到5rem */
+  padding: 6rem 0 2rem 0; /* 匹配header高度80px + 额外间距 */
   background-color: #f8f9fa;
   min-height: 100vh;
+  /* 防止CLS优化 */
+  contain: layout style;
 }
 
 .container {

@@ -292,17 +292,30 @@ export default {
 
 @media (max-width: 768px) {
   .footer {
-    padding: 2rem 1rem; /* Further reduce padding */
+    padding: 2rem 1rem;
+    min-height: 350px; /* 移动端固定最小高度 */
+  }
+
+  .footer-content {
+    min-height: 250px; /* 移动端固定最小高度 */
   }
 
   .footer-columns {
-    display: block;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    min-height: 180px; /* 固定最小高度防止CLS */
+    contain: layout style paint;
+  }
+
+  .footer-column:nth-child(1) {
+    grid-column: 1 / -1; /* 第一列占满整行 */
+    min-height: 80px;
   }
 
   .footer-column:nth-child(2) {
-    width: 50%;
-    float: left;
+    grid-column: 1;
+    min-height: 100px;
   }
 
   .footer-column:nth-child(3) {
@@ -310,8 +323,8 @@ export default {
   }
 
   .footer-column:nth-child(4) {
-    width: 50%;
-    float: left;
+    grid-column: 2;
+    min-height: 100px;
   }
 
   .footer-logo {

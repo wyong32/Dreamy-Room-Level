@@ -4,7 +4,17 @@
     <div class="container">
       <div class="logo">
         <div class="logo-text">
-          <img src="/images/logo.webp" alt="Logo" class="logo-image" /> {{ $t('header.logo') }}
+          <img
+            src="/images/logo.webp"
+            alt="Logo"
+            class="logo-image"
+            width="30"
+            height="30"
+            loading="eager"
+            decoding="sync"
+            fetchpriority="high"
+          />
+          {{ $t('header.logo') }}
         </div>
       </div>
       <nav class="nav desktop-nav" aria-label="Main Navigation">
@@ -321,6 +331,11 @@ export default {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 100;
   padding: 1rem 0;
+  /* 防止CLS优化 */
+  height: 80px;
+  min-height: 80px;
+  contain: layout style paint;
+  box-sizing: border-box;
 }
 
 .container {
@@ -346,9 +361,16 @@ export default {
 
 .logo-image {
   height: 30px;
-  width: auto;
+  width: 30px;
   margin-right: 0.5rem;
   vertical-align: middle;
+  /* 防止CLS优化 */
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  object-fit: contain;
+  contain: layout style paint;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .nav ul {
@@ -602,10 +624,12 @@ export default {
 @media (max-width: 768px) {
   .header {
     padding: 0.8rem 0;
+    height: 70px;
+    min-height: 70px;
   }
   .mobile-nav {
-    top: 54px;
-    height: calc(100vh - 54px);
+    top: 70px;
+    height: calc(100vh - 70px);
   }
 
   .container {
