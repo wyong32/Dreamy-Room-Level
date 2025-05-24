@@ -209,6 +209,12 @@ export default {
       '免责声明：本网站为非官方粉丝站点，与梦幻房间游戏创作者无关联。所有权利归其各自所有者所有。',
   },
 
+  // YouTube组件
+  youtube: {
+    clickToLoad: '点击加载视频',
+    performanceNote: '延迟加载以提高页面性能',
+  },
+
   // 语言切换器
   language: {
     en: 'English',

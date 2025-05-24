@@ -66,6 +66,10 @@ export default {
     contact: 'Contact',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',
+  },
+  youtube: {
+    clickToLoad: 'Click to load video',
+    performanceNote: 'Delayed loading to improve page performance',
     searchPlaceholder: 'Enter level (1-{max})',
     searchInvalidLevel: 'Please enter a level between 1 and {max}.',
   },

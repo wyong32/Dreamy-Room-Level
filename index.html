@@ -299,17 +299,20 @@
         // 启动智能预加载
         setupIntelligentPreload()
 
-        // 创建GA脚本（生产环境）
+        // 延迟加载GA脚本（生产环境）
         if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-          const script = document.createElement('script')
-          script.async = true
-          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XDPMML0BQW'
-          document.head.appendChild(script)
+          // 延迟3秒加载GA，减少对首屏性能的影响
+          setTimeout(() => {
+            const script = document.createElement('script')
+            script.async = true
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XDPMML0BQW'
+            document.head.appendChild(script)
 
-          script.onload = function () {
-            gtag('js', new Date())
-            gtag('config', 'G-XDPMML0BQW')
-          }
+            script.onload = function () {
+              gtag('js', new Date())
+              gtag('config', 'G-XDPMML0BQW')
+            }
+          }, 3000)
         }
       })
     </script>

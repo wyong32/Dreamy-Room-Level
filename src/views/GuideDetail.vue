@@ -16,13 +16,11 @@
       <div class="guide-content">
         <div class="main-content">
           <div v-if="guide.iframeUrl" class="guide-video-wrapper">
-            <iframe
-              :src="guide.iframeUrl"
+            <YouTubeFacade
+              :videoUrl="guide.iframeUrl"
               :title="guide.pageTitle + ' Video Gameplay'"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+              :customThumbnail="getVideoThumbnail(guide)"
+            />
           </div>
           <div class="guide-details" v-html="guide.detailsHtml"></div>
         </div>
@@ -65,6 +63,7 @@
 import guidesData from '@/datas/guides/index.js'
 import guidesZhData from '@/datas/guides-zh/index.js'
 import SeoHead from '@/components/SeoHead.vue'
+import YouTubeFacade from '@/components/YouTubeFacade.vue'
 import { useI18n } from 'vue-i18n'
 import i18n from '@/i18n'
 import { useHead } from '@vueuse/head'
@@ -73,6 +72,7 @@ export default {
   name: 'GuideDetail',
   components: {
     SeoHead,
+    YouTubeFacade,
   },
   props: {
     id: {
@@ -221,6 +221,19 @@ export default {
         }
       }
       return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null
+    },
+    getVideoThumbnail(guide) {
+      if (!guide) return null
+
+      // 优先使用侧边栏图片或主图片作为缩略图
+      let thumbnail = guide.sidebarData?.sidebarImageUrl || guide.imageUrl
+
+      // 确保路径是绝对路径
+      if (thumbnail && thumbnail.startsWith('/')) {
+        thumbnail = `${window.location.origin}${thumbnail}`
+      }
+
+      return thumbnail || this.getYoutubeThumbnailUrl(guide.iframeUrl)
     },
     injectJsonLd(guide) {
       const siteUrl =
@@ -405,30 +418,21 @@ export default {
 }
 
 .guide-video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #f0f0f0; /* Light grey background, can be #000 or transparent */
   margin-bottom: 20px; /* Space below the video */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* 移除padding-bottom，让YouTubeFacade组件自己处理宽高比 */
 }
 
-.guide-video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none; /* Ensure no default border */
-}
+/* YouTubeFacade组件会自己处理iframe样式 */
 
 .guide-details {
   line-height: 1.8;
   color: #333;
   font-size: 1.05rem;
 }
-/* 
+/*
 .guide-details h2 {
   color: #333;
   margin: 2rem 0 1.5rem;
@@ -531,15 +535,10 @@ export default {
 
 /* 表格样式 */
 .guide-details table {
+  display: block;
   width: 100%;
   border-collapse: collapse;
   margin: 1.8rem 0;
-  overflow: hidden;
-}
-
-.guide-details table {
-  display: block;
-  width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
