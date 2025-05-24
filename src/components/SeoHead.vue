@@ -30,6 +30,16 @@ export default {
       type: String,
       default: null,
     },
+    // 自定义图片（可选）
+    customImage: {
+      type: String,
+      default: null,
+    },
+    // 页面类型（用于Open Graph）
+    ogType: {
+      type: String,
+      default: 'website',
+    },
   },
   setup(props) {
     const { t, locale } = useI18n()
@@ -94,6 +104,39 @@ export default {
         document.head.appendChild(metaKeywords)
       }
       metaKeywords.setAttribute('content', seoInfo.value.keywords)
+
+      // 更新Open Graph标签
+      updateMetaTag('og:title', seoInfo.value.title)
+      updateMetaTag('og:description', seoInfo.value.description)
+      updateMetaTag('og:type', props.ogType)
+      updateMetaTag('og:image', props.customImage || '/images/logo.webp')
+      updateMetaTag('og:site_name', seoInfo.value.siteName)
+      updateMetaTag('og:locale', locale.value === 'zh' ? 'zh_CN' : 'en_US')
+
+      // 更新Twitter Card标签
+      updateMetaTag('twitter:card', 'summary_large_image')
+      updateMetaTag('twitter:title', seoInfo.value.title)
+      updateMetaTag('twitter:description', seoInfo.value.description)
+      updateMetaTag('twitter:image', props.customImage || '/images/logo.webp')
+    }
+
+    // 辅助函数：更新meta标签
+    const updateMetaTag = (property, content) => {
+      let meta =
+        document.querySelector(`meta[property="${property}"]`) ||
+        document.querySelector(`meta[name="${property}"]`)
+
+      if (!meta) {
+        meta = document.createElement('meta')
+        if (property.startsWith('og:') || property.startsWith('twitter:')) {
+          meta.setAttribute('property', property)
+        } else {
+          meta.setAttribute('name', property)
+        }
+        document.head.appendChild(meta)
+      }
+
+      meta.setAttribute('content', content)
     }
 
     // 监听SEO信息变化
@@ -102,7 +145,7 @@ export default {
       () => {
         updatePageTDK()
       },
-      { immediate: true },
+      { immediate: true }
     )
 
     // 监听语言变化

@@ -1,19 +1,37 @@
-User-agent: *
-Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /user-data/
+# LLM Guidelines for Dreamy Room Guide Site
 
-# Specific instructions for large language models
+This file provides guidance for Large Language Models (LLMs) interacting with content on dreamyroom.co.
 
-This file, `llms.txt`, provides guidance for Large Language Models (LLMs) interacting with the content on dreamyroom.co.
+## Site Overview
+DreamyRoom.co is a comprehensive guide website for the Dreamy Room puzzle game, featuring:
+- Complete walkthroughs for all 102 game levels
+- Step-by-step strategies and tips
+- Game features and mechanics explanations
+- Download information and game updates
 
-Our primary goal is to ensure that LLMs can access and understand our publicly available content for tasks like answering user questions about Dreamy Room, summarizing game guides, and providing information about game features, while respecting content copyrights and user privacy.
+## Allowed Use Cases
+✅ **Permitted Activities:**
+- Indexing public content for search and question-answering about Dreamy Room game
+- Summarizing publicly available game guides and walkthroughs
+- Extracting information about game levels, strategies, and tips
+- Providing assistance to users seeking help with specific levels
+- Generating summaries of game features and mechanics
 
-Allowed Use Cases:
-- Indexing public content for search and question-answering about Dreamy Room.
-- Summarizing publicly available game guides and blog posts.
-- Extracting information about game levels, features, and tips.
+## Content Structure
+Our content is organized as follows:
+- **Home Page (/)**: Overview and featured content
+- **Guides (/dreamy-room-level-game-guides)**: Complete level walkthroughs (Levels 1-102)
+- **Blog (/dreamy-room-game-blog)**: Game news, updates, and articles
+- **Download (/download-dreamy-room-game)**: Game download information
+- **About/Contact**: Site information and contact details
+
+## Key Topics Covered
+- Dreamy Room game level solutions
+- Puzzle-solving strategies
+- Room decoration tips
+- Game mechanics and features
+- Mobile gaming guides (iOS/Android)
+- Step-by-step walkthroughs
 
 Prohibited Use Cases:
 - Reproducing copyrighted game art, extensive direct quotes from guides or blog posts without proper attribution to dreamyroom.co.

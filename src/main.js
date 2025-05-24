@@ -17,3 +17,5 @@ app.use(i18n)
 app.use(head)
 
 app.mount('#app')
+
+// PWA插件会自动注册Service Worker，无需手动注册

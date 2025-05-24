@@ -16,7 +16,7 @@
 
     <div v-if="filteredGuides.length > 0" class="guide-cards">
       <article
-        v-for="guide in filteredGuides"
+        v-for="(guide, index) in filteredGuides"
         :key="guide.id"
         class="guide-card"
         @click="navigateToGuide(guide)"
@@ -28,9 +28,14 @@
               'https://via.placeholder.com/300x300/f5f0ff/b19cd9?text=' + guide.title
             "
             :alt="guide.imageAlt || guide.pageTitle"
-            loading="lazy"
-            decoding="async"
+            :fetchpriority="index < 6 ? 'high' : 'auto'"
+            :loading="index < 6 ? 'eager' : 'lazy'"
+            :decoding="index < 6 ? 'sync' : 'async'"
+            width="300"
+            height="200"
             @error="handleImageError"
+            @load="handleImageLoad"
+            class="guide-image"
           />
         </div>
         <div class="card-content">
@@ -137,6 +142,11 @@ export default {
       }
     }
 
+    const handleImageLoad = (event) => {
+      // 图片加载完成后添加淡入效果
+      event.target.classList.add('loaded')
+    }
+
     return {
       t,
       i18nLocale,
@@ -147,6 +157,7 @@ export default {
       navigateToGuide,
       getCategoryName,
       handleImageError,
+      handleImageLoad,
     }
   },
 }
@@ -223,6 +234,14 @@ export default {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.food-image img.loaded {
+  opacity: 1;
 }
 
 .card-content {

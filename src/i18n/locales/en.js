@@ -6,16 +6,18 @@ export default {
       separator: ' - ',
     },
     home: {
-      title: 'Dreamy Room Level - Game Guide & Tips - DreamyRoom.co',
+      title: 'Dreamy Room Level Walkthrough Guide - Complete Game Solutions | DreamyRoom.co',
       description:
-        'Explore every corner of the dreamy room and unlock the secrets of all levels. Find comprehensive guides, tips, and tricks for Dreamy Room Level game.',
-      keywords: 'dreamy room level, game guide, puzzle game, room decoration, game tips',
+        'Master all 102 levels of Dreamy Room with our complete walkthrough guides. Step-by-step solutions, tips, and strategies for every puzzle. Free game guides and download links.',
+      keywords:
+        'dreamy room level, game walkthrough, puzzle solutions, room decoration guide, mobile game tips, level guide, dreamy room cheats, game strategy',
     },
     guides: {
-      title: 'Game Guides - Dreamy Room Level',
+      title: 'All Dreamy Room Level Guides & Walkthroughs - Complete Solutions',
       description:
-        'Find detailed guides for all levels of Dreamy Room. Complete walkthroughs, tips, and strategies to help you progress through the game.',
-      keywords: 'dreamy room level guides, game walkthrough, level guides, puzzle solutions',
+        'Browse all 102 Dreamy Room level guides with detailed walkthroughs, screenshots, and step-by-step solutions. Find the perfect strategy for every puzzle and decoration challenge.',
+      keywords:
+        'dreamy room guides, level walkthroughs, puzzle solutions, game strategies, room decoration tips, mobile game help, dreamy room cheats',
     },
     blog: {
       title: 'Blog - Dreamy Room Level',

@@ -72,7 +72,13 @@
       <div class="container">
         <Suspense>
           <template #default>
-            <GameGuides />
+            <GameGuides v-if="!isMobile || showMobileGuides" />
+            <div v-else-if="isMobile && !showMobileGuides" class="mobile-guides-placeholder">
+              <button @click="loadMobileGuides" class="load-guides-btn">
+                <span>📱</span>
+                {{ $t('home.loadGuides') || 'Load Game Guides' }}
+              </button>
+            </div>
           </template>
           <template #fallback>
             <div class="loading-placeholder">
@@ -279,9 +285,15 @@ export default {
     return { t }
   },
   data() {
-    return {}
+    return {
+      isMobile: false,
+      showMobileGuides: false,
+    }
   },
   mounted() {
+    // 检测移动端
+    this.checkMobile()
+
     // 添加滚动动画
     this.addScrollAnimation()
 
@@ -289,6 +301,18 @@ export default {
     this.setupFaqToggle()
   },
   methods: {
+    // 检测移动端设备
+    checkMobile() {
+      this.isMobile =
+        window.innerWidth <= 768 ||
+        /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    },
+
+    // 移动端加载指南
+    loadMobileGuides() {
+      this.showMobileGuides = true
+    },
+
     // 添加滚动动画
     addScrollAnimation() {
       const sections = document.querySelectorAll('section')
@@ -1287,5 +1311,40 @@ section.animate {
   .tip-card {
     padding: 0.5rem; /* 调整提示卡片内边距 */
   }
+}
+
+/* 移动端指南加载按钮 */
+.mobile-guides-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.load-guides-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.load-guides-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.load-guides-btn span {
+  font-size: 1.2rem;
 }
 </style>

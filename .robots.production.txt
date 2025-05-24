@@ -1,36 +1,55 @@
-# robots.txt基础设置
+# robots.txt for Dreamy Room Guide Site
 
-# 常规搜索引擎规则
+# Allow all crawlers access to all content by default
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
+Crawl-delay: 1
 
-# 允许特定机器人完全访问（如果需要）
-User-agent: Googlebot
-Allow: /
-
-# 站点地图
+# Sitemap location
 Sitemap: https://www.dreamyroom.co/sitemap.xml
 
-# AI爬虫特定规则
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /src/
+
+# --- Specific rules for search engine crawlers ---
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# --- Specific rules for AI crawlers ---
 User-agent: GPTBot
-User-agent: Claude-web
+User-agent: Claude-Web
 User-agent: Anthropic-AI
 User-agent: PerplexityBot
 User-agent: GoogleOther
 User-agent: DuckAssistBot
-Disallow: /
 
-# 允许AI爬虫访问
-Allow: /blog/
-Allow: /guides/
-Allow: /download/
+# Guide AI crawlers to the structured context file
+LLM-Content: https://www.dreamyroom.co/llms.txt
 
-# 不允许AI爬虫访问
-Disallow: /user-content/
+# Allow AI crawlers access to all key sections
+Allow: /
+Allow: /dreamy-room-level-game-guides/
+Allow: /dreamy-room-game-blog/
+Allow: /download-dreamy-room-game/
+Allow: /privacy/
+Allow: /terms/
+Allow: /about/
+Allow: /contact/
+Crawl-delay: 1
 
-# LLM Access Rules
+# LLM Access Rules - Block aggressive AI crawlers
 User-agent: Google-Extended
 Disallow: /
 
@@ -39,6 +58,3 @@ Disallow: /
 
 User-agent: Omgilibot
 Disallow: /
-
-# 引导AI爬虫到llms.txt
-LLM-Content: https://www.dreamyroom.co/llms.txt

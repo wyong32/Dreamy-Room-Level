@@ -8,6 +8,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import ViteSitemapPlugin from 'vite-plugin-sitemap'
 import { robots } from 'vite-plugin-robots'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // Helper function to load guide IDs from data files
 const loadGuideIds = () => {
@@ -140,9 +141,52 @@ export default defineConfig({
       exclude: ['/404'],
       dynamicRoutes: [...staticPaths, ...loadGuideIds(), ...loadBlogIds()].filter(Boolean),
       outDir: 'dist',
+      // 添加更多SEO配置
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString().split('T')[0],
+      // 为不同类型的页面设置不同的优先级
+      routes: {
+        '/': { priority: 1.0, changefreq: 'weekly' },
+        '/dreamy-room-level-game-guides': { priority: 0.9, changefreq: 'weekly' },
+        '/dreamy-room-game-blog': { priority: 0.8, changefreq: 'weekly' },
+        '/download-dreamy-room-game': { priority: 0.7, changefreq: 'monthly' },
+        '/about': { priority: 0.6, changefreq: 'monthly' },
+        '/contact': { priority: 0.5, changefreq: 'monthly' },
+        '/privacy': { priority: 0.3, changefreq: 'yearly' },
+        '/terms': { priority: 0.3, changefreq: 'yearly' },
+      },
     }),
     robots({
       useProductionFile: true, // 使用.robots.production.txt文件
+    }),
+    VitePWA({
+      registerType: 'autoUpdate',
+      devOptions: {
+        enabled: false, // 开发环境禁用PWA
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,webp}'],
+        cleanupOutdatedCaches: true,
+      },
+      includeAssets: ['favicon.ico'],
+      manifest: {
+        name: 'Dreamy Room Game Guides',
+        short_name: 'Dreamy Room',
+        description: 'Complete walkthrough guides for all levels of Dreamy Room puzzle game',
+        theme_color: '#6a4c93',
+        background_color: '#faf5ff',
+        display: 'standalone',
+        scope: '/',
+        start_url: '/',
+        icons: [
+          {
+            src: '/favicon.ico',
+            sizes: '64x64 32x32 24x24 16x16',
+            type: 'image/x-icon',
+          },
+        ],
+      },
     }),
   ],
   resolve: {
@@ -151,17 +195,49 @@ export default defineConfig({
     },
   },
   build: {
-    // 简化配置以确保部署成功
     target: 'es2015',
-    minify: true, // 使用默认压缩
+    minify: 'terser', // 使用terser获得更好的压缩
+    terserOptions: {
+      compress: {
+        drop_console: true, // 生产环境移除console
+        drop_debugger: true, // 移除debugger
+        pure_funcs: ['console.log'], // 移除特定函数调用
+      },
+    },
     rollupOptions: {
       output: {
         manualChunks: {
           vue: ['vue', 'vue-router', 'vue-i18n'],
           vendor: ['pinia', '@vueuse/head'],
+          guides: ['@/datas/guides/index.js'],
+        },
+        // 优化文件名和缓存
+        chunkFileNames: 'js/[name]-[hash].js',
+        entryFileNames: 'js/[name]-[hash].js',
+        assetFileNames: (assetInfo) => {
+          const fileName = assetInfo.names?.[0] || 'asset'
+          const info = fileName.split('.')
+          const ext = info[info.length - 1]
+          if (/\.(png|jpe?g|gif|svg|webp|avif)(\?.*)?$/i.test(fileName)) {
+            return `images/[name]-[hash].${ext}`
+          }
+          if (ext === 'css') {
+            return `css/[name]-[hash].${ext}`
+          }
+          return `assets/[name]-[hash].${ext}`
         },
       },
     },
+    // 启用CSS代码分割
+    cssCodeSplit: true,
+    // 设置chunk大小警告限制
     chunkSizeWarningLimit: 1000,
+    // 启用压缩报告
+    reportCompressedSize: true,
+  },
+  // 优化依赖预构建
+  optimizeDeps: {
+    include: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
+    exclude: ['@vueuse/head'], // 按需加载
   },
 })
