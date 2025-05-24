@@ -1,16 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import GuidesView from '../views/GuidesView.vue'
-import BlogView from '../views/BlogView.vue'
-import DownloadView from '../views/DownloadView.vue'
-import GuideDetail from '../views/GuideDetail.vue'
-import BlogDetail from '../views/BlogDetail.vue'
-import PrivacyView from '../views/PrivacyView.vue'
-import TermsView from '../views/TermsView.vue'
-import AboutView from '../views/AboutView.vue'
-import ContactView from '../views/ContactView.vue'
-
 import i18n from '../i18n'
+
+// 懒加载组件 - 只有HomeView保持同步加载以优化首屏性能
+import HomeView from '../views/HomeView.vue'
+
+// 其他组件使用懒加载
+const GuidesView = () => import('../views/GuidesView.vue')
+const BlogView = () => import('../views/BlogView.vue')
+const DownloadView = () => import('../views/DownloadView.vue')
+const GuideDetail = () => import('../views/GuideDetail.vue')
+const BlogDetail = () => import('../views/BlogDetail.vue')
+const PrivacyView = () => import('../views/PrivacyView.vue')
+const TermsView = () => import('../views/TermsView.vue')
+const AboutView = () => import('../views/AboutView.vue')
+const ContactView = () => import('../views/ContactView.vue')
 
 // Create routes for default locale (English)
 const routes = [
@@ -80,7 +83,7 @@ const routes = [
 
 // 暂时注释掉多语言路由相关代码，以后可能会重新启用
 // Create localized routes for non-default locales
-const localeRoutes = []
+// const localeRoutes = []
 
 /*
 // Add localized routes for each route
@@ -156,7 +159,7 @@ router.beforeEach((to, _from, next) => {
 */
 
 // 简化的导航守卫，只设置默认语言
-router.beforeEach((to, _from, next) => {
+router.beforeEach((_to, _from, next) => {
   // 强制使用英文
   i18n.global.locale.value = 'en'
   return next()

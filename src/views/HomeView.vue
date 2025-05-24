@@ -70,7 +70,17 @@
         <span class="title-icon">📖</span> {{ $t('home.guides.title') }}
       </h2>
       <div class="container">
-        <GameGuides />
+        <Suspense>
+          <template #default>
+            <GameGuides />
+          </template>
+          <template #fallback>
+            <div class="loading-placeholder">
+              <div class="loading-spinner"></div>
+              <p>{{ $t('common.loading') || 'Loading...' }}</p>
+            </div>
+          </template>
+        </Suspense>
       </div>
     </section>
 
@@ -335,8 +345,7 @@ export default {
         const headerHeight = document.querySelector('.header').offsetHeight
 
         // 计算目标位置，考虑头部导航的高度
-        const targetPosition =
-          section.getBoundingClientRect().top + window.pageYOffset - headerHeight
+        const targetPosition = section.getBoundingClientRect().top + window.scrollY - headerHeight
 
         // 使用平滑滚动
         window.scrollTo({
@@ -606,6 +615,41 @@ main {
   background-color: #f9f7fe;
   position: relative;
   scroll-margin-top: 80px; /* 考虑头部导航的高度 */
+}
+
+/* 加载占位符 */
+.loading-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  min-height: 300px;
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f0e6ff;
+  border-top: 4px solid #b19cd9;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-placeholder p {
+  color: #6a4c93;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 /* 下载游戏 */

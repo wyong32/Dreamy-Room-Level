@@ -226,7 +226,7 @@ function updateMetaTag(attrName, attrValue, content) {
 }
 
 body {
-  font-family: 'Noto Sans SC', 'Microsoft YaHei', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   color: #6a4c93;
   background-color: #faf5ff;
   line-height: 1.6;

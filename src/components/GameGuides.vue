@@ -28,6 +28,9 @@
               'https://via.placeholder.com/300x300/f5f0ff/b19cd9?text=' + guide.title
             "
             :alt="guide.imageAlt || guide.pageTitle"
+            loading="lazy"
+            decoding="async"
+            @error="handleImageError"
           />
         </div>
         <div class="card-content">
@@ -124,6 +127,16 @@ export default {
       return t('guides.levelRange', { start: range[0], end: range[1] })
     }
 
+    const handleImageError = (event) => {
+      // 图片加载失败时的处理
+      const img = event.target
+      if (img && !img.dataset.fallbackLoaded) {
+        img.dataset.fallbackLoaded = 'true'
+        img.src =
+          'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmMGZmIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iI2I5Y2Q5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+RHJlYW15IFJvb208L3RleHQ+PC9zdmc+'
+      }
+    }
+
     return {
       t,
       i18nLocale,
@@ -133,6 +146,7 @@ export default {
       setActiveCategory,
       navigateToGuide,
       getCategoryName,
+      handleImageError,
     }
   },
 }

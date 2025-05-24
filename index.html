@@ -2,28 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <!-- Favicon 设置 - 支持多种尺寸和格式 -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/images/logo.webp" type="image/webp" />
+    <link rel="apple-touch-icon" href="/images/logo.webp" />
+    <link rel="manifest" href="/manifest.json" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#ffffff" />
-    <meta name="author" content="Your Name or Company" />
+    <meta name="author" content="Dreamy Room Guide Team" />
 
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Asynchronously load Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
+    <!-- 使用系统字体，无需加载外部字体 -->
+    <style>
+      /* 系统字体配置 - 参考cookingdom项目 */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-display: swap;
+      }
+    </style>
     <title>Dreamy Room Game Guides</title>
     <meta
       name="description"
@@ -34,16 +30,72 @@
       content="dreamy room level, game guide, puzzle game, room decoration, game tips"
     />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDPMML0BQW"></script>
+    <!-- Open Graph 标签 - 用于社交媒体分享和搜索结果 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dreamy Room All Level Walkthroughs Guide" />
+    <meta
+      property="og:description"
+      content="Your companion for all 50 levels of Dreamy Room puzzle game. This complete guides will help you unpack every puzzle in Dreamy Room with ease and enjoyment!"
+    />
+    <meta property="og:image" content="/images/logo.webp" />
+    <meta property="og:url" content="https://www.dreamyroom.co" />
+    <meta property="og:site_name" content="Dreamy Room Guide" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card 标签 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dreamy Room All Level Walkthroughs Guide" />
+    <meta
+      name="twitter:description"
+      content="Your companion for all 50 levels of Dreamy Room puzzle game. Complete guides for every puzzle!"
+    />
+    <meta name="twitter:image" content="/images/logo.webp" />
+
+    <!-- 结构化数据 - JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Dreamy Room Guide",
+        "url": "https://www.dreamyroom.co",
+        "description": "Complete walkthrough guides for all levels of Dreamy Room puzzle game",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Dreamy Room Guide Team",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.dreamyroom.co/images/logo.webp"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.dreamyroom.co/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- Google Analytics - 延迟加载优化 -->
     <script>
+      // 延迟加载Google Analytics以提升性能
       window.dataLayer = window.dataLayer || []
       function gtag() {
         dataLayer.push(arguments)
       }
-      gtag('js', new Date())
 
-      gtag('config', 'G-XDPMML0BQW')
+      // 页面加载完成后再加载GA
+      window.addEventListener('load', function () {
+        // 创建GA脚本
+        const script = document.createElement('script')
+        script.async = true
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XDPMML0BQW'
+        document.head.appendChild(script)
+
+        script.onload = function () {
+          gtag('js', new Date())
+          gtag('config', 'G-XDPMML0BQW')
+        }
+      })
     </script>
   </head>
   <body>
