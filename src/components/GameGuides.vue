@@ -168,6 +168,12 @@ export default {
 .guides-container {
   padding: 2rem 0;
   position: relative;
+  /* 参考cookingdom的section容器优化策略 */
+  contain: layout style paint;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 600px;
 }
 
 /* Level Navigation */
@@ -200,10 +206,15 @@ export default {
 
 .guide-cards {
   display: grid;
+  /* 参考cookingdom的精确grid控制策略 */
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  /* 新增cookingdom优化技术 */
+  contain: layout style;
+  place-items: stretch;
+  min-height: 400px;
 }
 
 .guide-card {
@@ -227,6 +238,11 @@ export default {
   background-color: #f5f0ff;
   position: relative;
   overflow: hidden;
+  /* 参考cookingdom的容器优化策略 */
+  contain: layout paint;
+  will-change: transform;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 180px;
 }
 
 .food-image img {
@@ -238,6 +254,11 @@ export default {
   transition: opacity 0.3s ease;
   transform: translateZ(0);
   backface-visibility: hidden;
+  /* 参考cookingdom的图片优化策略 */
+  will-change: transform;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  perspective: 1000;
 }
 
 .food-image img.loaded {
@@ -334,5 +355,47 @@ export default {
   padding: 3rem 1rem;
   font-size: 1.2rem;
   color: #666;
+}
+
+/* 参考cookingdom的骨架屏加载状态 */
+.guides-placeholder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  min-height: 400px;
+}
+
+.placeholder-item {
+  height: 280px;
+  background: linear-gradient(110deg, #f5f5f5 8%, #efefef 18%, #f5f5f5 33%);
+  border-radius: 15px;
+  animation: shimmer 1.5s linear infinite;
+  background-size: 200% 100%;
+  contain: layout style paint;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(106, 76, 147, 0.3);
+  border-radius: 50%;
+  border-top-color: #6a4c93;
+  animation: spin 1s ease-in-out infinite;
+  margin: 2rem auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 </style>

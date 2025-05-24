@@ -128,14 +128,14 @@ export default {
 </script>
 
 <style scoped>
-/* 页脚 */
+/* 页脚 - 参考cookingdom优化策略 */
 .footer {
   background: #8b4513; /* 棕色背景 */
   color: white;
   padding: 3rem 2rem;
-  /* 防止CLS优化 */
+  /* 参考cookingdom的CLS优化策略 */
   contain: layout style paint;
-  min-height: 400px;
+  min-height: 300px; /* 减少到合理高度，参考cookingdom */
   width: 100%;
   box-sizing: border-box;
 }
@@ -143,9 +143,9 @@ export default {
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  /* 防止CLS优化 */
+  /* 参考cookingdom优化策略 */
   contain: layout style;
-  min-height: 300px;
+  min-height: 200px; /* 减少到合理高度 */
   width: 100%;
   box-sizing: border-box;
 }
@@ -154,10 +154,10 @@ export default {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr; /* 固定列比例 */
   gap: 2rem;
-  margin-bottom: 3rem;
-  /* 防止CLS优化 */
+  margin-bottom: 2rem; /* 减少底部间距 */
+  /* 参考cookingdom优化策略 */
   contain: layout style paint;
-  min-height: 250px;
+  min-height: 180px; /* 减少到合理高度 */
   width: 100%;
   box-sizing: border-box;
 }
@@ -165,20 +165,10 @@ export default {
 .footer-column {
   display: flex;
   flex-direction: column;
-  /* 防止CLS优化 */
-  min-height: 200px;
+  /* 参考cookingdom优化策略 */
+  min-height: 150px; /* 减少到合理高度 */
   contain: layout style;
   box-sizing: border-box;
-}
-
-.footer-column:nth-child(1) {
-  min-height: 220px; /* 第一列稍高 */
-}
-
-.footer-column:nth-child(2),
-.footer-column:nth-child(3),
-.footer-column:nth-child(4) {
-  min-height: 180px;
 }
 
 .footer-logo {
@@ -198,9 +188,8 @@ export default {
   line-height: 1.6;
   font-size: 0.95rem;
   color: #fff;
-  /* 防止CLS优化 */
-  min-height: 4.8rem; /* 约3行文本的高度 */
-  contain: layout style;
+  /* 精准CLS优化 */
+  height: 4.8rem; /* 固定高度而非最小高度 */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -233,9 +222,9 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  /* 防止CLS优化 */
-  min-height: 9.6rem; /* 约6个链接的高度 */
-  contain: layout style;
+  /* 精准CLS优化 */
+  height: 9.6rem; /* 固定高度 */
+  overflow: hidden;
 }
 
 .footer-nav a {
@@ -243,12 +232,14 @@ export default {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.95rem;
-  /* 防止CLS优化 */
-  min-height: 1.4rem;
+  /* 精准CLS优化 */
+  height: 1.4rem;
   line-height: 1.4;
   display: block;
-  contain: layout style;
   padding: 0.1rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .footer-nav a:hover {
@@ -379,11 +370,11 @@ export default {
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1rem;
-    min-height: 350px; /* 移动端固定最小高度 */
+    min-height: 280px; /* 参考cookingdom，减少移动端高度 */
   }
 
   .footer-content {
-    min-height: 250px; /* 移动端固定最小高度 */
+    min-height: 200px; /* 参考cookingdom，减少移动端高度 */
   }
 
   .footer-columns {

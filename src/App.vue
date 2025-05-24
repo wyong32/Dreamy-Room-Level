@@ -216,6 +216,18 @@ function updateMetaTag(attrName, attrValue, content) {
 .main-content {
   flex: 1;
   padding-top: 80px; /* 为固定的header留出空间 */
+  /* 参考cookingdom的CLS优化策略 */
+  contain: layout style;
+  min-height: 600px; /* 设置最小高度，防止内容加载时的布局偏移 */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px; /* 移动端header高度 */
+    min-height: 500px; /* 移动端减少最小高度 */
+  }
 }
 
 /* 全局基础样式 */
@@ -240,6 +252,13 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  /* 参考cookingdom的全局图片优化策略 */
+  background-color: #f0f0f0; /* 图片加载前的背景色 */
+  transition: opacity 0.3s ease; /* 平滑过渡效果 */
+  transform: translateZ(0); /* 启用GPU加速 */
+  backface-visibility: hidden; /* 防止闪烁 */
+  will-change: transform; /* 提示浏览器这个元素会变化 */
+  image-rendering: -webkit-optimize-contrast; /* 提高图片渲染质量 */
 }
 
 .container {

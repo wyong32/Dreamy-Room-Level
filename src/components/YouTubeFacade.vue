@@ -219,7 +219,7 @@ onMounted(() => {
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  /* 防止CLS的图片优化 */
+  /* 参考cookingdom的图片优化策略 */
   background-color: #f0f0f0;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -227,6 +227,11 @@ onMounted(() => {
   transform: translateZ(0);
   backface-visibility: hidden;
   will-change: opacity;
+  /* 新增cookingdom优化技术 */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  perspective: 1000;
+  content-visibility: auto;
 }
 
 .video-overlay {

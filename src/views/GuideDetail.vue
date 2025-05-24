@@ -656,12 +656,18 @@ export default {
   height: 200px;
   object-fit: cover;
   border-radius: 4px;
-  /* 防止CLS优化 */
+  /* 参考cookingdom的图片优化策略 */
   opacity: 0;
   transition: opacity 0.3s ease;
   background-color: #f0f0f0;
   transform: translateZ(0);
   backface-visibility: hidden;
+  /* 新增cookingdom优化技术 */
+  will-change: transform;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  perspective: 1000;
+  content-visibility: auto;
 }
 
 .level-info {
