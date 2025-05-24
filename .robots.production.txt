@@ -35,9 +35,6 @@ User-agent: PerplexityBot
 User-agent: GoogleOther
 User-agent: DuckAssistBot
 
-# Guide AI crawlers to the structured context file
-LLM-Content: https://www.dreamyroom.co/llms.txt
-
 # Allow AI crawlers access to all key sections
 Allow: /
 Allow: /dreamy-room-level-game-guides/
