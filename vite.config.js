@@ -206,13 +206,31 @@ export default defineConfig({
     },
     rollupOptions: {
       output: {
-        manualChunks: {
-          vue: ['vue', 'vue-router', 'vue-i18n'],
-          vendor: ['pinia', '@vueuse/head'],
-          guides: ['@/datas/guides/index.js'],
-          // 进一步分割代码以减少未使用的JavaScript
-          utils: ['@/utils/index.js'],
-          components: ['@/components/GameGuides.vue', '@/components/SeoHead.vue'],
+        manualChunks(id) {
+          // Vue核心库
+          if (id.includes('vue') || id.includes('vue-router') || id.includes('vue-i18n')) {
+            return 'vue'
+          }
+          // 第三方库
+          if (id.includes('pinia') || id.includes('@vueuse')) {
+            return 'vendor'
+          }
+          // 指南数据
+          if (id.includes('/datas/guides/') || id.includes('/datas/blogs')) {
+            return 'data'
+          }
+          // 组件
+          if (id.includes('/components/') && !id.includes('node_modules')) {
+            return 'components'
+          }
+          // 视图
+          if (id.includes('/views/') && !id.includes('node_modules')) {
+            return 'views'
+          }
+          // 其他第三方库
+          if (id.includes('node_modules')) {
+            return 'libs'
+          }
         },
         // 优化文件名和缓存
         chunkFileNames: 'js/[name]-[hash].js',
@@ -247,10 +265,7 @@ export default defineConfig({
   server: {
     // 启用HTTP/2
     https: false,
-    // 预热常用文件
-    warmup: {
-      clientFiles: ['./src/main.js', './src/App.vue', './src/views/HomeView.vue'],
-    },
+    // 移除预热配置，避免路径问题
   },
   // 预览服务器配置
   preview: {
