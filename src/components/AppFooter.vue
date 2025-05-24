@@ -128,16 +128,17 @@ export default {
 </script>
 
 <style scoped>
-/* 页脚 - 参考cookingdom优化策略 */
+/* 页脚 - 彻底固定尺寸策略 */
 .footer {
   background: #8b4513; /* 棕色背景 */
   color: white;
   padding: 3rem 2rem;
-  /* 参考cookingdom的CLS优化策略 */
-  contain: layout style paint;
-  min-height: 280px; /* 进一步减少高度 */
+  /* 彻底固定高度，防止任何布局偏移 */
+  height: 280px; /* 固定高度 */
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden; /* 防止内容溢出 */
+  contain: layout style paint;
   /* 防止文本重排 */
   font-size: 0.95rem;
   line-height: 1.6;
@@ -146,11 +147,12 @@ export default {
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  /* 参考cookingdom优化策略 */
-  contain: layout style;
-  min-height: 200px; /* 减少到合理高度 */
+  /* 彻底固定高度 */
+  height: 200px; /* 固定高度 */
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
+  contain: layout style;
 }
 
 .footer-columns {
@@ -158,18 +160,20 @@ export default {
   grid-template-columns: 2fr 1fr 1fr 1fr; /* 固定列比例 */
   gap: 2rem;
   margin-bottom: 2rem; /* 减少底部间距 */
-  /* 参考cookingdom优化策略 */
-  contain: layout style paint;
-  min-height: 180px; /* 减少到合理高度 */
+  /* 彻底固定高度 */
+  height: 160px; /* 固定高度 */
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
+  contain: layout style paint;
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
-  /* 参考cookingdom优化策略 */
-  min-height: 150px; /* 减少到合理高度 */
+  /* 彻底固定高度 */
+  height: 150px; /* 固定高度 */
+  overflow: hidden;
   contain: layout style;
   box-sizing: border-box;
 }
@@ -179,9 +183,10 @@ export default {
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
-  /* 防止CLS优化 */
-  min-height: 2.2rem;
+  /* 彻底固定高度 */
+  height: 2rem; /* 固定高度 */
   line-height: 1.2;
+  overflow: hidden;
   contain: layout style;
 }
 
@@ -374,29 +379,30 @@ export default {
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1rem;
-    min-height: 250px; /* 进一步减少移动端高度 */
+    height: 250px; /* 移动端固定高度 */
   }
 
   .footer-content {
-    min-height: 180px; /* 进一步减少移动端高度 */
+    height: 180px; /* 移动端固定高度 */
   }
 
   .footer-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    min-height: 180px; /* 固定最小高度防止CLS */
+    height: 140px; /* 移动端固定高度 */
+    overflow: hidden;
     contain: layout style paint;
   }
 
   .footer-column:nth-child(1) {
     grid-column: 1 / -1; /* 第一列占满整行 */
-    min-height: 80px;
+    height: 60px; /* 移动端固定高度 */
   }
 
   .footer-column:nth-child(2) {
     grid-column: 1;
-    min-height: 100px;
+    height: 80px; /* 移动端固定高度 */
   }
 
   .footer-column:nth-child(3) {
@@ -405,32 +411,32 @@ export default {
 
   .footer-column:nth-child(4) {
     grid-column: 2;
-    min-height: 100px;
+    height: 80px; /* 移动端固定高度 */
   }
 
   .footer-logo {
     font-size: 1.4rem;
-    min-height: 1.8rem;
+    height: 1.8rem; /* 移动端固定高度 */
   }
 
   .footer-desc {
     font-size: 0.85rem;
-    height: 4rem; /* 移动端减少高度 */
+    height: 4rem; /* 移动端固定高度 */
   }
 
   .footer-title {
     font-size: 1rem;
-    min-height: 1.3rem;
+    height: 1.3rem; /* 移动端固定高度 */
   }
 
   .footer-nav {
     gap: 0.5rem;
-    min-height: 8rem; /* 移动端调整高度 */
+    height: 7rem; /* 移动端固定高度 */
   }
 
   .footer-nav a {
     font-size: 0.85rem;
-    min-height: 1.2rem;
+    height: 1.2rem; /* 移动端固定高度 */
   }
 
   .copyright {

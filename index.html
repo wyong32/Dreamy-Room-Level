@@ -27,6 +27,28 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+      /* 预设关键图片尺寸，防止图片加载导致的CLS */
+      img {
+        background-color: #f0f0f0;
+        transition: opacity 0.3s ease;
+        transform: translateZ(0);
+        backface-visibility: hidden;
+      }
+      .logo-image {
+        width: 30px;
+        height: 30px;
+      }
+      .guide-image,
+      .food-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .youtube-thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
       .header {
         height: 80px;
         position: fixed;
@@ -35,38 +57,74 @@
         z-index: 100;
         background-color: rgba(255, 255, 255, 0.9);
       }
-      /* 参考cookingdom的精简内联CSS策略 */
+      /* 彻底固定所有关键容器尺寸 */
+      .app {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .main-content {
+        flex: 1;
+        min-height: 600px;
+        contain: layout style;
+      }
       .footer {
-        min-height: 280px; /* 进一步减少高度 */
+        height: 280px; /* 固定高度而非最小高度 */
         background: #8b4513;
         contain: layout style paint;
+        overflow: hidden;
         /* 防止文本重排 */
         font-size: 0.95rem;
         line-height: 1.6;
       }
       /* 预设footer关键文本样式 */
+      .footer-content {
+        height: 200px;
+        overflow: hidden;
+      }
+      .footer-columns {
+        height: 160px;
+        overflow: hidden;
+      }
       .footer-logo {
-        min-height: 2rem;
+        height: 2rem;
         font-size: 1.8rem;
         line-height: 1.2;
+        overflow: hidden;
       }
       .footer-desc {
-        height: 4.5rem; /* 减少固定高度 */
+        height: 4.5rem;
+        overflow: hidden;
+      }
+      .footer-nav {
+        height: 8.5rem;
         overflow: hidden;
       }
       @media (max-width: 768px) {
         .header {
           height: 70px;
         }
+        .main-content {
+          min-height: 500px;
+        }
         .footer {
-          min-height: 250px; /* 移动端进一步减少 */
+          height: 250px; /* 移动端固定高度 */
+        }
+        .footer-content {
+          height: 180px;
+        }
+        .footer-columns {
+          height: 140px;
         }
         .footer-logo {
-          min-height: 1.8rem;
+          height: 1.8rem;
           font-size: 1.4rem;
         }
         .footer-desc {
           height: 4rem;
+        }
+        .footer-nav {
+          height: 7rem;
         }
       }
     </style>
