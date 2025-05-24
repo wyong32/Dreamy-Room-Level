@@ -206,31 +206,10 @@ export default defineConfig({
     },
     rollupOptions: {
       output: {
-        manualChunks(id) {
-          // Vue核心库
-          if (id.includes('vue') || id.includes('vue-router') || id.includes('vue-i18n')) {
-            return 'vue'
-          }
-          // 第三方库
-          if (id.includes('pinia') || id.includes('@vueuse')) {
-            return 'vendor'
-          }
-          // 指南数据
-          if (id.includes('/datas/guides/') || id.includes('/datas/blogs')) {
-            return 'data'
-          }
-          // 组件
-          if (id.includes('/components/') && !id.includes('node_modules')) {
-            return 'components'
-          }
-          // 视图
-          if (id.includes('/views/') && !id.includes('node_modules')) {
-            return 'views'
-          }
-          // 其他第三方库
-          if (id.includes('node_modules')) {
-            return 'libs'
-          }
+        manualChunks: {
+          vue: ['vue', 'vue-router', 'vue-i18n'],
+          vendor: ['pinia', '@vueuse/head'],
+          guides: ['@/datas/guides/index.js'],
         },
         // 优化文件名和缓存
         chunkFileNames: 'js/[name]-[hash].js',
@@ -260,21 +239,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
     exclude: ['@vueuse/head'], // 按需加载
-  },
-  // 服务器配置
-  server: {
-    // 启用HTTP/2
-    https: false,
-    // 移除预热配置，避免路径问题
-  },
-  // 预览服务器配置
-  preview: {
-    // 启用压缩
-    headers: {
-      'Cache-Control': 'public, max-age=31536000',
-      'X-Content-Type-Options': 'nosniff',
-      'X-Frame-Options': 'DENY',
-      'X-XSS-Protection': '1; mode=block',
-    },
   },
 })
