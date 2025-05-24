@@ -25,12 +25,12 @@
           <img
             :src="
               guide.imageUrl ||
-              'https://via.placeholder.com/300x300/f5f0ff/b19cd9?text=' + guide.title
+              'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjVmMGZmIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iI2I5Y2Q5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+RHJlYW15IFJvb208L3RleHQ+PC9zdmc+'
             "
             :alt="guide.imageAlt || guide.pageTitle"
-            :fetchpriority="index < 6 ? 'high' : 'auto'"
-            :loading="index < 6 ? 'eager' : 'lazy'"
-            :decoding="index < 6 ? 'sync' : 'async'"
+            :fetchpriority="index < 3 ? 'high' : 'auto'"
+            :loading="index < 3 ? 'eager' : 'lazy'"
+            :decoding="index < 3 ? 'sync' : 'async'"
             width="300"
             height="200"
             @error="handleImageError"

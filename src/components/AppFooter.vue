@@ -152,12 +152,12 @@ export default {
 
 .footer-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* 固定列比例 */
   gap: 2rem;
   margin-bottom: 3rem;
   /* 防止CLS优化 */
-  contain: layout style;
-  min-height: 200px;
+  contain: layout style paint;
+  min-height: 250px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -165,6 +165,20 @@ export default {
 .footer-column {
   display: flex;
   flex-direction: column;
+  /* 防止CLS优化 */
+  min-height: 200px;
+  contain: layout style;
+  box-sizing: border-box;
+}
+
+.footer-column:nth-child(1) {
+  min-height: 220px; /* 第一列稍高 */
+}
+
+.footer-column:nth-child(2),
+.footer-column:nth-child(3),
+.footer-column:nth-child(4) {
+  min-height: 180px;
 }
 
 .footer-logo {
@@ -260,12 +274,38 @@ export default {
 @media (max-width: 992px) {
   .footer {
     padding: 2.5rem 1.5rem;
+    min-height: 380px;
+  }
+
+  .footer-content {
+    min-height: 280px;
   }
 
   .footer-columns {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 1fr 1fr; /* 平板端2列布局 */
     gap: 1.5rem;
     margin-bottom: 2rem;
+    min-height: 220px;
+  }
+
+  .footer-column:nth-child(1) {
+    grid-column: 1 / -1; /* 第一列占满整行 */
+    min-height: 120px;
+  }
+
+  .footer-column:nth-child(2) {
+    grid-column: 1;
+    min-height: 100px;
+  }
+
+  .footer-column:nth-child(3) {
+    grid-column: 2;
+    min-height: 100px;
+  }
+
+  .footer-column:nth-child(4) {
+    grid-column: 1 / -1; /* 第四列占满整行 */
+    min-height: 80px;
   }
 
   .footer-logo {

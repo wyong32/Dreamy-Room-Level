@@ -27,10 +27,23 @@
         </div>
 
         <aside class="guide-sidebar">
-          <div class="sidebar-image">
-            <img :src="guide.sidebarData.sidebarImageUrl" :alt="guide.pageTitle" />
+          <div class="sidebar-image" v-if="guide.sidebarData?.sidebarImageUrl">
+            <img
+              :src="guide.sidebarData.sidebarImageUrl"
+              :alt="guide.pageTitle"
+              width="300"
+              height="200"
+              loading="lazy"
+              decoding="async"
+              @load="handleSidebarImageLoad"
+              @error="handleSidebarImageError"
+            />
           </div>
-          <div class="level-info" v-html="guide.sidebarData.levelInfoHtml"></div>
+          <div
+            class="level-info"
+            v-if="guide.sidebarData?.levelInfoHtml"
+            v-html="guide.sidebarData.levelInfoHtml"
+          ></div>
 
           <div v-if="guide.sidebarData.featuredGuides" class="featured-guides">
             <h3>{{ t('guides.relatedGuides') }}</h3>
@@ -235,6 +248,18 @@ export default {
       }
 
       return thumbnail || this.getYoutubeThumbnailUrl(guide.iframeUrl)
+    },
+    handleSidebarImageLoad(event) {
+      const img = event.target
+      img.style.opacity = '1'
+    },
+    handleSidebarImageError(event) {
+      const img = event.target
+      if (!img.dataset.fallbackLoaded) {
+        img.dataset.fallbackLoaded = 'true'
+        img.src =
+          'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzk5OTk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkd1aWRlIEltYWdlPC90ZXh0Pjwvc3ZnPg=='
+      }
     },
     injectJsonLd(guide) {
       const siteUrl =
@@ -609,25 +634,60 @@ export default {
   border-radius: 8px;
   padding: 1.8rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* 防止CLS优化 */
+  contain: layout style paint;
+  min-height: 400px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .sidebar-image {
   margin-bottom: 1.8rem;
+  /* 防止CLS优化 */
+  min-height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  contain: layout style paint;
 }
 
 .sidebar-image img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 4px;
+  /* 防止CLS优化 */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #f0f0f0;
+  transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .level-info {
   margin-bottom: 2rem;
+  /* 防止CLS优化 */
+  min-height: 120px;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  contain: layout style paint;
+  box-sizing: border-box;
 }
 
 .level-info h3 {
   color: #333;
-  margin-bottom: 0.8rem;
+  margin: 0 0 0.8rem 0;
   font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.level-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
 }
 
 .featured-guides h3 {

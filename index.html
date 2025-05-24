@@ -2,8 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- DNS预解析和预连接 -->
+    <link rel="dns-prefetch" href="//www.youtube.com" />
+    <link rel="dns-prefetch" href="//i.ytimg.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- 预加载关键资源 -->
     <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/images/guides_01.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/images/guides_02.webp" as="image" type="image/webp" />
+    <link rel="preload" href="/images/guides_03.webp" as="image" type="image/webp" />
+
+    <!-- 内联关键CSS防止CLS -->
+    <style>
+      /* 防止CLS的最小样式 */
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        height: 80px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+      }
+      .footer {
+        min-height: 400px;
+      }
+      @media (max-width: 768px) {
+        .header {
+          height: 70px;
+        }
+        .footer {
+          min-height: 350px;
+        }
+      }
+    </style>
 
     <!-- Favicon 设置 - 支持多种尺寸和格式 -->
     <link rel="icon" href="/favicon.ico" sizes="any" />
