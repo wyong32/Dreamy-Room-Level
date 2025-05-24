@@ -8,11 +8,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- 预加载关键资源 -->
-    <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
-    <link rel="preload" href="/images/guides_01.webp" as="image" type="image/webp" />
-    <link rel="preload" href="/images/guides_02.webp" as="image" type="image/webp" />
-    <link rel="preload" href="/images/guides_03.webp" as="image" type="image/webp" />
+    <!-- 预加载关键资源 - 优化LCP -->
+    <link
+      rel="preload"
+      href="/images/logo.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <!-- 预加载LCP关键图片 -->
+    <link
+      rel="preload"
+      href="/images/phone-screen.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      href="/images/hero-bg.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <!-- 延迟预加载非关键图片 -->
+    <link
+      rel="preload"
+      href="/images/guides_01.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="low"
+    />
+    <link
+      rel="preload"
+      href="/images/guides_02.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="low"
+    />
+    <link
+      rel="preload"
+      href="/images/guides_03.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="low"
+    />
 
     <!-- 内联关键CSS防止CLS -->
     <style>
@@ -431,10 +471,10 @@
         // 启动智能预加载
         setupIntelligentPreload()
 
-        // 延迟加载GA脚本（生产环境）
+        // 延迟加载GA脚本（生产环境）- 进一步优化
         if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-          // 延迟3秒加载GA，减少对首屏性能的影响
-          setTimeout(() => {
+          // 使用requestIdleCallback延迟加载GA，减少对首屏性能的影响
+          const loadGA = () => {
             const script = document.createElement('script')
             script.async = true
             script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XDPMML0BQW'
@@ -442,9 +482,26 @@
 
             script.onload = function () {
               gtag('js', new Date())
-              gtag('config', 'G-XDPMML0BQW')
+              gtag('config', 'G-XDPMML0BQW', {
+                // 优化GA配置
+                send_page_view: false, // 手动控制页面视图
+                transport_type: 'beacon', // 使用beacon API
+                custom_map: { custom_parameter: 'value' },
+              })
+              // 手动发送页面视图
+              gtag('event', 'page_view', {
+                page_title: document.title,
+                page_location: window.location.href,
+              })
             }
-          }, 3000)
+          }
+
+          // 使用requestIdleCallback或setTimeout作为fallback
+          if (window.requestIdleCallback) {
+            requestIdleCallback(loadGA, { timeout: 5000 })
+          } else {
+            setTimeout(loadGA, 5000)
+          }
         }
       })
     </script>

@@ -210,6 +210,9 @@ export default defineConfig({
           vue: ['vue', 'vue-router', 'vue-i18n'],
           vendor: ['pinia', '@vueuse/head'],
           guides: ['@/datas/guides/index.js'],
+          // 进一步分割代码以减少未使用的JavaScript
+          utils: ['@/utils/index.js'],
+          components: ['@/components/GameGuides.vue', '@/components/SeoHead.vue'],
         },
         // 优化文件名和缓存
         chunkFileNames: 'js/[name]-[hash].js',
@@ -239,5 +242,24 @@ export default defineConfig({
   optimizeDeps: {
     include: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
     exclude: ['@vueuse/head'], // 按需加载
+  },
+  // 服务器配置
+  server: {
+    // 启用HTTP/2
+    https: false,
+    // 预热常用文件
+    warmup: {
+      clientFiles: ['./src/main.js', './src/App.vue', './src/views/HomeView.vue'],
+    },
+  },
+  // 预览服务器配置
+  preview: {
+    // 启用压缩
+    headers: {
+      'Cache-Control': 'public, max-age=31536000',
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'X-XSS-Protection': '1; mode=block',
+    },
   },
 })

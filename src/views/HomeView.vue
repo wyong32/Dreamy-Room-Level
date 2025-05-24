@@ -132,7 +132,18 @@
         </div>
         <div class="download-image">
           <div class="phone-mockup" aria-label="Game mobile interface preview">
-            <div class="phone-screen"></div>
+            <div class="phone-screen">
+              <img
+                src="/images/phone-screen.webp"
+                alt="Dreamy Room Game Screenshot"
+                class="phone-screen-image"
+                width="280"
+                height="550"
+                loading="eager"
+                fetchpriority="high"
+                decoding="sync"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -145,7 +156,17 @@
       </h2>
       <div class="about-container">
         <div class="about-image">
-          <div class="image-frame" aria-label="Game scene showcase"></div>
+          <div class="image-frame" aria-label="Game scene showcase">
+            <img
+              src="/images/about-image.webp"
+              alt="Dreamy Room Game Scene"
+              class="about-image-img"
+              width="400"
+              height="400"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
         </div>
         <div class="about-content">
           <h3>{{ $t('home.about.storyTitle') }}</h3>
@@ -811,15 +832,20 @@ main {
   position: relative;
 }
 
-.phone-screen::before {
-  content: '';
+.phone-screen-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/images/phone-screen.webp') center/cover no-repeat;
+  object-fit: cover;
   opacity: 0.8;
+  border-radius: 30px;
+  /* 优化LCP性能 */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 /* 关于游戏 */
@@ -859,15 +885,20 @@ main {
   box-shadow: 0 30px 60px rgba(106, 76, 147, 0.2);
 }
 
-.image-frame::before {
-  content: '';
+.about-image-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('/images/about-image.webp') center/cover no-repeat;
+  object-fit: cover;
   opacity: 0.8;
+  border-radius: 20px;
+  /* 优化渲染性能 */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .about-content {
