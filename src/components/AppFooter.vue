@@ -213,7 +213,7 @@ export default {
 
 .footer-title {
   font-size: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem; /* 减少margin避免高度冲突 */
   color: white;
   position: relative;
   display: flex;
@@ -343,48 +343,48 @@ export default {
 
   .footer-column:nth-child(1) {
     flex: 1 1 100%; /* 第一列占满整行 */
-    height: 80px; /* 平板端固定高度 */
+    min-height: 80px; /* 平板端最小高度 */
   }
 
   .footer-column:nth-child(2) {
     flex: 1 1 45%; /* 第二列占45%宽度 */
-    height: 100px; /* 平板端固定高度 */
+    min-height: 100px; /* 平板端最小高度 */
   }
 
   .footer-column:nth-child(3) {
     flex: 1 1 45%; /* 第三列占45%宽度 */
-    height: 100px; /* 平板端固定高度 */
+    min-height: 100px; /* 平板端最小高度 */
   }
 
   .footer-column:nth-child(4) {
     flex: 1 1 100%; /* 第四列占满整行 */
-    height: 60px; /* 平板端固定高度 */
+    min-height: 60px; /* 平板端最小高度 */
   }
 
   .footer-logo {
     font-size: 1.5rem;
-    height: 1.8rem; /* 平板端固定高度 */
+    min-height: 1.8rem; /* 平板端最小高度 */
   }
 
   .footer-desc {
     font-size: 0.9rem;
-    height: 4.2rem; /* 平板端固定高度 */
+    max-height: 5rem; /* 平板端最大高度 */
   }
 
   .footer-title {
     font-size: 1.1rem;
-    margin-bottom: 1rem;
-    height: 1.4rem; /* 平板端固定高度 */
+    margin-bottom: 0.6rem; /* 减少margin */
+    min-height: 1.4rem; /* 平板端最小高度 */
   }
 
   .footer-nav {
     gap: 0.6rem;
-    height: 7.5rem; /* 平板端固定高度 */
+    max-height: 8rem; /* 平板端最大高度 */
   }
 
   .footer-nav a {
     font-size: 0.9rem;
-    height: 1.3rem; /* 平板端固定高度 */
+    min-height: 1.3rem; /* 平板端最小高度 */
   }
 }
 
@@ -409,12 +409,12 @@ export default {
 
   .footer-column:nth-child(1) {
     flex: 1 1 100%; /* 第一列占满整行 */
-    height: 60px; /* 移动端固定高度 */
+    min-height: 60px; /* 移动端最小高度 */
   }
 
   .footer-column:nth-child(2) {
     flex: 1 1 45%; /* 第二列占45%宽度 */
-    height: 80px; /* 移动端固定高度 */
+    min-height: 80px; /* 移动端最小高度 */
   }
 
   .footer-column:nth-child(3) {
@@ -423,32 +423,32 @@ export default {
 
   .footer-column:nth-child(4) {
     flex: 1 1 45%; /* 第四列占45%宽度 */
-    height: 80px; /* 移动端固定高度 */
+    min-height: 80px; /* 移动端最小高度 */
   }
 
   .footer-logo {
     font-size: 1.4rem;
-    height: 1.8rem; /* 移动端固定高度 */
+    min-height: 1.8rem; /* 移动端最小高度 */
   }
 
   .footer-desc {
     font-size: 0.85rem;
-    height: 4rem; /* 移动端固定高度 */
+    max-height: 4.5rem; /* 移动端最大高度 */
   }
 
   .footer-title {
     font-size: 1rem;
-    height: 1.3rem; /* 移动端固定高度 */
+    min-height: 1.3rem; /* 移动端最小高度 */
   }
 
   .footer-nav {
     gap: 0.5rem;
-    height: 7rem; /* 移动端固定高度 */
+    max-height: 8rem; /* 移动端最大高度 */
   }
 
   .footer-nav a {
     font-size: 0.85rem;
-    height: 1.2rem; /* 移动端固定高度 */
+    min-height: 1.2rem; /* 移动端最小高度 */
   }
 
   .copyright {
@@ -462,15 +462,15 @@ export default {
 
 @media (max-width: 576px) {
   .footer {
-    height: 240px; /* 小屏幕固定高度 */
+    min-height: 280px; /* 小屏幕最小高度 */
   }
 
   .footer-content {
-    height: 170px; /* 小屏幕固定高度 */
+    min-height: 200px; /* 小屏幕最小高度 */
   }
 
   .footer-columns {
-    height: 130px; /* 小屏幕固定高度 */
+    min-height: 160px; /* 小屏幕最小高度 */
   }
 
   .footer-column {
@@ -479,44 +479,44 @@ export default {
   }
 
   .footer-column:nth-child(1) {
-    height: 50px; /* 小屏幕固定高度 */
+    min-height: 50px; /* 小屏幕最小高度 */
   }
 
   .footer-column:nth-child(2),
   .footer-column:nth-child(4) {
-    height: 70px; /* 小屏幕固定高度 */
+    min-height: 70px; /* 小屏幕最小高度 */
   }
 
   .footer-logo {
     font-size: 1.3rem;
-    height: 1.6rem; /* 小屏幕固定高度 */
+    min-height: 1.6rem; /* 小屏幕最小高度 */
   }
 
   .footer-desc {
     font-size: 0.8rem;
-    height: 3.8rem; /* 小屏幕固定高度 */
+    max-height: 4rem; /* 小屏幕最大高度 */
   }
 
   .footer-title {
     font-size: 0.95rem;
-    height: 1.2rem; /* 小屏幕固定高度 */
+    min-height: 1.2rem; /* 小屏幕最小高度 */
   }
 
   .footer-nav {
-    height: 6.5rem; /* 小屏幕固定高度 */
+    max-height: 7rem; /* 小屏幕最大高度 */
   }
 
   .footer-nav a {
     font-size: 0.8rem;
-    height: 1.1rem; /* 小屏幕固定高度 */
+    min-height: 1.1rem; /* 小屏幕最小高度 */
   }
 
   .copyright {
-    height: 1.1rem; /* 小屏幕固定高度 */
+    min-height: 1.1rem; /* 小屏幕最小高度 */
   }
 
   .disclaimer {
-    height: 2.8rem; /* 小屏幕固定高度 */
+    max-height: 3rem; /* 小屏幕最大高度 */
   }
 }
 </style>
