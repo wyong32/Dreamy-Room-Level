@@ -61,7 +61,7 @@
           <input
             type="number"
             v-model="searchLevel"
-            :placeholder="searchPlaceholder"
+            placeholder="search"
             min="1"
             :max="maxLevel"
             @keyup.enter="performSearch"

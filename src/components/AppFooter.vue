@@ -186,6 +186,10 @@ export default {
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
+  /* 防止CLS优化 */
+  min-height: 2.2rem;
+  line-height: 1.2;
+  contain: layout style;
 }
 
 .footer-desc {
@@ -194,6 +198,13 @@ export default {
   line-height: 1.6;
   font-size: 0.95rem;
   color: #fff;
+  /* 防止CLS优化 */
+  min-height: 4.8rem; /* 约3行文本的高度 */
+  contain: layout style;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .footer-title {
@@ -203,17 +214,28 @@ export default {
   position: relative;
   display: flex;
   align-items: center;
+  /* 防止CLS优化 */
+  min-height: 1.5rem;
+  line-height: 1.2;
+  contain: layout style;
 }
 
 .footer-icon {
   font-size: 1.1rem;
   margin-right: 0.5rem;
+  /* 防止CLS优化 */
+  width: 1.6rem;
+  display: inline-block;
+  text-align: center;
 }
 
 .footer-nav {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  /* 防止CLS优化 */
+  min-height: 9.6rem; /* 约6个链接的高度 */
+  contain: layout style;
 }
 
 .footer-nav a {
@@ -221,6 +243,12 @@ export default {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.95rem;
+  /* 防止CLS优化 */
+  min-height: 1.4rem;
+  line-height: 1.4;
+  display: block;
+  contain: layout style;
+  padding: 0.1rem 0;
 }
 
 .footer-nav a:hover {
@@ -232,6 +260,9 @@ export default {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
+  /* 防止CLS优化 */
+  min-height: 36px;
+  contain: layout style;
 }
 
 .social-link {
@@ -246,6 +277,9 @@ export default {
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 1.1rem;
+  /* 防止CLS优化 */
+  flex-shrink: 0;
+  contain: layout style paint;
 }
 
 .social-link:hover {
@@ -259,6 +293,10 @@ export default {
   opacity: 0.7;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
+  /* 防止CLS优化 */
+  min-height: 1.3rem;
+  line-height: 1.4;
+  contain: layout style;
 }
 
 .disclaimer {
@@ -268,6 +306,14 @@ export default {
   font-size: 0.8rem;
   max-width: 800px;
   margin: 0 auto;
+  /* 防止CLS优化 */
+  min-height: 3.2rem; /* 约2-3行文本的高度 */
+  line-height: 1.6;
+  contain: layout style;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 /* 响应式设计 */
@@ -369,26 +415,27 @@ export default {
 
   .footer-logo {
     font-size: 1.4rem;
-    /* text-align: center; */ /* If centering column content */
+    min-height: 1.8rem;
   }
 
   .footer-desc {
     font-size: 0.85rem;
-    /* text-align: center; */ /* If centering column content */
+    min-height: 4.2rem; /* 移动端调整高度 */
   }
 
   .footer-title {
     font-size: 1rem;
-    /* justify-content: center; */ /* If centering title with icon */
+    min-height: 1.3rem;
   }
 
   .footer-nav {
     gap: 0.5rem;
-    /* align-items: center; */ /* If centering nav items */
+    min-height: 8rem; /* 移动端调整高度 */
   }
 
   .footer-nav a {
     font-size: 0.85rem;
+    min-height: 1.2rem;
   }
 
   .copyright {
@@ -408,18 +455,34 @@ export default {
 
   .footer-logo {
     font-size: 1.3rem;
+    min-height: 1.6rem;
   }
 
   .footer-desc {
     font-size: 0.8rem;
+    min-height: 3.8rem; /* 小屏幕调整高度 */
   }
 
   .footer-title {
     font-size: 0.95rem;
+    min-height: 1.2rem;
+  }
+
+  .footer-nav {
+    min-height: 7.5rem; /* 小屏幕调整高度 */
   }
 
   .footer-nav a {
     font-size: 0.8rem;
+    min-height: 1.1rem;
+  }
+
+  .copyright {
+    min-height: 1.1rem;
+  }
+
+  .disclaimer {
+    min-height: 2.8rem; /* 小屏幕调整高度 */
   }
 }
 </style>
