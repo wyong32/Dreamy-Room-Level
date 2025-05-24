@@ -135,9 +135,12 @@ export default {
   padding: 3rem 2rem;
   /* 参考cookingdom的CLS优化策略 */
   contain: layout style paint;
-  min-height: 300px; /* 减少到合理高度，参考cookingdom */
+  min-height: 280px; /* 进一步减少高度 */
   width: 100%;
   box-sizing: border-box;
+  /* 防止文本重排 */
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .footer-content {
@@ -188,12 +191,13 @@ export default {
   line-height: 1.6;
   font-size: 0.95rem;
   color: #fff;
-  /* 精准CLS优化 */
-  height: 4.8rem; /* 固定高度而非最小高度 */
+  /* 精准CLS优化 - 减少高度 */
+  height: 4.5rem; /* 减少固定高度 */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  line-clamp: 3; /* 标准属性 */
 }
 
 .footer-title {
@@ -222,8 +226,8 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  /* 精准CLS优化 */
-  height: 9.6rem; /* 固定高度 */
+  /* 精准CLS优化 - 减少高度 */
+  height: 8.5rem; /* 减少固定高度 */
   overflow: hidden;
 }
 
@@ -370,11 +374,11 @@ export default {
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1rem;
-    min-height: 280px; /* 参考cookingdom，减少移动端高度 */
+    min-height: 250px; /* 进一步减少移动端高度 */
   }
 
   .footer-content {
-    min-height: 200px; /* 参考cookingdom，减少移动端高度 */
+    min-height: 180px; /* 进一步减少移动端高度 */
   }
 
   .footer-columns {
@@ -411,7 +415,7 @@ export default {
 
   .footer-desc {
     font-size: 0.85rem;
-    min-height: 4.2rem; /* 移动端调整高度 */
+    height: 4rem; /* 移动端减少高度 */
   }
 
   .footer-title {

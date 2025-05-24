@@ -242,6 +242,11 @@ body {
   color: #6a4c93;
   background-color: #faf5ff;
   line-height: 1.6;
+  /* 防止字体加载导致的CLS */
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {

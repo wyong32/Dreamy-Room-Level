@@ -20,6 +20,12 @@
       body {
         margin: 0;
         padding: 0;
+        /* 防止字体加载导致的CLS */
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        font-display: swap;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       .header {
         height: 80px;
@@ -31,16 +37,36 @@
       }
       /* 参考cookingdom的精简内联CSS策略 */
       .footer {
-        min-height: 300px;
+        min-height: 280px; /* 进一步减少高度 */
         background: #8b4513;
         contain: layout style paint;
+        /* 防止文本重排 */
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      /* 预设footer关键文本样式 */
+      .footer-logo {
+        min-height: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+      }
+      .footer-desc {
+        height: 4.5rem; /* 减少固定高度 */
+        overflow: hidden;
       }
       @media (max-width: 768px) {
         .header {
           height: 70px;
         }
         .footer {
-          min-height: 280px;
+          min-height: 250px; /* 移动端进一步减少 */
+        }
+        .footer-logo {
+          min-height: 1.8rem;
+          font-size: 1.4rem;
+        }
+        .footer-desc {
+          height: 4rem;
         }
       }
     </style>
