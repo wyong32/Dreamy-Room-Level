@@ -218,7 +218,7 @@ function updateMetaTag(attrName, attrValue, content) {
   padding-top: 80px; /* 为固定的header留出空间 */
   /* 参考cookingdom的CLS优化策略 */
   contain: layout style;
-  min-height: 600px; /* 设置最小高度，防止内容加载时的布局偏移 */
+  min-height: 800px; /* 参考cookingdom，提高到800px */
   width: 100%;
   box-sizing: border-box;
 }
@@ -226,7 +226,7 @@ function updateMetaTag(attrName, attrValue, content) {
 @media (max-width: 768px) {
   .main-content {
     padding-top: 70px; /* 移动端header高度 */
-    min-height: 500px; /* 移动端减少最小高度 */
+    min-height: 600px; /* 参考cookingdom，移动端也提高高度 */
   }
 }
 

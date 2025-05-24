@@ -156,10 +156,10 @@ export default {
 }
 
 .footer-columns {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr; /* 固定列比例 */
+  /* 参考cookingdom，使用flex布局而非grid */
+  display: flex;
   gap: 2rem;
-  margin-bottom: 2rem; /* 减少底部间距 */
+  margin-bottom: 2rem;
   /* 彻底固定高度 */
   height: 160px; /* 固定高度 */
   width: 100%;
@@ -176,6 +176,17 @@ export default {
   overflow: hidden;
   contain: layout style;
   box-sizing: border-box;
+}
+
+/* 参考cookingdom，设置flex比例 */
+.footer-column:nth-child(1) {
+  flex: 2; /* 第一列占2份 */
+}
+
+.footer-column:nth-child(2),
+.footer-column:nth-child(3),
+.footer-column:nth-child(4) {
+  flex: 1; /* 其他列各占1份 */
 }
 
 .footer-logo {
@@ -387,8 +398,9 @@ export default {
   }
 
   .footer-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* 移动端保持flex布局 */
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     height: 140px; /* 移动端固定高度 */
     overflow: hidden;
@@ -396,12 +408,12 @@ export default {
   }
 
   .footer-column:nth-child(1) {
-    grid-column: 1 / -1; /* 第一列占满整行 */
+    flex: 1 1 100%; /* 第一列占满整行 */
     height: 60px; /* 移动端固定高度 */
   }
 
   .footer-column:nth-child(2) {
-    grid-column: 1;
+    flex: 1 1 45%; /* 第二列占45%宽度 */
     height: 80px; /* 移动端固定高度 */
   }
 
@@ -410,7 +422,7 @@ export default {
   }
 
   .footer-column:nth-child(4) {
-    grid-column: 2;
+    flex: 1 1 45%; /* 第四列占45%宽度 */
     height: 80px; /* 移动端固定高度 */
   }
 
