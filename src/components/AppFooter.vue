@@ -128,16 +128,15 @@ export default {
 </script>
 
 <style scoped>
-/* 页脚 - 彻底固定尺寸策略 */
+/* 页脚 - 调整高度以显示内容 */
 .footer {
   background: #8b4513; /* 棕色背景 */
   color: white;
   padding: 3rem 2rem;
-  /* 彻底固定高度，防止任何布局偏移 */
-  height: 280px; /* 固定高度 */
+  /* 增加高度以显示所有内容 */
+  min-height: 350px; /* 增加最小高度 */
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden; /* 防止内容溢出 */
   contain: layout style paint;
   /* 防止文本重排 */
   font-size: 0.95rem;
@@ -147,11 +146,10 @@ export default {
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  /* 彻底固定高度 */
-  height: 200px; /* 固定高度 */
+  /* 调整高度以显示内容 */
+  min-height: 270px; /* 增加最小高度 */
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
   contain: layout style;
 }
 
@@ -160,20 +158,18 @@ export default {
   display: flex;
   gap: 2rem;
   margin-bottom: 2rem;
-  /* 彻底固定高度 */
-  height: 160px; /* 固定高度 */
+  /* 调整高度以显示内容 */
+  min-height: 200px; /* 增加最小高度 */
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
   contain: layout style paint;
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
-  /* 彻底固定高度 */
-  height: 150px; /* 固定高度 */
-  overflow: hidden;
+  /* 调整高度以显示内容 */
+  min-height: 180px; /* 增加最小高度 */
   contain: layout style;
   box-sizing: border-box;
 }
@@ -194,10 +190,9 @@ export default {
   font-weight: bold;
   margin-bottom: 1rem;
   color: white;
-  /* 彻底固定高度 */
-  height: 2rem; /* 固定高度 */
+  /* 调整高度以显示内容 */
+  min-height: 2rem; /* 最小高度 */
   line-height: 1.2;
-  overflow: hidden;
   contain: layout style;
 }
 
@@ -207,8 +202,8 @@ export default {
   line-height: 1.6;
   font-size: 0.95rem;
   color: #fff;
-  /* 精准CLS优化 - 减少高度 */
-  height: 4.5rem; /* 减少固定高度 */
+  /* 调整高度以显示内容 */
+  max-height: 5rem; /* 最大高度限制 */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -242,8 +237,8 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  /* 精准CLS优化 - 减少高度 */
-  height: 8.5rem; /* 减少固定高度 */
+  /* 调整高度以显示内容 */
+  max-height: 10rem; /* 最大高度限制 */
   overflow: hidden;
 }
 
@@ -252,12 +247,11 @@ export default {
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.95rem;
-  /* 精准CLS优化 */
-  height: 1.4rem;
+  /* 调整高度以显示内容 */
+  min-height: 1.4rem;
   line-height: 1.4;
   display: block;
   padding: 0.1rem 0;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -331,70 +325,77 @@ export default {
 @media (max-width: 992px) {
   .footer {
     padding: 2.5rem 1.5rem;
-    min-height: 380px;
+    min-height: 380px; /* 平板端增加高度 */
   }
 
   .footer-content {
-    min-height: 280px;
+    min-height: 300px; /* 平板端增加高度 */
   }
 
   .footer-columns {
-    grid-template-columns: 1fr 1fr; /* 平板端2列布局 */
+    /* 平板端也使用flex布局 */
+    display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-bottom: 2rem;
-    min-height: 220px;
+    min-height: 240px; /* 平板端增加高度 */
   }
 
   .footer-column:nth-child(1) {
-    grid-column: 1 / -1; /* 第一列占满整行 */
-    min-height: 120px;
+    flex: 1 1 100%; /* 第一列占满整行 */
+    height: 80px; /* 平板端固定高度 */
   }
 
   .footer-column:nth-child(2) {
-    grid-column: 1;
-    min-height: 100px;
+    flex: 1 1 45%; /* 第二列占45%宽度 */
+    height: 100px; /* 平板端固定高度 */
   }
 
   .footer-column:nth-child(3) {
-    grid-column: 2;
-    min-height: 100px;
+    flex: 1 1 45%; /* 第三列占45%宽度 */
+    height: 100px; /* 平板端固定高度 */
   }
 
   .footer-column:nth-child(4) {
-    grid-column: 1 / -1; /* 第四列占满整行 */
-    min-height: 80px;
+    flex: 1 1 100%; /* 第四列占满整行 */
+    height: 60px; /* 平板端固定高度 */
   }
 
   .footer-logo {
     font-size: 1.5rem;
+    height: 1.8rem; /* 平板端固定高度 */
   }
 
   .footer-desc {
     font-size: 0.9rem;
+    height: 4.2rem; /* 平板端固定高度 */
   }
 
   .footer-title {
     font-size: 1.1rem;
     margin-bottom: 1rem;
+    height: 1.4rem; /* 平板端固定高度 */
   }
 
   .footer-nav {
     gap: 0.6rem;
+    height: 7.5rem; /* 平板端固定高度 */
   }
 
   .footer-nav a {
     font-size: 0.9rem;
+    height: 1.3rem; /* 平板端固定高度 */
   }
 }
 
 @media (max-width: 768px) {
   .footer {
     padding: 2rem 1rem;
-    height: 250px; /* 移动端固定高度 */
+    min-height: 320px; /* 移动端增加高度 */
   }
 
   .footer-content {
-    height: 180px; /* 移动端固定高度 */
+    min-height: 240px; /* 移动端增加高度 */
   }
 
   .footer-columns {
@@ -402,8 +403,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    height: 140px; /* 移动端固定高度 */
-    overflow: hidden;
+    min-height: 180px; /* 移动端增加高度 */
     contain: layout style paint;
   }
 
@@ -461,41 +461,62 @@ export default {
 }
 
 @media (max-width: 576px) {
+  .footer {
+    height: 240px; /* 小屏幕固定高度 */
+  }
+
+  .footer-content {
+    height: 170px; /* 小屏幕固定高度 */
+  }
+
+  .footer-columns {
+    height: 130px; /* 小屏幕固定高度 */
+  }
+
   .footer-column {
     /* On very small screens, ensure content isn't too cramped */
     padding: 0 0.5rem; /* Add a little horizontal padding within columns if needed */
   }
 
+  .footer-column:nth-child(1) {
+    height: 50px; /* 小屏幕固定高度 */
+  }
+
+  .footer-column:nth-child(2),
+  .footer-column:nth-child(4) {
+    height: 70px; /* 小屏幕固定高度 */
+  }
+
   .footer-logo {
     font-size: 1.3rem;
-    min-height: 1.6rem;
+    height: 1.6rem; /* 小屏幕固定高度 */
   }
 
   .footer-desc {
     font-size: 0.8rem;
-    min-height: 3.8rem; /* 小屏幕调整高度 */
+    height: 3.8rem; /* 小屏幕固定高度 */
   }
 
   .footer-title {
     font-size: 0.95rem;
-    min-height: 1.2rem;
+    height: 1.2rem; /* 小屏幕固定高度 */
   }
 
   .footer-nav {
-    min-height: 7.5rem; /* 小屏幕调整高度 */
+    height: 6.5rem; /* 小屏幕固定高度 */
   }
 
   .footer-nav a {
     font-size: 0.8rem;
-    min-height: 1.1rem;
+    height: 1.1rem; /* 小屏幕固定高度 */
   }
 
   .copyright {
-    min-height: 1.1rem;
+    height: 1.1rem; /* 小屏幕固定高度 */
   }
 
   .disclaimer {
-    min-height: 2.8rem; /* 小屏幕调整高度 */
+    height: 2.8rem; /* 小屏幕固定高度 */
   }
 }
 </style>
