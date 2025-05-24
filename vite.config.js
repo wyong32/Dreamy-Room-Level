@@ -151,66 +151,17 @@ export default defineConfig({
     },
   },
   build: {
-    // 性能优化配置
+    // 简化配置以确保部署成功
     target: 'es2015',
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true, // 移除console.log
-        drop_debugger: true, // 移除debugger
-        pure_funcs: ['console.log', 'console.info', 'console.debug'], // 移除特定函数
-        dead_code: true, // 移除死代码
-      },
-      mangle: {
-        safari10: true, // 兼容Safari 10
-      },
-    },
+    minify: true, // 使用默认压缩
     rollupOptions: {
-      // Tree shaking优化
-      treeshake: {
-        moduleSideEffects: false,
-        propertyReadSideEffects: false,
-        unknownGlobalSideEffects: false,
-      },
       output: {
-        // 代码分割优化
-        manualChunks: (id) => {
-          // Vue核心库
-          if (id.includes('vue') || id.includes('vue-router') || id.includes('vue-i18n')) {
-            return 'vue'
-          }
-          // UI组件库
-          if (id.includes('@vueuse/head') || id.includes('pinia')) {
-            return 'ui'
-          }
-          // 数据文件
-          if (id.includes('/datas/guides')) {
-            return 'guides'
-          }
-          // node_modules中的其他库
-          if (id.includes('node_modules')) {
-            return 'vendor'
-          }
+        manualChunks: {
+          vue: ['vue', 'vue-router', 'vue-i18n'],
+          vendor: ['pinia', '@vueuse/head'],
         },
-        // 优化文件名
-        chunkFileNames: 'assets/js/[name]-[hash].js',
-        entryFileNames: 'assets/js/[name]-[hash].js',
-        assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
       },
     },
-    // 启用gzip压缩
-    reportCompressedSize: true,
-    // 增加chunk大小警告限制
     chunkSizeWarningLimit: 1000,
-  },
-  // 开发服务器优化
-  server: {
-    hmr: {
-      overlay: false, // 禁用错误覆盖层以提高性能
-    },
-  },
-  // CSS优化
-  css: {
-    devSourcemap: false, // 生产环境禁用CSS源映射
   },
 })
