@@ -20,6 +20,7 @@
               :videoUrl="guide.iframeUrl"
               :title="guide.pageTitle + ' Video Gameplay'"
               :customThumbnail="getVideoThumbnail(guide)"
+              :isAboveFold="true"
             />
           </div>
           <div class="guide-details" v-html="guide.detailsHtml"></div>

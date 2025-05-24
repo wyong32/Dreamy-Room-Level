@@ -7,9 +7,17 @@
         :src="thumbnailUrl"
         :alt="title || 'YouTube video thumbnail'"
         class="youtube-thumbnail"
-        loading="lazy"
-        decoding="async"
+        :loading="isAboveFold ? 'eager' : 'lazy'"
+        :decoding="isAboveFold ? 'sync' : 'async'"
+        :fetchpriority="isAboveFold ? 'high' : 'auto'"
+        width="640"
+        height="360"
+        @load="handleImageLoad"
+        @error="handleImageError"
       />
+
+      <!-- 视频蒙版 -->
+      <div class="video-overlay"></div>
 
       <!-- 播放按钮 -->
       <div class="play-button">
@@ -21,6 +29,12 @@
           <path class="play-button-icon" d="M 45,24 27,14 27,34"></path>
         </svg>
       </div>
+
+      <!-- 加载提示信息 -->
+      <!-- <div class="placeholder-info">
+        <p class="click-to-load">{{ $t('youtube.clickToLoad') }}</p>
+        <p class="performance-note">{{ $t('youtube.performanceNote') }}</p>
+      </div> -->
     </div>
 
     <!-- YouTube iframe (仅在点击后加载) -->
@@ -56,6 +70,10 @@ const props = defineProps({
   customThumbnail: {
     type: String,
     default: '',
+  },
+  isAboveFold: {
+    type: Boolean,
+    default: false,
   },
 })
 
@@ -105,6 +123,20 @@ const loadYouTube = () => {
       video_id: videoId.value,
       video_title: props.title,
     })
+  }
+}
+
+// 图片加载处理
+const handleImageLoad = (event) => {
+  const img = event.target
+  img.style.opacity = '1'
+}
+
+const handleImageError = (event) => {
+  const img = event.target
+  if (!img.dataset.fallbackLoaded) {
+    img.dataset.fallbackLoaded = 'true'
+    img.src = '/images/video-placeholder.webp'
   }
 }
 
@@ -167,12 +199,16 @@ onMounted(() => {
   transition: all 0.3s ease;
 }
 
-.youtube-placeholder:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+.youtube-placeholder:hover .video-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .youtube-placeholder:hover .play-button {
   transform: scale(1.1);
+}
+
+.youtube-placeholder:hover .placeholder-info {
+  opacity: 1;
 }
 
 .youtube-thumbnail {
@@ -183,11 +219,31 @@ onMounted(() => {
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  /* 防止CLS的图片优化 */
+  background-color: #f0f0f0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* 性能优化 */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: opacity;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  transition: background-color 0.3s ease;
+  pointer-events: none;
 }
 
 .play-button {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   transition: transform 0.3s ease;
 }
 
@@ -198,6 +254,32 @@ onMounted(() => {
 
 .play-button-icon {
   fill: #fff;
+}
+
+.placeholder-info {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 3;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.click-to-load {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.performance-note {
+  font-size: 12px;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .youtube-iframe {
@@ -213,6 +295,19 @@ onMounted(() => {
 @media (max-width: 768px) {
   .youtube-facade {
     min-height: 180px;
+  }
+
+  .click-to-load {
+    font-size: 14px;
+  }
+
+  .performance-note {
+    font-size: 10px;
+  }
+
+  .placeholder-info {
+    bottom: 10px;
+    padding: 0 10px;
   }
 }
 </style>

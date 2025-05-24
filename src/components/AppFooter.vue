@@ -133,11 +133,21 @@ export default {
   background: #8b4513; /* 棕色背景 */
   color: white;
   padding: 3rem 2rem;
+  /* 防止CLS优化 */
+  contain: layout style paint;
+  min-height: 400px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+  /* 防止CLS优化 */
+  contain: layout style;
+  min-height: 300px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-columns {
@@ -145,6 +155,11 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
+  /* 防止CLS优化 */
+  contain: layout style;
+  min-height: 200px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-column {
