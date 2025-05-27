@@ -10,15 +10,81 @@
             {{ $t('footer.about.description') }}
           </p>
           <div class="social-links">
-            <a href="#" class="social-link" title="Follow us on Twitter" aria-label="Twitter"
-              ><i class="social-icon">🐦</i></a
+            <!-- <a href="" class="social-link" target="_blank">
+              <img src="" alt="" />
+            </a> -->
+            <!-- 1 -->
+            <a href="https://www.indiehackers.com/jasonzim90" class="social-link" target="_blank">
+              <img
+                src="https://www.indiehackers.com/images/favicons/favicon--32x32.png"
+                alt="indiehackers"
+              />
+            </a>
+            <!-- 2 -->
+            <a
+              href="https://share.evernote.com/note/abf3894f-e40e-0750-055b-26bf83561006"
+              class="social-link"
+              target="_blank"
             >
-            <a href="#" class="social-link" title="Follow us on Instagram" aria-label="Instagram"
-              ><i class="social-icon">📷</i></a
+              <img
+                src="https://evernote.com/_next/static/media/evernote-logo.c443c65f.svg"
+                alt="evernote"
+              />
+            </a>
+            <!-- 3 -->
+            <a
+              href="https://www.notion.so/dreamy-room-1c27ae35635d80c8ba5bf8ceae5b68ae"
+              class="social-link"
+              target="_blank"
             >
-            <a href="#" class="social-link" title="Join our Discord" aria-label="Discord"
-              ><i class="social-icon">💬</i></a
+              <img src="https://www.notion.com/front-static/favicon.ico" alt="notion" />
+            </a>
+            <!-- 4 -->
+            <a
+              href="https://ko-fi.com/post/Dreamyroom-co-S6S51EYNW7"
+              class="social-link"
+              target="_blank"
             >
+              <img src="https://ko-fi.com/favicon.png" alt="ko-fi" />
+            </a>
+            <!-- 5 -->
+            <a href="https://wenyong3.gumroad.com/l/jdhsjo" class="social-link" target="_blank">
+              <img
+                src="https://assets.gumroad.com/assets/pink-icon-c5f5013768a1da41246e70403f02afc8b34ac89c20f3ba2dd0a01f3973027700.png"
+                alt="gumroad"
+              />
+            </a>
+            <!-- 6 -->
+            <a
+              href="https://cookingdom.podia.com/blog/81f02d32-5111-4754-9b99-b33bc5c14edb"
+              class="social-link"
+              target="_blank"
+            >
+              <img src="https://www.podia.com/favicon.ico" alt="podia" />
+            </a>
+            <!-- 7 -->
+            <a href="https://jimmy11.kit.com/9da40cc588" class="social-link" target="_blank">
+              <img src="https://kit.com/favicon-32x32.png" alt="kit" />
+            </a>
+            <!-- 8 -->
+            <a
+              href="https://www.pinterest.com/wenyong3124/dreamyroom/"
+              class="social-link"
+              target="_blank"
+            >
+              <img
+                src="https://s.pinimg.com/webapp/logo_transparent_144x144-3da7a67b.png"
+                alt="pinimg"
+              />
+            </a>
+            <!-- 9 -->
+            <a
+              href="https://jmmiy.micro.blog/2025/05/26/dreamy-room-level-guides.html"
+              class="social-link"
+              target="_blank"
+            >
+              <img src="https://micro.blog/jmmiy/favicon.png" alt="micro" />
+            </a>
           </div>
         </div>
 
@@ -46,12 +112,6 @@
               :title="$t('footer.quickLinks.download')"
               >{{ $t('footer.quickLinks.download') }}</router-link
             >
-            <router-link :to="getLocalizedPath('/about')" :title="$t('footer.quickLinks.about')">{{
-              $t('footer.quickLinks.about')
-            }}</router-link>
-            <router-link :to="getLocalizedPath('/contact')" title="Contact Us">
-              Contact Us
-            </router-link>
           </nav>
         </div>
 
@@ -94,6 +154,12 @@
             <router-link :to="getLocalizedPath('/terms')" :title="$t('footer.legal.terms')">{{
               $t('footer.legal.terms')
             }}</router-link>
+            <router-link :to="getLocalizedPath('/about')" :title="$t('footer.quickLinks.about')">
+              About Us
+            </router-link>
+            <router-link :to="getLocalizedPath('/contact')" title="Contact Us">
+              Contact Us
+            </router-link>
           </nav>
         </div>
       </div>
@@ -169,6 +235,7 @@ export default {
   display: flex;
   flex-direction: column;
   /* 调整高度以显示内容 */
+  max-width: 350px;
   min-height: 180px; /* 增加最小高度 */
   contain: layout style;
   box-sizing: border-box;
@@ -263,6 +330,7 @@ export default {
 
 .social-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
   /* 防止CLS优化 */
@@ -276,7 +344,7 @@ export default {
   justify-content: center;
   width: 36px;
   height: 36px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #fff;
   border-radius: 50%;
   color: white;
   text-decoration: none;
@@ -288,7 +356,7 @@ export default {
 }
 
 .social-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #fff;
   transform: translateY(-3px);
 }
 
