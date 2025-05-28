@@ -81,54 +81,53 @@
         <span class="hamburger-icon"></span>
       </button>
     </div>
-    <nav class="mobile-nav" :class="{ open: isMobileMenuOpen }" aria-label="Mobile Navigation">
-      <ul>
-        <li>
-          <router-link
-            :to="getLocalizedPath('/')"
-            :title="$t('header.home')"
-            @click="closeMobileMenu"
-            ><span class="nav-icon">🏠</span> {{ $t('header.home') }}</router-link
-          >
-        </li>
-        <li>
-          <router-link
-            :to="getLocalizedPath('/dreamy-room-level-game-guides')"
-            :title="$t('header.guides')"
-            @click="closeMobileMenu"
-            ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link
-          >
-        </li>
-        <li>
-          <router-link
-            :to="getLocalizedPath('/dreamy-room-game-blog')"
-            :title="$t('header.blog')"
-            @click="closeMobileMenu"
-            ><span class="nav-icon">📝</span> {{ $t('header.blog') }}</router-link
-          >
-        </li>
-        <li>
-          <router-link
-            :to="getLocalizedPath('/download-dreamy-room-game')"
-            :title="$t('header.download')"
-            @click="closeMobileMenu"
-            ><span class="nav-icon">⬇️</span> {{ $t('header.download') }}</router-link
-          >
-        </li>
-      </ul>
-    </nav>
   </header>
+
+  <!-- 移动端导航放在header外面 -->
+  <nav class="mobile-nav" :class="{ open: isMobileMenuOpen }" aria-label="Mobile Navigation">
+    <ul>
+      <li>
+        <router-link :to="getLocalizedPath('/')" :title="$t('header.home')" @click="closeMobileMenu"
+          ><span class="nav-icon">🏠</span> {{ $t('header.home') }}</router-link
+        >
+      </li>
+      <li>
+        <router-link
+          :to="getLocalizedPath('/dreamy-room-level-game-guides')"
+          :title="$t('header.guides')"
+          @click="closeMobileMenu"
+          ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link
+        >
+      </li>
+      <li>
+        <router-link
+          :to="getLocalizedPath('/dreamy-room-game-blog')"
+          :title="$t('header.blog')"
+          @click="closeMobileMenu"
+          ><span class="nav-icon">📝</span> {{ $t('header.blog') }}</router-link
+        >
+      </li>
+      <li>
+        <router-link
+          :to="getLocalizedPath('/download-dreamy-room-game')"
+          :title="$t('header.download')"
+          @click="closeMobileMenu"
+          ><span class="nav-icon">⬇️</span> {{ $t('header.download') }}</router-link
+        >
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 
 export default {
   name: 'AppHeader',
   setup() {
-    const { locale, t } = useI18n()
+    const { t } = useI18n()
     const router = useRouter()
 
     const isMobileMenuOpen = ref(false)
@@ -488,8 +487,20 @@ export default {
   font-weight: bold;
 }
 
+/* 默认隐藏移动端导航和按钮 */
 .mobile-nav {
   display: none;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* 在大屏幕上确保移动端导航完全隐藏 */
+@media (min-width: 993px) {
+  .mobile-nav {
+    display: none !important;
+  }
 }
 
 /* 响应式设计 */
@@ -508,10 +519,6 @@ export default {
 
   .desktop-nav {
     display: none;
-  }
-
-  .mobile-nav {
-    display: block;
   }
 
   .mobile-nav-toggle {
@@ -567,18 +574,18 @@ export default {
   }
 
   .mobile-nav {
-    display: none;
     position: fixed;
-    top: 60px;
+    top: 80px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 80px);
     background-color: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(5px);
     padding: 2rem;
     box-sizing: border-box;
-    z-index: 99;
+    z-index: 101; /* 比header的z-index(100)更高 */
     overflow-y: auto;
+    display: none;
     flex-direction: column;
     align-items: center;
     text-align: center;

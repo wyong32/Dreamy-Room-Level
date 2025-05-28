@@ -14,6 +14,7 @@ const PrivacyView = () => import('../views/PrivacyView.vue')
 const TermsView = () => import('../views/TermsView.vue')
 const AboutView = () => import('../views/AboutView.vue')
 const ContactView = () => import('../views/ContactView.vue')
+const NotFoundView = () => import('../views/NotFoundView.vue')
 
 // Create routes for default locale (English)
 const routes = [
@@ -78,6 +79,12 @@ const routes = [
     name: 'blog-detail',
     component: BlogDetail,
     props: true,
+  },
+  // 404 Not Found - 必须放在最后
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: NotFoundView,
   },
 ]
 

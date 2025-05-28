@@ -66,12 +66,12 @@ export default {
     contact: 'Contact',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',
+    searchPlaceholder: 'Enter level (1-{max})',
+    searchInvalidLevel: 'Please enter a level between 1 and {max}.',
   },
   youtube: {
     clickToLoad: 'Click to load video',
     performanceNote: 'Delayed loading to improve page performance',
-    searchPlaceholder: 'Enter level (1-{max})',
-    searchInvalidLevel: 'Please enter a level between 1 and {max}.',
   },
 
   // Home Page
@@ -256,6 +256,24 @@ export default {
     copyright: '© 2025 Dreamy Room. All rights reserved.',
     disclaimer:
       'Disclaimer: This website is an unofficial fan site and is not affiliated with the creators of Dreamy Room. All rights belong to their respective owners.',
+  },
+
+  // 404 Not Found Page
+  notFound: {
+    title: 'Page Not Found',
+    description: 'Sorry, the page you are looking for does not exist or has been moved.',
+    requestedPath: 'Requested Path',
+    backToHome: 'Back to Home',
+    backToGuides: 'Back to Guides',
+    suggestions: 'You might be looking for:',
+    searchHint: 'Or search for a specific level:',
+  },
+
+  // Common
+  common: {
+    loading: 'Loading...',
+    error: 'An error occurred',
+    retry: 'Retry',
   },
 
   // Language Switcher

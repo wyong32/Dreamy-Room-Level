@@ -15,10 +15,7 @@
             </a> -->
             <!-- 1 -->
             <a href="https://www.indiehackers.com/jasonzim90" class="social-link" target="_blank">
-              <img
-                src="https://www.indiehackers.com/images/favicons/favicon--32x32.png"
-                alt="indiehackers"
-              />
+              <img src="/images/icon/indiehackers-icon.webp" alt="indiehackers" />
             </a>
             <!-- 2 -->
             <a
@@ -26,10 +23,7 @@
               class="social-link"
               target="_blank"
             >
-              <img
-                src="https://evernote.com/_next/static/media/evernote-logo.c443c65f.svg"
-                alt="evernote"
-              />
+              <img src="/images/icon/evernote-icon.svg" alt="evernote" />
             </a>
             <!-- 3 -->
             <a
@@ -37,7 +31,7 @@
               class="social-link"
               target="_blank"
             >
-              <img src="https://www.notion.com/front-static/favicon.ico" alt="notion" />
+              <img src="/images/icon/notion-icon.ico" alt="notion" />
             </a>
             <!-- 4 -->
             <a
@@ -45,14 +39,11 @@
               class="social-link"
               target="_blank"
             >
-              <img src="https://ko-fi.com/favicon.png" alt="ko-fi" />
+              <img src="/images/icon/ko-fi-icon.webp" alt="ko-fi" />
             </a>
             <!-- 5 -->
             <a href="https://wenyong3.gumroad.com/l/jdhsjo" class="social-link" target="_blank">
-              <img
-                src="https://assets.gumroad.com/assets/pink-icon-c5f5013768a1da41246e70403f02afc8b34ac89c20f3ba2dd0a01f3973027700.png"
-                alt="gumroad"
-              />
+              <img src="/images/icon/gumroad-icon.webp" alt="gumroad" />
             </a>
             <!-- 6 -->
             <a
@@ -60,11 +51,11 @@
               class="social-link"
               target="_blank"
             >
-              <img src="https://www.podia.com/favicon.ico" alt="podia" />
+              <img src="/images/icon/podia-icon.ico" alt="podia" />
             </a>
             <!-- 7 -->
             <a href="https://jimmy11.kit.com/9da40cc588" class="social-link" target="_blank">
-              <img src="https://kit.com/favicon-32x32.png" alt="kit" />
+              <img src="/images/icon/kit-icon.png" alt="kit" />
             </a>
             <!-- 8 -->
             <a
@@ -72,10 +63,7 @@
               class="social-link"
               target="_blank"
             >
-              <img
-                src="https://s.pinimg.com/webapp/logo_transparent_144x144-3da7a67b.png"
-                alt="pinimg"
-              />
+              <img src="/images/icon/pinterest-icon.png" alt="pinimg" />
             </a>
             <!-- 9 -->
             <a
@@ -83,7 +71,7 @@
               class="social-link"
               target="_blank"
             >
-              <img src="https://micro.blog/jmmiy/favicon.png" alt="micro" />
+              <img src="/images/icon/jmmiy-icon.png" alt="micro" />
             </a>
           </div>
         </div>
