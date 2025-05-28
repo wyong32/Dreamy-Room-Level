@@ -8,11 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- 预加载关键资源 -->
-    <link rel="preload" href="/images/logo.webp" as="image" type="image/webp" />
-    <link rel="preload" href="/images/guides_01.webp" as="image" type="image/webp" />
-    <link rel="preload" href="/images/guides_02.webp" as="image" type="image/webp" />
-    <link rel="preload" href="/images/guides_03.webp" as="image" type="image/webp" />
+    <!-- 只预加载关键的首屏资源 -->
+    <link
+      rel="preload"
+      href="/images/logo.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
 
     <!-- 内联关键CSS防止CLS -->
     <style>
@@ -144,6 +147,18 @@
     <meta name="theme-color" content="#6a4c93" />
     <meta name="author" content="Dreamy Room Guide Team" />
 
+    <!-- 权限策略设置 - 修复权限策略违规 -->
+    <meta
+      http-equiv="Permissions-Policy"
+      content="autoplay=(), fullscreen=(), cross-origin-isolated=()"
+    />
+
+    <!-- 内容安全策略 -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com; frame-src 'self' https://www.youtube.com;"
+    />
+
     <!-- 增强SEO Meta Tags -->
     <meta
       name="robots"
@@ -165,15 +180,6 @@
 
     <!-- 安全相关 -->
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-
-    <!-- 预加载关键资源 - 只预加载立即需要的资源 -->
-    <link
-      rel="preload"
-      href="/images/logo.webp"
-      as="image"
-      type="image/webp"
-      fetchpriority="high"
-    />
 
     <!-- DNS 预解析 -->
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
@@ -383,6 +389,11 @@
 
       // 智能预加载 - 只在用户即将看到指南部分时预加载
       function setupIntelligentPreload() {
+        // 检查是否在首页，只在首页预加载指南图片
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+          return
+        }
+
         // 使用Intersection Observer监听指南部分
         const observer = new IntersectionObserver(
           (entries) => {
@@ -395,13 +406,17 @@
                   '/images/guides_03.webp',
                 ]
 
-                criticalImages.forEach((src) => {
-                  const link = document.createElement('link')
-                  link.rel = 'preload'
-                  link.as = 'image'
-                  link.href = src
-                  link.type = 'image/webp'
-                  document.head.appendChild(link)
+                criticalImages.forEach((src, index) => {
+                  // 延迟预加载，避免阻塞主线程
+                  setTimeout(() => {
+                    const link = document.createElement('link')
+                    link.rel = 'preload'
+                    link.as = 'image'
+                    link.href = src
+                    link.type = 'image/webp'
+                    link.fetchpriority = 'low' // 设置低优先级
+                    document.head.appendChild(link)
+                  }, index * 100) // 每个图片间隔100ms预加载
                 })
 
                 // 预加载完成后停止观察
@@ -410,7 +425,8 @@
             })
           },
           {
-            rootMargin: '200px', // 提前200px开始预加载
+            rootMargin: '300px', // 提前300px开始预加载
+            threshold: 0.1,
           },
         )
 
@@ -419,12 +435,42 @@
           const guidesSection =
             document.getElementById('guides') ||
             document.querySelector('.guides') ||
-            document.querySelector('[class*="guide"]')
+            document.querySelector('[class*="guide"]') ||
+            document.querySelector('.hero') // 备选方案
           if (guidesSection) {
             observer.observe(guidesSection)
+          } else {
+            // 如果找不到指南部分，延迟预加载
+            setTimeout(() => {
+              const criticalImages = ['/images/guides_01.webp']
+              criticalImages.forEach((src) => {
+                const link = document.createElement('link')
+                link.rel = 'preload'
+                link.as = 'image'
+                link.href = src
+                link.type = 'image/webp'
+                link.fetchpriority = 'low'
+                document.head.appendChild(link)
+              })
+            }, 2000)
           }
-        }, 1000)
+        }, 1500)
       }
+
+      // 错误处理 - 捕获模块加载错误
+      window.addEventListener('error', function (event) {
+        // 检查是否是模块加载错误
+        if (event.target && event.target.tagName === 'SCRIPT' && event.target.type === 'module') {
+          console.warn('Module loading error detected, attempting reload...')
+          // 延迟重新加载页面，避免无限循环
+          setTimeout(() => {
+            if (!window.moduleErrorReloaded) {
+              window.moduleErrorReloaded = true
+              window.location.reload()
+            }
+          }, 1000)
+        }
+      })
 
       // 页面加载完成后的优化
       window.addEventListener('load', function () {
@@ -446,6 +492,13 @@
             }
           }, 3000)
         }
+      })
+
+      // 处理未捕获的Promise拒绝
+      window.addEventListener('unhandledrejection', function (event) {
+        console.warn('Unhandled promise rejection:', event.reason)
+        // 防止错误传播到控制台
+        event.preventDefault()
       })
     </script>
   </head>
