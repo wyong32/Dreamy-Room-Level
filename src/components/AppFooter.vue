@@ -141,7 +141,7 @@
               rel="noopener"
             >
               <img
-                src="/images/icon/jmmiy-icon.png"
+                src="/images/icon/micro-icon.png"
                 alt="micro"
                 loading="lazy"
                 width="24"
