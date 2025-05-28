@@ -240,28 +240,4 @@ export default defineConfig({
     include: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
     exclude: ['@vueuse/head'], // 按需加载
   },
-  // 服务器配置
-  server: {
-    // 修复MIME类型问题
-    middlewareMode: false,
-    headers: {
-      'Content-Type': 'text/html; charset=utf-8',
-    },
-    // 配置正确的MIME类型
-    fs: {
-      strict: false,
-    },
-  },
-  // 预览服务器配置（用于生产构建预览）
-  preview: {
-    headers: {
-      'Content-Type': 'text/html; charset=utf-8',
-      'Cache-Control': 'public, max-age=31536000',
-      'X-Content-Type-Options': 'nosniff',
-      'X-Frame-Options': 'DENY',
-      'X-XSS-Protection': '1; mode=block',
-      'Referrer-Policy': 'strict-origin-when-cross-origin',
-      'Permissions-Policy': 'autoplay=(), fullscreen=(), cross-origin-isolated=()',
-    },
-  },
 })
