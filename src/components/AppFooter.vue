@@ -14,64 +14,139 @@
               <img src="" alt="" />
             </a> -->
             <!-- 1 -->
-            <a href="https://www.indiehackers.com/jasonzim90" class="social-link" target="_blank">
-              <img src="/images/icon/indiehackers-icon.webp" alt="indiehackers" />
+            <a
+              href="https://www.indiehackers.com/jasonzim90"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="/images/icon/indiehackers-icon.webp"
+                alt="indiehackers"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
             <!-- 2 -->
             <a
               href="https://share.evernote.com/note/abf3894f-e40e-0750-055b-26bf83561006"
               class="social-link"
               target="_blank"
+              rel="noopener"
             >
-              <img src="/images/icon/evernote-icon.svg" alt="evernote" />
+              <img
+                src="/images/icon/evernote-icon.svg"
+                alt="evernote"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
             <!-- 3 -->
             <a
               href="https://www.notion.so/dreamy-room-1c27ae35635d80c8ba5bf8ceae5b68ae"
               class="social-link"
               target="_blank"
+              rel="noopener"
             >
-              <img src="/images/icon/notion-icon.ico" alt="notion" />
+              <img
+                src="/images/icon/notion-icon.ico"
+                alt="notion"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
             <!-- 4 -->
             <a
               href="https://ko-fi.com/post/Dreamyroom-co-S6S51EYNW7"
               class="social-link"
               target="_blank"
+              rel="noopener"
             >
-              <img src="/images/icon/ko-fi-icon.webp" alt="ko-fi" />
+              <img
+                src="/images/icon/ko-fi-icon.webp"
+                alt="ko-fi"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
             <!-- 5 -->
-            <a href="https://wenyong3.gumroad.com/l/jdhsjo" class="social-link" target="_blank">
-              <img src="/images/icon/gumroad-icon.webp" alt="gumroad" />
+            <a
+              href="https://wenyong3.gumroad.com/l/jdhsjo"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="/images/icon/gumroad-icon.webp"
+                alt="gumroad"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
             <!-- 6 -->
             <a
               href="https://cookingdom.podia.com/blog/81f02d32-5111-4754-9b99-b33bc5c14edb"
               class="social-link"
               target="_blank"
+              rel="noopener"
             >
-              <img src="/images/icon/podia-icon.ico" alt="podia" />
+              <img
+                src="/images/icon/podia-icon.ico"
+                alt="podia"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
             <!-- 7 -->
-            <a href="https://jimmy11.kit.com/9da40cc588" class="social-link" target="_blank">
-              <img src="/images/icon/kit-icon.png" alt="kit" />
+            <a
+              href="https://jimmy11.kit.com/9da40cc588"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="/images/icon/kit-icon.png"
+                alt="kit"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
             <!-- 8 -->
             <a
               href="https://www.pinterest.com/wenyong3124/dreamyroom/"
               class="social-link"
               target="_blank"
+              rel="noopener"
             >
-              <img src="/images/icon/pinterest-icon.png" alt="pinimg" />
+              <img
+                src="/images/icon/pinterest-icon.png"
+                alt="pinimg"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
             <!-- 9 -->
             <a
               href="https://jmmiy.micro.blog/2025/05/26/dreamy-room-level-guides.html"
               class="social-link"
               target="_blank"
+              rel="noopener"
             >
-              <img src="/images/icon/jmmiy-icon.png" alt="micro" />
+              <img
+                src="/images/icon/jmmiy-icon.png"
+                alt="micro"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
             </a>
           </div>
         </div>
@@ -374,6 +449,7 @@ export default {
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
