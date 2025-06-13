@@ -157,6 +157,16 @@ export default defineConfig({
         '/privacy': { priority: 0.3, changefreq: 'yearly' },
         '/terms': { priority: 0.3, changefreq: 'yearly' },
       },
+      // 添加这些选项
+      generateOnBuild: true,
+      generateOnDev: false,
+      filename: 'sitemap.xml',
+      xslColumns: [
+        { label: 'URL', width: '50%' },
+        { label: 'Last Modified', select: 'sitemap:lastmod', width: '25%' },
+        { label: 'Priority', select: 'sitemap:priority', width: '12.5%' },
+        { label: 'Change Frequency', select: 'sitemap:changefreq', width: '12.5%' },
+      ],
     }),
     robots({
       useProductionFile: true, // 使用.robots.production.txt文件
