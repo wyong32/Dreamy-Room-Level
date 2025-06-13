@@ -141,6 +141,7 @@ export default defineConfig({
       exclude: ['/404'],
       dynamicRoutes: [...staticPaths, ...loadGuideIds(), ...loadBlogIds()].filter(Boolean),
       outDir: 'dist',
+      publicPath: '/',
       // 添加更多SEO配置
       changefreq: 'weekly',
       priority: 0.8,
