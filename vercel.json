@@ -9,7 +9,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|manifest\\.(json|webmanifest)|favicon\\.ico|sw\\.js|registerSW\\.js|workbox-.*\\.js|images/.*|css/.*|js/.*|assets/.*|api/|_next/).*)",
+      "source": "/((?!sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|manifest\\.json|manifest\\.webmanifest|favicon\\.ico|sw\\.js|registerSW\\.js|workbox-.*\\.js|images/.*|css/.*|js/.*|assets/.*|api/|_next/).*)",
       "destination": "/index.html"
     }
   ],
