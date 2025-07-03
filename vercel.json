@@ -7,37 +7,10 @@
       "config": { "distDir": "dist" }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/sitemap\\.xml",
-      "dest": "/sitemap.xml",
-      "headers": {
-        "Content-Type": "application/xml",
-        "Cache-Control": "public, max-age=3600"
-      }
-    },
-    {
-      "src": "/robots\\.txt",
-      "dest": "/robots.txt",
-      "headers": {
-        "Content-Type": "text/plain"
-      }
-    },
-    {
-      "src": "/favicon\\.ico",
-      "dest": "/favicon.ico"
-    },
-    {
-      "src": "/manifest\\.(json|webmanifest)",
-      "dest": "/manifest.$1"
-    },
-    {
-      "src": "/(images|css|js|assets)/.*",
-      "dest": "/$0"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!sitemap\\.xml|robots\\.txt|llms\\.txt|llms-full\\.txt|manifest\\.(json|webmanifest)|favicon\\.ico|sw\\.js|registerSW\\.js|workbox-.*\\.js|images/.*|css/.*|js/.*|assets/.*|api/|_next/).*)",
+      "destination": "/index.html"
     }
   ],
   "redirects": [
@@ -67,6 +40,19 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
         }
       ]
     },
