@@ -120,6 +120,13 @@ export default [
           imageAlt: 'Level 101 of the Dreamy Room game',
           detailsRoute: { path: '/dreamy-room-level-101' },
         },
+        {
+          id: 'game-level-103',
+          title: 'Level 103<br/>Solution Walkthrough',
+          imageUrl: 'images/guides_103.webp',
+          imageAlt: 'Level 103 Solution Walkthrough',
+          detailsRoute: { path: '/dreamy-room-level-103' },
+        },
       ],
     },
     detailsHtml: `
@@ -181,4 +188,188 @@ export default [
     <p>By following this guide, you’ll successfully complete Dreamy Room Level 102, transforming the space into a serene, multi-level spa retreat. Enjoy decorating your spa-inspired haven!</p>
   `,
   },
+
+  {
+    id: 'game-level-103',
+    title: 'Level 103',
+    pageTitle: 'Dreamy Room Level 103 Solution Walkthrough',
+    pageSubtitle:
+      'Solve Dreamy Room Level 103 with ease using our detailed solution guide featuring cozy elements and stylish design tips.',
+    category: '101-110',
+    publishDate: '2025-07-03',
+    imageUrl: 'images/guides_103.webp',
+    imageAlt: 'Level 103 of the Dreamy Room game',
+    detailsRoute: { path: '/dreamy-room-level-103' },
+    iframeUrl: 'https://www.youtube.com/embed/y9_rH_0HDRg',
+    seo: {
+      title: 'Dreamy Room Level 103 Solution Walkthrough - Complete Room Setup Guide',
+      description:
+        'Follow this in-depth walkthrough to complete Dreamy Room Level 103. Learn to position every element perfectly and bring your dream room to life.',
+      keywords:
+        'Dreamy Room Level 103, Level 103 walkthrough, Dreamy Room guide, cozy room solution, Dreamy Room puzzle tips',
+    },
+    sidebarData: {
+      sidebarImageUrl: '/images/guides_103.webp',
+      levelInfoHtml:
+        '<h3>Level 103: Cozy Cloud Retreat</h3><p>Assemble a dreamy cloud-themed space with floating furniture, soft lighting, and whimsical décor. Follow precise steps to complete your room flawlessly.</p>',
+      featuredGuides: [
+        {
+          id: 'game-level-102',
+          title: 'Level 102<br/>Spa-Themed Room',
+          imageUrl: 'images/guides_102.webp',
+          imageAlt: 'Level 102 of the Dreamy Room game',
+          detailsRoute: { path: '/dreamy-room-level-102' },
+        },
+        {
+          id: 'game-level-104',
+          title: 'Level 104<br/>Solution Walkthrough',
+          imageUrl: 'images/guides_104.webp',
+          imageAlt: 'Level 102 Solution Walkthrough',
+          detailsRoute: { path: '/dreamy-room-level-104' },
+        }
+      ],
+    },
+    detailsHtml: `
+    <h2>Dreamy Room Level 103 Solution Walkthrough</h2>
+    <p>Dreamy Room Level 103 offers players the chance to construct a whimsical cloud-inspired room featuring floating decor, plush seating, and soft glowing lights. In this walkthrough, we’ll guide you step-by-step through the entire Dreamy Room Level 103 solution so you can complete the design efficiently and enjoyably.</p>
+
+    <h3>Step 1: Build the elevated cloud bed area</h3>
+    <p>Start by placing the large fluffy white mattress in the upper platform center. Add the two soft blue cloud pillows and a crescent moon cushion. Drape the pale sky-blue quilt across the foot for extra coziness.</p>
+
+    <h3>Step 2: Add wall-mounted lanterns and floating moon light</h3>
+    <p>Install two cloud-shaped lanterns on either side of the back wall above the bed. Center the floating crescent moon light directly above the mattress using the ceiling mount.</p>
+
+    <h3>Step 3: Assemble the transparent wardrobe and curtain screen</h3>
+    <p>Place the translucent wardrobe along the left wall of the room. Pull the semi-transparent curtain screen across the lower-left corner to create a private dressing nook.</p>
+
+    <h3>Step 4: Install the rainbow rug and plush toy display</h3>
+    <p>Lay down the colorful rainbow-shaped rug in the center of the lower level. On top of it, place the floating shelf unit and position three cloud animal plushies (bear, rabbit, unicorn) evenly across the shelf.</p>
+
+    <h3>Step 5: Hang picture frames and glowing stars</h3>
+    <p>Mount five photo frames in a scattered layout on the right-side wall, each showcasing pastel nature themes. Add three glowing star decorations around the top right corner of the room for ambient lighting.</p>
+
+    <h3>Step 6: Arrange the cloud sofa, side table, and tea set</h3>
+    <p>Place the cloud-shaped sofa on the right side of the room, facing left. Add a floating pastel side table to its left, and set a white teapot and two cloud-shaped teacups on the table.</p>
+
+    <h3>Step 7: Set up reading area with bookshelf and beanbag</h3>
+    <p>Drag the small bookshelf into the lower-left corner, next to the curtain screen. Place the oversized sky-blue beanbag in front and add a pastel lamp to its right for the perfect reading light.</p>
+
+    <h3>Step 8: Add storage trunks and floating plants</h3>
+    <p>Stack two soft-edged storage trunks in the back-right corner of the room. Mount three hanging planters with trailing vines along the top wall rail to complete the natural vibe.</p>
+
+    <h3>Step 9: Decorate with wall decals and paper mobiles</h3>
+    <p>Stick pastel star and cloud decals along the back wall. Suspend three paper mobiles (moon, star, raindrop) from the ceiling beams for added charm and dynamic motion.</p>
+
+    <h3>Step 10: Finish with a mirror and personalized name sign</h3>
+    <p>Attach the oval cloud-edged mirror beside the wardrobe. Just below, place the wooden name sign with your chosen nickname using pastel letter tiles.</p>
+
+    <h2>Important Tips for Dreamy Room Level 103</h2>
+    <ul>
+      <li><strong>Snap Points:</strong> Many floating elements require snap points. Watch for glowing outlines.</li>
+      <li><strong>Layering:</strong> Always place background items like decals and lights before furniture.</li>
+      <li><strong>Micro-Adjustments:</strong> Use the fine-tune mode to align objects with pixel-perfect accuracy.</li>
+      <li><strong>Theme Consistency:</strong> Stick to pastel and cloud-themed items to stay within the level’s aesthetic.</li>
+    </ul>
+
+    <h2>Dreamy Room Level 103 Walkthrough Tips</h2>
+    <ul>
+      <li><strong>Plan Ahead:</strong> Preview the entire inventory to prioritize large items first.</li>
+      <li><strong>Double Check:</strong> Zoom out occasionally to see the room’s balance and spacing.</li>
+      <li><strong>Lighting Layers:</strong> Use soft lights in layers to create depth and warmth.</li>
+      <li><strong>Mood Matching:</strong> Match accessories by hue and texture to ensure harmony.</li>
+    </ul>
+
+    <p>With this comprehensive Dreamy Room Level 103 solution walkthrough, you’ll breeze through the level and craft a serene, cozy, and magical retreat among the clouds. Dreamy Room Level 103 is all about combining design flair with attention to detail—so take your time and enjoy every step!</p>
+  `
+  },
+
+  {
+    id: 'game-level-104',
+    title: 'Level 104',
+    pageTitle: 'Dreamy Room Level 104 Solution Walkthrough',
+    pageSubtitle:
+      'Follow our expert guide to complete Dreamy Room Level 104 with a celestial observatory theme. Every detail explained, every object perfectly placed.',
+    category: '101-110',
+    publishDate: '2025-07-03',
+    imageUrl: 'images/guides_104.webp',
+    imageAlt: 'Level 104 of the Dreamy Room game',
+    detailsRoute: { path: '/dreamy-room-level-104' },
+    iframeUrl: 'https://www.youtube.com/embed/nAi8YrL6v-o',
+    seo: {
+      title: 'Dreamy Room Level 104 Solution Walkthrough - Starry Observatory Room Guide',
+      description:
+        'Master Dreamy Room Level 104 with our full walkthrough. Create a stargazing-themed observatory with telescopes, night lights, and cosmic décor.',
+      keywords:
+        'Dreamy Room Level 104, Level 104 walkthrough, Dreamy Room solution, observatory room guide, Dreamy Room tips',
+    },
+    sidebarData: {
+      sidebarImageUrl: '/images/guides_104.webp',
+      levelInfoHtml:
+        '<h3>Level 104: Celestial Observatory</h3><p>Design a stargazing retreat using telescopes, constellations, and soft galaxy lighting. Follow our Dreamy Room Level 104 walkthrough to bring the stars indoors.</p>',
+      featuredGuides: [
+        {
+          id: 'game-level-103',
+          title: 'Level 103<br/>Cozy Cloud Retreat',
+          imageUrl: 'images/guides_103.webp',
+          imageAlt: 'Level 103 of the Dreamy Room game',
+          detailsRoute: { path: '/dreamy-room-level-103' },
+        },
+      ],
+    },
+    detailsHtml: `
+    <h2>Dreamy Room Level 104 Solution Walkthrough</h2>
+    <p>Dreamy Room Level 104 invites you to create a magical observatory with star maps, telescopes, and galactic ambiance. In this full Dreamy Room Level 104 walkthrough, we detail each step to perfectly construct your cosmic-themed room.</p>
+
+    <h3>Step 1: Build the elevated stargazing platform</h3>
+    <p>Start by assembling the wooden stargazing deck in the upper-left corner. Add the wide star rug and two space-blue floor cushions aligned diagonally to face the viewing area.</p>
+
+    <h3>Step 2: Mount the telescope and planetary chart</h3>
+    <p>Place the telescope stand at the front of the stargazing platform and aim it upward at a 45-degree angle. Mount the large planetary chart to the back wall above the platform, centering it between two hanging string lights.</p>
+
+    <h3>Step 3: Add moon shelf and constellation art</h3>
+    <p>Attach the crescent moon shelf to the left wall and arrange three glowing jars on it. Add the constellation canvas and two framed galaxy posters to the right side of the room in a triangle layout.</p>
+
+    <h3>Step 4: Install the floating bunk and ladder</h3>
+    <p>Place the dark blue bunk bed frame near the center-right wall. Position the cloud-shaped mattress and navy bedding on top. Add the metal ladder on the left side of the frame for access.</p>
+
+    <h3>Step 5: Arrange storage cubes and astronaut plush</h3>
+    <p>Stack four pastel purple storage cubes below the bunk. On top of the leftmost cube, place the small astronaut plush. Next to it, add a pile of space-themed books and a galaxy projector lamp.</p>
+
+    <h3>Step 6: Set up the night sky projector and star globe</h3>
+    <p>Place the night sky projector on the circular side table beside the bed. Next to it, place the rotating star globe and ensure the light points upward to simulate constellations.</p>
+
+    <h3>Step 7: Lay down the nebula carpet and floor lights</h3>
+    <p>Spread the purple-pink nebula-themed carpet across the center of the room. Add three dome floor lamps around the edges, pointing inward to softly illuminate the center.</p>
+
+    <h3>Step 8: Decorate ceiling with paper planets and glow-in-the-dark stars</h3>
+    <p>Hang paper models of planets from the ceiling using invisible wire. Scatter glow-in-the-dark stars across the upper wall and ceiling beams to amplify the cosmic effect.</p>
+
+    <h3>Step 9: Add beanbag reading corner and space comics</h3>
+    <p>Set the navy beanbag in the lower-left corner with a low shelf beside it. Place three volumes of space comics on the shelf and a reading lamp above for a cozy study nook.</p>
+
+    <h3>Step 10: Finalize with wall clock and name plate</h3>
+    <p>Hang the galaxy-patterned wall clock near the door and personalize the star-shaped name plate on the desk using letter tiles in glowing ink.</p>
+
+    <h2>Tips for Dreamy Room Level 104</h2>
+    <ul>
+      <li><strong>Lighting Balance:</strong> Use soft blue and purple hues for a relaxing star-gazing atmosphere.</li>
+      <li><strong>Placement Order:</strong> Install ceiling and wall decor before beds and furniture to avoid overlap.</li>
+      <li><strong>Symmetry:</strong> Align wall decorations evenly for an organized observatory effect.</li>
+      <li><strong>Snap Zones:</strong> Be patient with floating elements—they often snap only when placed correctly.</li>
+    </ul>
+
+    <h2>Walkthrough Strategy for Dreamy Room Level 104</h2>
+    <ul>
+      <li><strong>Preview All Items:</strong> Quickly preview all available items to avoid missing a required piece.</li>
+      <li><strong>Layer Planning:</strong> Think in layers—start with backdrops and lighting before moving to beds and accessories.</li>
+      <li><strong>Object Rotation:</strong> Rotate telescopes and lamps to achieve realistic directional lighting.</li>
+      <li><strong>Final Check:</strong> Use the preview mode to verify alignment and glow effects before completing.</li>
+    </ul>
+
+    <p>By following this Dreamy Room Level 104 solution walkthrough, you’ll transform your space into a celestial observatory of tranquility and wonder. Let the stars guide your imagination as you complete another dazzling level of Dreamy Room!</p>
+  `
+  }
+
+
+
 ]
