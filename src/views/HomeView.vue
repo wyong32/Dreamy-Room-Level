@@ -772,7 +772,7 @@ main {
 
 .download-text span {
   font-size: 0.8rem;
-  color: #fff;
+  color: #ffffff;
 }
 
 .download-text strong {
