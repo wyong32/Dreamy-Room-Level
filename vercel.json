@@ -7,8 +7,6 @@
       "config": { "distDir": "dist" }
     }
   ],
-  "cleanUrls": true,
-  "trailingSlash": false,
   "env": {
     "VITE_SITE_URL": "https://www.dreamyroom.co"
   },
