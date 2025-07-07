@@ -36,7 +36,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api|_next|favicon.ico|sitemap.xml|robots.txt|manifest|images|css|js).*)",
+      "source": "/((?!api/|_next/|favicon\\.ico|sitemap\\.xml|robots\\.txt|manifest|sw\\.js|registerSW\\.js|workbox-.*\\.js|.*\\.(css|js|png|jpg|jpeg|gif|svg|webp|ico|woff|woff2|ttf|eot)).*)",
       "destination": "/index.html"
     }
   ]
