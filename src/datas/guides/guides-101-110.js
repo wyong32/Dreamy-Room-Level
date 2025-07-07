@@ -314,6 +314,13 @@ export default [
           imageAlt: 'Level 103 of the Dreamy Room game',
           detailsRoute: { path: '/dreamy-room-level-103' },
         },
+        {
+          id: 'game-level-105',
+          title: 'Level 105 of the Dreamy Room game',
+          imageUrl: 'images/guides_105.webp',
+          imageAlt: 'Level 105 of the Dreamy Room game',
+          detailsRoute: { path: '/dreamy-room-level-105' },
+        },
       ],
     },
     detailsHtml: `
@@ -368,7 +375,190 @@ export default [
 
     <p>By following this Dreamy Room Level 104 solution walkthrough, you’ll transform your space into a celestial observatory of tranquility and wonder. Let the stars guide your imagination as you complete another dazzling level of Dreamy Room!</p>
   `
+  },
+
+  {
+    id: 'game-level-105',
+    title: 'Level 105',
+    pageTitle: 'Dreamy Room Level 105 Solution Walkthrough',
+    pageSubtitle:
+      'Dive into an aquatic dreamland with our complete walkthrough for Dreamy Room Level 105. Transform your space into a serene underwater fantasy bedroom with glowing reefs, sea creatures, and oceanic ambiance.',
+    category: '101-110',
+    publishDate: '2025-07-07',
+    imageUrl: 'images/guides_105.webp',
+    imageAlt: 'Level 105 of the Dreamy Room game',
+    detailsRoute: { path: '/dreamy-room-level-105' },
+    iframeUrl: 'https://www.youtube.com/embed/oxDPzrXYLok',
+    seo: {
+      title: 'Dreamy Room Level 105 Solution Walkthrough - Underwater Fantasy Bedroom Guide',
+      description:
+        'Complete Dreamy Room Level 105 with our expert walkthrough. Create an underwater-themed bedroom with corals, jellyfish lights, and dreamy aquatic touches.',
+      keywords:
+        'Dreamy Room Level 105, Level 105 walkthrough, Dreamy Room solution, underwater bedroom guide, aquatic room tips',
+    },
+    sidebarData: {
+      sidebarImageUrl: '/images/guides_105.webp',
+      levelInfoHtml:
+        '<h3>Level 105: Underwater Fantasy Bedroom</h3><p>Create a serene sea-themed bedroom with coral reefs, jellyfish lighting, and ocean-inspired furniture. Follow our full Dreamy Room Level 105 walkthrough to build your deep-sea retreat.</p>',
+      featuredGuides: [
+        {
+          id: 'game-level-104',
+          title: 'Level 104<br/>Celestial Observatory',
+          imageUrl: 'images/guides_104.webp',
+          imageAlt: 'Level 104 of the Dreamy Room game',
+          detailsRoute: { path: '/dreamy-room-level-104' },
+        },
+        {
+          id: 'game-level-106',
+          title: 'Dreamy Room Level 106 Solution Walkthrough',
+          imageUrl: 'images/guides_106.webp',
+          imageAlt: 'Level 106 of the Dreamy Room game',
+          detailsRoute: { path: '/dreamy-room-level-106' },
+        },
+      ],
+    },
+    detailsHtml: `
+      <h2>Dreamy Room Level 105 Solution Walkthrough</h2>
+      <p>Dreamy Room Level 105 immerses you in a tranquil underwater world. With glowing jellyfish lights, coral-shaped furniture, and soothing ocean tones, this walkthrough will help you transform your space into a peaceful aquatic haven.</p>
+  
+      <h3>Step 1: Lay the oceanic flooring and gradient backdrop</h3>
+      <p>Begin by selecting the deep-blue wavy flooring. Pair it with a sea-gradient wall mural that fades from turquoise at the bottom to a pale aqua at the top.</p>
+  
+      <h3>Step 2: Build the shell-shaped bed setup</h3>
+      <p>Position the shell headboard at the center of the back wall. Add the pearl-white mattress and matching seashell pillows. Place the scallop blanket draped neatly across the bed.</p>
+  
+      <h3>Step 3: Install jellyfish pendant lights</h3>
+      <p>Hang two jellyfish pendant lights from the ceiling above the bed—one on each side. Adjust the glow to a soft bluish-purple hue for ambient illumination.</p>
+  
+      <h3>Step 4: Add coral nightstands and aquatic accessories</h3>
+      <p>Place coral-shaped nightstands on both sides of the bed. Decorate them with items like a bubble lamp, a sand dollar clock, and a jar of sea glass pebbles.</p>
+  
+      <h3>Step 5: Create the bubble reading nook</h3>
+      <p>In the left corner, set up a transparent bubble chair suspended from the ceiling. Underneath, add a circular seafoam rug and a small octopus-shaped footrest.</p>
+  
+      <h3>Step 6: Place the seahorse bookshelf</h3>
+      <p>Against the right wall, position the tall seahorse bookshelf. Fill it with aquatic-themed storybooks, conch shells, and glowing crystals.</p>
+  
+      <h3>Step 7: Build the treasure chest storage area</h3>
+      <p>Place a vintage-style treasure chest at the foot of the bed. Keep it slightly open, revealing plush sea stars, a rolled-up map, and a mock pearl necklace.</p>
+  
+      <h3>Step 8: Decorate with wall-mounted aquatic creatures</h3>
+      <p>Mount three framed silhouettes of sea creatures—whale, manta ray, and dolphin—on the left wall in a wave pattern. Add bubble decals around them for a floating effect.</p>
+  
+      <h3>Step 9: Set up the moonlit aquarium window</h3>
+      <p>Install the moonlit ocean-view window on the back wall above the bed. The animated glow simulates moonlight shimmering through moving water.</p>
+  
+      <h3>Step 10: Finish with seashell rug and ambient sound unit</h3>
+      <p>Lay down a large spiral shell rug in the center. Place the ambient sound unit beside the bed and set it to loop soft ocean waves and dolphin calls.</p>
+  
+      <h2>Tips for Dreamy Room Level 105</h2>
+      <ul>
+        <li><strong>Match Color Temperatures:</strong> Use cool blues and violets consistently across lighting and décor.</li>
+        <li><strong>Balance Texture:</strong> Combine glossy (bubble chair, shell items) with soft (blankets, rugs) for depth.</li>
+        <li><strong>Lighting First:</strong> Install hanging lights before placing tall furniture to avoid overlap issues.</li>
+        <li><strong>Keep Symmetry:</strong> Balance both sides of the bed to maintain underwater sanctuary aesthetics.</li>
+      </ul>
+  
+      <h2>Walkthrough Strategy for Dreamy Room Level 105</h2>
+      <ul>
+        <li><strong>Preview Aquarium Items:</strong> Some pieces are subtle—preview each to avoid missing essential elements.</li>
+        <li><strong>Layer from Top Down:</strong> Ceiling decorations first, then wall features, then floor objects.</li>
+        <li><strong>Glow Adjustment:</strong> Fine-tune jellyfish light brightness for a soothing effect.</li>
+        <li><strong>Preview Mode:</strong> Use the final preview to ensure the sea elements blend harmoniously.</li>
+      </ul>
+  
+      <p>By following this complete Dreamy Room Level 105 walkthrough, you’ll effortlessly create a bedroom that feels like it’s beneath the sea. Let coral reefs, sea creatures, and starlit waves lull you into the most relaxing Dreamy Room yet.</p>
+    `
+  },
+
+  {
+    id: 'game-level-106',
+    title: 'Level 106',
+    pageTitle: 'Dreamy Room Level 106 Solution Walkthrough',
+    pageSubtitle:
+      'Step into a magical woodland retreat with our full walkthrough for Dreamy Room Level 106. From glowing mushrooms to fairy lights, we’ll guide you through every enchanting placement.',
+    category: '101-110',
+    publishDate: '2025-07-07',
+    imageUrl: 'images/guides_106.webp',
+    imageAlt: 'Level 106 of the Dreamy Room game',
+    detailsRoute: { path: '/dreamy-room-level-106' },
+    iframeUrl: 'https://www.youtube.com/embed/t03yy2_l4Hg',
+    seo: {
+      title: 'Dreamy Room Level 106 Solution Walkthrough - Enchanted Forest Room Guide',
+      description:
+        'Complete Dreamy Room Level 106 with our detailed walkthrough. Build a whimsical forest room filled with fairy lights, treehouse beds, and magical décor.',
+      keywords:
+        'Dreamy Room Level 106, Level 106 walkthrough, Dreamy Room solution, enchanted forest room, fantasy room guide',
+    },
+    sidebarData: {
+      sidebarImageUrl: '/images/guides_106.webp',
+      levelInfoHtml:
+        '<h3>Level 106: Enchanted Forest Hideaway</h3><p>Create a mystical woodland retreat using treehouse furniture, glowing mushrooms, and hanging fairy lights. Follow our step-by-step Dreamy Room Level 106 walkthrough for a spellbinding room design.</p>',
+      featuredGuides: [
+        {
+          id: 'game-level-105',
+          title: 'Level 105<br/>Underwater Fantasy Bedroom',
+          imageUrl: 'images/guides_105.webp',
+          imageAlt: 'Level 105 of the Dreamy Room game',
+          detailsRoute: { path: '/dreamy-room-level-105' },
+        },
+      ],
+    },
+    detailsHtml: `
+      <h2>Dreamy Room Level 106 Solution Walkthrough</h2>
+      <p>In Dreamy Room Level 106, your goal is to design a magical forest sanctuary. With natural textures, fairy-themed accents, and glowing forest floor vibes, this walkthrough shows you every step to turn your room into an enchanted woodland hideaway.</p>
+  
+      <h3>Step 1: Lay the mossy forest flooring and tree mural backdrop</h3>
+      <p>Start by selecting a dark moss-green carpet for the floor. Apply the forest mural wallpaper on the back wall with silhouettes of tall trees fading into foggy twilight.</p>
+  
+      <h3>Step 2: Construct the treehouse bunk bed</h3>
+      <p>Place the wooden bunk bed designed like a miniature treehouse against the back-left wall. Add bark-textured railings and leaf-patterned bedding. Attach the mini rope ladder to the left side.</p>
+  
+      <h3>Step 3: Install fairy light garlands and lantern clusters</h3>
+      <p>Hang string lights shaped like fireflies around the top edges of the room. Add three glass lanterns with soft yellow light near the treehouse bed for extra glow.</p>
+  
+      <h3>Step 4: Set up mushroom stools and toadstool table</h3>
+      <p>Place two red-and-white mushroom stools near the center of the room. Between them, add a toadstool-shaped table with a glowing ring effect around its base.</p>
+  
+      <h3>Step 5: Add forest bookshelf and woodland plushies</h3>
+      <p>Place the wooden bookshelf carved like a tree trunk against the right wall. Fill it with forest-themed books and add plush figures of owls, foxes, and deer on the lower shelves.</p>
+  
+      <h3>Step 6: Build the crystal terrarium corner</h3>
+      <p>In the front-right corner, set up a glass terrarium filled with glowing crystals, moss, and mini fairy figurines. Place a curved branch lamp above it for gentle illumination.</p>
+  
+      <h3>Step 7: Place enchanted mirror and ivy wreath</h3>
+      <p>Hang the oval-shaped enchanted mirror with a rustic bark frame on the left wall. Above it, add a handmade ivy wreath with twinkling LED accents.</p>
+  
+      <h3>Step 8: Arrange leaf rug and firefly jar decorations</h3>
+      <p>Spread a large autumn-leaf-shaped rug in the center. On either side, place small jars with glowing fireflies that softly blink in intervals.</p>
+  
+      <h3>Step 9: Create a fairy reading nook</h3>
+      <p>In the lower-left corner, set a round moss cushion with a willow branch floor lamp. Add a stack of fairy tale books tied with twine and a mushroom-patterned throw blanket nearby.</p>
+  
+      <h3>Step 10: Finalize with magical wall decals and name sign</h3>
+      <p>Add starburst and leaf swirl decals across the ceiling and side walls. Complete the design with a wood-burned name plate above the bed, customized with glowing lettering.</p>
+  
+      <h2>Tips for Dreamy Room Level 106</h2>
+      <ul>
+        <li><strong>Keep It Organic:</strong> Stick with natural textures like bark, moss, and soft woven fabrics for authenticity.</li>
+        <li><strong>Light Temperature:</strong> Use only warm lights to enhance the cozy enchanted atmosphere.</li>
+        <li><strong>Vertical Layers:</strong> Use wall height—add shelves and lights at multiple levels for a tree canopy effect.</li>
+        <li><strong>Placement Precision:</strong> Firefly lights and terrarium elements may require rotation or slight nudges to snap correctly.</li>
+      </ul>
+  
+      <h2>Walkthrough Strategy for Dreamy Room Level 106</h2>
+      <ul>
+        <li><strong>Identify All Glowing Elements:</strong> This level emphasizes subtle glow—check jars, mirrors, and light sources carefully.</li>
+        <li><strong>Start with Structure:</strong> Treehouse bed and mural must be installed first as they determine layout flow.</li>
+        <li><strong>Layer Lighting:</strong> Use both high and low-level light sources to create a forest canopy glow.</li>
+        <li><strong>Preview for Shadows:</strong> Use preview mode to adjust lantern placement and avoid awkward shadows.</li>
+      </ul>
+  
+      <p>By following this detailed Dreamy Room Level 106 solution walkthrough, you’ll bring the peaceful wonder of a fairy forest into your room. Let the trees whisper, the fireflies dance, and the forest magic carry you into another dreamlike space.</p>
+    `
   }
+
+
 
 
 
