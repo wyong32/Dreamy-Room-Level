@@ -148,6 +148,21 @@
                 height="24"
               />
             </a>
+            <!-- 10 -->
+            <a
+              href="https://www.direct-directory.com/"
+              class="social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="/images/icon/directory-icon.png"
+                alt="micro"
+                loading="lazy"
+                width="24"
+                height="24"
+              />
+            </a>
           </div>
         </div>
 
