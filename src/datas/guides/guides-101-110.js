@@ -556,7 +556,183 @@ export default [
   
       <p>By following this detailed Dreamy Room Level 106 solution walkthrough, you’ll bring the peaceful wonder of a fairy forest into your room. Let the trees whisper, the fireflies dance, and the forest magic carry you into another dreamlike space.</p>
     `
+  },
+
+  {
+    id: 'game-level-107',
+    title: 'Level 107',
+    pageTitle: 'Dreamy Room Level 107 Solution Walkthrough',
+    pageSubtitle:
+      'Transform your space into a cosmic observatory with our full walkthrough for Dreamy Room Level 107. From galaxy murals to glowing star maps, every step is detailed for your perfect celestial retreat.',
+    category: '101-110',
+    publishDate: '2025-07-07',
+    imageUrl: 'images/guides_107.webp',
+    imageAlt: 'Level 107 of the Dreamy Room game',
+    detailsRoute: { path: '/dreamy-room-level-107' },
+    iframeUrl: 'https://www.youtube.com/embed/bMiA4oLYYZs',
+    seo: {
+      title: 'Dreamy Room Level 107 Solution Walkthrough - Cosmic Observatory Guide',
+      description:
+        'Complete Dreamy Room Level 107 with our detailed walkthrough. Design a celestial observatory with starry murals, telescope corners, and glowing planetary décor.',
+      keywords:
+        'Dreamy Room Level 107, Level 107 walkthrough, Dreamy Room solution, cosmic observatory, starry room guide',
+    },
+    sidebarData: {
+      sidebarImageUrl: '/images/guides_107.webp',
+      levelInfoHtml:
+        '<h3>Level 107: Cosmic Observatory Haven</h3><p>Create an inspiring cosmic-themed space with galaxy walls, telescopes, and soft star-glow lighting. Follow our step-by-step Dreamy Room Level 107 walkthrough to design the ultimate stargazer retreat.</p>',
+      featuredGuides: [
+        {
+          id: 'game-level-106',
+          title: 'Level 106<br/>Enchanted Forest Hideaway',
+          imageUrl: 'images/guides_106.webp',
+          imageAlt: 'Level 106 of the Dreamy Room game',
+          detailsRoute: { path: '/dreamy-room-level-106' },
+        },
+      ],
+    },
+    detailsHtml: `
+      <h2>Dreamy Room Level 107 Solution Walkthrough</h2>
+      <p>In Dreamy Room Level 107, you’ll create a cosmic observatory filled with glowing stars and planets. This walkthrough guides you through every step to design a room perfect for astronomy lovers and dreamers alike.</p>
+
+      <h3>Step 1: Install galaxy mural wallpaper and dark floor tiles</h3>
+      <p>Begin by applying a galaxy mural featuring deep blues and purples with scattered stars on the main wall. Use smooth dark-gray tiles for the floor to create a contrast that enhances the cosmic feel.</p>
+
+      <h3>Step 2: Set up the primary telescope station</h3>
+      <p>Place a sleek black telescope on a tripod by the right window. Add a small round table beside it for star charts and notebooks.</p>
+
+      <h3>Step 3: Mount constellation light panels</h3>
+      <p>Attach thin LED constellation panels to the ceiling. Choose warm white lighting for a soft stellar glow, and space them evenly for a starfield look.</p>
+
+      <h3>Step 4: Add planetary mobile and orbit chandelier</h3>
+      <p>Hang a planetary mobile near the center featuring miniature models of Earth, Saturn, and Jupiter. Directly above it, install an orbit-style chandelier for subtle ambient lighting.</p>
+
+      <h3>Step 5: Create an astronomy reading nook</h3>
+      <p>In the lower-left corner, place a cushioned recliner chair with a galaxy-patterned throw blanket. Add a small bookshelf stacked with astronomy books and a dim floor lamp for cozy reading sessions.</p>
+
+      <h3>Step 6: Place star map rug and glow-in-the-dark floor accents</h3>
+      <p>Lay down a star map rug in the center of the room, depicting major constellations. Add glow-in-the-dark floor stickers around it to simulate a soft, celestial ambience at night.</p>
+
+      <h3>Step 7: Set up meteorite display case</h3>
+      <p>Against the left wall, install a glass display case holding small meteorite replicas and glowing crystal fragments. Position a spotlight above it to enhance the display’s brilliance.</p>
+
+      <h3>Step 8: Hang telescope-themed wall art</h3>
+      <p>Decorate the back wall with framed telescope blueprints and artistic depictions of nebulae and distant galaxies.</p>
+
+      <h3>Step 9: Add cozy stargazing bed</h3>
+      <p>Place a low-profile bed with deep-blue bedding sprinkled with silver star patterns in the upper-left corner. Add small crescent-moon-shaped pillows for thematic consistency.</p>
+
+      <h3>Step 10: Final touches with fiber optic ceiling stars</h3>
+      <p>Embed fiber optic lighting in the ceiling to mimic a real night sky. Adjust brightness for a calm, starry effect perfect for relaxation.</p>
+
+      <h2>Tips for Dreamy Room Level 107</h2>
+      <ul>
+        <li><strong>Keep It Thematic:</strong> Stick with blues, purples, and silver tones for a cohesive cosmic atmosphere.</li>
+        <li><strong>Balance Lighting:</strong> Combine ceiling stars, wall LEDs, and subtle lamp lighting for depth.</li>
+        <li><strong>Interactive Elements:</strong> Place items like telescopes and charts for a functional observatory vibe.</li>
+        <li><strong>Plan Layout:</strong> Position the telescope near windows and display cases where they won’t obstruct movement.</li>
+      </ul>
+
+      <h2>Walkthrough Strategy for Dreamy Room Level 107</h2>
+      <ul>
+        <li><strong>Focus on Lighting:</strong> Lighting creates the cosmic feel—install light sources early in the build.</li>
+        <li><strong>Prioritize Centerpieces:</strong> Planetary mobile and telescope are the main visual anchors of the room.</li>
+        <li><strong>Use Complementary Textures:</strong> Mix smooth surfaces with soft fabrics to create warmth in a space-heavy theme.</li>
+        <li><strong>Preview Mode:</strong> Adjust star panel placements and fiber optic ceiling effects for realism.</li>
+      </ul>
+
+      <p>Following this Dreamy Room Level 107 solution walkthrough will transform your design into a peaceful, star-filled sanctuary. It’s perfect for night sky lovers and dreamers who want to bring the cosmos into their personal space.</p>
+    `
+  },
+
+  {
+    id: 'game-level-108',
+    title: 'Level 108',
+    pageTitle: 'Dreamy Room Level 108 Solution Walkthrough',
+    pageSubtitle:
+      'Dive into an underwater fantasy with our full walkthrough for Dreamy Room Level 108. From coral reef walls to glowing jellyfish lamps, we’ll guide you through every step of this ocean-inspired design.',
+    category: '101-110',
+    publishDate: '2025-07-07',
+    imageUrl: 'images/guides_108.webp',
+    imageAlt: 'Level 108 of the Dreamy Room game',
+    detailsRoute: { path: '/dreamy-room-level-108' },
+    iframeUrl: 'https://www.youtube.com/embed/j4hV89LmzLw',
+    seo: {
+      title: 'Dreamy Room Level 108 Solution Walkthrough - Underwater Paradise Guide',
+      description:
+        'Complete Dreamy Room Level 108 with our detailed walkthrough. Design a stunning underwater paradise featuring coral walls, aquatic furniture, and glowing jellyfish lamps.',
+      keywords:
+        'Dreamy Room Level 108, Level 108 walkthrough, Dreamy Room solution, underwater paradise, oceanic room guide',
+    },
+    sidebarData: {
+      sidebarImageUrl: '/images/guides_108.webp',
+      levelInfoHtml:
+        '<h3>Level 108: Underwater Paradise Retreat</h3><p>Create an immersive aquatic sanctuary with coral-themed walls, ocean-inspired furniture, and bioluminescent décor. Follow our step-by-step Dreamy Room Level 108 walkthrough to bring the beauty of the deep sea into your dream space.</p>',
+      featuredGuides: [
+        {
+          id: 'game-level-107',
+          title: 'Level 107<br/>Cosmic Observatory Haven',
+          imageUrl: 'images/guides_107.webp',
+          imageAlt: 'Level 107 of the Dreamy Room game',
+          detailsRoute: { path: '/dreamy-room-level-107' },
+        },
+      ],
+    },
+    detailsHtml: `
+      <h2>Dreamy Room Level 108 Solution Walkthrough</h2>
+      <p>In Dreamy Room Level 108, you’ll design an enchanting underwater paradise filled with coral textures, shimmering fish décor, and bioluminescent accents. This walkthrough covers every step to bring an oceanic dreamscape to life.</p>
+
+      <h3>Step 1: Apply coral reef wall panels and oceanic flooring</h3>
+      <p>Start by selecting coral reef-themed wall panels with soft gradients of blue and teal. For flooring, use a smooth sand-textured finish or shimmering aqua tiles to give an authentic undersea feel.</p>
+
+      <h3>Step 2: Place the bubble canopy bed</h3>
+      <p>Set a bubble-inspired canopy bed in the center-left of the room. Use seashell-patterned bedding and translucent drapes that mimic floating water currents.</p>
+
+      <h3>Step 3: Install jellyfish pendant lights</h3>
+      <p>Hang three jellyfish-shaped pendant lamps with soft glowing tentacles above the bed. Use cool white and blue tones for a calming bioluminescent effect.</p>
+
+      <h3>Step 4: Create coral reef shelving and fish tank feature</h3>
+      <p>Against the right wall, build custom coral reef shelving units to store small decorative items. Place a rectangular fish tank nearby with glowing tropical fish and a miniature shipwreck decoration.</p>
+
+      <h3>Step 5: Add seashell lounge chairs and pearl table</h3>
+      <p>Place two curved seashell-shaped lounge chairs near the bottom-right corner, with a small pearl-inspired table between them for an elegant conversation area.</p>
+
+      <h3>Step 6: Position kelp-like floor lamps</h3>
+      <p>Use tall, slender floor lamps designed to resemble swaying kelp. Position them near the back corners to frame the room with vertical elements.</p>
+
+      <h3>Step 7: Set up aquatic-themed dresser and mirror</h3>
+      <p>Place a driftwood-textured dresser on the left wall, paired with a round mirror bordered by tiny shells and starfish motifs.</p>
+
+      <h3>Step 8: Decorate with floating bubble sculptures</h3>
+      <p>Add decorative transparent bubble sculptures suspended from thin wires to create a sense of floating movement within the room.</p>
+
+      <h3>Step 9: Install ambient underwater sound system</h3>
+      <p>Position a discreet sound system under the window sill to play gentle ocean sounds, enhancing the immersive experience of the room.</p>
+
+      <h3>Step 10: Finish with starfish rugs and aquatic wall decals</h3>
+      <p>Place small starfish-shaped rugs around the seating area and bed. Add aquatic wall decals such as dolphins, manta rays, and schools of fish for final detailing.</p>
+
+      <h2>Tips for Dreamy Room Level 108</h2>
+      <ul>
+        <li><strong>Use Blue Tones:</strong> Mix multiple shades of blue and teal for depth and a realistic ocean look.</li>
+        <li><strong>Play with Lighting:</strong> Soft, indirect lighting enhances the underwater ambience and highlights décor.</li>
+        <li><strong>Balance Organic and Modern:</strong> Combine natural shapes like shells and coral with clean lines for functional elements.</li>
+        <li><strong>Use Sound and Movement:</strong> Incorporate sound and hanging elements for an immersive experience.</li>
+      </ul>
+
+      <h2>Walkthrough Strategy for Dreamy Room Level 108</h2>
+      <ul>
+        <li><strong>Anchor with Bed Placement:</strong> The bubble canopy bed sets the tone and should be positioned first.</li>
+        <li><strong>Light Placement:</strong> Jellyfish lamps and kelp floor lights create layers of ambient glow.</li>
+        <li><strong>Decorate Around Centerpieces:</strong> Build furniture layouts around main aquatic pieces like the fish tank.</li>
+        <li><strong>Preview and Adjust:</strong> Use preview mode to tweak bubble sculptures and decals for realistic floating effects.</li>
+      </ul>
+
+      <p>By following this detailed Dreamy Room Level 108 solution walkthrough, you can design a tranquil and enchanting underwater paradise. Feel the calm of ocean waves, the magic of marine life, and the beauty of the deep sea in your own Dreamy Room creation.</p>
+    `
   }
+
+
 
 
 
