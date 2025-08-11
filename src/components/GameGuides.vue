@@ -78,6 +78,7 @@ export default {
       { id: '81-90', name: 'Levels 81-90' },
       { id: '91-100', name: 'Levels 91-100' },
       { id: '101-110', name: 'Levels 101-110' },
+      { id: '111-120', name: 'Levels 111-120' },
     ])
 
     const loadGuides = () => {
@@ -214,7 +215,6 @@ export default {
   /* 新增cookingdom优化技术 */
   contain: layout style;
   place-items: stretch;
-  min-height: 400px;
 }
 
 .guide-card {
