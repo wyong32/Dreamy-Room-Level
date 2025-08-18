@@ -25,19 +25,15 @@ const loadGuideIds = () => {
         const filePath = path.join(dataDir, file)
         const content = fs.readFileSync(filePath, 'utf-8')
 
-        // 查找detailsRoute中的路径，这是我们希望的URL路径
-        const routeMatches = content.match(
-          /detailsRoute:\s*{\s*path:\s*['|"](\/[a-zA-Z0-9-]+)['|"]/g,
-        )
-        if (routeMatches) {
-          routeMatches.forEach((match) => {
-            const route = match.match(/['|"](\/[a-zA-Z0-9-]+)['|"]/)[1]
-            if (route && typeof route === 'string') {
-              // 移除开头的斜杠，因为path属性不需要
-              const pathStr = route.startsWith('/') ? route.substring(1) : route
-              ids.add(pathStr)
-            }
-          })
+        // 查找 detailsRoute.path（兼容带引号键名与跨行写法）
+        const routeRegex = /["']?detailsRoute["']?\s*:\s*\{[\s\S]*?["']?path["']?\s*:\s*["'](\/[a-zA-Z0-9-]+)["']/g
+        let match
+        while ((match = routeRegex.exec(content)) !== null) {
+          const route = match[1]
+          if (route && typeof route === 'string') {
+            const pathStr = route.startsWith('/') ? route.substring(1) : route
+            ids.add(pathStr)
+          }
         }
       }
     })
@@ -60,21 +56,17 @@ const loadBlogIds = () => {
     if (fs.existsSync(filePath)) {
       const content = fs.readFileSync(filePath, 'utf-8')
 
-      // 查找detailsRoute中的路径，这是我们希望的URL路径
-      const routeMatches = content.match(/detailsRoute:\s*{\s*path:\s*['|"](\/[a-zA-Z0-9-]+)['|"]/g)
-      if (routeMatches) {
-        routeMatches.forEach((match) => {
-          const routeMatch = match.match(/['|"](\/[a-zA-Z0-9-]+)['|"]/)
-          if (routeMatch && routeMatch[1] && typeof routeMatch[1] === 'string') {
-            // 移除开头的斜杠，因为path属性不需要
-            const pathStr = routeMatch[1].startsWith('/')
-              ? routeMatch[1].substring(1)
-              : routeMatch[1]
-            if (typeof pathStr === 'string') {
-              ids.add(pathStr)
-            }
+      // 查找 detailsRoute.path（兼容带引号键名与跨行写法）
+      const routeRegex = /["']?detailsRoute["']?\s*:\s*\{[\s\S]*?["']?path["']?\s*:\s*["'](\/[a-zA-Z0-9-]+)["']/g
+      let match
+      while ((match = routeRegex.exec(content)) !== null) {
+        const routePath = match[1]
+        if (routePath && typeof routePath === 'string') {
+          const pathStr = routePath.startsWith('/') ? routePath.substring(1) : routePath
+          if (typeof pathStr === 'string') {
+            ids.add(pathStr)
           }
-        })
+        }
       }
     }
 
@@ -89,23 +81,17 @@ const loadBlogIds = () => {
           const filePath = path.join(blogsDir, file)
           const content = fs.readFileSync(filePath, 'utf-8')
 
-          // 查找detailsRoute中的路径，这是我们希望的URL路径
-          const routeMatches = content.match(
-            /detailsRoute:\s*{\s*path:\s*['|"](\/[a-zA-Z0-9-]+)['|"]/g,
-          )
-          if (routeMatches) {
-            routeMatches.forEach((match) => {
-              const routeMatch = match.match(/['|"](\/[a-zA-Z0-9-]+)['|"]/)
-              if (routeMatch && routeMatch[1] && typeof routeMatch[1] === 'string') {
-                // 移除开头的斜杠，因为path属性不需要
-                const pathStr = routeMatch[1].startsWith('/')
-                  ? routeMatch[1].substring(1)
-                  : routeMatch[1]
-                if (typeof pathStr === 'string') {
-                  ids.add(pathStr)
-                }
+          // 查找 detailsRoute.path（兼容带引号键名与跨行写法）
+          const routeRegex = /["']?detailsRoute["']?\s*:\s*\{[\s\S]*?["']?path["']?\s*:\s*["'](\/[a-zA-Z0-9-]+)["']/g
+          let match
+          while ((match = routeRegex.exec(content)) !== null) {
+            const routePath = match[1]
+            if (routePath && typeof routePath === 'string') {
+              const pathStr = routePath.startsWith('/') ? routePath.substring(1) : routePath
+              if (typeof pathStr === 'string') {
+                ids.add(pathStr)
               }
-            })
+            }
           }
         }
       })
