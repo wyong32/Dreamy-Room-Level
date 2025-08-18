@@ -139,5 +139,147 @@ export default [
             </ul>
       
             <p>Following this Dreamy Room Level 112 solution walkthrough will help you build a mysterious and luxurious treasure vault with perfect symmetry and an adventurous narrative.</p>`
+    },
+
+    {
+        "id": "game-level-113",
+        "title": "Level 113",
+        "pageTitle": "Dreamy Room Level 113 Solution Walkthrough",
+        "pageSubtitle": "Complete Dreamy Room Level 113 with this full solution walkthrough. From arranging mystical fountains to placing enchanted plants and glowing crystals, follow each step to design a magical garden chamber.",
+        "category": "111-120",
+        "publishDate": "2025-08-18",
+        "imageUrl": "images/guides_113.webp",
+        "imageAlt": "Level 113 of the Dreamy Room game",
+        "detailsRoute": {
+            "path": "/dreamy-room-level-113"
+        },
+        "iframeUrl": "https://www.youtube.com/embed/qPDPE3t8NOY",
+        "seo": {
+            "title": "Dreamy Room Level 113 Solution Walkthrough - Enchanted Garden",
+            "description": "Follow our complete Dreamy Room Level 113 walkthrough. Learn how to place fountains, glowing plants, and arcane crystals to transform the chamber into an enchanting magical garden.",
+            "keywords": "Dreamy Room Level 113, Level 113 walkthrough, Dreamy Room garden solution, enchanted room guide, Dreamy Room crystals"
+        },
+        "sidebarData": {
+            "sidebarImageUrl": "/images/guides_113.webp",
+            "levelInfoHtml": "<h3>Level 113: Enchanted Garden</h3><p>This walkthrough shows how to set up a mystical indoor garden, from placing fountains and glowing flora to arranging magical artifacts and cozy seating for Dreamy Room Level 113. Perfect for players who want a lush and enchanting design.</p>",
+            "featuredGuides": [
+                {
+                    "id": "game-level-112",
+                    "title": "Level 112<br/>Treasure Vault",
+                    "imageUrl": "images/guides_112.webp",
+                    "imageAlt": "Level 112 of the Dreamy Room game",
+                    "detailsRoute": {
+                        "path": "/dreamy-room-level-112"
+                    }
+                }
+            ]
+        },
+        "detailsHtml": `<h2>Dreamy Room Level 113 Solution Walkthrough</h2>
+          <p>Dreamy Room Level 113 invites you to transform a plain stone chamber into an <strong>enchanted indoor garden</strong> filled with glowing flora, sparkling crystals, and mystical fountains. Careful placement of natural and magical elements is the key to success in this level.</p>
+      
+          <h3>Step 1: Place the central fountain</h3>
+          <p>Start by positioning the circular stone fountain in the middle of the room. Ensure the water spouts face upward and the glowing lilies are visible around the rim. This will serve as the garden’s centerpiece.</p>
+      
+          <h3>Step 2: Arrange glowing plants and vines</h3>
+          <p>Attach glowing ivy vines along the left and right walls, making sure they drape naturally without covering the fountain. Place two potted glowing mushrooms on either side of the fountain for balance. Position the tall crystal-flower plant near the left corner.</p>
+      
+          <h3>Step 3: Add magical crystals and artifacts</h3>
+          <p>Cluster three radiant crystals in the back alcove, ensuring their glow illuminates the surrounding plants. Place a small stone pedestal near the crystals and set a magical orb on top. To the right wall, hang a rune-carved plaque to add arcane flair.</p>
+      
+          <h3>Step 4: Create the seating nook</h3>
+          <p>In the lower-right corner, place the wooden bench with vine carvings. Add a soft green cushion on the bench. Position a round side table next to it, placing a glowing book, a tea mug, and a small lantern on its surface for a cozy touch.</p>
+      
+          <h3>Step 5: Add floor details and finishing touches</h3>
+          <p>Scatter a few stepping stones leading from the doorway to the fountain. Place a basket of herbs and a watering can near the bench. Finally, arrange two luminous butterflies above the fountain for a magical finishing detail.</p>
+      
+          <h2>Tips for Dreamy Room Level 113</h2>
+          <ul>
+            <li><strong>Balance natural and magical elements:</strong> Don’t overcrowd one side of the room with glowing objects—spread them evenly.</li>
+            <li><strong>Use symmetry:</strong> The fountain serves as the center; align items symmetrically for a pleasing look.</li>
+            <li><strong>Mind visibility:</strong> Make sure glowing plants and crystals are not hidden behind walls or furniture.</li>
+          </ul>
+      
+          <h2>Walkthrough Strategy</h2>
+          <ul>
+            <li><strong>Start with the centerpiece:</strong> The fountain should be placed first to guide all other arrangements.</li>
+            <li><strong>Layer natural décor:</strong> Add vines and plants before artifacts to ensure proper layering.</li>
+            <li><strong>Personalize the nook:</strong> The seating corner gives the room a lived-in, enchanting feel—decorate it thoughtfully.</li>
+          </ul>
+      
+          <p>Following this Dreamy Room Level 113 solution walkthrough will help you design a lush and mystical indoor garden, blending nature and magic in perfect harmony.</p>`
+    },
+
+    {
+        "id": "game-level-114",
+        "title": "Level 114",
+        "pageTitle": "Dreamy Room Level 114 Solution Walkthrough",
+        "pageSubtitle": "Complete Dreamy Room Level 114 with this step-by-step walkthrough. From assembling the star dome and telescope to arranging charts, gadgets, and a scholar’s desk, follow each step for a flawless Celestial Observatory.",
+        "category": "111-120",
+        "publishDate": "2025-08-18",
+        "imageUrl": "images/guides_114.webp",
+        "imageAlt": "Level 114 of the Dreamy Room game",
+        "detailsRoute": {
+            "path": "/dreamy-room-level-114"
+        },
+        "iframeUrl": "https://www.youtube.com/embed/3pIJP3878Ok",
+        "seo": {
+            "title": "Dreamy Room Level 114 Solution Walkthrough - Celestial Observatory",
+            "description": "Follow this complete Level 114 guide for Dreamy Room. Learn perfect placement for the star dome, brass telescope, constellation maps, orrery, and an astronomer’s desk to build a stunning observatory.",
+            "keywords": "Dreamy Room Level 114, Level 114 walkthrough, observatory solution, telescope placement, constellation room, Dreamy Room guide"
+        },
+        "sidebarData": {
+            "sidebarImageUrl": "/images/guides_114.webp",
+            "levelInfoHtml": "<h3>Level 114: Celestial Observatory</h3><p>Transform the chamber into a stargazer’s haven—install the rotating star dome, align a brass telescope, and arrange maps, an orrery, and a study nook. This walkthrough ensures clean snaps, clear sightlines, and balanced décor.</p>",
+            "featuredGuides": [
+                {
+                    "id": "game-level-113",
+                    "title": "Level 113<br/>Enchanted Garden",
+                    "imageUrl": "images/guides_113.webp",
+                    "imageAlt": "Level 113 of the Dreamy Room game",
+                    "detailsRoute": {
+                        "path": "/dreamy-room-level-113"
+                    }
+                }
+            ]
+        },
+        "detailsHtml": `<h2>Dreamy Room Level 114 Solution Walkthrough</h2>
+          <p>Level 114 turns a bare stone room into a <strong>Celestial Observatory</strong>. Precision matters: align optical devices with the star dome, maintain walkway clearance, and keep the scholarly corner tidy for an elegant, functional layout.</p>
+      
+          <h3>Step 1: Install the rotating star dome</h3>
+          <p>Mount the segmented <em>star dome</em> across the ceiling. Center the main circular aperture over the room’s midpoint so projected constellations land symmetrically on the walls. Nudge until the dome ribs align with the room’s corner pillars.</p>
+      
+          <h3>Step 2: Anchor the brass telescope and tripod</h3>
+          <p>Place the <strong>brass telescope</strong> on its tripod near the front-right quadrant, aimed toward the dome’s aperture. Ensure the eyepiece clears the railing and that the tripod legs don’t clip the floor trim. Add the adjustment wheel panel to the right side of the mount.</p>
+      
+          <h3>Step 3: Set the orrery and instrument pedestal</h3>
+          <p>Position the <strong>orrery</strong> (miniature solar system) on a waist-high pedestal left of center, leaving walking space between it and the telescope. Rotate it so the largest ring faces outward. Place the small <em>instrument tray</em> beside it with calipers, a sextant, and a pocket watch.</p>
+      
+          <h3>Step 4: Hang constellation charts and wall plaques</h3>
+          <p>On the back wall, hang the three <strong>constellation charts</strong> in a horizontal line: Northern, Equatorial, Southern. Keep equal spacing and align their bottom edges. Add two brass <em>star plaques</em> above the side arches for visual balance, and a crescent-moon sconce between the charts.</p>
+      
+          <h3>Step 5: Build the scholar’s desk nook</h3>
+          <p>In the lower-left corner, place the <strong>oak desk</strong> facing inward. Add a leather chair slightly angled toward the telescope. On the desk, arrange an open atlas, quill & inkwell, rolled ephemerides (two stacked, one tied), and a dim desk lamp. Slide a narrow bookshelf behind the chair with logbooks and a boxed lens kit.</p>
+      
+          <h3>Step 6: Floor markers, ladder, and finishing details</h3>
+          <p>Lay a circular <em>compass rug</em> beneath the dome center. Place the collapsible <strong>ladder</strong> near the back-right pillar to suggest access for dome maintenance. Scatter three star stones along the rug’s perimeter and place a covered crate of spare lenses near the doorway without blocking the path.</p>
+      
+          <h2>Tips for Dreamy Room Level 114</h2>
+          <ul>
+            <li><strong>Mind sightlines:</strong> Keep the telescope’s beam path clear of shelves and sconces.</li>
+            <li><strong>Symmetry matters:</strong> Charts and plaques should mirror the dome ribs for a clean look.</li>
+            <li><strong>Leave walk space:</strong> Maintain a clear corridor between the orrery and the desk nook.</li>
+            <li><strong>Use gentle nudges:</strong> Micro-adjust with arrow keys for perfect edge alignment.</li>
+          </ul>
+      
+          <h2>Walkthrough Strategy</h2>
+          <ul>
+            <li><strong>Top-down first:</strong> Install the star dome before placing tall items to avoid overlap.</li>
+            <li><strong>Core instruments next:</strong> Telescope and orrery define the room’s function and traffic flow.</li>
+            <li><strong>Decor after function:</strong> Add charts, plaques, and desk props once major pieces are locked in.</li>
+          </ul>
+      
+          <p>Follow this Level 114 walkthrough to craft a refined observatory with precise alignments, readable charts, and a cozy study—perfect for late-night stargazing and celestial research.</p>`
     }
+
+
 ]
