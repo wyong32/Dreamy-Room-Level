@@ -279,7 +279,555 @@ export default [
           </ul>
       
           <p>Follow this Level 114 walkthrough to craft a refined observatory with precise alignments, readable charts, and a cozy study—perfect for late-night stargazing and celestial research.</p>`
+    },
+
+    {
+        "id": "game-level-115",
+        "title": "Level 115",
+        "pageTitle": "Dreamy Room Level 115 Solution Walkthrough",
+        "pageSubtitle": "Complete Dreamy Room Level 115 with this step-by-step walkthrough. From installing CCTV cameras and teller desks to arranging ATMs, monitors, plants, and seating, follow each step to perfect your Finance Office scene.",
+        "category": "111-120",
+        "publishDate": "2025-09-02",
+        "imageUrl": "images/guides_115.webp",
+        "imageAlt": "Level 115 of the Dreamy Room game",
+        "detailsRoute": {
+            "path": "/dreamy-room-level-115"
+        },
+        "iframeUrl": "https://www.youtube.com/embed/BHEJjVI5TWg",
+        "seo": {
+            "title": "Dreamy Room Level 115 Solution Walkthrough - Finance Office",
+            "description": "Follow this complete Level 115 walkthrough for Dreamy Room. Learn perfect placement for CCTV cameras, teller desks, monitors, ATMs, plants, and seating to create a polished finance office environment.",
+            "keywords": "Dreamy Room Level 115, Level 115 walkthrough, finance office solution, CCTV placement, ATM arrangement, Dreamy Room guide"
+        },
+        "sidebarData": {
+            "sidebarImageUrl": "/images/guides_115.webp",
+            "levelInfoHtml": "<h3>Level 115: Finance Office</h3><p>Transform the chamber into a modern finance suite—install CCTV cameras, teller desks, ATMs, and seating. This walkthrough ensures accurate placements, smooth flow, and a professional atmosphere.</p>",
+            "featuredGuides": [
+                {
+                    "id": "game-level-114",
+                    "title": "Level 114<br/>Celestial Observatory",
+                    "imageUrl": "images/guides_114.webp",
+                    "imageAlt": "Level 114 of the Dreamy Room game",
+                    "detailsRoute": {
+                        "path": "/dreamy-room-level-114"
+                    }
+                }
+            ]
+        },
+        "detailsHtml": `
+        <h2>Dreamy Room Level 115 Solution Walkthrough</h2>
+          <p>Level 115 transforms a bare space into a secure and polished <strong>Finance Office</strong>. In this walkthrough, precision is everything—align cameras, monitors, teller desks, and ATMs to create an efficient, professional environment.</p>
+            <img src="/images/guides_115_1.webp" alt="Level 115 of the Dreamy Room game" />
+          <h3>Step 1: Place the two CCTV cameras</h3>
+          <p>Mount the <strong>CCTV cameras</strong> on the upper left and right corners. Angle each at 45 degrees to cover the entire floor. Ensure their lenses overlap slightly without creating blind spots, securing full surveillance coverage.</p>
+      
+          <h3>Step 2: Install the electronic monitors</h3>
+          <p>On the left wall, place three <strong>electronic monitors</strong>—currency rate display, buy/sell tracker, and trend graph—at eye level. Align their top edges and maintain equal spacing for a clean presentation.</p>
+      
+          <h3>Step 3: Arrange bill counter, safe, and cash</h3>
+          <p>On the left storage cabinet, place the <em>bill counter</em> to the far left, the <strong>circular safe</strong> beside it, and stacks of <em>cash bundles</em> and money bags to the right. Keep spacing consistent for visual balance.</p>
+      
+          <h3>Step 4: Add potted plants</h3>
+          <p>Bring life to the office with greenery. Place a <strong>white planter</strong> by the teller desk, a tall leafy plant near the ATMs, and a <em>flower vase</em> on the side table by the sofa. These soften the banking setup.</p>
+      
+          <h3>Step 5: Set up the teller desk</h3>
+          <p>Center the curved <strong>teller desk</strong> at the foreground, facing inward. Add two <em>barstool chairs</em> in front, evenly spaced. Mount the <strong>plexiglass barrier</strong> on the desk between the monitors for realism.</p>
+      
+          <h3>Step 6: Install rope barrier</h3>
+          <p>Place two polished posts in front of the teller desk and connect them with a <em>red velvet rope</em>. Align them evenly with the desk edges to guide visitor flow.</p>
+      
+          <h3>Step 7: Position the ATMs</h3>
+          <p>Place two <strong>ATM machines</strong> against the back wall. Align their bases with the floor grid and ensure equal spacing between them for symmetry and functionality.</p>
+      
+          <h3>Step 8: Mount the air conditioning unit</h3>
+          <p>Install the <strong>air conditioner</strong> above the monitors on the back wall. Align it centrally between the two CCTV cameras, keeping its bottom edge just above the top of the trend graph monitor.</p>
+      
+          <h3>Step 9: Hang world map and projector</h3>
+          <p>Mount the <em>projector</em> near the ceiling, slightly right of center. Place the <strong>world map display</strong> directly below it, ensuring it sits above the ATMs without clipping into them.</p>
+      
+          <h3>Step 10: Install window with curtains</h3>
+          <p>On the right wall, add the <strong>window</strong> below the right CCTV camera. Attach the <em>green curtains</em> so they drape naturally to floor level, enhancing the room’s realism.</p>
+      
+          <h3>Step 11: Arrange seating area</h3>
+          <p>Create comfort in the right-front area with a <strong>sofa</strong>, <em>armchair</em>, <em>coffee table</em>, and <em>side table</em>. Place a flower vase on the side table and a mug and book on the coffee table for cozy details.</p>
+      
+          <h3>Step 12: Add welcome mat and kiosk</h3>
+          <p>Finalize the entryway with a <strong>welcome mat</strong> in front of the teller desk and a <strong>kiosk terminal</strong> to its right. Align them with the grid for precise positioning.</p>
+      
+          <h2>Notes and Precautions</h2>
+          <ul>
+            <li>Use snap-to-grid guides to prevent misalignments.</li>
+            <li>Avoid overlapping items, especially with the ATMs and rope barriers.</li>
+            <li>Check boundary edges so no object clips off-screen.</li>
+          </ul>
+      
+          <h2>Tips and Tricks</h2>
+          <ul>
+            <li>Lock major pieces first (desks, ATMs, windows) before adjusting small décor.</li>
+            <li>Use blueprint overlay mode to measure distances precisely.</li>
+            <li>Work zone by zone—electronics, furniture, then decorative accents.</li>
+          </ul>
+      
+          <h2>Final Scene Description</h2>
+          <p>In the completed <strong>Dreamy Room Level 115</strong>, CCTV cameras oversee a polished financial hub. Monitors glow on the left wall above a safe and bill counter, with stacks of cash carefully arranged. A teller desk with plexiglass and barstools anchors the center, while ATMs line the back wall. Potted plants and a seating area add warmth, complemented by a world map projection and a window with green curtains. A welcome mat and kiosk at the entrance complete the professional yet welcoming Finance Office.</p>`
+    },
+
+    {
+        id: "game-level-116",
+        title: "Level 116",
+        pageTitle: "Dreamy Room Level 116 Solution Walkthrough",
+        pageSubtitle: "Complete Dreamy Room Level 116 with this step-by-step walkthrough. From water borders and grassy foundations to shell houses, tree platforms, and whimsical props, follow this guide to perfect your enchanted garden scene.",
+        category: "111-120",
+        publishDate: "2025-09-02",
+        imageUrl: "images/guides_116.webp",
+        imageAlt: "Level 116 of the Dreamy Room game",
+        detailsRoute: {
+            path: "/dreamy-room-level-116"
+        },
+        iframeUrl: "https://www.youtube.com/embed/yVpIc2jSmvI",
+        seo: {
+            title: "Dreamy Room Level 116 Solution Walkthrough - Shell House & Tree Platform Garden",
+            description: "Follow this complete Level 116 guide for Dreamy Room. Learn exact placement for the water border, grassy mats, shell house, tree trunk, foliage cubes, birds, and whimsical props to build a magical floating garden scene.",
+            keywords: "Dreamy Room Level 116, Level 116 walkthrough, shell house solution, tree trunk placement, floating garden, Dreamy Room guide"
+        },
+        sidebarData: {
+            sidebarImageUrl: "/images/guides_116.webp",
+            levelInfoHtml: `<h3>Level 116: Shell House Garden</h3>
+      <p>Transform the area into a whimsical retreat — frame the scene with a water border, raise pillared platforms, place a blue shell cottage, and crown the tallest column with a tree and birds. This walkthrough ensures smooth snaps, balanced décor, and enchanting details.</p>`,
+            featuredGuides: [
+                {
+                    id: "game-level-115",
+                    title: "Level 115<br/>Banking Hall",
+                    imageUrl: "images/guides_115.webp",
+                    imageAlt: "Level 115 of the Dreamy Room game",
+                    detailsRoute: {
+                        path: "/dreamy-room-level-115"
+                    }
+                }
+            ]
+        },
+        detailsHtml: `
+      <h2>Dreamy Room Level 116 Solution Walkthrough</h2>
+      <p>Level 116 transforms a blank stage into a <strong>floating garden retreat</strong>. Every detail matters: align the water border, set the grassy base, stack columns and tree foliage, and finish with lively animals and props for a balanced, magical outcome.</p>
+      <img src="/images/guides_116_1.webp" alt="Level 116 of the Dreamy Room game" />
+      <h3>Step 1: Prepare the water border and grassy foundation</h3>
+      <p>Select the pale sky-blue <em>frame tile</em> and snap it along the placement grid edges to form a water moat. Inside, fit the irregular green <strong>turf mat</strong> into the left section, leaving no gaps. This base defines the whole composition.</p>
+      
+      <h3>Step 2: Construct the pillared platforms</h3>
+      <p>Place the <strong>tallest gray column</strong> at the rear center, the medium-height cylinder just to its right, and the shortest in the far-right corner. Add the small cuboid block in front of the medium column for a staircase effect. These pillars create your vertical skyline.</p>
+      
+      <h3>Step 3: Position the shell house and interior details</h3>
+      <p>Install the <strong>blue shell-shaped house</strong> slightly right of center, facing forward. Inside, add the wooden balcony rail, miniature desk with scrolls and maps, and a curved sleeping alcove at the base. These touches make the dwelling feel alive.</p>
+      
+      <h3>Step 4: Assemble the tree trunk and foliage cubes</h3>
+      <p>Attach the <strong>brown trunk</strong> atop the tallest column. Crown it with three turf cubes—left, center, and right—for leafy platforms. Wrap vines around the trunk and let white blossoms drape naturally between cubes for organic flow.</p>
+      
+      <h3>Step 5: Add birds, nest, flora, and ground-level props</h3>
+      <p>Perch a <strong>blue bird</strong> on the left cube and a <strong>pink bird</strong> on the right, facing inward. Place a <em>nest with three eggs</em> on the center cube. At ground level, cluster mushrooms near the right column, set stump stools before the shell house, hang a cauldron from its frame, and span the moat with a short bridge. Add palm fronds, broad leaves, lily pads, and a tiny frog for finishing charm.</p>
+      
+      <h2>Notes and Precautions</h2>
+      <ul>
+      <li><strong>Check snaps:</strong> After each placement, rotate the camera to confirm perfect fit.</li>
+      <li><strong>Avoid drags:</strong> Lift and re-drop large items to prevent dislodging nearby pieces.</li>
+      <li><strong>Mind limits:</strong> Track prop counts to avoid hitting the placement cap mid-build.</li>
+      <li><strong>Move tool first:</strong> Use the move function instead of undo to avoid erasing correct setups.</li>
+      </ul>
+      
+      <h2>Tips and Tricks</h2>
+      <ul>
+      <li><strong>Start large:</strong> Place the moat, turf mat, and pillars first to define proportions.</li>
+      <li><strong>Use auto-rotate:</strong> Quickly align symmetrical props like birds or mushrooms.</li>
+      <li><strong>Group items:</strong> Keep similar pieces in quick slots for faster switching.</li>
+      <li><strong>Switch views:</strong> Bird’s-eye view reveals misalignments hidden from the front.</li>
+      </ul>
+      
+      <h2>Final Scene Description</h2>
+      <p>The finished Level 116 shows a serene garden bordered by blue water. A grassy mat hosts a shell-like blue cottage with balcony and cozy interior. Behind it, three columns rise, crowned with turf cubes, vines, blossoms, and bird companions around a nest. Below, mushrooms, stumps, a cauldron, bridge, lily pads, and a frog complete the magical, balanced tableau.</p>
+      `
+    },
+
+    {
+        id: "game-level-117",
+        title: "Level 117",
+        pageTitle: "Dreamy Room Level 117 Solution Walkthrough",
+        pageSubtitle: "Step-by-step guide to complete Dreamy Room Level 117. From placing the vintage camera structure and rooftop picnic setup to camper van gear, campfire, and riverside details, follow this walkthrough to perfect your whimsical campsite scene.",
+        category: "111-120",
+        publishDate: "2025-09-02",
+        imageUrl: "images/guides_117.webp",
+        imageAlt: "Level 117 of the Dreamy Room game",
+        detailsRoute: {
+            path: "/dreamy-room-level-117"
+        },
+        iframeUrl: "https://www.youtube.com/embed/OjnEnuLv94U",
+        seo: {
+            title: "Dreamy Room Level 117 Solution Walkthrough - Vintage Camera & Riverside Campsite",
+            description: "Complete Level 117 of Dreamy Room with this detailed walkthrough. Learn how to place the vintage camera house, rooftop picnic, camper van setup, campfire, animals, tent, and riverside details for a charming campsite build.",
+            keywords: "Dreamy Room Level 117, Level 117 walkthrough, camera house, camper van, rooftop picnic, campfire, campsite, Dreamy Room guide"
+        },
+        sidebarData: {
+            sidebarImageUrl: "/images/guides_117.webp",
+            levelInfoHtml: `<h3>Level 117: Camera Campsite</h3>
+      <p>Turn your stage into a lively campsite by anchoring a giant camera house, decorating it with lights and vines, adding picnic details, a camper van, and riverside accents. This walkthrough ensures every element is perfectly aligned.</p>`,
+            featuredGuides: [
+                {
+                    id: "game-level-116",
+                    title: "Level 116<br/>Shell House Garden",
+                    imageUrl: "images/guides_116.webp",
+                    imageAlt: "Level 116 of the Dreamy Room game",
+                    detailsRoute: {
+                        path: "/dreamy-room-level-116"
+                    }
+                }
+            ]
+        },
+        detailsHtml: `
+      <h2>Dreamy Room Level 117 Solution Walkthrough</h2>
+      <p>Level 117 transforms your scene into a <strong>riverside campsite</strong> anchored by a whimsical camera-shaped house. Follow this walkthrough to place the main structure, rooftop picnic, camper van lounge, and detailed riverside props.</p>
+      <img src="/images/guides_117_1.webp" alt="Level 117 of the Dreamy Room game" />
+      <h3>Step 1: Place the vintage camera structure</h3>
+      <p>Select the oversized <strong>vintage camera dwelling</strong> and place it in the center-left grassy area, flush with the river’s edge. Ensure it locks into place without tilting forward or back.</p>
+      
+      <h3>Step 2: Drape string lights and climbing vines</h3>
+      <p>Add <strong>multicolored string lights</strong> across the front roof edge. Tuck <em>green vines</em> into the side crevices, letting foliage spill naturally to soften the structure.</p>
+      
+      <h3>Step 3: Place squirrel figurine and telescope</h3>
+      <p>On the camera rooftop, position a <strong>squirrel figurine</strong> beside a <strong>telescope</strong> angled toward the waterfall. Adjust slightly left to avoid overlapping the lights.</p>
+      
+      <h3>Step 4: Add wooden table with umbrella and picnic set</h3>
+      <p>On the right rooftop plateau, place a <strong>round wooden table</strong>, insert the red-and-white umbrella, and arrange <em>two sandwiches</em> plus a <em>lemonade glass</em> for a cozy picnic scene.</p>
+      
+      <h3>Step 5: Attach the bunny climber</h3>
+      <p>Snap the <strong>bunny figurine</strong> onto the camera lens area so it looks like it’s climbing up. Leave spacing from the vines to avoid placement conflict.</p>
+      
+      <h3>Step 6: Position the yellow camper van</h3>
+      <p>Park the <strong>yellow camper van</strong> beneath the camera’s overhang, angled toward the river. Ensure the wheels sit flush with the grass terrain.</p>
+      
+      <h3>Step 7: Load rooftop gear and set up canopy lounge</h3>
+      <p>Stack a <strong>sleeping mat</strong>, <strong>crate</strong>, and <strong>duffel bag</strong> neatly on the van roof. Extend a striped <strong>awning canopy</strong> and place two <em>camping chairs</em> plus a <em>side table</em> underneath for a complete lounge.</p>
+      
+      <h3>Step 8: Arrange ground details</h3>
+      <ul>
+      <li>Create a <strong>campfire</strong> with logs, tripod, and stew pot.</li>
+      <li>Add <em>mushrooms</em> and bushes for woodland accents.</li>
+      <li>Stack crates with a curious <strong>grey cat</strong> pawing at the top.</li>
+      <li>Pitch a <strong>yellow tent</strong> with flag and lights.</li>
+      <li>Place a <strong>canoe</strong> in the river with a paddling <strong>black-and-white cat</strong>.</li>
+      <li>Add <em>lily pads</em> and a <em>frog figurine</em> for finishing touches.</li>
+      </ul>
+      
+      <h2>Notes and Precautions</h2>
+      <ul>
+      <li>Watch for <strong>green snap guides</strong> to confirm accurate placement.</li>
+      <li>If an item won’t register, rotate by 15° or nudge one grid unit.</li>
+      <li>Props like vines and bunny climber need spacing to avoid overlap conflicts.</li>
+      <li>Use the <strong>move tool</strong> instead of undo to prevent reverting correct placements.</li>
+      </ul>
+      
+      <h2>Tips and Tricks</h2>
+      <ul>
+      <li>Memorize key <strong>alignment hotspots</strong> like van racks and tent pegs.</li>
+      <li>Use <em>ghost mode</em> to preview layering before dropping props.</li>
+      <li>Group and clone similar foliage assets for quicker decoration.</li>
+      <li>Rotate animal props by 22.5° increments for natural poses.</li>
+      </ul>
+      
+      <h2>Final Scene Description</h2>
+      <p>The finished Level 117 scene showcases a riverside campsite anchored by a giant camera house. A squirrel peers through a telescope, a picnic sits under an umbrella, and a bunny climbs the lens. Below, a camper van with rooftop gear and canopy lounge sits by a glowing campfire, while cats explore crates, tents, and a canoe on the river. Frogs, lily pads, and lush vines complete the playful, storybook atmosphere.</p>
+      `
+    },
+
+    {
+        id: "game-level-118",
+        title: "Level 118",
+        pageTitle: "Dreamy Room Level 118 Solution Walkthrough",
+        pageSubtitle: "Complete walkthrough of Dreamy Room Level 118. Follow this step-by-step guide to build the cozy two-level retreat with bathroom, bedroom, kitchen, and living room arrangements.",
+        category: "111-120",
+        publishDate: "2025-09-02",
+        imageUrl: "images/guides_118.webp",
+        imageAlt: "Level 118 of the Dreamy Room game",
+        detailsRoute: {
+            path: "/dreamy-room-level-118"
+        },
+        iframeUrl: "https://www.youtube.com/embed/6DCJhTXvVqA",
+        seo: {
+            title: "Dreamy Room Level 118 Solution Walkthrough - Two-Level Retreat Guide",
+            description: "Step-by-step walkthrough of Dreamy Room Level 118. Learn how to place the bathtub, shower partition, bed, fridge, cabinets, kitchen appliances, sofa, TV, and decorations to complete the cozy pastel retreat.",
+            keywords: "Dreamy Room Level 118, Level 118 walkthrough, bathtub, bedroom, mini fridge, teal kitchen, sofa, TV, Dreamy Room guide"
+        },
+        sidebarData: {
+            sidebarImageUrl: "/images/guides_118.webp",
+            levelInfoHtml: `<h3>Level 118: Two-Level Retreat</h3>
+      <p>Create a pastel-colored two-level home with a bathtub, shower, bedroom, kitchen, and living space. This walkthrough shows every placement step for a seamless cozy design.</p>`,
+            featuredGuides: [
+                {
+                    id: "game-level-117",
+                    title: "Level 117<br/>Camera Campsite",
+                    imageUrl: "images/guides_117.webp",
+                    imageAlt: "Level 117 of the Dreamy Room game",
+                    detailsRoute: {
+                        path: "/dreamy-room-level-117"
+                    }
+                }
+            ]
+        },
+        detailsHtml: `
+      <h2>Dreamy Room Level 118 Solution Walkthrough</h2>
+      <p>Level 118 transforms your empty shell into a <strong>two-level retreat</strong> with pastel accents, balancing a compact bathroom, cozy bedroom, and functional kitchen-living area. Follow this guide for exact placements.</p>
+      
+      <img src="/images/guides_118_1.webp" alt="Level 118 of the Dreamy Room game" />
+
+      <h3>Step 1: Place the bathtub</h3>
+      <p>Drag the <strong>white-and-aqua bathtub</strong> to the upper-left corner, flush against both walls. Ensure it doesn’t overlap the drainage outlet for proper faucet placement.</p>
+      
+      <h3>Step 2: Install shower rod and glass partition</h3>
+      <p>Add the <strong>curved shower rod</strong> above the tub, snapping to corner brackets. Place the <strong>glass partition</strong> to the right of the tub, sealing against the wall to form a neat shower enclosure.</p>
+      
+      <h3>Step 3: Hang towel, mirror, and pet window</h3>
+      <p>Place the <strong>yellow towel</strong> on the rack, hang the <strong>round golden mirror</strong> above the tub, and add the <strong>pet window decal</strong> on the left wall for playful charm.</p>
+      
+      <h3>Step 4: Position yellow utility cart</h3>
+      <p>Place the <strong>yellow utility cart</strong> to the right of the tub, fill it with <em>soda bottles</em> and <em>jars</em>, then rotate slightly for alignment with the bathroom door.</p>
+      
+      <h3>Step 5: Place pink mini fridge</h3>
+      <p>Set the <strong>pink mini fridge</strong> near the bed area, leaving one grid unit of clearance by the stairs. Add <em>two bottles</em> on top for extra detail.</p>
+      
+      <h3>Step 6: Assemble double bed</h3>
+      <p>Place the <strong>double bed</strong> against the right wall, under the upcoming window. Add the <em>fish-pattern blanket</em> and two pillows, adjusting for symmetry.</p>
+      
+      <h3>Step 7: Add window with curtains</h3>
+      <p>Install the <strong>arched window</strong> above the bed, then hang <strong>blue-and-yellow curtains</strong> with a yellow valance for contrast.</p>
+      
+      <h3>Step 8: Build the staircase</h3>
+      <p>Place the <strong>staircase</strong> in the front-left area, ensuring it aligns with the platform. Attach the <em>teal handrail</em> for stability.</p>
+      
+      <h3>Step 9: Install cabinets and countertop</h3>
+      <p>Place three <strong>teal base cabinets</strong> with gold handles on the lower back wall. Add the <strong>countertop</strong> on top, preparing for sink and stove placement.</p>
+      
+      <h3>Step 10: Add stove, oven, pan, and cutting board</h3>
+      <p>Insert the <strong>stove-oven unit</strong> into the countertop cutout. Place a <em>frying pan</em> on the burner and a <em>cutting board</em> angled on the left side.</p>
+      
+      <h3>Step 11: Position TV, stand, and speaker</h3>
+      <p>Place the <strong>TV stand</strong> on the lower right wall, add the <strong>flat-screen TV</strong> on top, and situate the <strong>tall silver speaker</strong> to the side.</p>
+      
+      <h3>Step 12: Arrange sofa, coffee table, plants, and rugs</h3>
+      <p>Place the <strong>mint-green sofa</strong> facing the TV with the <strong>coffee table</strong> in front. Add a <em>green rug</em> at the staircase base and a <em>beige rug</em> under the sofa. Finish with <em>potted plants</em> near the window and sofa.</p>
+      
+      <h2>Notes and Precautions</h2>
+      <ul>
+      <li>Rotate and snap gently to avoid misalignments that block future placements.</li>
+      <li>Leave clearance around objects for smooth navigation.</li>
+      <li>Use grid guides for cabinetry and major furniture to keep lines level.</li>
+      <li>Avoid overlapping small items like jars and bottles.</li>
+      <li>Save progress frequently to prevent resets.</li>
+      </ul>
+      
+      <h2>Tips and Tricks</h2>
+      <ul>
+      <li>Hold <strong>CTRL</strong> to bypass grid snapping for micro-adjustments.</li>
+      <li>Press <strong>spacebar</strong> to rotate the camera and find snap points.</li>
+      <li>Save custom setups (bathroom, kitchen) as <em>Favorites</em> for reuse.</li>
+      <li>Use inventory search to quickly find props like “bathtub” or “stove.”</li>
+      <li>Enable shadow overlay to preview lighting and avoid odd silhouettes.</li>
+      </ul>
+      
+      <h2>Final Scene Description</h2>
+      <p>The finished Level 118 scene is a pastel two-level retreat. Upstairs, a white-and-aqua bathtub with a golden mirror, towel, and pet window adds charm. A pink mini fridge stands beside a cozy double bed under a curtained arched window. Below, teal cabinets with gold handles and a stove create a stylish kitchen, while a mint sofa and coffee table face a TV setup. Plants, rugs, and thoughtful décor complete the warm, storybook-like retreat.</p>
+      `
+    },
+
+    {
+        id: "game-level-119",
+        title: "Level 119",
+        pageTitle: "Dreamy Room Level 119 Solution Walkthrough",
+        pageSubtitle: "Master Dreamy Room Level 119 with this step-by-step guide. From scaffolding and NASA rocket placement to control consoles, pipes, and auxiliary props, build your perfect space station scene.",
+        category: "111-120",
+        publishDate: "2025-09-02",
+        imageUrl: "images/guides_119.webp",
+        imageAlt: "Level 119 of the Dreamy Room game",
+        detailsRoute: {
+            path: "/dreamy-room-level-119"
+        },
+        iframeUrl: "https://www.youtube.com/embed/ce89IEZrnUs",
+        seo: {
+            title: "Dreamy Room Level 119 Walkthrough & Guide - NASA Rocket Space Station",
+            description: "Follow this complete walkthrough for Dreamy Room Level 119. Learn how to place the platform, scaffolding, NASA rocket, control consoles, piping, and decorative props to build a balanced and nostalgic space-themed room.",
+            keywords: "Dreamy Room Level 119, Level 119 walkthrough, NASA rocket guide, space station room, Dreamy Room solution"
+        },
+        sidebarData: {
+            sidebarImageUrl: "/images/guides_119.webp",
+            levelInfoHtml: `<h3>Level 119: NASA Space Station</h3>
+      <p>Dreamy Room Level 119 transforms into a nostalgic space station. From scaffolds and piping to a central NASA rocket, follow this guide to build a perfectly balanced, high-tech launch scene.</p>`,
+            featuredGuides: [
+                {
+                    id: "game-level-118",
+                    title: "Level 118<br/>Pastel Bathroom & Living Room",
+                    imageUrl: "images/guides_118.webp",
+                    imageAlt: "Level 118 of the Dreamy Room game",
+                    detailsRoute: {
+                        path: "/dreamy-room-level-118"
+                    }
+                }
+            ]
+        },
+        detailsHtml: `
+      <h2>Dreamy Room Level 119 Solution Walkthrough</h2>
+      <p>Dreamy Room Level 119 builds on the core Dreamy Room experience, emphasizing mindful decoration and memory storytelling. In this guide, you’ll transform the empty canvas into a bustling space station-themed room, placing every object in its perfect spot.</p>
+      
+      <img src="/images/guides_119_1.webp" alt="Level 119 of the Dreamy Room game" />
+
+      <h3>Step 1: Place the base platform and back walls</h3>
+      <p>Lay down the cream-colored floor tile and align it with the bottom edge. Add the two perpendicular back walls snug into the corners. Ensure the grooves and etched lines mirror for a balanced foundation.</p>
+      
+      <h3>Step 2: Place left scaffolding, crates, and control console</h3>
+      <p>Add the beige lattice scaffolding on the left, stack two light-blue crates on the walkway, and position the compact control console below with its green screen facing outward.</p>
+      
+      <h3>Step 3: Place the NASA rocket in the center</h3>
+      <p>Set the red-and-white NASA rocket in the platform’s center. Use the alignment guide to ensure it’s perfectly vertical, with the “NASA” lettering facing the front.</p>
+      
+      <h3>Step 4: Place right scaffolding, pulley winch, and crate</h3>
+      <p>Mirror the left with scaffolding on the right. Place the pulley winch on top, add a light-green crate, and confirm both scaffolds align at the same height.</p>
+      
+      <h3>Step 5: Connect piping between scaffolds and rocket</h3>
+      <p>Attach the elbow pipe from the left scaffold into the rocket’s port. Add a straight pipe connecting the rocket to the right scaffold winch, ensuring airtight alignment.</p>
+      
+      <h3>Step 6: Add satellite dish, energy orb, and wind turbine fan</h3>
+      <p>Mount the satellite dish on the left scaffold, position the glowing pink energy orb at its focal point, and place the blue turbine fan in front, facing outward.</p>
+      
+      <h3>Step 7: Set up the command desk with laptop, books, and plant</h3>
+      <p>Place the mint-green desk in the front-right quadrant. Add a laptop, two stacked books, a succulent, and small accessories like a pencil and ergonomic mouse ball.</p>
+      
+      <h3>Step 8: Place the water tower and auxiliary tank</h3>
+      <p>Position the blue-domed water tower in the front-right corner, and place the short cylindrical tank beside it, leaving a gap for precision.</p>
+      
+      <h3>Step 9: Add NASA signage and nameplate</h3>
+      <p>Mount the rectangular NASA logo on the right scaffolding and the smaller nameplate at the front-left platform edge for thematic cohesion.</p>
+      
+      <h2>Notes and Precautions</h2>
+      <ul>
+      <li>Check alignment: Dreamy Room Level 119 enforces strict grid snapping.</li>
+      <li>Ensure scaffolding connects flush against back walls.</li>
+      <li>Rotate objects before placing to face correctly.</li>
+      <li>Save progress often to avoid resets.</li>
+      </ul>
+      
+      <h2>Tips and Tricks</h2>
+      <ul>
+      <li>Use guide overlays to align scaffolding perfectly.</li>
+      <li>Place large structures first, then props.</li>
+      <li>Zoom out for symmetry checks.</li>
+      <li>Use keyboard shortcuts (R to rotate, arrow keys to nudge).</li>
+      <li>Enable color-blind mode to distinguish crates and pipes.</li>
+      </ul>
+      
+      <h2>Final Scene Description</h2>
+      <p>The finished Level 119 scene resembles a nostalgic space launch station. A central NASA rocket rises between beige scaffolds, with crates, consoles, pipes, and a satellite dish beaming energy. A turbine fan spins below, while a mint-green command desk, water tower, and tank sit at the front. NASA signage completes the industrial vibe, and tiny fox-like engineers bring the diorama to life. Dreamy Room Level 119 captures the perfect balance of industry and whimsy.</p>
+      `
+    },
+
+    {
+        id: "game-level-120",
+        title: "Level 120",
+        pageTitle: "Dreamy Room Level 120 Solution Walkthrough",
+        pageSubtitle: "Master Dreamy Room Level 120 with this full guide. From racks and banners to blacksmith benches and dining lofts, decorate your medieval workshop with precision.",
+        category: "111-120",
+        publishDate: "2025-09-02",
+        imageUrl: "images/guides_120.webp",
+        imageAlt: "Level 120 of the Dreamy Room game",
+        detailsRoute: {
+            path: "/dreamy-room-level-120"
+        },
+        iframeUrl: "https://www.youtube.com/embed/aYzGWpG01RQ",
+        seo: {
+            title: "Dreamy Room Level 120 Walkthrough & Guide - Medieval Workshop",
+            description: "Complete walkthrough for Dreamy Room Level 120. Learn how to place racks, ladders, banners, blacksmith benches, scroll cabinets, and characters for a perfect medieval workshop scene.",
+            keywords: "Dreamy Room Level 120, Level 120 walkthrough, medieval workshop, blacksmith bench, Dreamy Room solution"
+        },
+        sidebarData: {
+            sidebarImageUrl: "/images/guides_120.webp",
+            levelInfoHtml: `<h3>Level 120: Medieval Workshop</h3>
+      <p>Dreamy Room Level 120 transforms a blank stone chamber into a warm and detailed artisan workshop. Follow this step-by-step walkthrough to create a balanced mix of blacksmith tools, dining loft, banners, and character interactions.</p>`,
+            featuredGuides: [
+                {
+                    id: "game-level-119",
+                    title: "Level 119<br/>NASA Rocket Space Station",
+                    imageUrl: "images/guides_119.webp",
+                    imageAlt: "Level 119 of the Dreamy Room game",
+                    detailsRoute: {
+                        path: "/dreamy-room-level-119"
+                    }
+                }
+            ]
+        },
+        detailsHtml: `
+      <h2>Dreamy Room Level 120 Solution Walkthrough</h2>
+      <p>Dreamy Room Level 120 transforms a blank stone chamber into an enchanting medieval workshop. In this guide, you’ll master the placement of every rack, ladder, banner, and bench for a perfectly immersive scene.</p>
+      
+      <img src="/images/guides_120_1.webp" alt="Level 120 of the Dreamy Room game" />
+
+      <h3>Step 1: Place the Boot Rack and Weapon Rack</h3>
+      <p>Position the wooden boot rack in the bottom-left corner, flush against the wall. Place the fence-style weapon stand in front, leaning axes and spears neatly.</p>
+      
+      <h3>Step 2: Install the Ladder, Window, and Greenery</h3>
+      <p>Lean the ladder on the left wall, add the arched window above its midpoint, and drape trailing vines from the window’s top edge for a cozy corner.</p>
+      
+      <h3>Step 3: Hang the Decorative Banner</h3>
+      <p>Mount the green heraldic banner with gold emblem high on the left wall, centered above the ladder and window.</p>
+      
+      <h3>Step 4: Install the Second-Floor Railing</h3>
+      <p>Snap railing posts along the open upper story, spanning left to right. Ensure all posts connect without gaps for realism.</p>
+      
+      <h3>Step 5: Set Up the Dining Nook</h3>
+      <p>Place the round table and two chairs on the loft. Add a golden decanter, crystal goblet, and roasted chicken plate for a warm medieval dining scene.</p>
+      
+      <h3>Step 6: Add the Potted Plant</h3>
+      <p>Snap the green potted plant to the railing, letting leaves drape outward for natural balance.</p>
+      
+      <h3>Step 7: Position the Cabinet of Scrolls and Potions</h3>
+      <p>Place the tall cabinet on the back wall of the loft, then fill its cubbies with scrolls, potion bottles, and tomes.</p>
+      
+      <h3>Step 8: Place the Small Stool</h3>
+      <p>Set the round wooden stool with cushion beside the cabinet, angled outward as if ready for a scholar.</p>
+      
+      <h3>Step 9: Build the Blacksmith’s Bench</h3>
+      <p>On the lower floor, place the blacksmith’s bench, golden anvil, and vice. Align everything flush with the platform edges.</p>
+      
+      <h3>Step 10: Add Blacksmith Character and Helmets</h3>
+      <p>Position the cat-like blacksmith NPC mid-swing at the anvil, and line up three helmets on the bench surface.</p>
+      
+      <h3>Step 11: Position the Knight, Shields, and Swords</h3>
+      <p>Place the armored knight near the bench. Mount three shields on the right wall in a gentle arc, with sword racks beneath them.</p>
+      
+      <h3>Step 12: Mount Trophy, Crates, and Candles</h3>
+      <p>Hang the deer head trophy above the shields. Add greenery crates in the bottom-right corner, and place two lit candles for atmospheric light.</p>
+      
+      <h2>Notes and Precautions</h2>
+      <ul>
+      <li>Always follow snapping guides to avoid clipping issues.</li>
+      <li>Do not push cabinets too close to corners or they may float.</li>
+      <li>Check that candles don’t overlap objects, or light won’t render correctly.</li>
+      <li>Ensure railing aligns perfectly with grid increments.</li>
+      </ul>
+      
+      <h2>Tips and Tricks</h2>
+      <ul>
+      <li>Start with corner-anchored objects to maintain spacing.</li>
+      <li>Preview candlelight and window glow with placement overlay.</li>
+      <li>Hold Shift to disable snapping for fine adjustments.</li>
+      <li>Save before adding NPCs to avoid rework from reset bugs.</li>
+      </ul>
+      
+      <h2>Final Scene Description</h2>
+      <p>The finished Level 120 is a bustling medieval workshop. A boot rack and weapon stand occupy the bottom-left corner, while a ladder leads to a cozy loft. The upper story holds a dining nook with roasted chicken, a tall cabinet filled with scrolls and potions, and greenery draping from an arched window. A heraldic banner and candles cast a warm glow. Below, a cat-like blacksmith hammers at the anvil as a knight observes. Shields, swords, crates of greenery, and a deer trophy complete the immersive atelier.</p>
+      `
     }
+
+
+
+
+
+
+
+
 
 
 ]

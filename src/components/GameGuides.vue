@@ -208,7 +208,7 @@ export default {
 .guide-cards {
   display: grid;
   /* 参考cookingdom的精确grid控制策略 */
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
