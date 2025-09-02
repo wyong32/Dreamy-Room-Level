@@ -4,20 +4,6 @@
     <SeoHead pageType="home" />
     <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-title">
-      <!-- <div class="floating-bubbles" aria-hidden="true">
-        <div
-          class="bubble"
-          v-for="n in 10"
-          :key="n"
-          :style="{
-            left: `${Math.random() * 100}%`,
-            width: `${Math.random() * 60 + 20}px`,
-            height: `${Math.random() * 60 + 20}px`,
-            animationDuration: `${Math.random() * 10 + 5}s`,
-            animationDelay: `${Math.random() * 5}s`,
-          }"
-        ></div>
-      </div> -->
       <div class="hero-content">
         <h1 id="hero-title">{{ $t('home.hero.title') }}</h1>
         <p>{{ $t('home.hero.subtitle') }}</p>
@@ -39,6 +25,26 @@
         </div>
       </div>
     </section>
+
+    <!-- PC端顶部横幅广告位1 -->
+    <aside class="ads-wrapper" v-if="!isMobile">
+      <ins class="eas6a97888e2" data-zoneid="5714766"></ins>
+    </aside>
+
+    <!-- 横幅广告左侧1 -->
+    <aside v-if="!isMobile">
+      <ins class="eas6a97888e17" data-zoneid="5714768"></ins>
+    </aside>
+
+    <!-- 横幅广告右侧1 -->
+    <aside v-if="!isMobile">
+      <ins class="eas6a97888e17" data-zoneid="5714770"></ins>
+    </aside>
+
+    <!-- 移动横幅广告位 -->
+    <aside v-if="isMobile">
+      <ins class="eas6a97888e10" data-zoneid="5714772"></ins>
+    </aside>
 
     <!-- Game Features -->
     <section id="features" class="features" aria-labelledby="features-title">
@@ -500,6 +506,11 @@
       </div>
     </section>
 
+    <!-- 移动端原生广告位 -->
+    <aside class="ads-wrapper" v-if="isMobile">
+      <ins class="eas6a97888e20" data-zoneid="5714776"></ins>
+    </aside>
+
     <!-- About the Game -->
     <section id="about" class="about" aria-labelledby="about-title">
       <h2 id="about-title" class="section-title">
@@ -776,6 +787,10 @@ import GameGuides from '@/components/GameGuides.vue'
 import SeoHead from '@/components/SeoHead.vue'
 import { useI18n } from 'vue-i18n'
 
+import { useDeviceDetection } from '@/utils/useDeviceDetection.js'
+
+const { isMobile } = useDeviceDetection()
+
 export default {
   name: 'HomeView',
   components: {
@@ -801,6 +816,16 @@ export default {
 
     // 添加FAQ点击事件
     this.setupFaqToggle()
+
+    // 触发广告（通用：DOM 就绪后推送一次）
+    setTimeout(() => {
+      try {
+        window.AdProvider = window.AdProvider || []
+        window.AdProvider.push({ serve: {} })
+      } catch (e) {
+        console.error('AdProvider push failed:', e)
+      }
+    }, 500)
   },
   methods: {
     // 检测移动端设备
@@ -1870,5 +1895,12 @@ section.animate {
 
 .load-guides-btn span {
   font-size: 1.2rem;
+}
+
+.ads-wrapper {
+  text-align: center;
+  padding: 10px 0;
+  overflow: hidden;
+  width: 100%;
 }
 </style>
