@@ -20,15 +20,15 @@
 
       <!-- 操作按钮 -->
       <div class="action-buttons">
-        <router-link :to="getLocalizedPath('/')" class="btn btn-primary">
+        <a :href="getLocalizedPath('/')" class="btn btn-primary">
           <span class="btn-icon">🏠</span>
           {{ $t('notFound.backToHome') }}
-        </router-link>
+        </a>
         
-        <router-link :to="getLocalizedPath('/dreamy-room-level-game-guides')" class="btn btn-secondary">
+        <a :href="getLocalizedPath('/dreamy-room-level-game-guides')" class="btn btn-secondary">
           <span class="btn-icon">📖</span>
           {{ $t('notFound.backToGuides') }}
-        </router-link>
+        </a>
       </div>
 
       <!-- 建议链接 -->
@@ -36,22 +36,22 @@
         <h3>{{ $t('notFound.suggestions') }}</h3>
         <ul class="suggestion-list">
           <li>
-            <router-link :to="getLocalizedPath('/dreamy-room-level-game-guides')">
+            <a :href="getLocalizedPath('/dreamy-room-level-game-guides')">
               <span class="suggestion-icon">📖</span>
               {{ $t('header.guides') }}
-            </router-link>
+            </a>
           </li>
           <li>
-            <router-link :to="getLocalizedPath('/dreamy-room-game-blog')">
+            <a :href="getLocalizedPath('/dreamy-room-game-blog')">
               <span class="suggestion-icon">📝</span>
               {{ $t('header.blog') }}
-            </router-link>
+            </a>
           </li>
           <li>
-            <router-link :to="getLocalizedPath('/download-dreamy-room-game')">
+            <a :href="getLocalizedPath('/download-dreamy-room-game')">
               <span class="suggestion-icon">⬇️</span>
               {{ $t('header.download') }}
-            </router-link>
+            </a>
           </li>
         </ul>
       </div>

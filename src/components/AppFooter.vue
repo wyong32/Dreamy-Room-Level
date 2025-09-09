@@ -215,23 +215,23 @@
             {{ $t('footer.quickLinks.title') }}
           </h3>
           <nav class="footer-nav" aria-label="Quick Links Navigation">
-            <router-link :to="getLocalizedPath('/')" :title="$t('footer.quickLinks.home')">{{
+            <a :href="getLocalizedPath('/')" :title="$t('footer.quickLinks.home')">{{
               $t('footer.quickLinks.home')
-            }}</router-link>
-            <router-link
-              :to="getLocalizedPath('/guides')"
+            }}</a>
+            <a
+              :href="getLocalizedPath('/guides')"
               :title="$t('footer.quickLinks.guides')"
-              >{{ $t('footer.quickLinks.guides') }}</router-link
+              >{{ $t('footer.quickLinks.guides') }}</a
             >
-            <router-link
-              :to="getLocalizedPath('/dreamy-room-game-blog')"
+            <a
+              :href="getLocalizedPath('/dreamy-room-game-blog')"
               :title="$t('footer.quickLinks.blog')"
-              >{{ $t('footer.quickLinks.blog') }}</router-link
+              >{{ $t('footer.quickLinks.blog') }}</a
             >
-            <router-link
-              :to="getLocalizedPath('/download-dreamy-room-game')"
+            <a
+              :href="getLocalizedPath('/download-dreamy-room-game')"
               :title="$t('footer.quickLinks.download')"
-              >{{ $t('footer.quickLinks.download') }}</router-link
+              >{{ $t('footer.quickLinks.download') }}</a
             >
           </nav>
         </div>
@@ -325,18 +325,18 @@
             {{ $t('footer.legal.title') }}
           </h3>
           <nav class="footer-nav" aria-label="Legal Navigation">
-            <router-link :to="getLocalizedPath('/privacy')" :title="$t('footer.legal.privacy')">{{
+            <a :href="getLocalizedPath('/privacy')" :title="$t('footer.legal.privacy')">{{
               $t('footer.legal.privacy')
-            }}</router-link>
-            <router-link :to="getLocalizedPath('/terms')" :title="$t('footer.legal.terms')">{{
+            }}</a>
+            <a :href="getLocalizedPath('/terms')" :title="$t('footer.legal.terms')">{{
               $t('footer.legal.terms')
-            }}</router-link>
-            <router-link :to="getLocalizedPath('/about')" :title="$t('footer.quickLinks.about')">
+            }}</a>
+            <a :href="getLocalizedPath('/about')" :title="$t('footer.quickLinks.about')">
               About Us
-            </router-link>
-            <router-link :to="getLocalizedPath('/contact')" title="Contact Us">
+            </a>
+            <a :href="getLocalizedPath('/contact')" title="Contact Us">
               Contact Us
-            </router-link>
+            </a>
           </nav>
         </div>
       </div>

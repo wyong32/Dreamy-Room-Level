@@ -20,8 +20,8 @@
       <nav class="nav desktop-nav" aria-label="Main Navigation">
         <ul>
           <li>
-            <router-link
-              :to="getLocalizedPath('/')"
+            <a
+              :href="getLocalizedPath('/')"
               :title="$t('header.home')"
               @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">
@@ -52,12 +52,12 @@
                   ></path>
                 </svg>
               </span>
-              {{ $t('header.home') }}</router-link
+              {{ $t('header.home') }}</a
             >
           </li>
           <li>
-            <router-link
-              :to="getLocalizedPath('/dreamy-room-level-game-guides')"
+            <a
+              :href="getLocalizedPath('/dreamy-room-level-game-guides')"
               :title="$t('header.guides')"
               @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">
@@ -78,12 +78,12 @@
                   ></path>
                 </svg>
               </span>
-              {{ $t('header.guides') }}</router-link
+              {{ $t('header.guides') }}</a
             >
           </li>
           <li>
-            <router-link
-              :to="getLocalizedPath('/dreamy-room-game-blog')"
+            <a
+              :href="getLocalizedPath('/dreamy-room-game-blog')"
               :title="$t('header.blog')"
               @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">
@@ -104,12 +104,12 @@
                   ></path>
                 </svg>
               </span>
-              {{ $t('header.blog') }}</router-link
+              {{ $t('header.blog') }}</a
             >
           </li>
           <li>
-            <router-link
-              :to="getLocalizedPath('/download-dreamy-room-game')"
+            <a
+              :href="getLocalizedPath('/download-dreamy-room-game')"
               :title="$t('header.download')"
               @click="closeMobileMenuIfNeeded"
               ><span class="nav-icon">
@@ -130,7 +130,7 @@
                   ></path>
                 </svg>
               </span>
-              {{ $t('header.download') }}</router-link
+              {{ $t('header.download') }}</a
             >
           </li>
         </ul>
@@ -191,32 +191,32 @@
   <nav class="mobile-nav" :class="{ open: isMobileMenuOpen }" aria-label="Mobile Navigation">
     <ul>
       <li>
-        <router-link :to="getLocalizedPath('/')" :title="$t('header.home')" @click="closeMobileMenu"
-          ><span class="nav-icon">🏠</span> {{ $t('header.home') }}</router-link
+        <a :href="getLocalizedPath('/')" :title="$t('header.home')" @click="closeMobileMenu"
+          ><span class="nav-icon">🏠</span> {{ $t('header.home') }}</a
         >
       </li>
       <li>
-        <router-link
-          :to="getLocalizedPath('/dreamy-room-level-game-guides')"
+        <a
+          :href="getLocalizedPath('/dreamy-room-level-game-guides')"
           :title="$t('header.guides')"
           @click="closeMobileMenu"
-          ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</router-link
+          ><span class="nav-icon">📖</span> {{ $t('header.guides') }}</a
         >
       </li>
       <li>
-        <router-link
-          :to="getLocalizedPath('/dreamy-room-game-blog')"
+        <a
+          :href="getLocalizedPath('/dreamy-room-game-blog')"
           :title="$t('header.blog')"
           @click="closeMobileMenu"
-          ><span class="nav-icon">📝</span> {{ $t('header.blog') }}</router-link
+          ><span class="nav-icon">📝</span> {{ $t('header.blog') }}</a
         >
       </li>
       <li>
-        <router-link
-          :to="getLocalizedPath('/download-dreamy-room-game')"
+        <a
+          :href="getLocalizedPath('/download-dreamy-room-game')"
           :title="$t('header.download')"
           @click="closeMobileMenu"
-          ><span class="nav-icon">⬇️</span> {{ $t('header.download') }}</router-link
+          ><span class="nav-icon">⬇️</span> {{ $t('header.download') }}</a
         >
       </li>
     </ul>

@@ -44,9 +44,9 @@
               <span class="post-date">{{ post.date }}</span>
             </div>
             <p class="post-excerpt">{{ post.content }}</p>
-            <router-link :to="post.detailsRoute" class="read-more">{{
+            <a :href="post.detailsRoute" class="read-more">{{
               $t('blog.readMore')
-            }}</router-link>
+            }}</a>
           </div>
         </article>
       </div>
