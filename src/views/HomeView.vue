@@ -502,16 +502,6 @@ export default {
 
     // 添加FAQ点击事件
     this.setupFaqToggle()
-
-    // 触发广告（通用：DOM 就绪后推送一次）
-    setTimeout(() => {
-      try {
-        window.AdProvider = window.AdProvider || []
-        window.AdProvider.push({ serve: {} })
-      } catch (e) {
-        console.error('AdProvider push failed:', e)
-      }
-    }, 500)
   },
   methods: {
     // 检测移动端设备
